@@ -1,0 +1,1213 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap");
+
+
+/* ========================= */
+/* VARIABLES */
+/* ========================= */
+
+:root {
+  --background: #faf7f1;
+  --background-soft: #f3eadf;
+  --background-card: #f1e8dc;
+  --text: #171512;
+  --text-soft: #514b44;
+  --gold: #b58a5a;
+  --border: #ddd0c0;
+  --navbar-height: 112px;
+}
+
+
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  min-height: var(--navbar-height);
+  padding: 16px 68px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  background: rgba(250, 247, 241, 0.94);
+  border-bottom: 1px solid rgba(181, 138, 90, 0.2);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+
+/* LOGO ET NOM */
+
+.navbar-brand {
+  justify-self: start;
+
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.navbar-logo-link {
+  width: 78px;
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.navbar-logo {
+  width: 76px;
+  height: 76px;
+
+  object-fit: contain;
+
+  filter: contrast(1.15);
+
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+.navbar-logo-link:hover .navbar-logo {
+  transform: scale(1.08) rotate(-3deg);
+
+  filter:
+    contrast(1.2)
+    drop-shadow(0 8px 14px rgba(181, 138, 90, 0.3));
+}
+
+.navbar-identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.navbar-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.3px;
+
+  transition:
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.navbar-name:hover {
+  color: var(--gold);
+  transform: translateX(2px);
+}
+
+/* Aucun soulignement sous François Benett */
+
+.navbar-name::before,
+.navbar-name::after {
+  display: none;
+  content: none;
+}
+
+.navbar-subtitle {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #766d64;
+}
+
+
+/* TITRE CENTRAL */
+
+.navbar-page-title {
+  justify-self: center;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 7px;
+
+  animation: apparitionTitre 0.6s ease;
+}
+
+@keyframes apparitionTitre {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+    letter-spacing: 3px;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 7px;
+  }
+}
+
+
+/* BOUTON MENU */
+
+.menu-toggle {
+  justify-self: end;
+
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border: 1px solid rgba(181, 138, 90, 0.42);
+  border-radius: 50%;
+
+  background: transparent;
+  cursor: pointer;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 1px;
+
+  display: block;
+
+  background: var(--text);
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease,
+    width 0.4s ease,
+    background 0.35s ease;
+}
+
+.menu-toggle:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: rotate(4deg);
+}
+
+.menu-toggle:hover span {
+  background: white;
+}
+
+.menu-toggle:hover span:nth-child(2) {
+  width: 14px;
+}
+
+.menu-toggle-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* ========================= */
+/* MENU LATÉRAL */
+/* ========================= */
+
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1090;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  border: none;
+
+  background: rgba(18, 15, 12, 0.28);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
+}
+
+.menu-backdrop-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1100;
+
+  width: min(470px, 92vw);
+  height: 100vh;
+  padding: 35px 45px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(243, 234, 223, 0.99);
+  border-left: 1px solid rgba(181, 138, 90, 0.3);
+
+  transform: translateX(105%);
+
+  transition:
+    transform 0.65s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.menu-panel-open {
+  transform: translateX(0);
+}
+
+.menu-panel-header {
+  padding-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(181, 138, 90, 0.3);
+
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.menu-close {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.4s ease,
+    transform 0.4s ease;
+}
+
+.menu-close:hover {
+  color: var(--gold);
+  transform: rotate(90deg);
+}
+
+.menu-panel-links {
+  margin-top: 55px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-panel-links a {
+  position: relative;
+
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  gap: 26px;
+
+  border-bottom: 1px solid rgba(23, 21, 18, 0.12);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 39px;
+  letter-spacing: 1.5px;
+
+  overflow: hidden;
+
+  transition:
+    color 0.4s ease,
+    padding-left 0.4s ease;
+}
+
+.menu-panel-links a::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--gold);
+
+  transition: width 0.5s ease;
+}
+
+.menu-panel-links a:hover {
+  padding-left: 12px;
+  color: var(--gold);
+}
+
+.menu-panel-links a:hover::before {
+  width: 100%;
+}
+
+.menu-number {
+  min-width: 25px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8a7c6e;
+}
+
+.menu-panel-footer {
+  margin-top: auto;
+  padding-top: 22px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+
+  border-top: 1px solid rgba(181, 138, 90, 0.3);
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #786d62;
+}
+
+
+/* ========================= */
+/* COUVERTURE */
+/* ========================= */
+
+.hero {
+  width: 100%;
+  height: 65vh;
+
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  animation: apparitionHero 1.2s ease;
+}
+
+@keyframes apparitionHero {
+  from {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* ========================= */
+/* DÉCOUVRIR */
+/* ========================= */
+
+.decouvrir {
+  max-width: 900px;
+  padding: 55px 70px 35px;
+}
+
+.decouvrir h1 {
+  margin: 0 0 25px;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.decouvrir p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--text-soft);
+  text-align: justify;
+}
+
+
+/* ========================= */
+/* ŒUVRES DE L’ACCUEIL */
+/* ========================= */
+
+.oeuvres-section {
+  padding: 30px 70px 70px;
+}
+
+.oeuvres-section h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.slider-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oeuvres-slider {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.oeuvres-slider img {
+  width: 260px;
+  height: 350px;
+
+  object-fit: cover;
+
+  opacity: 0.65;
+  cursor: pointer;
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.oeuvres-slider img.active {
+  opacity: 1;
+}
+
+.oeuvres-slider img:hover {
+  opacity: 1;
+  transform: translateY(-5px) scale(1.015);
+  box-shadow: 0 20px 45px rgba(31, 24, 18, 0.16);
+}
+
+.slide-animation {
+  animation: mouvementSlide 0.6s ease;
+}
+
+@keyframes mouvementSlide {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* CARTE COLLECTION */
+
+.collection-card {
+  width: 260px;
+  height: 350px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+
+  border: 1px solid #d8cfc2;
+  background: transparent;
+
+  transition:
+    background 0.45s ease,
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.collection-card:hover {
+  background: #eee3d5;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(31, 24, 18, 0.1);
+}
+
+.plus-circle {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--text);
+  border-radius: 50%;
+
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1;
+
+  transition:
+    color 0.45s ease,
+    background 0.45s ease,
+    border-color 0.45s ease,
+    transform 0.45s ease;
+}
+
+.collection-card:hover .plus-circle {
+  color: white;
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: rotate(90deg);
+}
+
+
+/* FLÈCHES */
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: rgba(0, 0, 0, 0.42);
+  color: white;
+
+  font-size: 19px;
+  cursor: pointer;
+
+  opacity: 0;
+
+  transform: translateY(-50%);
+
+  transition:
+    opacity 0.35s ease,
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.slider-container:hover .slider-arrow {
+  opacity: 1;
+}
+
+.slider-arrow:first-child {
+  left: 15px;
+}
+
+.slider-arrow:last-child {
+  right: 15px;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.08);
+}
+
+
+/* ========================= */
+/* PAGE COLLECTIONS */
+/* ========================= */
+
+.collections-page {
+  padding: 80px 70px;
+}
+
+.collections-header {
+  max-width: 850px;
+  margin-bottom: 70px;
+}
+
+.collections-header h1 {
+  margin: 0 0 25px;
+
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+
+.collections-header p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-soft);
+  text-align: justify;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.collection-card-page {
+  position: relative;
+
+  height: 430px;
+
+  display: block;
+
+  overflow: hidden;
+  background: var(--background-card);
+}
+
+.collection-card-page img {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.8s ease,
+    filter 0.8s ease;
+}
+
+.collection-card-page:hover img {
+  transform: scale(1.025);
+  filter: brightness(0.88);
+}
+
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  color: white;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 35%,
+    rgba(0, 0, 0, 0.68)
+  );
+
+  transition: background 0.5s ease;
+}
+
+.collection-card-page:hover .collection-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.04),
+    rgba(0, 0, 0, 0.78)
+  );
+}
+
+.collection-overlay h2 {
+  margin: 0 0 15px;
+
+  font-size: 43px;
+
+  transition: transform 0.45s ease;
+}
+
+.collection-overlay p,
+.collection-overlay span {
+  opacity: 0;
+  transform: translateY(18px);
+
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.collection-overlay p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.collection-overlay span {
+  margin-top: 15px;
+
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.collection-card-page:hover .collection-overlay h2 {
+  transform: translateY(-5px);
+}
+
+.collection-card-page:hover .collection-overlay p,
+.collection-card-page:hover .collection-overlay span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.oeuvres-originales {
+  margin-top: 100px;
+  padding-top: 50px;
+
+  border-top: 1px solid var(--border);
+}
+
+.oeuvres-originales h2 {
+  font-size: 45px;
+}
+
+
+/* ========================= */
+/* PAGE PARCOURS */
+/* ========================= */
+
+.parcours-page {
+  padding: 75px 70px 95px;
+}
+
+.parcours-title {
+  margin: 0 0 65px;
+
+  font-size: clamp(72px, 8vw, 110px);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 4px;
+}
+
+.parcours-introduction {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.parcours-text,
+.parcours-first-text {
+  flex: 1;
+}
+
+.parcours-text h1,
+.parcours-first-text h1 {
+  margin: 0 0 50px;
+
+  font-size: clamp(72px, 8vw, 105px);
+  font-weight: 600;
+  line-height: 0.95;
+}
+
+.parcours-text p,
+.parcours-first-text p,
+.parcours-content p,
+.parcours-suite p,
+.parcours-signature p {
+  margin: 0 0 28px;
+
+  font-size: 18px;
+  line-height: 1.95;
+  color: var(--text-soft);
+  text-align: justify;
+}
+
+.parcours-portrait {
+  width: min(480px, 42vw);
+  flex-shrink: 0;
+}
+
+.parcours-portrait img {
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0 20px 55px rgba(31, 24, 18, 0.12);
+
+  transition:
+    transform 0.65s ease,
+    box-shadow 0.65s ease;
+}
+
+.parcours-portrait img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 65px rgba(31, 24, 18, 0.18);
+}
+
+.parcours-content,
+.parcours-suite {
+  max-width: 1000px;
+  margin-top: 70px;
+}
+
+.parcours-signature {
+  max-width: 900px;
+  margin-top: 90px;
+  padding-top: 45px;
+
+  border-top: 1px solid var(--border);
+}
+
+.parcours-signature h2 {
+  font-size: 45px;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+  margin-top: 80px;
+  padding: 60px 70px 30px;
+
+  background: var(--background-soft);
+  border-top: 1px solid var(--border);
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer-content h2,
+.footer-content h3 {
+  margin-top: 0;
+}
+
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links a,
+.footer-contact a {
+  position: relative;
+  width: fit-content;
+}
+
+.footer-links a::after,
+.footer-contact a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--gold);
+
+  transition: width 0.4s ease;
+}
+
+.footer-links a:hover::after,
+.footer-contact a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+
+  border-top: 1px solid var(--border);
+
+  font-size: 13px;
+  color: #756b61;
+}
+
+
+/* ========================= */
+/* TABLETTE */
+/* ========================= */
+
+@media (max-width: 1050px) {
+  .navbar {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .navbar-logo-link {
+    width: 68px;
+    height: 68px;
+  }
+
+  .navbar-logo {
+    width: 66px;
+    height: 66px;
+  }
+
+  .navbar-name {
+    font-size: 29px;
+  }
+
+  .navbar-subtitle {
+    font-size: 8px;
+    letter-spacing: 2.3px;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .oeuvres-slider {
+    gap: 20px;
+  }
+
+  .oeuvres-slider img,
+  .collection-card {
+    width: 230px;
+    height: 320px;
+  }
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 760px) {
+  :root {
+    --navbar-height: 88px;
+  }
+
+  .navbar {
+    min-height: var(--navbar-height);
+    padding: 10px 20px;
+
+    grid-template-columns: 1fr auto;
+  }
+
+  .navbar-brand {
+    gap: 11px;
+  }
+
+  .navbar-logo-link {
+    width: 58px;
+    height: 58px;
+  }
+
+  .navbar-logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .navbar-name {
+    font-size: 24px;
+  }
+
+  .navbar-subtitle {
+    font-size: 7px;
+    letter-spacing: 1.8px;
+  }
+
+  .navbar-page-title {
+    display: none;
+  }
+
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .menu-panel {
+    padding: 28px;
+  }
+
+  .menu-panel-links a {
+    font-size: 34px;
+  }
+
+  .hero {
+    height: 52vh;
+  }
+
+  .decouvrir,
+  .oeuvres-section,
+  .collections-page,
+  .parcours-page {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .decouvrir h1,
+  .collections-header h1 {
+    font-size: 52px;
+  }
+
+  .oeuvres-slider {
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .oeuvres-slider img,
+  .collection-card {
+    width: 220px;
+    height: 300px;
+  }
+
+  .slider-arrow {
+    opacity: 1;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card-page {
+    height: 430px;
+  }
+
+  .parcours-introduction {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .parcours-portrait {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .footer {
+    padding: 50px 24px 25px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+
+/* ========================= */
+/* PETITS MOBILES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .navbar-brand {
+    gap: 8px;
+  }
+
+  .navbar-logo-link {
+    width: 51px;
+    height: 51px;
+  }
+
+  .navbar-logo {
+    width: 49px;
+    height: 49px;
+  }
+
+  .navbar-name {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .navbar-subtitle {
+    font-size: 6px;
+    letter-spacing: 1.3px;
+  }
+
+  .menu-toggle {
+    width: 41px;
+    height: 41px;
+  }
+
+  .menu-panel-links a {
+    min-height: 72px;
+    font-size: 30px;
+  }
+
+  .decouvrir h1,
+  .collections-header h1 {
+    font-size: 46px;
+  }
+
+  .collection-card-page {
+    height: 380px;
+  }
+
+  .collection-overlay h2 {
+    font-size: 37px;
+  }
+}
