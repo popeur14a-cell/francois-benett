@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://benett-galerie.vercel.app";
+const SITE_URL = "https://benett-peintre.fr";
 
 export default function Collections() {
   const collections = [

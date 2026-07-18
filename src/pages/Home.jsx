@@ -57,7 +57,7 @@ export default function Home() {
 
         <link
           rel="canonical"
-          href="https://benett-galerie.vercel.app/"
+          href="https://benett-peintre.fr"
         />
 
         <meta
@@ -72,12 +72,12 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://benett-galerie.vercel.app/images/benett-cover.jpg"
+          content="https://benett-peintre.fr/images/benett-cover.jpg"
         />
 
         <meta
           property="og:url"
-          content="https://benett-galerie.vercel.app/"
+          content="https://benett-peintre.fr/"
         />
 
         <meta
@@ -107,7 +107,7 @@ export default function Home() {
 
         <meta
           name="twitter:image"
-          content="https://benett-galerie.vercel.app/images/benett-cover.jpg"
+          content="https://benett-peintre.fr/images/benett-cover.jpg"
         />
       </Helmet>
 

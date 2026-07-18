@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://benett-galerie.vercel.app";
+const SITE_URL = "https://benett-peintre.fr";
 
 export default function Contact() {
   const pageUrl = `${SITE_URL}/contact`;

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 import { collectionsData } from "../data/collectionsData";
 
-const SITE_URL = "https://benett-galerie.vercel.app";
+const SITE_URL = "https://benett-peintre.fr";
 
 export default function CollectionDetail() {
   const { collectionId } = useParams();
