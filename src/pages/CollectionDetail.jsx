@@ -1,5 +1,9 @@
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 import { collectionsData } from "../data/collectionsData";
+
+const SITE_URL = "https://benett-galerie.vercel.app";
 
 export default function CollectionDetail() {
   const { collectionId } = useParams();
@@ -8,62 +12,183 @@ export default function CollectionDetail() {
 
   if (!collection) {
     return (
-      <main className="collection-detail-page">
-        <div className="collection-not-found">
-          <h1>Collection introuvable</h1>
+      <>
+        <Helmet>
+          <title>Collection introuvable | Benett Gallery</title>
 
-          <Link to="/collections" className="collection-back-link">
-            ← Retour aux collections
-          </Link>
-        </div>
-      </main>
+          <meta
+            name="description"
+            content="Cette collection n’existe pas ou n’est plus disponible."
+          />
+
+          <meta name="robots" content="noindex, follow" />
+        </Helmet>
+
+        <main className="collection-detail-page">
+          <div className="collection-not-found">
+            <h1>Collection introuvable</h1>
+
+            <Link to="/collections" className="collection-back-link">
+              ← Retour aux collections
+            </Link>
+          </div>
+        </main>
+      </>
     );
   }
 
+  const collectionUrl = `${SITE_URL}/collections/${collectionId}`;
+
+  const premiereImage = collection.oeuvres[0]?.image
+    ? `${SITE_URL}${collection.oeuvres[0].image}`
+    : `${SITE_URL}/images/benett-cover.jpg`;
+
+  const nombreOeuvres = collection.oeuvres.length;
+
+  const description = `Découvrez la collection ${collection.nom} de François Benett, peintre contemporain. Explorez ${nombreOeuvres} ${
+    nombreOeuvres > 1 ? "œuvres originales" : "œuvre originale"
+  } sur Benett Gallery.`;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `Collection ${collection.nom} – François Benett`,
+    description,
+    url: collectionUrl,
+    image: premiereImage,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Benett Gallery",
+      url: SITE_URL,
+    },
+    about: {
+      "@type": "Person",
+      name: "François Benett",
+      jobTitle: "Peintre contemporain",
+      url: SITE_URL,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: nombreOeuvres,
+      itemListElement: collection.oeuvres.map((oeuvre, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "VisualArtwork",
+          name: oeuvre.titre,
+          image: `${SITE_URL}${oeuvre.image}`,
+          artform: "Peinture",
+          creator: {
+            "@type": "Person",
+            name: "François Benett",
+          },
+        },
+      })),
+    },
+  };
+
   return (
-    <main className="collection-detail-page">
-      <header className="collection-detail-header">
-        <Link to="/collections" className="collection-back-link">
-          <span aria-hidden="true">←</span>
-          Retour aux collections
-        </Link>
+    <>
+      <Helmet>
+        <title>
+          {collection.nom} – François Benett | Benett Gallery
+        </title>
 
-        <h1>{collection.nom}</h1>
+        <meta name="description" content={description} />
 
-        <p className="collection-count">
-          {collection.oeuvres.length}{" "}
-          {collection.oeuvres.length > 1 ? "œuvres" : "œuvre"}
-        </p>
-      </header>
+        <meta name="robots" content="index, follow" />
 
-      <section className="artworks-grid">
-        {collection.oeuvres.map((oeuvre, index) => (
-          <article className="artwork-card" key={`${oeuvre.titre}-${index}`}>
-            <div className="artwork-image-container">
-              <img
-                src={oeuvre.image}
-                alt={oeuvre.titre}
-                className="artwork-image"
-                loading="lazy"
-              />
-            </div>
+        <link rel="canonical" href={collectionUrl} />
 
-            <div className="artwork-information">
-              <h2>{oeuvre.titre}</h2>
+        <meta
+          property="og:title"
+          content={`${collection.nom} – François Benett`}
+        />
 
-              {oeuvre.dimensions && (
-                <p className="artwork-dimensions">{oeuvre.dimensions}</p>
-              )}
+        <meta property="og:description" content={description} />
 
-              {oeuvre.collectionParticuliere && (
-                <p className="artwork-status">
-                  Collection particulière
-                </p>
-              )}
-            </div>
-          </article>
-        ))}
-      </section>
-    </main>
+        <meta property="og:image" content={premiereImage} />
+
+        <meta
+          property="og:image:alt"
+          content={`Collection ${collection.nom} de François Benett`}
+        />
+
+        <meta property="og:url" content={collectionUrl} />
+
+        <meta property="og:type" content="website" />
+
+        <meta property="og:site_name" content="Benett Gallery" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content={`${collection.nom} – François Benett`}
+        />
+
+        <meta name="twitter:description" content={description} />
+
+        <meta name="twitter:image" content={premiereImage} />
+
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
+      <main className="collection-detail-page">
+        <header className="collection-detail-header">
+          <Link to="/collections" className="collection-back-link">
+            <span aria-hidden="true">←</span>
+            Retour aux collections
+          </Link>
+
+          <h1>{collection.nom}</h1>
+
+          <p className="collection-count">
+            {nombreOeuvres} {nombreOeuvres > 1 ? "œuvres" : "œuvre"}
+          </p>
+        </header>
+
+        <section
+          className="artworks-grid"
+          aria-label={`Œuvres de la collection ${collection.nom}`}
+        >
+          {collection.oeuvres.map((oeuvre, index) => (
+            <article
+              className="artwork-card"
+              key={`${oeuvre.titre}-${index}`}
+            >
+              <div className="artwork-image-container">
+                <img
+                  src={oeuvre.image}
+                  alt={`${oeuvre.titre}, œuvre de François Benett, collection ${collection.nom}`}
+                  className="artwork-image"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
+                  decoding="async"
+                />
+              </div>
+
+              <div className="artwork-information">
+                <h2>{oeuvre.titre}</h2>
+
+                {oeuvre.collectionParticuliere && (
+                  <p className="artwork-status">
+                    Collection particulière
+                  </p>
+                )}
+
+                {oeuvre.dimensions && (
+                  <p className="artwork-dimensions">
+                    {oeuvre.dimensions}
+                  </p>
+                )}
+              </div>
+            </article>
+          ))}
+        </section>
+      </main>
+    </>
   );
 }
