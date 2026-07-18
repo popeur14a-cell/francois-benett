@@ -1,104 +1,71 @@
 import { Link } from "react-router-dom";
 
-
 export default function Footer() {
-
-
   return (
-
     <footer className="footer">
-
-
       <div className="footer-content">
-
-
-
         <div className="footer-brand">
+          <Link
+            to="/"
+            className="footer-logo-link"
+            aria-label="Retour à l’accueil"
+          >
+            <img
+              src="/images/logo-b.png"
+              alt="Logo François Benett"
+              className="footer-logo"
+            />
+          </Link>
 
-          <h2>
-            François Benett
-          </h2>
+          <div className="footer-identity">
+            <Link to="/parcours" className="footer-name">
+              François Benett
+            </Link>
 
-
-          <p>
-            Peintre contemporain
-          </p>
-
-
+            <p className="footer-subtitle">
+              Peintre contemporain
+            </p>
+          </div>
         </div>
-
-
-
-
-
-        <div className="footer-links">
-
-
-          <Link to="/collections">
-            Collections
-          </Link>
-
-
-          <Link to="/parcours">
-            Parcours
-          </Link>
-
-
-          <Link to="/contact">
-            Contact
-          </Link>
-
-
-        </div>
-
-
-
-
-
 
         <div className="footer-contact">
+          <p className="footer-contact-title">Contact :</p>
 
+          <div className="footer-contact-links">
+            <a href="tel:+33681099836">
+              +33 6 81 09 98 36
+            </a>
 
-          <a href="mailto:benett.peintre@hotmail.fr">
-            benett.peintre@hotmail.fr
-          </a>
+            <a href="mailto:benett.peintre@hotmail.fr">
+              benett.peintre@hotmail.fr
+            </a>
 
+            <a
+              href="https://www.instagram.com/francois_benett/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
 
-          <a href="tel:+33000000000">
-            Téléphone
-          </a>
+            <a
+              href="https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295?ref=ts"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Singulart
+            </a>
 
-
-          <a
-            href="https://www.instagram.com/francois_benett/"
-            target="_blank"
-          >
-            François Benett
-          </a>
-
-
+            
+          </div>
         </div>
-
-
-
       </div>
-
-
-
-
 
       <div className="footer-bottom">
-
-
-        © {new Date().getFullYear()} François Benett
-
-
+        <p>
+          © {new Date().getFullYear()} François Benett
+        </p>
       </div>
-
-
-
     </footer>
-
   );
-
 }
