@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import Collections from "./pages/Collections";
@@ -38,7 +39,7 @@ export default function App() {
         image: `${SITE_URL}/images/portrait.jpg`,
         url: SITE_URL,
         sameAs: [
-          "https://www.instagram.com/francois_benett/",
+          "https://www.instagram.com/benett_gallery/",
           "https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295?ref=ts",
         ],
         homeLocation: {
@@ -65,6 +66,7 @@ export default function App() {
       </Helmet>
 
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />

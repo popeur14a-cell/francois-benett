@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import LanguageProvider from "./context/LanguageProvider";
 
 import App from "./App";
 import "./index.css";
@@ -13,7 +14,9 @@ ReactDOM.createRoot(
   <React.StrictMode>
     <HelmetProvider>
       <BrowserRouter>
-        <App />
+        <LanguageProvider>
+          <App />
+        </LanguageProvider>
       </BrowserRouter>
 
       <SpeedInsights />

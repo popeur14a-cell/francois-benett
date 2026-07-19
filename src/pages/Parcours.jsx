@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import useLanguage from "../context/useLanguage";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
@@ -92,7 +93,64 @@ const regards = [
   },
 ];
 
+const bibliographieEn = [
+  "Foreword by Raymond Chelet, director of the Le Mans School of Fine Arts, for the exhibition at the Musée de Tessé in Le Mans (1975).",
+  "Appearance on France 3 in the programme “Midi cocktail”, alongside Benoîte Groult, on the theme “Eternal Woman” (1993).",
+  "Foreword by Yves Cosson of the Académie de Bretagne for the exhibition at the Salon du Mans (1995).",
+  "Pratique des Arts no. 4 — “BENETT, the ideal painting?” (2000).",
+  "Foreword by Jean-Louis Avril, Univers des Arts, for the exhibition at the Briançon Centre for Contemporary Art (2007).",
+];
+
+const regardsEn = [
+  {
+    titre: "Benett’s Little Theatre",
+    auteur: "Yves Cosson",
+    paragraphes: [
+      "Benett offers the viewer an astonishing, shifting spectacle populated by slender young women, suspended in stillness or mysterious expectation in the streets of Spain or the intimacy of a room.",
+      "Avoiding picturesque anecdote, the painter creates a heartfelt tribute to women, tenderness and gentleness. Behind apparently ordinary scenes lies a silent yet ardent theatre, each composition capturing a secret, a meeting or a suspended moment.",
+      "His refined blue and yellow harmonies recall the poetic world of circus performers and musicians. The charm takes hold: these figures are fascinating and mysterious, distant yet deeply familiar.",
+    ],
+  },
+  {
+    titre: "Le Moniteur de Strasbourg",
+    auteur: "November 1997",
+    paragraphes: [
+      "Original in the way it combines figurative representation with an elegantly controlled modern style, each Benett painting possesses its own rhythm and intense poetry.",
+      "Through transparency, shadow, light and dominant colours, the female figure embraces that rhythm with grace and charm.",
+    ],
+  },
+  {
+    titre: "Le Maine Libre",
+    auteur: "J. Guichard — 1994",
+    paragraphes: [
+      "François Benett places rigorous technique at the service of a personal style, removing expected details while drawing attention to carefully chosen accessories.",
+      "He avoids mannerism while suggesting an elaborate symbolism and creates a highly personal new baroque.",
+    ],
+  },
+  {
+    titre: "Les Dernières Nouvelles d’Alsace",
+    auteur: "December 2001",
+    paragraphes: [
+      "A richly textured personal technique and a free gesture give Benett’s compositions their freshness and fascination. Stylised women mingle with plays of light and colour, as though seen through a prism.",
+      "Benett reveals a world of purified forms and refined atmospheres recalling Venice’s golden age: an enchanting, alchemical reflection of the painter’s inner vision.",
+    ],
+  },
+  {
+    titre: "Univers des Arts",
+    auteur: "J.-L. Avril — November 2007",
+    paragraphes: [
+      "In his painting, Benett brings opposites together: the spontaneity allowed by acrylic and the subjectivity of his compositions.",
+      "His polymorphic figures, ambiguity and mystery express our dualities, from doubt and unease to peace and joy.",
+      "His palette moves cyclically through blue harmonies and responses of red and yellow. Benett holds the eye, unsettles it and invites it to remain.",
+    ],
+  },
+];
+
 export default function Parcours() {
+  const { language } = useLanguage();
+  const en = language === "en";
+  const critiques = en ? regardsEn : regards;
+  const bibliographieActive = en ? bibliographieEn : bibliographie;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
@@ -114,7 +172,7 @@ export default function Parcours() {
   return (
     <>
       <Helmet>
-        <html lang="fr" />
+        <html lang={language} />
         <title>Parcours de François Benett | Peintre contemporain</title>
         <meta name="description" content={DESCRIPTION} />
         <meta name="robots" content="index, follow" />
@@ -136,19 +194,19 @@ export default function Parcours() {
 
       <main className="parcours-page">
         <header className="parcours-header">
-          <span className="parcours-kicker">Parcours</span>
+          <span className="parcours-kicker">{en ? "About" : "Parcours"}</span>
           <h1 className="parcours-title">François Benett</h1>
-          <p className="parcours-subtitle">Peintre contemporain</p>
+          <p className="parcours-subtitle">{en ? "Contemporary painter" : "Peintre contemporain"}</p>
         </header>
 
         <section className="parcours-introduction" aria-labelledby="presentation-artiste">
           <div className="parcours-text">
-            <h2 id="presentation-artiste">Une peinture de lumière, de poésie et d’émotion</h2>
-            <p>François Benett vit et travaille dans la région nantaise. Diplômé National des Beaux-Arts, il développe depuis plusieurs décennies un univers artistique personnel, construit autour de la lumière, de la poésie et de l’émotion.</p>
-            <p>Son œuvre s’inscrit dans une peinture figurative contemporaine où les personnages, les paysages et les scènes de vie deviennent des espaces d’expression et de sensibilité.</p>
-            <p>À travers ses tableaux, François Benett invite le spectateur à voyager entre réalité et imaginaire. Son travail est marqué par une recherche constante autour de la couleur, de la matière et des atmosphères.</p>
-            <p>Au fil des années, il a construit un style qui lui est propre, permettant de reconnaître ses œuvres sans même voir sa signature.</p>
-            <p>François Benett a exposé dans de nombreuses galeries et salons en France. Il a également été invité d’honneur dans différents salons artistiques.</p>
+            <h2 id="presentation-artiste">{en ? "A painting of light, poetry and emotion" : "Une peinture de lumière, de poésie et d’émotion"}</h2>
+            <p>{en ? "François Benett lives and works in the Nantes region. A graduate of the National School of Fine Arts, he has spent several decades developing a personal artistic world built around light, poetry and emotion." : "François Benett vit et travaille dans la région nantaise. Diplômé National des Beaux-Arts, il développe depuis plusieurs décennies un univers artistique personnel, construit autour de la lumière, de la poésie et de l’émotion."}</p>
+            <p>{en ? "His work belongs to contemporary figurative painting, where figures, landscapes and scenes of everyday life become spaces of expression and sensitivity." : "Son œuvre s’inscrit dans une peinture figurative contemporaine où les personnages, les paysages et les scènes de vie deviennent des espaces d’expression et de sensibilité."}</p>
+            <p>{en ? "Through his paintings, François Benett invites viewers to travel between reality and imagination. His work reflects a constant exploration of colour, material and atmosphere." : "À travers ses tableaux, François Benett invite le spectateur à voyager entre réalité et imaginaire. Son travail est marqué par une recherche constante autour de la couleur, de la matière et des atmosphères."}</p>
+            <p>{en ? "Over the years, he has developed a distinctive style that makes his works recognisable even without seeing his signature." : "Au fil des années, il a construit un style qui lui est propre, permettant de reconnaître ses œuvres sans même voir sa signature."}</p>
+            <p>{en ? "François Benett has exhibited in numerous galleries and art fairs in France and has been guest of honour at several artistic events." : "François Benett a exposé dans de nombreuses galeries et salons en France. Il a également été invité d’honneur dans différents salons artistiques."}</p>
           </div>
           <figure className="parcours-portrait">
             <img src="/images/portrait.jpg" alt="Portrait de François Benett, peintre contemporain" fetchPriority="high" decoding="async" width="800" height="1000" />
@@ -157,12 +215,12 @@ export default function Parcours() {
         </section>
 
         <section className="parcours-section parcours-formation" aria-labelledby="formation-reconnaissance">
-          <h2 id="formation-reconnaissance">Formation et reconnaissance</h2>
-          <p>François Benett est diplômé National des Beaux-Arts. Son parcours artistique est marqué par de nombreuses expositions personnelles, des invitations d’honneur et une présence dans plusieurs galeries françaises. Son travail a été présenté auprès de collectionneurs en France et à l’étranger.</p>
+          <h2 id="formation-reconnaissance">{en ? "Education and recognition" : "Formation et reconnaissance"}</h2>
+          <p>{en ? "François Benett is a graduate of the National School of Fine Arts. His career includes numerous solo exhibitions, invitations as guest of honour and representation in several French galleries. His work has been presented to collectors in France and abroad." : "François Benett est diplômé National des Beaux-Arts. Son parcours artistique est marqué par de nombreuses expositions personnelles, des invitations d’honneur et une présence dans plusieurs galeries françaises. Son travail a été présenté auprès de collectionneurs en France et à l’étranger."}</p>
         </section>
 
         <section className="parcours-section" aria-labelledby="expositions-personnelles">
-          <h2 id="expositions-personnelles">Expositions personnelles</h2>
+          <h2 id="expositions-personnelles">{en ? "Solo exhibitions" : "Expositions personnelles"}</h2>
           <div className="parcours-timeline">
             {expositions.map(([annee, lieux]) => (
               <article className="parcours-event" key={annee}>
@@ -175,9 +233,9 @@ export default function Parcours() {
 
         <section className="parcours-section parcours-two-columns" aria-label="Collections et bibliographie">
           <div>
-            <h2>Collections particulières et musées</h2>
-            <p>Les œuvres de François Benett sont présentes dans des collections particulières en France, en Allemagne, en Belgique, en Italie, aux États-Unis et au Japon.</p>
-            <p>Ses œuvres ont également été présentées dans plusieurs collections publiques et musées :</p>
+            <h2>{en ? "Private collections and museums" : "Collections particulières et musées"}</h2>
+            <p>{en ? "François Benett’s works are held in private collections in France, Germany, Belgium, Italy, the United States and Japan." : "Les œuvres de François Benett sont présentes dans des collections particulières en France, en Allemagne, en Belgique, en Italie, aux États-Unis et au Japon."}</p>
+            <p>{en ? "His works have also been presented in public collections and museums:" : "Ses œuvres ont également été présentées dans plusieurs collections publiques et musées :"}</p>
             <ul className="parcours-list">
               <li>Musée de Tessé — Le Mans</li>
               <li>Musée de Cholet</li>
@@ -185,19 +243,19 @@ export default function Parcours() {
             </ul>
           </div>
           <div>
-            <h2>Bibliographie</h2>
+            <h2>{en ? "Bibliography" : "Bibliographie"}</h2>
             <ul className="parcours-list">
-              {bibliographie.map((item) => <li key={item}>{item}</li>)}
+              {bibliographieActive.map((item) => <li key={item}>{item}</li>)}
             </ul>
           </div>
         </section>
 
         <section className="parcours-section parcours-regards" aria-labelledby="regards-oeuvre">
           <header>
-            <span className="parcours-kicker">Critiques et publications</span>
-            <h2 id="regards-oeuvre">Regards sur l’œuvre de François Benett</h2>
+            <span className="parcours-kicker">{en ? "Reviews and publications" : "Critiques et publications"}</span>
+            <h2 id="regards-oeuvre">{en ? "Perspectives on François Benett’s work" : "Regards sur l’œuvre de François Benett"}</h2>
           </header>
-          {regards.map((regard) => (
+          {critiques.map((regard) => (
             <article className="parcours-critique" key={regard.titre}>
               <h3>{regard.titre}</h3>
               {regard.paragraphes.map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}

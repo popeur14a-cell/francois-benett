@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import useLanguage from "../context/useLanguage";
 
 export default function Footer() {
+  const { language } = useLanguage();
+  const en = language === "en";
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -8,7 +11,7 @@ export default function Footer() {
           <Link
             to="/"
             className="footer-logo-link"
-            aria-label="Retour à l’accueil"
+            aria-label={en ? "Back to home" : "Retour à l’accueil"}
           >
             <img
               src="/images/logo-b.png"
@@ -23,13 +26,15 @@ export default function Footer() {
             </Link>
 
             <p className="footer-subtitle">
-              Peintre contemporain
+              {en ? "Contemporary painter" : "Peintre contemporain"}
             </p>
           </div>
         </div>
 
         <div className="footer-contact">
-          <p className="footer-contact-title">Contact :</p>
+          <Link to="/contact" className="footer-contact-title">
+            {en ? "Contact:" : "Contact :"}
+          </Link>
 
           <div className="footer-contact-links">
             <a href="tel:+33681099836">
@@ -41,7 +46,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/francois_benett/"
+              href="https://www.instagram.com/benett_gallery/"
               target="_blank"
               rel="noreferrer"
             >

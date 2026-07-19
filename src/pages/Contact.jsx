@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import useLanguage from "../context/useLanguage";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
@@ -9,6 +11,32 @@ const DESCRIPTION =
   "Contactez François Benett pour toute demande concernant une œuvre originale, une exposition ou un projet artistique.";
 
 export default function Contact() {
+  const { language } = useLanguage();
+  const en = language === "en";
+  const [statutEnvoi, setStatutEnvoi] = useState("idle");
+
+  async function envoyerMessage(event) {
+    event.preventDefault();
+    setStatutEnvoi("sending");
+    const donnees = new FormData(event.currentTarget);
+    const formulaire = event.currentTarget;
+
+    try {
+      const reponse = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(donnees.entries())),
+      });
+
+      if (!reponse.ok) throw new Error("Envoi impossible");
+
+      formulaire.reset();
+      setStatutEnvoi("success");
+    } catch {
+      setStatutEnvoi("error");
+    }
+  }
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
@@ -29,7 +57,7 @@ export default function Contact() {
       email: "mailto:benett.peintre@hotmail.fr",
       url: SITE_URL,
       sameAs: [
-        "https://www.instagram.com/francois_benett/",
+        "https://www.instagram.com/benett_gallery/",
         "https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295?ref=ts",
       ],
     },
@@ -38,10 +66,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <html lang="fr" />
+        <html lang={language} />
 
         <title>
-          Contacter François Benett | Peintre contemporain
+          {en ? "Contact François Benett | Contemporary painter" : "Contacter François Benett | Peintre contemporain"}
         </title>
 
         <meta
@@ -121,12 +149,10 @@ export default function Contact() {
 
       <main className="contact-page">
         <header className="contact-header">
-          <h1>Contacter François Benett</h1>
+          <h1>{en ? "Contact François Benett" : "Contacter François Benett"}</h1>
 
           <p className="contact-introduction">
-            Pour toute demande concernant une œuvre originale, une
-            exposition ou un projet artistique, vous pouvez contacter
-            François Benett directement.
+            {en ? "For enquiries about an original work, an exhibition or an artistic project, you can contact François Benett directly." : "Pour toute demande concernant une œuvre originale, une exposition ou un projet artistique, vous pouvez contacter François Benett directement."}
           </p>
         </header>
 
@@ -135,7 +161,7 @@ export default function Contact() {
           aria-label="Coordonnées de François Benett"
         >
           <div className="contact-item">
-            <h2 className="contact-label">Téléphone</h2>
+            <h2 className="contact-label">{en ? "Phone" : "Téléphone"}</h2>
 
             <a
               className="contact-link"
@@ -164,12 +190,12 @@ export default function Contact() {
 
             <a
               className="contact-link"
-              href="https://www.instagram.com/francois_benett/"
+              href="https://www.instagram.com/benett_gallery/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Ouvrir le compte Instagram de François Benett dans un nouvel onglet"
             >
-              @francois_benett
+              @benett_gallery
               <span aria-hidden="true"> ↗</span>
             </a>
           </div>
@@ -184,10 +210,73 @@ export default function Contact() {
               rel="noopener noreferrer"
               aria-label="Consulter la page Singulart de François Benett dans un nouvel onglet"
             >
-              Voir François Benett sur Singulart
+              {en ? "View François Benett on Singulart" : "Voir François Benett sur Singulart"}
               <span aria-hidden="true"> ↗</span>
             </a>
           </div>
+        </section>
+
+        <section className="contact-form-section" aria-labelledby="contact-form-title">
+          <div className="contact-form-heading">
+            <span>{en ? "Write to us" : "Écrivez-nous"}</span>
+            <h2 id="contact-form-title">{en ? "Send a message" : "Envoyer un message"}</h2>
+            <p>
+              {en ? "Complete this form and your e-mail application will automatically prepare the message." : "Remplissez ce formulaire : votre application de messagerie préparera automatiquement l’e-mail à envoyer."}
+            </p>
+          </div>
+
+          <form className="contact-form" onSubmit={envoyerMessage}>
+            <div className="contact-honeypot" aria-hidden="true">
+              <label htmlFor="contact-site-web">Site web</label>
+              <input id="contact-site-web" name="siteWeb" type="text" tabIndex="-1" autoComplete="off" />
+            </div>
+            <div className="contact-form-row">
+              <div className="contact-field">
+                <label htmlFor="contact-nom">{en ? "Name" : "Nom"}</label>
+                <input id="contact-nom" name="nom" type="text" autoComplete="name" required />
+              </div>
+
+              <div className="contact-field">
+                <label htmlFor="contact-email">E-mail</label>
+                <input id="contact-email" name="email" type="email" autoComplete="email" required />
+              </div>
+            </div>
+
+            <div className="contact-field">
+              <label htmlFor="contact-sujet">{en ? "Subject" : "Sujet"}</label>
+              <select id="contact-sujet" name="sujet" defaultValue="artwork">
+                <option value="artwork">{en ? "Enquiry about an artwork" : "Demande concernant une œuvre"}</option>
+                <option value="exhibition">{en ? "Exhibition proposal" : "Proposition d’exposition"}</option>
+                <option value="project">{en ? "Artistic project" : "Projet artistique"}</option>
+                <option value="other">{en ? "Other enquiry" : "Autre demande"}</option>
+              </select>
+            </div>
+
+            <div className="contact-field">
+              <label htmlFor="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="7" required />
+            </div>
+
+            <button className="contact-submit" type="submit" disabled={statutEnvoi === "sending"}>
+              {statutEnvoi === "sending"
+                ? en ? "Sending…" : "Envoi…"
+                : en ? "Send message" : "Envoyer le message"}
+              <span aria-hidden="true">↗</span>
+            </button>
+
+            <div className="contact-form-status" aria-live="polite">
+              {statutEnvoi === "success" && (
+                <p className="contact-success">
+                  {en ? "Your message has been sent. Thank you." : "Votre message a bien été envoyé. Merci."}
+                </p>
+              )}
+              {statutEnvoi === "error" && (
+                <p className="contact-error">
+                  {en ? "The message could not be sent. Please try again or use the e-mail address above." : "Le message n’a pas pu être envoyé. Réessayez ou utilisez l’adresse e-mail indiquée plus haut."}
+                </p>
+              )}
+            </div>
+          </form>
         </section>
 
         <section
@@ -195,7 +284,7 @@ export default function Contact() {
           aria-label="Types de demandes acceptées"
         >
           <p>
-            Œuvres originales · Expositions · Projets artistiques
+            {en ? "Original works · Exhibitions · Artistic projects" : "Œuvres originales · Expositions · Projets artistiques"}
           </p>
         </section>
       </main>

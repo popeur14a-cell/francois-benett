@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import useLanguage from "../context/useLanguage";
 
 const elements = [
   "/images/accueil/oeuvre1.jpg",
   "/images/accueil/oeuvre2.jpg",
   "/images/accueil/oeuvre3.jpg",
-  "/images/accueil/oeuvre4.jpg",
-  "/images/accueil/oeuvre5.jpg",
+  "/images/accueil/oeuvre4.webp",
+  "/images/accueil/oeuvre5.webp",
   "collection",
 ];
 
 export default function Home() {
+  const { language } = useLanguage();
+  const en = language === "en";
   const [index, setIndex] = useState(2);
   const [animation, setAnimation] = useState(false);
 
@@ -45,15 +48,15 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <html lang="fr" />
+        <html lang={language} />
 
         <title>
-          François Benett | Galerie officielle – Peintre contemporain
+          {en ? "François Benett | Official gallery – Contemporary painter" : "François Benett | Galerie officielle – Peintre contemporain"}
         </title>
 
         <meta
           name="description"
-          content="Découvrez les œuvres originales de François Benett, peintre contemporain français. Explorez ses collections inspirées de Venise, de l’Espagne, du Maroc et des scènes d’intimité."
+          content={en ? "Discover original works by French contemporary painter François Benett and explore his artistic collections." : "Découvrez les œuvres originales de François Benett, peintre contemporain français. Explorez ses collections inspirées de Venise, de l’Espagne, du Maroc et des scènes d’intimité."}
         />
 
         <meta name="robots" content="index, follow" />
@@ -75,7 +78,7 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://www.benett-peintre.fr/images/benett-cover.jpg"
+          content="https://www.benett-peintre.fr/images/benett-cover.webp"
         />
 
         <meta
@@ -113,7 +116,7 @@ export default function Home() {
 
         <meta
           name="twitter:image"
-          content="https://www.benett-peintre.fr/images/benett-cover.jpg"
+          content="https://www.benett-peintre.fr/images/benett-cover.webp"
         />
 
         <meta
@@ -125,36 +128,33 @@ export default function Home() {
       <main>
         <section className="hero">
           <img
-            src="/images/benett-cover.jpg"
-            alt="Œuvre de François Benett, peintre contemporain"
+            src="/images/benett-cover.webp"
+            alt={en ? "Artwork by contemporary painter François Benett" : "Œuvre de François Benett, peintre contemporain"}
             fetchPriority="high"
           />
         </section>
 
         <section className="decouvrir">
-          <h1>Découvrir l’univers de François Benett</h1>
+          <h1>{en ? "Discover the world of François Benett" : "Découvrir l’univers de François Benett"}</h1>
 
           <p>
-            Entrez dans l’univers de François Benett, peintre
-            contemporain, où la lumière, la poésie et l’émotion se
-            rencontrent.
+            {en ? "Enter the world of contemporary painter François Benett, where light, poetry and emotion come together." : "Entrez dans l’univers de François Benett, peintre contemporain, où la lumière, la poésie et l’émotion se rencontrent."}
           </p>
 
           <p>
-            Ses œuvres invitent le regard à voyager entre paysages,
-            personnages et imaginaires.
+            {en ? "His works invite the viewer to travel through landscapes, figures and imagination." : "Ses œuvres invitent le regard à voyager entre paysages, personnages et imaginaires."}
           </p>
         </section>
 
         <section className="oeuvres-section">
-          <h2>Œuvres à découvrir</h2>
+          <h2>{en ? "Featured works" : "Œuvres à découvrir"}</h2>
 
           <div className="slider-container">
             <button
               type="button"
               className="slider-arrow"
               onClick={precedent}
-              aria-label="Afficher les œuvres précédentes"
+              aria-label={en ? "Show previous works" : "Afficher les œuvres précédentes"}
             >
               ←
             </button>
@@ -172,7 +172,7 @@ export default function Home() {
                     key={`${element}-${position}`}
                     to="/collections"
                     className="collection-card"
-                    aria-label="Voir toutes les collections de François Benett"
+                    aria-label={en ? "View all François Benett collections" : "Voir toutes les collections de François Benett"}
                   >
                     <div
                       className="plus-circle"
@@ -181,7 +181,7 @@ export default function Home() {
                       +
                     </div>
 
-                    <span>Voir les collections</span>
+                    <span>{en ? "View collections" : "Voir les collections"}</span>
                   </Link>
                 ) : (
                   <img
@@ -190,7 +190,7 @@ export default function Home() {
                     className={
                       position === 1 ? "active" : ""
                     }
-                    alt={`Œuvre de François Benett présentée dans la galerie ${
+                    alt={`${en ? "François Benett artwork shown in the gallery" : "Œuvre de François Benett présentée dans la galerie"} ${
                       position + 1
                     }`}
                     loading="lazy"
@@ -203,7 +203,7 @@ export default function Home() {
               type="button"
               className="slider-arrow"
               onClick={suivant}
-              aria-label="Afficher les œuvres suivantes"
+              aria-label={en ? "Show next works" : "Afficher les œuvres suivantes"}
             >
               →
             </button>
