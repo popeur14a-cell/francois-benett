@@ -296,15 +296,14 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
-        titre: "Le secret de Guémené-Penfao — première partie",
+        titre: "Le secret de Guémené-Penfao",
         image: "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
-        dimensions: "80 × 80 cm (diptyque)",
-        collectionParticuliere: false,
-      },
-      {
-        titre: "Le secret de Guémené-Penfao — deuxième partie",
-        image: "/images/bretonnes/le-secret-de-guemene-penfao-2.jpg",
-        dimensions: "80 × 80 cm (diptyque)",
+        images: [
+          "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
+          "/images/bretonnes/le-secret-de-guemene-penfao-2.jpg",
+        ],
+        dimensions: "2 panneaux de 80 × 80 cm",
+        diptyque: true,
         collectionParticuliere: false,
       },
     ],

@@ -32,6 +32,18 @@ const expositions = [
   ["2006", ["Galerie Modus — Paris", "Centre d’art contemporain — Briançon"]],
   ["2007", ["Galerie JCB — Colmar", "Galerie Nadine Moineau — Nantes", "Galerie Art Présent — Paris"]],
   ["2009", ["Galerie Nadine Moineau — Nantes"]],
+  ["2011", ["Grand Hôtel de Cabourg"]],
+  ["2016", ["Galerie Art Symbol — Place des Vosges, Paris"]],
+  [
+    "2017",
+    [
+      {
+        fr: "Saint-Arnoult-en-Yvelines — Invité d’honneur",
+        en: "Saint-Arnoult-en-Yvelines — Guest of honour",
+      },
+    ],
+  ],
+  ["2023", ["Collégiale Saint-André — Chartres"]],
 ];
 
 const bibliographie = [
@@ -219,13 +231,33 @@ export default function Parcours() {
           <p>{en ? "François Benett is a graduate of the National School of Fine Arts. His career includes numerous solo exhibitions, invitations as guest of honour and representation in several French galleries. His work has been presented to collectors in France and abroad." : "François Benett est diplômé National des Beaux-Arts. Son parcours artistique est marqué par de nombreuses expositions personnelles, des invitations d’honneur et une présence dans plusieurs galeries françaises. Son travail a été présenté auprès de collectionneurs en France et à l’étranger."}</p>
         </section>
 
-        <section className="parcours-section" aria-labelledby="expositions-personnelles">
-          <h2 id="expositions-personnelles">{en ? "Solo exhibitions" : "Expositions personnelles"}</h2>
+        <section className="parcours-section parcours-expositions" aria-labelledby="expositions-personnelles">
+          <header className="parcours-expositions-header">
+            <div>
+              <span className="parcours-kicker">
+                {en ? "Selected dates" : "Dates choisies"}
+              </span>
+              <h2 id="expositions-personnelles">
+                {en ? "Solo exhibitions" : "Expositions personnelles"}
+              </h2>
+            </div>
+            <p>
+              {en
+                ? "A selection of exhibitions, gallery presentations and invitations that have shaped François Benett’s career."
+                : "Une sélection d’expositions, de présentations en galerie et d’invitations qui jalonnent le parcours de François Benett."}
+            </p>
+          </header>
           <div className="parcours-timeline">
-            {expositions.map(([annee, lieux]) => (
+            {[...expositions].reverse().map(([annee, lieux]) => (
               <article className="parcours-event" key={annee}>
-                <time>{annee}</time>
-                <ul>{lieux.map((lieu) => <li key={lieu}>{lieu}</li>)}</ul>
+                <time dateTime={annee}>{annee}</time>
+                <ul>
+                  {lieux.map((lieu) => {
+                    const libelle =
+                      typeof lieu === "string" ? lieu : en ? lieu.en : lieu.fr;
+                    return <li key={libelle}>{libelle}</li>;
+                  })}
+                </ul>
               </article>
             ))}
           </div>

@@ -3,16 +3,27 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 import { collectionsData } from "../data/collectionsData";
+import InteriorViewer from "../components/InteriorViewer";
 import useLanguage from "../context/useLanguage";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
 const DEFAULT_IMAGE = `${SITE_URL}/images/benett-cover.webp`;
 
+function obtenirImagesOeuvre(oeuvre) {
+  return oeuvre.images?.length ? oeuvre.images : [oeuvre.image];
+}
+
+function obtenirNomPanneau(index, en) {
+  if (en) return index === 0 ? "First part" : "Second part";
+  return index === 0 ? "Première partie" : "Deuxième partie";
+}
+
 export default function CollectionDetail() {
   const { language } = useLanguage();
   const en = language === "en";
   const [oeuvreOuverte, setOeuvreOuverte] = useState(null);
+  const [modeVisionneuse, setModeVisionneuse] = useState("oeuvre");
   const { collectionId } = useParams();
 
   const collection = collectionsData[collectionId];
@@ -51,7 +62,10 @@ export default function CollectionDetail() {
     if (oeuvreOuverte === null) return undefined;
 
     const gererClavier = (event) => {
-      if (event.key === "Escape") setOeuvreOuverte(null);
+      if (event.key === "Escape") {
+        setOeuvreOuverte(null);
+        setModeVisionneuse("oeuvre");
+      }
       if (event.key === "ArrowRight") {
         setOeuvreOuverte((index) => (index + 1) % nombreOeuvres);
       }
@@ -73,6 +87,16 @@ export default function CollectionDetail() {
 
   const oeuvreActive =
     oeuvreOuverte === null ? null : oeuvres[oeuvreOuverte];
+
+  const ouvrirVisionneuse = (index, mode = "oeuvre") => {
+    setModeVisionneuse(mode);
+    setOeuvreOuverte(index);
+  };
+
+  const fermerVisionneuse = () => {
+    setOeuvreOuverte(null);
+    setModeVisionneuse("oeuvre");
+  };
 
   if (!collection) {
     return (
@@ -139,7 +163,9 @@ export default function CollectionDetail() {
         item: {
           "@type": "VisualArtwork",
           name: oeuvre.titre,
-          image: `${SITE_URL}${oeuvre.image}`,
+          image: obtenirImagesOeuvre(oeuvre).map(
+            (image) => `${SITE_URL}${image}`
+          ),
           artform: "Peinture",
           artMedium: oeuvre.technique || "Acrylique sur toile",
           creator: {
@@ -268,21 +294,51 @@ export default function CollectionDetail() {
                 <button
                   type="button"
                   className="artwork-image-container artwork-open"
-                  onClick={() => setOeuvreOuverte(index)}
+                  onClick={() => ouvrirVisionneuse(index)}
                   aria-label={`${en ? "Enlarge" : "Agrandir"} ${oeuvre.titre}`}
                 >
-                  <img
-                    src={oeuvre.image}
-                    alt={`${oeuvre.titre}, œuvre de François Benett issue de la collection ${collection.nom}`}
-                    className="artwork-image"
-                    loading={index === 0 ? "eager" : "lazy"}
-                    fetchPriority={index === 0 ? "high" : "auto"}
-                    decoding="async"
-                  />
+                  {oeuvre.images?.length > 1 ? (
+                    <span className="artwork-diptych" aria-hidden="true">
+                      {oeuvre.images.map((image, imageIndex) => (
+                        <img
+                          key={image}
+                          src={image}
+                          alt=""
+                          className="artwork-image"
+                          loading={index === 0 ? "eager" : "lazy"}
+                          fetchPriority={index === 0 ? "high" : "auto"}
+                          decoding="async"
+                          data-panel={imageIndex + 1}
+                        />
+                      ))}
+                    </span>
+                  ) : (
+                    <img
+                      src={oeuvre.image}
+                      alt={`${oeuvre.titre}, œuvre de François Benett issue de la collection ${collection.nom}`}
+                      className="artwork-image"
+                      loading={index === 0 ? "eager" : "lazy"}
+                      fetchPriority={index === 0 ? "high" : "auto"}
+                      decoding="async"
+                    />
+                  )}
                   <span className="artwork-zoom-label" aria-hidden="true">
                     {en ? "View" : "Voir"} <span>＋</span>
                   </span>
                 </button>
+
+                {oeuvre.images?.length > 1 && (
+                  <div
+                    className="artwork-diptych-labels"
+                    aria-label={en ? "Diptych panels" : "Panneaux du diptyque"}
+                  >
+                    {oeuvre.images.map((image, imageIndex) => (
+                      <span key={image}>
+                        {obtenirNomPanneau(imageIndex, en)}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <div className="artwork-information">
                   <h2>{oeuvre.titre}</h2>
@@ -316,6 +372,15 @@ export default function CollectionDetail() {
                       ? en ? "Private collection" : "Collection particulière"
                       : en ? "Available upon request" : "Disponible sur demande"}
                   </p>
+
+                  <button
+                    type="button"
+                    className="artwork-room-button"
+                    onClick={() => ouvrirVisionneuse(index, "interieur")}
+                  >
+                    <span aria-hidden="true">▣</span>
+                    {en ? "View in a room" : "Voir dans un intérieur"}
+                  </button>
                 </div>
               </article>
             ))}
@@ -335,17 +400,21 @@ export default function CollectionDetail() {
             className="lightbox"
             role="dialog"
             aria-modal="true"
-            aria-label={en ? "Artwork viewer" : "Visionneuse d’œuvre"}
+            aria-label={
+              modeVisionneuse === "interieur"
+                ? en ? "Artwork in an interior" : "Œuvre dans un intérieur"
+                : en ? "Artwork viewer" : "Visionneuse d’œuvre"
+            }
             onMouseDown={(event) => {
               if (event.target === event.currentTarget) {
-                setOeuvreOuverte(null);
+                fermerVisionneuse();
               }
             }}
           >
             <button
               type="button"
               className="lightbox-close"
-              onClick={() => setOeuvreOuverte(null)}
+              onClick={fermerVisionneuse}
               aria-label={en ? "Close viewer" : "Fermer la visionneuse"}
             >
               <span aria-hidden="true">×</span>
@@ -366,15 +435,53 @@ export default function CollectionDetail() {
               </button>
             )}
 
-            <figure className="lightbox-content">
-              <img src={oeuvreActive.image} alt={oeuvreActive.titre} />
-              <figcaption>
-                <strong>{oeuvreActive.titre}</strong>
-                <span>
-                  {oeuvreOuverte + 1} / {nombreOeuvres}
-                </span>
-              </figcaption>
-            </figure>
+            {modeVisionneuse === "interieur" ? (
+              <InteriorViewer
+                artwork={oeuvreActive}
+                language={language}
+                onBack={() => setModeVisionneuse("oeuvre")}
+              />
+            ) : (
+              <figure className="lightbox-content">
+                {oeuvreActive.images?.length > 1 ? (
+                  <div
+                    className="lightbox-diptych"
+                    role="img"
+                    aria-label={oeuvreActive.titre}
+                  >
+                    {oeuvreActive.images.map((image, index) => (
+                      <div className="lightbox-diptych-panel" key={image}>
+                        <img
+                          src={image}
+                          alt={`${oeuvreActive.titre}, ${obtenirNomPanneau(
+                            index,
+                            en
+                          ).toLocaleLowerCase(language)}`}
+                        />
+                        <span>{obtenirNomPanneau(index, en)}</span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <img src={oeuvreActive.image} alt={oeuvreActive.titre} />
+                )}
+                <figcaption>
+                  <div className="lightbox-caption-copy">
+                    <strong>{oeuvreActive.titre}</strong>
+                    <span>
+                      {oeuvreOuverte + 1} / {nombreOeuvres}
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    className="lightbox-room-button"
+                    onClick={() => setModeVisionneuse("interieur")}
+                  >
+                    {en ? "View in a room" : "Voir dans un intérieur"}
+                  </button>
+                </figcaption>
+              </figure>
+            )}
 
             {nombreOeuvres > 1 && (
               <button
