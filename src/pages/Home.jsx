@@ -2,23 +2,23 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-export default function Home() {
-  const elements = [
-    "/images/accueil/oeuvre1.jpg",
-    "/images/accueil/oeuvre2.jpg",
-    "/images/accueil/oeuvre3.jpg",
-    "/images/accueil/oeuvre4.jpg",
-    "/images/accueil/oeuvre5.jpg",
-    "collection",
-  ];
+const elements = [
+  "/images/accueil/oeuvre1.jpg",
+  "/images/accueil/oeuvre2.jpg",
+  "/images/accueil/oeuvre3.jpg",
+  "/images/accueil/oeuvre4.jpg",
+  "/images/accueil/oeuvre5.jpg",
+  "collection",
+];
 
+export default function Home() {
   const [index, setIndex] = useState(2);
   const [animation, setAnimation] = useState(false);
 
   function changerSlide(nouvelIndex) {
     setAnimation(false);
 
-    setTimeout(() => {
+    window.setTimeout(() => {
       setIndex(nouvelIndex);
       setAnimation(true);
     }, 100);
@@ -29,11 +29,15 @@ export default function Home() {
   }
 
   function precedent() {
-    changerSlide((index - 1 + elements.length) % elements.length);
+    changerSlide(
+      (index - 1 + elements.length) % elements.length
+    );
   }
 
-  const afficher = [
-    elements[(index - 1 + elements.length) % elements.length],
+  const elementsAffiches = [
+    elements[
+      (index - 1 + elements.length) % elements.length
+    ],
     elements[index],
     elements[(index + 1) % elements.length],
   ];
@@ -41,53 +45,55 @@ export default function Home() {
   return (
     <>
       <Helmet>
+        <html lang="fr" />
+
         <title>
-          François Benett – Peintre contemporain | Benett Gallery
+          François Benett | Galerie officielle – Peintre contemporain
         </title>
 
         <meta
           name="description"
-          content="Découvrez les œuvres originales de François Benett, peintre contemporain. Explorez ses collections, son parcours artistique et son univers."
+          content="Découvrez les œuvres originales de François Benett, peintre contemporain français. Explorez ses collections inspirées de Venise, de l’Espagne, du Maroc et des scènes d’intimité."
         />
 
-        <meta
-          name="robots"
-          content="index, follow"
-        />
+        <meta name="robots" content="index, follow" />
 
         <link
           rel="canonical"
-          href="https://benett-peintre.fr"
+          href="https://www.benett-peintre.fr/"
         />
 
         <meta
           property="og:title"
-          content="François Benett – Peintre contemporain"
+          content="François Benett | Galerie officielle – Peintre contemporain"
         />
 
         <meta
           property="og:description"
-          content="Découvrez l’univers artistique et les œuvres originales de François Benett."
+          content="Découvrez les œuvres originales et l’univers artistique de François Benett, peintre contemporain français."
         />
 
         <meta
           property="og:image"
-          content="https://benett-peintre.fr/images/benett-cover.jpg"
+          content="https://www.benett-peintre.fr/images/benett-cover.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Œuvre de François Benett, peintre contemporain"
         />
 
         <meta
           property="og:url"
-          content="https://benett-peintre.fr/"
+          content="https://www.benett-peintre.fr/"
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
 
         <meta
           property="og:site_name"
-          content="Benett Gallery"
+          content="Galerie François Benett"
         />
 
         <meta
@@ -97,17 +103,22 @@ export default function Home() {
 
         <meta
           name="twitter:title"
-          content="François Benett – Peintre contemporain"
+          content="François Benett | Galerie officielle – Peintre contemporain"
         />
 
         <meta
           name="twitter:description"
-          content="Découvrez l’univers artistique et les œuvres originales de François Benett."
+          content="Découvrez les œuvres originales et l’univers artistique de François Benett."
         />
 
         <meta
           name="twitter:image"
-          content="https://benett-peintre.fr/images/benett-cover.jpg"
+          content="https://www.benett-peintre.fr/images/benett-cover.jpg"
+        />
+
+        <meta
+          name="twitter:image:alt"
+          content="Œuvre de François Benett, peintre contemporain"
         />
       </Helmet>
 
@@ -116,15 +127,16 @@ export default function Home() {
           <img
             src="/images/benett-cover.jpg"
             alt="Œuvre de François Benett, peintre contemporain"
+            fetchPriority="high"
           />
         </section>
 
         <section className="decouvrir">
-          <h1>DÉCOUVRIR</h1>
+          <h1>Découvrir l’univers de François Benett</h1>
 
           <p>
-            Entrez dans l’univers de François Benett, un peintre
-            contemporain où la lumière, la poésie et l’émotion se
+            Entrez dans l’univers de François Benett, peintre
+            contemporain, où la lumière, la poésie et l’émotion se
             rencontrent.
           </p>
 
@@ -154,7 +166,7 @@ export default function Home() {
                   : "oeuvres-slider"
               }
             >
-              {afficher.map((element, position) =>
+              {elementsAffiches.map((element, position) =>
                 element === "collection" ? (
                   <Link
                     key={`${element}-${position}`}
@@ -162,18 +174,26 @@ export default function Home() {
                     className="collection-card"
                     aria-label="Voir toutes les collections de François Benett"
                   >
-                    <div className="plus-circle">+</div>
+                    <div
+                      className="plus-circle"
+                      aria-hidden="true"
+                    >
+                      +
+                    </div>
 
-                    <span>Voir la collection</span>
+                    <span>Voir les collections</span>
                   </Link>
                 ) : (
                   <img
                     key={`${element}-${position}`}
                     src={element}
-                    className={position === 1 ? "active" : ""}
-                    alt={`Œuvre de François Benett ${
+                    className={
+                      position === 1 ? "active" : ""
+                    }
+                    alt={`Œuvre de François Benett présentée dans la galerie ${
                       position + 1
                     }`}
+                    loading="lazy"
                   />
                 )
               )}
