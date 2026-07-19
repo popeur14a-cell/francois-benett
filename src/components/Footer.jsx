@@ -70,6 +70,15 @@ export default function Footer() {
         <p>
           © {new Date().getFullYear()} François Benett
         </p>
+
+        <nav className="footer-legal-links" aria-label={en ? "Legal information" : "Informations légales"}>
+          <Link to="/mentions-legales">
+            {en ? "Legal notice" : "Mentions légales"}
+          </Link>
+          <Link to="/confidentialite">
+            {en ? "Privacy" : "Confidentialité"}
+          </Link>
+        </nav>
       </div>
     </footer>
   );

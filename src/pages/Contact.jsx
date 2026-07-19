@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
 
 const SITE_URL = "https://www.benett-peintre.fr";
@@ -256,6 +257,15 @@ export default function Contact() {
               <label htmlFor="contact-message">Message</label>
               <textarea id="contact-message" name="message" rows="7" required />
             </div>
+
+            <p className="contact-privacy-note">
+              {en
+                ? "The information entered is used only to reply to your request and is retained for no longer than 12 months. "
+                : "Les informations saisies servent uniquement à répondre à votre demande et sont conservées au maximum 12 mois. "}
+              <Link to="/confidentialite">
+                {en ? "Learn more about your data and rights." : "En savoir plus sur vos données et vos droits."}
+              </Link>
+            </p>
 
             <button className="contact-submit" type="submit" disabled={statutEnvoi === "sending"}>
               {statutEnvoi === "sending"

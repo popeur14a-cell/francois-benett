@@ -25,6 +25,14 @@ export default function Navbar() {
       return "CONTACT";
     }
 
+    if (location.pathname.startsWith("/mentions-legales")) {
+      return en ? "LEGAL NOTICE" : "MENTIONS LÉGALES";
+    }
+
+    if (location.pathname.startsWith("/confidentialite")) {
+      return en ? "PRIVACY" : "CONFIDENTIALITÉ";
+    }
+
     return "";
   };
 
@@ -32,6 +40,8 @@ export default function Navbar() {
     if (location.pathname.startsWith("/collections")) return "/collections";
     if (location.pathname.startsWith("/parcours")) return "/parcours";
     if (location.pathname.startsWith("/contact")) return "/contact";
+    if (location.pathname.startsWith("/mentions-legales")) return "/mentions-legales";
+    if (location.pathname.startsWith("/confidentialite")) return "/confidentialite";
     return "/";
   };
 

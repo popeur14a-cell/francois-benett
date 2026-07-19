@@ -10,6 +10,8 @@ import Collections from "./pages/Collections";
 import CollectionDetail from "./pages/CollectionDetail";
 import Parcours from "./pages/Parcours";
 import Contact from "./pages/Contact";
+import LegalNotice from "./pages/LegalNotice";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.benett-peintre.fr";
@@ -89,6 +91,16 @@ export default function App() {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+
+        <Route
+          path="/mentions-legales"
+          element={<LegalNotice />}
+        />
+
+        <Route
+          path="/confidentialite"
+          element={<PrivacyPolicy />}
         />
 
         <Route path="*" element={<NotFound />} />
