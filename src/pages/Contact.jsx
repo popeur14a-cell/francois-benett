@@ -1,86 +1,92 @@
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://benett-peintre.fr";
+const SITE_URL = "https://www.benett-peintre.fr";
+const SITE_NAME = "Galerie François Benett";
+const PAGE_URL = `${SITE_URL}/contact`;
+const SHARE_IMAGE = `${SITE_URL}/images/portrait.jpg`;
+
+const DESCRIPTION =
+  "Contactez François Benett pour toute demande concernant une œuvre originale, une exposition ou un projet artistique.";
 
 export default function Contact() {
-  const pageUrl = `${SITE_URL}/contact`;
-
-  const description =
-    "Contactez François Benett pour toute demande concernant une œuvre originale, une exposition ou un projet artistique.";
-
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    url: pageUrl,
-    name: "Contact - François Benett",
-    description,
+    name: "Contact de François Benett",
+    description: DESCRIPTION,
+    url: PAGE_URL,
+    inLanguage: "fr-FR",
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
     about: {
       "@type": "Person",
       name: "François Benett",
       jobTitle: "Peintre contemporain",
-      telephone: "+33 6 81 09 98 36",
-      email: "benett.peintre@hotmail.fr",
+      telephone: "+33681099836",
+      email: "mailto:benett.peintre@hotmail.fr",
       url: SITE_URL,
       sameAs: [
         "https://www.instagram.com/francois_benett/",
-        "https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295?ref=ts"
-      ]
-    }
+        "https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295?ref=ts",
+      ],
+    },
   };
 
   return (
     <>
       <Helmet>
-        <title>Contact | François Benett – Benett Gallery</title>
+        <html lang="fr" />
+
+        <title>
+          Contacter François Benett | Peintre contemporain
+        </title>
 
         <meta
           name="description"
-          content={description}
+          content={DESCRIPTION}
         />
 
-        <meta
-          name="robots"
-          content="index, follow"
-        />
+        <meta name="robots" content="index, follow" />
 
         <link
           rel="canonical"
-          href={pageUrl}
+          href={PAGE_URL}
         />
 
         <meta
           property="og:title"
-          content="Contact - François Benett"
+          content="Contacter François Benett | Peintre contemporain"
         />
 
         <meta
           property="og:description"
-          content={description}
+          content={DESCRIPTION}
         />
 
         <meta
           property="og:image"
-          content={`${SITE_URL}/images/portrait.jpg`}
+          content={SHARE_IMAGE}
         />
 
         <meta
           property="og:image:alt"
-          content="Portrait de François Benett"
+          content="Portrait de François Benett, peintre contemporain"
         />
 
         <meta
           property="og:url"
-          content={pageUrl}
+          content={PAGE_URL}
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
 
         <meta
           property="og:site_name"
-          content="Benett Gallery"
+          content={SITE_NAME}
         />
 
         <meta
@@ -90,17 +96,22 @@ export default function Contact() {
 
         <meta
           name="twitter:title"
-          content="Contact - François Benett"
+          content="Contacter François Benett | Peintre contemporain"
         />
 
         <meta
           name="twitter:description"
-          content={description}
+          content={DESCRIPTION}
         />
 
         <meta
           name="twitter:image"
-          content={`${SITE_URL}/images/portrait.jpg`}
+          content={SHARE_IMAGE}
+        />
+
+        <meta
+          name="twitter:image:alt"
+          content="Portrait de François Benett, peintre contemporain"
         />
 
         <script type="application/ld+json">
@@ -110,70 +121,82 @@ export default function Contact() {
 
       <main className="contact-page">
         <header className="contact-header">
-          <h1>Contact</h1>
+          <h1>Contacter François Benett</h1>
 
           <p className="contact-introduction">
-            Pour toute demande concernant une œuvre, une exposition
-            ou un projet artistique, vous pouvez me contacter directement.
+            Pour toute demande concernant une œuvre originale, une
+            exposition ou un projet artistique, vous pouvez contacter
+            François Benett directement.
           </p>
         </header>
 
-        <section className="contact-grid">
+        <section
+          className="contact-grid"
+          aria-label="Coordonnées de François Benett"
+        >
           <div className="contact-item">
-            <p className="contact-label">Téléphone</p>
+            <h2 className="contact-label">Téléphone</h2>
 
             <a
               className="contact-link"
               href="tel:+33681099836"
+              aria-label="Appeler François Benett au 06 81 09 98 36"
             >
               +33 6 81 09 98 36
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
 
           <div className="contact-item">
-            <p className="contact-label">E-mail</p>
+            <h2 className="contact-label">E-mail</h2>
 
             <a
               className="contact-link"
               href="mailto:benett.peintre@hotmail.fr"
             >
               benett.peintre@hotmail.fr
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
 
           <div className="contact-item">
-            <p className="contact-label">Instagram</p>
+            <h2 className="contact-label">Instagram</h2>
 
             <a
               className="contact-link"
               href="https://www.instagram.com/francois_benett/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Ouvrir le compte Instagram de François Benett dans un nouvel onglet"
             >
               @francois_benett
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
 
           <div className="contact-item">
-            <p className="contact-label">Singulart</p>
+            <h2 className="contact-label">Singulart</h2>
 
             <a
               className="contact-link"
               href="https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295?ref=ts"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Consulter la page Singulart de François Benett dans un nouvel onglet"
             >
-              Contactez via Singulart
-              <span aria-hidden="true">↗</span>
+              Voir François Benett sur Singulart
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </section>
 
-        <section className="contact-signature">
-          <p>Œuvres originales · Expositions · Projets artistiques</p>
+        <section
+          className="contact-signature"
+          aria-label="Types de demandes acceptées"
+        >
+          <p>
+            Œuvres originales · Expositions · Projets artistiques
+          </p>
         </section>
       </main>
     </>
