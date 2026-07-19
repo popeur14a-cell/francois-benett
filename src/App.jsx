@@ -9,6 +9,7 @@ import Collections from "./pages/Collections";
 import CollectionDetail from "./pages/CollectionDetail";
 import Parcours from "./pages/Parcours";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
@@ -50,7 +51,7 @@ export default function App() {
         "@id": `${SITE_URL}/#organization`,
         name: SITE_NAME,
         url: SITE_URL,
-        logo: `${SITE_URL}/logo192.png`,
+        logo: `${SITE_URL}/logo-b.png`,
       },
     ],
   };
@@ -87,6 +88,8 @@ export default function App() {
           path="/contact"
           element={<Contact />}
         />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

@@ -30,10 +30,6 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    fermerMenu();
-  }, [location.pathname]);
-
-  useEffect(() => {
     document.body.style.overflow = menuOuvert ? "hidden" : "";
 
     return () => {
@@ -49,6 +45,7 @@ export default function Navbar() {
             to="/"
             className="navbar-logo-link"
             aria-label="Retour à l’accueil"
+            onClick={fermerMenu}
           >
             <img
               src="/images/logo-b.png"
@@ -58,7 +55,11 @@ export default function Navbar() {
           </Link>
 
           <div className="navbar-identity">
-            <Link to="/parcours" className="navbar-name">
+            <Link
+              to="/parcours"
+              className="navbar-name"
+              onClick={fermerMenu}
+            >
               François Benett
             </Link>
 

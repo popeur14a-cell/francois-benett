@@ -843,12 +843,31 @@ h3 {
 }
 
 .parcours-title {
-  margin: 0 0 65px;
+  margin: 8px 0 12px;
 
   font-size: clamp(72px, 8vw, 110px);
   font-weight: 600;
   line-height: 0.9;
   letter-spacing: 4px;
+}
+
+.parcours-header {
+  margin-bottom: 65px;
+}
+
+.parcours-kicker {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.parcours-subtitle {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 21px;
+  letter-spacing: 0.08em;
 }
 
 .parcours-introduction {
@@ -862,13 +881,10 @@ h3 {
   flex: 1;
 }
 
-.parcours-text h1,
-.parcours-first-text h1 {
-  margin: 0 0 50px;
-
-  font-size: clamp(72px, 8vw, 105px);
-  font-weight: 600;
-  line-height: 0.95;
+.parcours-text h2 {
+  margin: 0 0 32px;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.08;
 }
 
 .parcours-text p,
@@ -921,6 +937,115 @@ h3 {
 
 .parcours-signature h2 {
   font-size: 45px;
+}
+
+.parcours-section {
+  max-width: 1180px;
+  margin-top: 110px;
+  padding-top: 55px;
+  border-top: 1px solid var(--border);
+}
+
+.parcours-section > h2,
+.parcours-regards > header h2,
+.parcours-two-columns h2 {
+  margin: 0 0 40px;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+}
+
+.parcours-section p,
+.parcours-list li {
+  color: var(--text-soft);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.parcours-timeline {
+  border-top: 1px solid var(--border);
+}
+
+.parcours-event {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 30px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.parcours-event time {
+  color: var(--gold);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.parcours-event ul,
+.parcours-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.parcours-event li {
+  margin-bottom: 7px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.parcours-two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 90px;
+}
+
+.parcours-list li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 22px;
+}
+
+.parcours-list li::before {
+  position: absolute;
+  left: 0;
+  content: "—";
+  color: var(--gold);
+}
+
+.parcours-regards {
+  max-width: 1000px;
+}
+
+.parcours-regards > header {
+  margin-bottom: 65px;
+}
+
+.parcours-regards > header h2 {
+  margin-top: 12px;
+}
+
+.parcours-critique {
+  margin-bottom: 85px;
+  padding-left: 42px;
+  border-left: 2px solid var(--gold);
+}
+
+.parcours-critique h3 {
+  margin: 0 0 28px;
+  font-size: clamp(28px, 3vw, 38px);
+  text-transform: uppercase;
+}
+
+.parcours-critique p {
+  margin: 0 0 22px;
+  text-align: justify;
+}
+
+.parcours-critique footer {
+  margin-top: 30px;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 
@@ -1378,6 +1503,19 @@ h3 {
   .parcours-portrait {
     width: 100%;
     max-width: 520px;
+  }
+
+  .parcours-two-columns {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .parcours-event {
+    grid-template-columns: 85px 1fr;
+  }
+
+  .parcours-critique {
+    padding-left: 22px;
   }
 
   .footer {
