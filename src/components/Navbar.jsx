@@ -75,7 +75,7 @@ export default function Navbar() {
             onClick={fermerMenu}
           >
             <img
-              src="/images/logo-b.png"
+              src="/logo-b.png"
               alt="Logo François Benett"
               className="navbar-logo"
             />

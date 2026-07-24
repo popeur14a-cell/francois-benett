@@ -1,21 +1,21 @@
 import { Helmet } from "react-helmet-async";
 import { Navigate, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
-import Home from "./pages/Home";
-import Collections from "./pages/Collections";
-import CollectionDetail from "./pages/CollectionDetail";
-import ArtworkDetail from "./pages/ArtworkDetail";
-import Parcours from "./pages/Parcours";
-import Contact from "./pages/Contact";
-import Favorites from "./pages/Favorites";
-import LegalNotice from "./pages/LegalNotice";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import NotFound from "./pages/NotFound";
+const Home = lazy(() => import("./pages/Home"));
+const Collections = lazy(() => import("./pages/Collections"));
+const CollectionDetail = lazy(() => import("./pages/CollectionDetail"));
+const ArtworkDetail = lazy(() => import("./pages/ArtworkDetail"));
+const Parcours = lazy(() => import("./pages/Parcours"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Favorites = lazy(() => import("./pages/Favorites"));
+const LegalNotice = lazy(() => import("./pages/LegalNotice"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
@@ -87,8 +87,9 @@ export default function App() {
       <Navbar />
       <ScrollToTop />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <Suspense fallback={<main className="route-loading" aria-busy="true"><span className="sr-only">Chargement de la page</span></main>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
         <Route
           path="/collections"
@@ -132,8 +133,9 @@ export default function App() {
           element={<PrivacyPolicy />}
         />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
 
       <Footer />
     </>

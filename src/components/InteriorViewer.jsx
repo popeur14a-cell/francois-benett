@@ -125,28 +125,24 @@ function obtenirProfilScene(dimensions, largeurSceneCm, nombrePanneaux = 1) {
   const plusGrandCote = Math.max(...format);
   if (plusGrandCote <= 60) {
     return {
-      largeurVisibleCm: largeurSceneCm / 1.55,
-      zoom: 1.55,
+      largeurVisibleCm: largeurSceneCm / 1.08,
+      zoom: 1.08,
       type: "small",
     };
   }
   if (plusGrandCote <= 85) {
     return {
-      largeurVisibleCm: largeurSceneCm / 1.25,
-      zoom: 1.25,
+      largeurVisibleCm: largeurSceneCm / 1.04,
+      zoom: 1.04,
       type: "medium",
     };
   }
   return { largeurVisibleCm: largeurSceneCm, zoom: 1, type: "large" };
 }
 
-function obtenirNomPanneau(index, en) {
-  if (en) return index === 0 ? "First part" : "Second part";
-  return index === 0 ? "Première partie" : "Deuxième partie";
-}
-
 export default function InteriorViewer({ artwork, language, onBack }) {
   const [interiorIndex, setInteriorIndex] = useState(0);
+  const [panelMode, setPanelMode] = useState("together");
   const en = language === "en";
   const availableInteriors = obtenirInterieursAdaptes(artwork);
   const interior = availableInteriors[interiorIndex] || availableInteriors[0];
@@ -154,19 +150,43 @@ export default function InteriorViewer({ artwork, language, onBack }) {
     ? artwork.images
     : [artwork.image];
   const isDiptych = artworkImages.length === 2;
+  const displayedImages = !isDiptych || panelMode === "together"
+    ? artworkImages
+    : [artworkImages[panelMode === "left" ? 0 : 1]];
+  const displaysDiptych = displayedImages.length === 2;
   const sceneProfile = obtenirProfilScene(
     artwork.dimensions,
     interior.sceneWidthCm,
-    isDiptych ? artworkImages.length : 1
+    displaysDiptych ? displayedImages.length : 1
   );
   const artworkScale = obtenirEchelleMur(
     artwork.dimensions,
     sceneProfile.largeurVisibleCm,
-    isDiptych ? artworkImages.length : 1
+    displaysDiptych ? displayedImages.length : 1
   );
 
   return (
     <div className="interior-viewer">
+      {isDiptych && (
+        <div className="diptych-view-options interior-diptych-controls" aria-label={en ? "Choose the diptych view" : "Choisir la vue du diptyque"}>
+          {[
+            ["together", en ? "Together" : "Ensemble"],
+            ["left", en ? "Left panel" : "Partie gauche"],
+            ["right", en ? "Right panel" : "Partie droite"],
+          ].map(([mode, label]) => (
+            <button
+              key={mode}
+              type="button"
+              className={panelMode === mode ? "active" : ""}
+              onClick={() => setPanelMode(mode)}
+              aria-pressed={panelMode === mode}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className={`interior-scene interior-scene-${sceneProfile.type}`}>
         <img
           className="interior-background"
@@ -177,7 +197,7 @@ export default function InteriorViewer({ artwork, language, onBack }) {
         />
         <div
           className={`interior-artwork ${
-            isDiptych ? "interior-artwork-diptych" : "interior-artwork-single"
+            displaysDiptych ? "interior-artwork-diptych" : "interior-artwork-single"
           }`}
           style={{
             width: artworkScale.width,
@@ -189,7 +209,7 @@ export default function InteriorViewer({ artwork, language, onBack }) {
             en ? "shown in an interior" : "présentée dans un intérieur"
           }`}
         >
-          {artworkImages.map((image) => (
+          {displayedImages.map((image) => (
             <span className="interior-canvas-panel" key={image}>
               <img src={image} alt="" />
             </span>
@@ -201,13 +221,6 @@ export default function InteriorViewer({ artwork, language, onBack }) {
         <div>
           <strong>{artwork.titre}</strong>
           {artwork.dimensions && <span>{artwork.dimensions}</span>}
-          {isDiptych && (
-            <div className="interior-diptych-names">
-              {artworkImages.map((image, index) => (
-                <span key={image}>{obtenirNomPanneau(index, en)}</span>
-              ))}
-            </div>
-          )}
         </div>
 
         <div className="interior-choices" aria-label={en ? "Choose an interior" : "Choisir un intérieur"}>

@@ -31,7 +31,30 @@ function isRateLimited(request) {
   const recent = (rateLimits.get(ip) || []).filter((time) => now - time < 15 * 60 * 1000);
   if (recent.length >= 5) return true;
   rateLimits.set(ip, [...recent, now]);
+  if (rateLimits.size > 1000) {
+    for (const [storedIp, attempts] of rateLimits) {
+      if (!attempts.some((time) => now - time < 15 * 60 * 1000)) {
+        rateLimits.delete(storedIp);
+      }
+    }
+  }
   return false;
+}
+
+function hasValidOrigin(request) {
+  const origin = clean(request.headers.origin, 300);
+  if (!origin) return true;
+
+  const host = clean(
+    request.headers["x-forwarded-host"] || request.headers.host,
+    300
+  );
+
+  try {
+    return new URL(origin).host === host;
+  } catch {
+    return false;
+  }
 }
 
 async function sendEmail(apiKey, payload, idempotencyKey) {
@@ -47,9 +70,18 @@ async function sendEmail(apiKey, payload, idempotencyKey) {
 }
 
 export default async function handler(request, response) {
+  response.setHeader("Cache-Control", "no-store, max-age=0");
+  response.setHeader("X-Robots-Tag", "noindex, nofollow");
+
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
     return response.status(405).json({ error: "Méthode non autorisée." });
+  }
+  if (!request.headers["content-type"]?.toLowerCase().includes("application/json")) {
+    return response.status(415).json({ error: "Format de requête non accepté." });
+  }
+  if (!hasValidOrigin(request)) {
+    return response.status(403).json({ error: "Origine de la requête non autorisée." });
   }
   if (!process.env.RESEND_API_KEY) {
     return response.status(503).json({ error: "Service e-mail non configuré." });
@@ -72,7 +104,8 @@ export default async function handler(request, response) {
   const messageWordCount = message.split(/\s+/).filter(Boolean).length;
 
   if (website) return response.status(200).json({ success: true });
-  if (Number.isFinite(startedAt) && Date.now() - startedAt < 1500) {
+  const elapsed = Date.now() - startedAt;
+  if (!Number.isFinite(startedAt) || elapsed < 1500 || elapsed > 24 * 60 * 60 * 1000) {
     return response.status(400).json({ error: "Envoi trop rapide." });
   }
   if (!nom || !emailValid || messageWordCount < 5 || !SUBJECTS[subjectCode]) {

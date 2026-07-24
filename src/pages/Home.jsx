@@ -83,7 +83,7 @@ export default function Home() {
         about: { "@id": "https://www.benett-peintre.fr/#person" },
         primaryImageOfPage: {
           "@type": "ImageObject",
-          url: "https://www.benett-peintre.fr/images/benett-cover.webp",
+          url: "https://www.benett-peintre.fr/images/benett-cover-1920.webp",
           width: 2400,
           height: 1813,
         },
@@ -126,7 +126,7 @@ export default function Home() {
           property="og:description"
           content="Découvrez les œuvres originales et l’univers poétique et contemporain de François Benett."
         />
-        <meta property="og:image" content="https://www.benett-peintre.fr/images/benett-cover.webp" />
+        <meta property="og:image" content="https://www.benett-peintre.fr/images/benett-cover-1920.webp" />
         <meta property="og:image:width" content="2400" />
         <meta property="og:image:height" content="1813" />
         <meta property="og:image:alt" content="Œuvre de François Benett, artiste peintre contemporain" />
@@ -137,7 +137,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={en ? "François Benett — Contemporary painter" : "François Benett — Artiste peintre contemporain"} />
         <meta name="twitter:description" content={homeDescription} />
-        <meta name="twitter:image" content="https://www.benett-peintre.fr/images/benett-cover.webp" />
+        <meta name="twitter:image" content="https://www.benett-peintre.fr/images/benett-cover-1920.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
@@ -145,11 +145,13 @@ export default function Home() {
         <section className="hero">
           <h1 className="sr-only">François Benett — Artiste peintre contemporain</h1>
           <img
-            src="/images/benett-cover.webp"
+            src="/images/benett-cover-1280.webp"
+            srcSet="/images/benett-cover-640.webp 640w, /images/benett-cover-1280.webp 1280w, /images/benett-cover-1920.webp 1920w"
+            sizes="100vw"
             alt={en ? "Artwork by contemporary painter François Benett" : "Œuvre de François Benett, artiste peintre contemporain"}
             fetchPriority="high"
-            width="1600"
-            height="900"
+            width="2400"
+            height="1813"
           />
         </section>
 

@@ -94,7 +94,7 @@ export default function CollectionDetail() {
 
   const collectionUrl = `${SITE_URL}/collections/${collectionId}`;
   const description = en ? meta.enText : meta.fr;
-  const firstImage = getAbsoluteUrl(artworks[0]?.image || "/images/benett-cover.webp");
+  const firstImage = getAbsoluteUrl(artworks[0]?.image || "/images/benett-cover-1920.webp");
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [

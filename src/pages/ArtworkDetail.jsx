@@ -44,6 +44,7 @@ export default function ArtworkDetail() {
   const related = artworks.filter((item) => item.slug !== artworkSlug).slice(0, 3);
   const { isFavorite, toggleFavorite } = useFavorites();
   const [viewerMode, setViewerMode] = useState(null);
+  const [zoomPanel, setZoomPanel] = useState(null);
   const [shareStatus, setShareStatus] = useState("");
   const closeButtonRef = useRef(null);
   const lightboxRef = useRef(null);
@@ -51,7 +52,10 @@ export default function ArtworkDetail() {
   useEffect(() => {
     if (!viewerMode) return undefined;
     const handleKey = (event) => {
-      if (event.key === "Escape") setViewerMode(null);
+      if (event.key === "Escape") {
+        setViewerMode(null);
+        setZoomPanel(null);
+      }
     };
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", handleKey);
@@ -188,18 +192,40 @@ export default function ArtworkDetail() {
             </button>
             {getArtworkImageList(artwork).map((image, index) => (
               <figure key={image}>
-                <button type="button" onClick={() => setViewerMode("zoom")} aria-label={`${en ? "Enlarge" : "Agrandir"} ${artwork.titre}`}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setZoomPanel(artwork.images?.length > 1 ? index : null);
+                    setViewerMode("zoom");
+                  }}
+                  aria-label={`${en ? "Enlarge" : "Agrandir"} ${artwork.titre}${artwork.images?.length > 1 ? `, ${getPanelName(index, en)}` : ""}`}
+                >
                   <img
                     src={image}
                     alt={artwork.images?.length > 1 ? `${getArtworkAlt(artwork, en)}, ${getPanelName(index, en)}` : getArtworkAlt(artwork, en)}
                     fetchPriority={index === 0 ? "high" : "auto"}
                     decoding="async"
                   />
-                  <span><ZoomIcon /> {en ? "Enlarge" : "Agrandir"}</span>
+                  {!artwork.images?.length && (
+                    <span><ZoomIcon /> {en ? "Enlarge" : "Agrandir"}</span>
+                  )}
                 </button>
                 {artwork.images?.length > 1 && <figcaption>{getPanelName(index, en)}</figcaption>}
               </figure>
             ))}
+            {artwork.images?.length === 2 && (
+              <button
+                type="button"
+                className="diptych-enlarge-all"
+                onClick={() => {
+                  setZoomPanel(null);
+                  setViewerMode("zoom");
+                }}
+                aria-label={en ? `Enlarge the complete diptych ${artwork.titre}` : `Agrandir le diptyque complet ${artwork.titre}`}
+              >
+                <ZoomIcon /> {en ? "Enlarge" : "Agrandir"}
+              </button>
+            )}
           </div>
 
           <div className="artwork-detail-info">
@@ -226,7 +252,7 @@ export default function ArtworkDetail() {
                   {en ? "Request information" : "Demander des informations"} <ArrowIcon direction="right" />
                 </Link>
               )}
-              <button type="button" onClick={() => setViewerMode("interior")}><RoomIcon /> {en ? "View in a room" : "Voir dans un intérieur"}</button>
+              <button type="button" onClick={() => { setZoomPanel(null); setViewerMode("interior"); }}><RoomIcon /> {en ? "View in a room" : "Voir dans un intérieur"}</button>
               <button type="button" onClick={share}><ShareIcon /> {en ? "Share" : "Partager"}</button>
               {shareStatus && <span className="share-status" role="status">{shareStatus}</span>}
             </div>
@@ -261,20 +287,68 @@ export default function ArtworkDetail() {
         {related.length > 0 && (
           <section className="related-artworks">
             <h2>{en ? `More works from ${collectionName}` : `D’autres œuvres de la collection ${collectionName}`}</h2>
-            <div>{related.map((item) => <Link key={item.path} to={item.path}><img src={item.thumbnail || item.image} alt={getArtworkAlt(item, en)} loading="lazy" /><span>{item.titre}</span></Link>)}</div>
+            <div>
+              {related.map((item) => {
+                const relatedImages = getArtworkImageList(item);
+                return (
+                  <Link key={item.path} to={item.path}>
+                    <span className={`related-artwork-visual ${relatedImages.length > 1 ? "is-diptych" : ""}`}>
+                      {relatedImages.map((image, index) => (
+                        <img
+                          key={image}
+                          src={image}
+                          alt={relatedImages.length > 1
+                            ? `${getArtworkAlt(item, en)}, ${getPanelName(index, en)}`
+                            : getArtworkAlt(item, en)}
+                          loading="lazy"
+                        />
+                      ))}
+                    </span>
+                    <span>{item.titre}</span>
+                  </Link>
+                );
+              })}
+            </div>
           </section>
         )}
 
         {viewerMode && (
           <div ref={lightboxRef} className="lightbox" role="dialog" aria-modal="true" aria-label={viewerMode === "interior" ? (en ? "Artwork in a room" : "Œuvre dans un intérieur") : (en ? "Artwork zoom" : "Zoom de l’œuvre")}>
-            <button ref={closeButtonRef} type="button" className="lightbox-close" onClick={() => setViewerMode(null)} aria-label={en ? "Close" : "Fermer"}><CloseIcon /></button>
+            <button ref={closeButtonRef} type="button" className="lightbox-close" onClick={() => { setViewerMode(null); setZoomPanel(null); }} aria-label={en ? "Close" : "Fermer"}><CloseIcon /></button>
             <FullscreenToggle targetRef={lightboxRef} language={language} />
             {viewerMode === "interior" ? (
               <InteriorViewer artwork={artwork} language={language} onBack={() => setViewerMode("zoom")} />
             ) : (
-              <div className={`artwork-zoom-content ${artwork.images?.length > 1 ? "is-diptych" : ""}`}>
-                {getArtworkImageList(artwork).map((image, index) => <img key={image} src={image} alt={artwork.images?.length > 1 ? `${getArtworkAlt(artwork, en)}, ${getPanelName(index, en)}` : getArtworkAlt(artwork, en)} />)}
-              </div>
+              <>
+                {artwork.images?.length === 2 && (
+                  <div className="diptych-view-options diptych-zoom-options" aria-label={en ? "Choose the diptych view" : "Choisir la vue du diptyque"}>
+                    {[
+                      [null, en ? "Together" : "Ensemble"],
+                      [0, en ? "Left panel" : "Partie gauche"],
+                      [1, en ? "Right panel" : "Partie droite"],
+                    ].map(([panel, label]) => (
+                      <button
+                        key={label}
+                        type="button"
+                        className={zoomPanel === panel ? "active" : ""}
+                        onClick={() => setZoomPanel(panel)}
+                        aria-pressed={zoomPanel === panel}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                <div className={`artwork-zoom-content ${artwork.images?.length === 2 && zoomPanel === null ? "is-diptych" : ""} ${artwork.images?.length === 2 && zoomPanel !== null ? "is-single-diptych-panel" : ""}`}>
+                  {(zoomPanel !== null
+                    ? [getArtworkImageList(artwork)[zoomPanel]]
+                    : getArtworkImageList(artwork)
+                  ).map((image) => {
+                    const panelIndex = getArtworkImageList(artwork).indexOf(image);
+                    return <img key={image} src={image} alt={artwork.images?.length > 1 ? `${getArtworkAlt(artwork, en)}, ${getPanelName(panelIndex, en)}` : getArtworkAlt(artwork, en)} />;
+                  })}
+                </div>
+              </>
             )}
           </div>
         )}
@@ -284,6 +358,6 @@ export default function ArtworkDetail() {
 }
 
 function getPanelName(index, en) {
-  if (en) return index === 0 ? "First part" : "Second part";
-  return index === 0 ? "Première partie" : "Deuxième partie";
+  if (en) return index === 0 ? "Left panel" : "Right panel";
+  return index === 0 ? "Partie gauche" : "Partie droite";
 }
