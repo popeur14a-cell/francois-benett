@@ -1,100 +1,925 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.benett-peintre.fr/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/parcours</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/contact</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/mentions-legales</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/confidentialite</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/maroc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/bretonnes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/amsterdam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/palais-des-doges</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/palais-des-doges.webp</image:loc>
+      <image:title>Palais des Doges — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/le-chant-de-l-oiseau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/chant-oiseau.jpg</image:loc>
+      <image:title>Le chant de l’oiseau — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/la-diva</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/la-diva.jpg</image:loc>
+      <image:title>La diva — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/l-oeuf-bleu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/oeuf-bleu.jpg</image:loc>
+      <image:title>L’œuf bleu — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/la-marionnettiste</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/marionnettiste.jpg</image:loc>
+      <image:title>La marionnettiste — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/la-belle-violoniste</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/belle-violoniste.jpg</image:loc>
+      <image:title>La belle violoniste — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/escale-a-venise</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/escale-venise.jpg</image:loc>
+      <image:title>Escale à Venise — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/le-bal-des-oiseaux</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/bal-des-oiseaux.jpg</image:loc>
+      <image:title>Le bal des oiseaux — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/la-diva-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/la-diva-2.jpg</image:loc>
+      <image:title>La diva 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/attente</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/attente.jpg</image:loc>
+      <image:title>Attente — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/attente-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/attente-2.jpg</image:loc>
+      <image:title>Attente 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/plenitude</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/plenitude.jpg</image:loc>
+      <image:title>Plénitude — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-deux-andalouses.jpg</image:loc>
+      <image:title>Les deux andalouses — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-deux-andalouses-2.jpg</image:loc>
+      <image:title>Les deux andalouses 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/les-amazones-au-rideau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/amazones-rideau.jpg</image:loc>
+      <image:title>Les amazones au rideau — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/les-andalouses-dans-l-alcove</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-andalouses-dans-l-alcove.jpg</image:loc>
+      <image:title>Les andalouses dans l’alcôve — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-deux-andalouses-3.jpg</image:loc>
+      <image:title>Les deux andalouses 3 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/au-cafe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/au-cafe.jpg</image:loc>
+      <image:title>Au Café — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/flamenco-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/flamenco-2.jpg</image:loc>
+      <image:title>Flamenco 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/place-d-espagne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/place-d-espagne.jpg</image:loc>
+      <image:title>Place d’Espagne — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/le-cafe-bleu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/le-cafe-bleu.jpg</image:loc>
+      <image:title>Le café bleu — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/espagne/andalouses-sur-la-place-d-espagne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/andalouses-sur-la-place-d-espagne.jpg</image:loc>
+      <image:title>Andalouses sur la place d’Espagne — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/maroc/les-colombes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/les-colombes.jpg</image:loc>
+      <image:title>Les colombes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/maroc/deux-poids-deux-mesures</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/deux-poids-deux-mesures.jpg</image:loc>
+      <image:title>Deux poids deux mesures — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/maroc/les-deux-odalisques-au-siamois</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/les-deux-odalisques-au-siamois.jpg</image:loc>
+      <image:title>Les deux odalisques au siamois — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/maroc/le-tri-des-fleurs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/le-tri-des-fleurs.jpg</image:loc>
+      <image:title>Le tri des fleurs — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/l-heure-du-the</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/heure-du-the.jpg</image:loc>
+      <image:title>L’heure du thé — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/attente-en-jaune</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/attente-en-jaune.jpg</image:loc>
+      <image:title>Attente en jaune — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/les-dernieres-nouvelles</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/les-dernieres-nouvelles.jpg</image:loc>
+      <image:title>Les Dernières Nouvelles — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/jeu-de-cartes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/jeu-de-cartes.jpg</image:loc>
+      <image:title>Jeu de cartes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/attente-au-procope</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/attente-au-procope.jpg</image:loc>
+      <image:title>Attente au Procope — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/cafe-de-flore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore.jpg</image:loc>
+      <image:title>Café de Flore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/rencontre-au-procope</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/rencontre-au-procope.jpg</image:loc>
+      <image:title>Rencontre au Procope — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/concerto-au-flore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/concerto-au-flore.jpg</image:loc>
+      <image:title>Concerto au Flore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/confidence-au-procope</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/confidence-au-procope.jpg</image:loc>
+      <image:title>Confidence au Procope — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/cafe-de-flore-collection-particuliere</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore.jpg</image:loc>
+      <image:title>Café de Flore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/cafe-de-flore-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore-2.jpg</image:loc>
+      <image:title>Café de Flore 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/modeles-rue-chappe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/modeles-rue-chappe.jpg</image:loc>
+      <image:title>Modèles Rue Chappe — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/montmartre-in-blue</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/montmartre-in-blue.jpg</image:loc>
+      <image:title>Montmartre in blue — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/moulin-rouge</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/moulin-rouge.jpg</image:loc>
+      <image:title>Moulin Rouge — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/nuit-parisienne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/nuit-parisienne.jpg</image:loc>
+      <image:title>Nuit Parisienne — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/repos-a-montmartre</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/repos-a-montmartre.jpg</image:loc>
+      <image:title>Repos à Montmartre — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/la-rotonde</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/la-rotonde.jpg</image:loc>
+      <image:title>La Rotonde — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/bretonnes/les-belles-histoires-avec-billy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/bretonnes/les-belles-histoires-avec-billy.jpg</image:loc>
+      <image:title>Les belles histoires avec Billy — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/bretonnes/le-secret-de-guemene-penfao</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/bretonnes/le-secret-de-guemene-penfao-2.jpg</image:loc>
+      <image:title>Le secret de Guémené-Penfao — François Benett</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/bretonnes/le-secret-de-guemene-penfao-1.jpg</image:loc>
+      <image:title>Le secret de Guémené-Penfao — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/amsterdam/amsterdam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/amsterdam/amsterdam.jpg</image:loc>
+      <image:title>Amsterdam — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango.jpg</image:loc>
+      <image:title>Tango — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/blue-tango</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/blue-tango.jpg</image:loc>
+      <image:title>Blue tango — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-love</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-love.jpg</image:loc>
+      <image:title>Tango love — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-in-the-night</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-in-the-night.jpg</image:loc>
+      <image:title>Tango in the night — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-2.jpg</image:loc>
+      <image:title>Tango 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-in-the-night-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-in-the-night-2.jpg</image:loc>
+      <image:title>Tango in the night 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-dream</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-dream.jpg</image:loc>
+      <image:title>Tango dream — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-in-the-night-3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-in-the-night-3.jpg</image:loc>
+      <image:title>Tango in the night 3 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/tango/tango-love-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-love-2.jpg</image:loc>
+      <image:title>Tango love 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/les-cavalieres-aux-etendards</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-cavalieres-aux-etendards.jpg</image:loc>
+      <image:title>Les cavalières aux étendards — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/les-trompettes-de-la-renommee</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-trompettes-de-la-renommee.jpg</image:loc>
+      <image:title>Les trompettes de la renommée — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/l-echappee</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/echappee.jpg</image:loc>
+      <image:title>L’échappée — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/les-trois-amazones</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-trois-amazones.jpg</image:loc>
+      <image:title>Les trois amazones — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/les-etendards</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-etendards.jpg</image:loc>
+      <image:title>Les étendards — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/la-mesange-bleue</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/la-mesange-bleue.jpg</image:loc>
+      <image:title>La mésange bleue — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/les-messagers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-messagers.jpg</image:loc>
+      <image:title>Les Messagers — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/messagers/le-retour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/le-retour.jpg</image:loc>
+      <image:title>Le retour — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/le-chat-blanc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/le-chat-blanc.jpg</image:loc>
+      <image:title>Le chat blanc — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/violoncellistes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/violoncellistes.jpg</image:loc>
+      <image:title>Violoncellistes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modele-1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modele-1.jpg</image:loc>
+      <image:title>Modèle 1 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modele-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modele-2.jpg</image:loc>
+      <image:title>Modèle 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/passion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/passion.jpg</image:loc>
+      <image:title>Passion — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/passionata</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/passionata.jpg</image:loc>
+      <image:title>Passionata — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/tea-time</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/tea-time.jpg</image:loc>
+      <image:title>Tea time — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/nature-morte-au-bouquet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/nature-morte-au-bouquet-jaune.jpg</image:loc>
+      <image:title>Nature morte au bouquet — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-chat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modeles-au-chat.jpg</image:loc>
+      <image:title>Modèles au chat — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-bouquet-jaune</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modeles-au-bouquet-jaune.jpg</image:loc>
+      <image:title>Modèles au bouquet jaune — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modele-au-bouquet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modele-au-bouquet.jpg</image:loc>
+      <image:title>Modèle au bouquet — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/les-violoncellistes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/les-violoncellistes.jpg</image:loc>
+      <image:title>Les violoncellistes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/les-joueurs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/les-joueurs.jpg</image:loc>
+      <image:title>Les joueurs — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/le-chant-du-roitelet.jpg</image:loc>
+      <image:title>Le chant du roitelet — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/le-chant-du-roitelet-2.jpg</image:loc>
+      <image:title>Le chant du roitelet 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/harmonie-jaune</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/harmonie-jaune.jpg</image:loc>
+      <image:title>Harmonie jaune — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/evasion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/evasion.jpg</image:loc>
+      <image:title>Évasion — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/evasion-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/evasion-2.jpg</image:loc>
+      <image:title>Évasion 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/l-heure-du-the</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/heure-du-the.jpg</image:loc>
+      <image:title>L’heure du thé — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/je-crois-qu-il-m-aime-encore.jpg</image:loc>
+      <image:title>Je crois qu’il m’aime encore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/les-grenadines-de-la-paix</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/les-grenadines-de-la-paix.jpg</image:loc>
+      <image:title>Les grenadines de la paix — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/ton-dessin-est-tres-beau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/ton-dessin-est-tres-beau.jpg</image:loc>
+      <image:title>Ton dessin est très beau — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/les-inseparables</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-inseparables.jpg</image:loc>
+      <image:title>Les inséparables — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/le-bas-de-laine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/le-bas-de-laine.jpg</image:loc>
+      <image:title>Le bas de laine — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/les-bulles</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-bulles.jpg</image:loc>
+      <image:title>Les bulles — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/les-inseparables-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-inseparables-2.jpg</image:loc>
+      <image:title>Les inséparables 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/l-oeuf-bleu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/loeuf-bleu.jpg</image:loc>
+      <image:title>L’œuf bleu — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/tambour-et-cornemuse</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/tambour-et-cornemuse.jpg</image:loc>
+      <image:title>Tambour et cornemuse — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/le-trio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/le-trio.jpg</image:loc>
+      <image:title>Le trio — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/clowns/les-dresseurs-de-poissons-au-triangle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-dresseurs-de-poissons-au-triangle.jpg</image:loc>
+      <image:title>Les dresseurs de poissons au triangle — François Benett</image:title>
+    </image:image>
+  </url>
 </urlset>

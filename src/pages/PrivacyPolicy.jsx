@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import useLanguage from "../context/useLanguage";
+import { ArtistLinkedText } from "../components/ArtistName";
 
 const PAGE_URL = "https://www.benett-peintre.fr/confidentialite";
 
@@ -31,7 +32,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2>{en ? "Data controller" : "Responsable du traitement"}</h2>
             <p>
-              {en ? "François Benett is responsible for the processing of personal data collected through this website." : "François Benett est responsable du traitement des données personnelles collectées par ce site."}
+              <ArtistLinkedText>{en ? "François Benett is responsible for the processing of personal data collected through this website." : "François Benett est responsable du traitement des données personnelles collectées par ce site."}</ArtistLinkedText>
             </p>
             <p>
               {en ? "For any privacy enquiry: " : "Pour toute question relative à vos données : "}
@@ -51,18 +52,18 @@ export default function PrivacyPolicy() {
                 : "Lorsque vous utilisez le formulaire de contact, le site collecte votre nom, votre adresse e-mail, le sujet de votre demande et votre message. Ces informations sont nécessaires pour pouvoir vous répondre."}
             </p>
             <p>
-              {en
+              <ArtistLinkedText>{en
                 ? "The processing is based on François Benett’s legitimate interest in answering enquiries and, where your request concerns a possible purchase or project, on steps taken at your request before entering into a contract. Your data is not used for advertising and is not sold."
-                : "Le traitement repose sur l’intérêt légitime de François Benett à répondre aux demandes et, lorsqu’elles concernent un éventuel achat ou projet, sur les démarches précontractuelles effectuées à votre demande. Vos données ne sont pas utilisées à des fins publicitaires et ne sont jamais vendues."}
+                : "Le traitement repose sur l’intérêt légitime de François Benett à répondre aux demandes et, lorsqu’elles concernent un éventuel achat ou projet, sur les démarches précontractuelles effectuées à votre demande. Vos données ne sont pas utilisées à des fins publicitaires et ne sont jamais vendues."}</ArtistLinkedText>
             </p>
           </section>
 
           <section>
             <h2>{en ? "Recipients and service providers" : "Destinataires et prestataires"}</h2>
             <p>
-              {en
+              <ArtistLinkedText>{en
                 ? "Messages are received by François Benett. The website is hosted by Vercel and messages are transmitted using Resend (Plus Five Five, Inc.), which act as technical service providers. Resend stores email service data in the United States and states that its data processing agreement includes the safeguards required for transfers from the European Union."
-                : "Les messages sont reçus par François Benett. Le site est hébergé par Vercel et les messages sont transmis à l’aide de Resend (Plus Five Five, Inc.), qui interviennent comme prestataires techniques. Resend indique héberger les données liées à son service de messagerie aux États-Unis et prévoir dans son accord de traitement les garanties applicables aux transferts depuis l’Union européenne."}
+                : "Les messages sont reçus par François Benett. Le site est hébergé par Vercel et les messages sont transmis à l’aide de Resend (Plus Five Five, Inc.), qui interviennent comme prestataires techniques. Resend indique héberger les données liées à son service de messagerie aux États-Unis et prévoir dans son accord de traitement les garanties applicables aux transferts depuis l’Union européenne."}</ArtistLinkedText>
             </p>
             <p className="legal-inline-links">
               <a href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noopener noreferrer">{en ? "Vercel privacy notice" : "Confidentialité de Vercel"}</a>

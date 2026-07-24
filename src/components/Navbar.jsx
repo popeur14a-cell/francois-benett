@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
+import { CloseIcon } from "./Icons";
 
 export default function Navbar() {
   const location = useLocation();
@@ -25,6 +26,10 @@ export default function Navbar() {
       return "CONTACT";
     }
 
+    if (location.pathname.startsWith("/favoris")) {
+      return en ? "FAVORITES" : "FAVORIS";
+    }
+
     if (location.pathname.startsWith("/mentions-legales")) {
       return en ? "LEGAL NOTICE" : "MENTIONS LÉGALES";
     }
@@ -40,6 +45,7 @@ export default function Navbar() {
     if (location.pathname.startsWith("/collections")) return "/collections";
     if (location.pathname.startsWith("/parcours")) return "/parcours";
     if (location.pathname.startsWith("/contact")) return "/contact";
+    if (location.pathname.startsWith("/favoris")) return "/favoris";
     if (location.pathname.startsWith("/mentions-legales")) return "/mentions-legales";
     if (location.pathname.startsWith("/confidentialite")) return "/confidentialite";
     return "/";
@@ -143,7 +149,7 @@ export default function Navbar() {
             onClick={fermerMenu}
             aria-label={en ? "Close menu" : "Fermer le menu"}
           >
-            ×
+            <CloseIcon />
           </button>
         </div>
 
@@ -158,19 +164,24 @@ export default function Navbar() {
             <span>Collections</span>
           </Link>
 
-          <Link to="/parcours" onClick={fermerMenu}>
+          <Link to="/favoris" onClick={fermerMenu}>
             <span className="menu-number">03</span>
+            <span>{en ? "Favorites" : "Favoris"}</span>
+          </Link>
+
+          <Link to="/parcours" onClick={fermerMenu}>
+            <span className="menu-number">04</span>
             <span>{en ? "About" : "Parcours"}</span>
           </Link>
 
           <Link to="/contact" onClick={fermerMenu}>
-            <span className="menu-number">04</span>
+            <span className="menu-number">05</span>
             <span>Contact</span>
           </Link>
         </nav>
 
         <div className="menu-panel-footer">
-          <span>François Benett</span>
+          <Link to="/parcours" className="artist-name-link" onClick={fermerMenu}>François Benett</Link>
           <span>{en ? "Contemporary painting" : "Peinture contemporaine"}</span>
         </div>
       </aside>

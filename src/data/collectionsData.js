@@ -24,7 +24,7 @@ export const collectionsData = {
       {
         titre: "L’œuf bleu",
         image: "/images/venise/oeuf-bleu.jpg",
-        dimensions: "65 × 54 cm",
+        dimensions: "73 × 60 cm",
         collectionParticuliere: false,
       },
       {
@@ -60,13 +60,20 @@ export const collectionsData = {
       {
         titre: "Attente",
         image: "/images/venise/attente.jpg",
-        dimensions: "",
+        dimensions: "55 × 46 cm",
         collectionParticuliere: false,
       },
       {
         titre: "Attente 2",
         image: "/images/venise/attente-2.jpg",
         dimensions: "",
+        collectionParticuliere: false,
+      },
+      {
+        titre: "Plénitude",
+        image: "/images/venise/plenitude.jpg",
+        thumbnail: "/images/venise/plenitude-preview.jpg",
+        dimensions: "70 × 70 cm",
         collectionParticuliere: false,
       },
     ],
@@ -97,13 +104,13 @@ export const collectionsData = {
       {
         titre: "Les andalouses dans l’alcôve",
         image: "/images/espagne/les-andalouses-dans-l-alcove.jpg",
-        dimensions: "",
+        dimensions: "80 × 80 cm",
         collectionParticuliere: false,
       },
       {
         titre: "Les deux andalouses 3",
         image: "/images/espagne/les-deux-andalouses-3.jpg",
-        dimensions: "",
+        dimensions: "81 × 65 cm",
         collectionParticuliere: false,
       },
       {
@@ -115,13 +122,13 @@ export const collectionsData = {
       {
         titre: "Flamenco 2",
         image: "/images/espagne/flamenco-2.jpg",
-        dimensions: "",
+        dimensions: "80 × 80 cm",
         collectionParticuliere: false,
       },
       {
         titre: "Place d’Espagne",
         image: "/images/espagne/place-d-espagne.jpg",
-        dimensions: "",
+        dimensions: "100 × 100 cm",
         collectionParticuliere: false,
       },
       {
@@ -133,7 +140,7 @@ export const collectionsData = {
       {
         titre: "Andalouses sur la place d’Espagne",
         image: "/images/espagne/andalouses-sur-la-place-d-espagne.jpg",
-        dimensions: "",
+        dimensions: "100 × 100 cm",
         collectionParticuliere: false,
       },
     ],
@@ -187,7 +194,7 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
-        titre: "Les dernières nouvelles",
+        titre: "Les Dernières Nouvelles",
         image: "/images/paris/les-dernieres-nouvelles.jpg",
         dimensions: "92 × 73 cm",
         collectionParticuliere: false,
@@ -213,12 +220,6 @@ export const collectionsData = {
       {
         titre: "Rencontre au Procope",
         image: "/images/paris/rencontre-au-procope.jpg",
-        dimensions: "92 × 73 cm",
-        collectionParticuliere: false,
-      },
-      {
-        titre: "Les parieurs",
-        image: "/images/paris/les-parieurs.jpg",
         dimensions: "92 × 73 cm",
         collectionParticuliere: false,
       },
@@ -249,7 +250,7 @@ export const collectionsData = {
       {
         titre: "Modèles Rue Chappe",
         image: "/images/paris/modeles-rue-chappe.jpg",
-        dimensions: "",
+        dimensions: "100 × 100 cm",
         collectionParticuliere: true,
       },
       {
@@ -292,15 +293,15 @@ export const collectionsData = {
       {
         titre: "Les belles histoires avec Billy",
         image: "/images/bretonnes/les-belles-histoires-avec-billy.jpg",
-        dimensions: "",
+        dimensions: "81 × 65 cm",
         collectionParticuliere: false,
       },
       {
         titre: "Le secret de Guémené-Penfao",
-        image: "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
+        image: "/images/bretonnes/le-secret-de-guemene-penfao-2.jpg",
         images: [
-          "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
           "/images/bretonnes/le-secret-de-guemene-penfao-2.jpg",
+          "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
         ],
         dimensions: "2 panneaux de 80 × 80 cm",
         diptyque: true,
@@ -529,7 +530,7 @@ export const collectionsData = {
       {
         titre: "Le chant du roitelet 2",
         image: "/images/scene-d-intimite/le-chant-du-roitelet-2.jpg",
-        dimensions: "",
+        dimensions: "80 × 80 cm",
         collectionParticuliere: false,
       },
       {

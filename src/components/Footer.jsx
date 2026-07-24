@@ -68,10 +68,11 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} François Benett
+          © {new Date().getFullYear()} <Link to="/parcours" className="artist-name-link">François Benett</Link> — {en ? "Official gallery · All rights reserved" : "Galerie officielle · Tous droits réservés"}
         </p>
 
         <nav className="footer-legal-links" aria-label={en ? "Legal information" : "Informations légales"}>
+          <Link to="/favoris">{en ? "Favorites" : "Favoris"}</Link>
           <Link to="/mentions-legales">
             {en ? "Legal notice" : "Mentions légales"}
           </Link>

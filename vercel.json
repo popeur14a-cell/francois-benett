@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/PARCOURS.html",
+      "destination": "/parcours",
+      "permanent": true
+    },
+    {
+      "source": "/CONTACT.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/COLLECTIONS.html",
+      "destination": "/collections",
+      "permanent": true
+    },
+    {
+      "source": "/collections/paris/les-parieurs",
+      "destination": "/collections/paris/les-dernieres-nouvelles",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

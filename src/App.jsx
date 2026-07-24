@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,8 +9,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Collections from "./pages/Collections";
 import CollectionDetail from "./pages/CollectionDetail";
+import ArtworkDetail from "./pages/ArtworkDetail";
 import Parcours from "./pages/Parcours";
 import Contact from "./pages/Contact";
+import Favorites from "./pages/Favorites";
 import LegalNotice from "./pages/LegalNotice";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
@@ -18,6 +21,20 @@ const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
 
 export default function App() {
+  useEffect(() => {
+    const blockContextMenu = (event) => event.preventDefault();
+    const blockImageDrag = (event) => {
+      if (event.target instanceof HTMLImageElement) event.preventDefault();
+    };
+
+    document.addEventListener("contextmenu", blockContextMenu);
+    document.addEventListener("dragstart", blockImageDrag);
+    return () => {
+      document.removeEventListener("contextmenu", blockContextMenu);
+      document.removeEventListener("dragstart", blockImageDrag);
+    };
+  }, []);
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -84,6 +101,16 @@ export default function App() {
         />
 
         <Route
+          path="/collections/paris/les-parieurs"
+          element={<Navigate to="/collections/paris/les-dernieres-nouvelles" replace />}
+        />
+
+        <Route
+          path="/collections/:collectionId/:artworkSlug"
+          element={<ArtworkDetail />}
+        />
+
+        <Route
           path="/parcours"
           element={<Parcours />}
         />
@@ -92,6 +119,8 @@ export default function App() {
           path="/contact"
           element={<Contact />}
         />
+
+        <Route path="/favoris" element={<Favorites />} />
 
         <Route
           path="/mentions-legales"

@@ -19,7 +19,55 @@ const interiors = [
     en: "Japandi",
     sceneWidthCm: 570,
   },
+  {
+    image: "/images/interieurs/salon-industriel-chaleureux.jpg",
+    fr: "Industriel",
+    en: "Industrial",
+    sceneWidthCm: 430,
+  },
+  {
+    image: "/images/interieurs/salon-occidental-contemporain.jpg",
+    fr: "Contemporain doux",
+    en: "Soft contemporary",
+    sceneWidthCm: 380,
+  },
+  {
+    image: "/images/interieurs/salon-vintage-elegant.jpg",
+    fr: "Vintage",
+    en: "Vintage",
+    sceneWidthCm: 400,
+  },
 ];
+
+function obtenirInterieursAdaptes(artwork) {
+  const format = obtenirDimensions(artwork.dimensions);
+  const plusGrandCote = format ? Math.max(...format) : null;
+
+  if (plusGrandCote && plusGrandCote <= 60) {
+    return [interiors[4], interiors[3], interiors[5]];
+  }
+
+  switch (artwork.collectionId) {
+    case "tango":
+    case "clowns":
+      return [interiors[3], interiors[5], interiors[0]];
+    case "venise":
+    case "paris":
+      return [interiors[1], interiors[5], interiors[4]];
+    case "espagne":
+    case "maroc":
+      return [interiors[4], interiors[2], interiors[5]];
+    case "messagers":
+      return [interiors[0], interiors[3], interiors[1]];
+    case "bretonnes":
+    case "amsterdam":
+      return [interiors[2], interiors[4], interiors[5]];
+    case "scene-d-intimite":
+      return [interiors[4], interiors[5], interiors[0]];
+    default:
+      return [interiors[0], interiors[4], interiors[5]];
+  }
+}
 
 const ecartDiptyqueCm = 3;
 
@@ -51,7 +99,7 @@ function obtenirEchelleMur(dimensions, largeurSceneCm, nombrePanneaux = 1) {
     };
   }
 
-  // Les formats de peinture sont indiqués hauteur × largeur.
+  // Le catalogue de l’artiste indique les formats hauteur × largeur.
   const [hauteurCm, largeurCm] = format;
   const largeurEspacementCm =
     nombrePanneaux > 1 ? ecartDiptyqueCm * (nombrePanneaux - 1) : 0;
@@ -68,6 +116,30 @@ function obtenirEchelleMur(dimensions, largeurSceneCm, nombrePanneaux = 1) {
   };
 }
 
+function obtenirProfilScene(dimensions, largeurSceneCm, nombrePanneaux = 1) {
+  const format = obtenirDimensions(dimensions);
+  if (!format || nombrePanneaux > 1) {
+    return { largeurVisibleCm: largeurSceneCm, zoom: 1, type: "large" };
+  }
+
+  const plusGrandCote = Math.max(...format);
+  if (plusGrandCote <= 60) {
+    return {
+      largeurVisibleCm: largeurSceneCm / 1.55,
+      zoom: 1.55,
+      type: "small",
+    };
+  }
+  if (plusGrandCote <= 85) {
+    return {
+      largeurVisibleCm: largeurSceneCm / 1.25,
+      zoom: 1.25,
+      type: "medium",
+    };
+  }
+  return { largeurVisibleCm: largeurSceneCm, zoom: 1, type: "large" };
+}
+
 function obtenirNomPanneau(index, en) {
   if (en) return index === 0 ? "First part" : "Second part";
   return index === 0 ? "Première partie" : "Deuxième partie";
@@ -76,25 +148,32 @@ function obtenirNomPanneau(index, en) {
 export default function InteriorViewer({ artwork, language, onBack }) {
   const [interiorIndex, setInteriorIndex] = useState(0);
   const en = language === "en";
-  const interior = interiors[interiorIndex];
+  const availableInteriors = obtenirInterieursAdaptes(artwork);
+  const interior = availableInteriors[interiorIndex] || availableInteriors[0];
   const artworkImages = artwork.images?.length
     ? artwork.images
     : [artwork.image];
   const isDiptych = artworkImages.length === 2;
-  const artworkScale = obtenirEchelleMur(
+  const sceneProfile = obtenirProfilScene(
     artwork.dimensions,
     interior.sceneWidthCm,
+    isDiptych ? artworkImages.length : 1
+  );
+  const artworkScale = obtenirEchelleMur(
+    artwork.dimensions,
+    sceneProfile.largeurVisibleCm,
     isDiptych ? artworkImages.length : 1
   );
 
   return (
     <div className="interior-viewer">
-      <div className="interior-scene">
+      <div className={`interior-scene interior-scene-${sceneProfile.type}`}>
         <img
           className="interior-background"
           src={interior.image}
           alt=""
           aria-hidden="true"
+          style={{ transform: `scale(${sceneProfile.zoom})` }}
         />
         <div
           className={`interior-artwork ${
@@ -132,7 +211,7 @@ export default function InteriorViewer({ artwork, language, onBack }) {
         </div>
 
         <div className="interior-choices" aria-label={en ? "Choose an interior" : "Choisir un intérieur"}>
-          {interiors.map((option, index) => (
+          {availableInteriors.map((option, index) => (
             <button
               key={option.image}
               type="button"

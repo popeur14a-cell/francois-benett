@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import useLanguage from "../context/useLanguage";
+import { ArrowIcon } from "../components/Icons";
+import { ArtistLinkedText } from "../components/ArtistName";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 
@@ -230,10 +232,10 @@ export default function Collections() {
 
       <main className="collections-page">
         <section className="collections-header">
-          <h1>{en ? "François Benett Collections" : "Collections de François Benett"}</h1>
+          <h1><ArtistLinkedText>{en ? "François Benett Collections" : "Collections de François Benett"}</ArtistLinkedText></h1>
 
           <p>
-            {en ? "Explore the different worlds of François Benett through journeys, places, figures and emotions. Each collection reveals its own atmosphere through original works." : "Découvrez les différents univers de François Benett, entre voyages, lieux, personnages et émotions. Chaque collection révèle une atmosphère particulière à travers des œuvres originales."}
+            <ArtistLinkedText>{en ? "Explore the different worlds of François Benett through journeys, places, figures and emotions. Each collection reveals its own atmosphere through original works." : "Découvrez les différents univers de François Benett, entre voyages, lieux, personnages et émotions. Chaque collection révèle une atmosphère particulière à travers des œuvres originales."}</ArtistLinkedText>
           </p>
         </section>
 
@@ -280,7 +282,7 @@ export default function Collections() {
                         <p>{en ? collection.descriptionEn : collection.description}</p>
                         <span>
                           {en ? "Discover" : "Découvrir"}
-                          <span aria-hidden="true"> →</span>
+                          <ArrowIcon />
                         </span>
                       </div>
                     </Link>
@@ -300,7 +302,7 @@ export default function Collections() {
           </h2>
 
           <p>
-            {en ? "Each François Benett painting is a unique piece, available upon request." : "Chaque tableau de François Benett est une pièce unique, disponible sur demande."}
+            <ArtistLinkedText>{en ? "Each François Benett painting is a unique piece, available upon request." : "Chaque tableau de François Benett est une pièce unique, disponible sur demande."}</ArtistLinkedText>
           </p>
         </section>
       </main>

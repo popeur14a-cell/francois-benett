@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import useLanguage from "../context/useLanguage";
+import { ArtistLink, ArtistLinkedText } from "../components/ArtistName";
 
 const PAGE_URL = "https://www.benett-peintre.fr/mentions-legales";
 
@@ -31,12 +32,12 @@ export default function LegalNotice() {
           <section>
             <h2>{en ? "Website publisher" : "Éditeur du site"}</h2>
             <p>
-              {en
+              <ArtistLinkedText>{en
                 ? "This website is published by François Benett, a private individual and contemporary painter."
-                : "Ce site est édité par François Benett, personne physique et artiste peintre contemporain."}
+                : "Ce site est édité par François Benett, personne physique et artiste peintre contemporain."}</ArtistLinkedText>
             </p>
             <dl className="legal-details">
-              <div><dt>{en ? "Publication director" : "Directeur de la publication"}</dt><dd>François Benett</dd></div>
+              <div><dt>{en ? "Publication director" : "Directeur de la publication"}</dt><dd><ArtistLink /></dd></div>
               <div><dt>{en ? "Postal address" : "Adresse postale"}</dt><dd>8 rue Alphonse Daudet, 44130 Blain, France</dd></div>
               <div><dt>{en ? "Email" : "E-mail"}</dt><dd><a href="mailto:benett.peintre@hotmail.fr">benett.peintre@hotmail.fr</a></dd></div>
               <div><dt>{en ? "Telephone" : "Téléphone"}</dt><dd><a href="tel:+33681099836">+33 6 81 09 98 36</a></dd></div>
@@ -57,9 +58,9 @@ export default function LegalNotice() {
           <section>
             <h2>{en ? "Intellectual property" : "Propriété intellectuelle"}</h2>
             <p>
-              {en
+              <ArtistLinkedText>{en
                 ? "All artworks, photographs, texts, the logo and other content shown on this website are protected by intellectual property law. Unless prior written permission has been granted by François Benett, no reproduction, representation, adaptation or use, in whole or in part, is permitted."
-                : "Les œuvres, photographies, textes, logo et autres contenus présentés sur ce site sont protégés par le droit de la propriété intellectuelle. Sauf autorisation écrite préalable de François Benett, aucune reproduction, représentation, adaptation ou utilisation, totale ou partielle, n’est autorisée."}
+                : "Les œuvres, photographies, textes, logo et autres contenus présentés sur ce site sont protégés par le droit de la propriété intellectuelle. Sauf autorisation écrite préalable de François Benett, aucune reproduction, représentation, adaptation ou utilisation, totale ou partielle, n’est autorisée."}</ArtistLinkedText>
             </p>
           </section>
 
