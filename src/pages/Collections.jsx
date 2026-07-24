@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
 import { ArrowIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
+import ResponsiveImage from "../components/ResponsiveImage";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 
@@ -125,12 +126,13 @@ const SHARE_IMAGE = `${SITE_URL}/images/venise/palais-des-doges.webp`;
 export default function Collections() {
   const { language } = useLanguage();
   const en = language === "en";
+  const pageUrl = en ? `${SITE_URL}/en/collections` : PAGE_URL;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Collections de François Benett",
     description: PAGE_DESCRIPTION,
-    url: PAGE_URL,
+    url: pageUrl,
     image: SHARE_IMAGE,
     inLanguage: "fr-FR",
     isPartOf: {
@@ -173,7 +175,7 @@ export default function Collections() {
 
         <meta name="robots" content="index, follow" />
 
-        <link rel="canonical" href={PAGE_URL} />
+        <link rel="canonical" href={pageUrl} />
 
         <meta
           property="og:title"
@@ -192,7 +194,7 @@ export default function Collections() {
           content="Œuvre de la collection Venise de François Benett"
         />
 
-        <meta property="og:url" content={PAGE_URL} />
+        <meta property="og:url" content={pageUrl} />
 
         <meta property="og:type" content="website" />
 
@@ -269,8 +271,9 @@ export default function Collections() {
                       className="collection-card-page"
                       aria-label={`${en ? "Discover the collection" : "Découvrir la collection"} ${en ? collection.nomEn : collection.nom}`}
                     >
-                      <img
+                      <ResponsiveImage
                         src={collection.image}
+                        sizes="(max-width: 760px) 92vw, 46vw"
                         alt={`${en ? "Artwork representing the collection" : "Œuvre représentative de la collection"} ${en ? collection.nomEn : collection.nom} ${en ? "by" : "de"} François Benett`}
                         loading={categorie.id === "lieux" && index < 2 ? "eager" : "lazy"}
                         fetchPriority={categorie.id === "lieux" && index === 0 ? "high" : "auto"}

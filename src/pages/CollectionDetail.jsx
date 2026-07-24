@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import { collectionsData } from "../data/collectionsData";
 import { COLLECTION_ORDER, collectionMeta, SITE_URL } from "../data/collectionMeta";
 import {
@@ -14,6 +14,7 @@ import { ArrowIcon, CloseIcon, HeartIcon, RoomIcon } from "../components/Icons";
 import useLanguage from "../context/useLanguage";
 import useFavorites from "../context/useFavorites";
 import FullscreenToggle from "../components/FullscreenToggle";
+import ResponsiveImage from "../components/ResponsiveImage";
 
 function getPanelName(index, en) {
   if (en) return index === 0 ? "First part" : "Second part";
@@ -92,7 +93,7 @@ export default function CollectionDetail() {
     );
   }
 
-  const collectionUrl = `${SITE_URL}/collections/${collectionId}`;
+  const collectionUrl = `${SITE_URL}${en ? "/en" : ""}/collections/${collectionId}`;
   const description = en ? meta.enText : meta.fr;
   const firstImage = getAbsoluteUrl(artworks[0]?.image || "/images/benett-cover-1920.webp");
   const structuredData = {
@@ -189,9 +190,10 @@ export default function CollectionDetail() {
                 {artwork.images?.length > 1 ? (
                   <span className="artwork-diptych" aria-hidden="true">
                     {artwork.images.map((image, panelIndex) => (
-                      <img
+                      <ResponsiveImage
                         key={image}
                         src={image}
+                        sizes="(max-width: 760px) 44vw, 24vw"
                         alt=""
                         className="artwork-image"
                         loading={index === 0 ? "eager" : "lazy"}
@@ -202,8 +204,9 @@ export default function CollectionDetail() {
                     ))}
                   </span>
                 ) : (
-                  <img
+                  <ResponsiveImage
                     src={artwork.thumbnail || artwork.image}
+                    sizes="(max-width: 760px) 92vw, 32vw"
                     alt={getArtworkAlt(artwork, en)}
                     className="artwork-image"
                     loading={index === 0 ? "eager" : "lazy"}

@@ -5,6 +5,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGES = ROOT / "public" / "images"
+RESPONSIVE = IMAGES / "responsive"
 
 
 def resize_to_width(image: Image.Image, width: int) -> Image.Image:
@@ -40,4 +41,29 @@ with Image.open(IMAGES / "venise" / "plenitude.jpg") as source:
             progressive=True,
         )
 
-print("Responsive cover, logo and Plénitude image optimized.")
+for source_path in IMAGES.rglob("*"):
+    if (
+        not source_path.is_file()
+        or RESPONSIVE in source_path.parents
+        or source_path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}
+        or source_path.name.startswith("benett-cover-")
+        or "interieurs" in source_path.parts
+    ):
+        continue
+
+    relative = source_path.relative_to(IMAGES)
+    output_directory = RESPONSIVE / relative.parent
+    output_directory.mkdir(parents=True, exist_ok=True)
+
+    with Image.open(source_path) as source:
+        converted = source.convert("RGB")
+        for width in (480, 640, 960):
+            output = resize_to_width(converted, width)
+            output.save(
+                output_directory / f"{source_path.stem}-{width}.webp",
+                "WEBP",
+                quality=78 if width == 480 else 80 if width == 640 else 82,
+                method=6,
+            )
+
+print("Responsive cover, gallery images, logo and Plénitude image optimized.")

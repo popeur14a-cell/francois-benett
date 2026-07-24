@@ -1,6 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import { Link } from "react-router-dom";
 import { ArrowIcon, HeartIcon } from "../components/Icons";
+import ResponsiveImage from "../components/ResponsiveImage";
 import useFavorites from "../context/useFavorites";
 import useLanguage from "../context/useLanguage";
 import { findArtworkByPath, getArtworkAlt } from "../utils/artworks";
@@ -30,7 +31,7 @@ export default function Favorites() {
             <div className="favorites-grid">
               {artworks.map((artwork) => (
                 <article key={artwork.path}>
-                  <Link to={artwork.path}><img src={artwork.thumbnail || artwork.image} alt={getArtworkAlt(artwork, en)} /></Link>
+                  <Link to={artwork.path}><ResponsiveImage src={artwork.thumbnail || artwork.image} sizes="(max-width: 760px) 92vw, 30vw" alt={getArtworkAlt(artwork, en)} loading="lazy" decoding="async" /></Link>
                   <div>
                     <h2><Link to={artwork.path}>{artwork.titre}</Link></h2>
                     {artwork.dimensions && <p>{artwork.dimensions}</p>}

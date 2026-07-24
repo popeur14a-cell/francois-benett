@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import { Link } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
 import { ArrowIcon } from "../components/Icons";
@@ -164,6 +164,7 @@ const regardsEn = [
 export default function Parcours() {
   const { language } = useLanguage();
   const en = language === "en";
+  const pageUrl = en ? `${SITE_URL}/en/parcours` : PAGE_URL;
   const critiques = en ? regardsEn : regards;
   const bibliographieActive = en ? bibliographieEn : bibliographie;
   const structuredData = {
@@ -191,12 +192,12 @@ export default function Parcours() {
         <title>Parcours de François Benett | Peintre contemporain</title>
         <meta name="description" content={DESCRIPTION} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={PAGE_URL} />
+        <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content="Parcours de François Benett | Peintre contemporain" />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:image" content={PORTRAIT_URL} />
         <meta property="og:image:alt" content="Portrait de François Benett, peintre contemporain" />
-        <meta property="og:url" content={PAGE_URL} />
+        <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="profile" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content={SITE_NAME} />

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
 import { ArrowIcon } from "../components/Icons";
 

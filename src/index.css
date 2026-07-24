@@ -2532,16 +2532,6 @@ h3 {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .slide-animation,
-  .lightbox,
-  .carousel-artwork-link img,
-  .interior-background,
-  .interior-artwork {
-    animation: none !important;
-    transition: none !important;
-  }
-}
 /* ========================= */
 /* TABLETTE */
 /* ========================= */

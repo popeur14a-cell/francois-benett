@@ -57,6 +57,16 @@ function hasValidOrigin(request) {
   }
 }
 
+function hasValidProof(startedAt, requestId, proofNonce) {
+  if (!requestId || !Number.isInteger(proofNonce) || proofNonce < 0 || proofNonce > 10_000_000) {
+    return false;
+  }
+  const digest = createHash("sha256")
+    .update(`${startedAt}:${requestId}:${proofNonce}`)
+    .digest("hex");
+  return digest.startsWith("000");
+}
+
 async function sendEmail(apiKey, payload, idempotencyKey) {
   return fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -99,6 +109,7 @@ export default async function handler(request, response) {
   const artworkUrl = clean(request.body?.artworkUrl, 500);
   const language = clean(request.body?.language, 5) === "en" ? "en" : "fr";
   const requestId = clean(request.body?.requestId, 120).replace(/[^a-zA-Z0-9-]/g, "");
+  const proofNonce = Number(request.body?.proofNonce);
   const startedAt = Number(request.body?.startedAt);
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   const messageWordCount = message.split(/\s+/).filter(Boolean).length;
@@ -107,6 +118,9 @@ export default async function handler(request, response) {
   const elapsed = Date.now() - startedAt;
   if (!Number.isFinite(startedAt) || elapsed < 1500 || elapsed > 24 * 60 * 60 * 1000) {
     return response.status(400).json({ error: "Envoi trop rapide." });
+  }
+  if (!hasValidProof(startedAt, requestId, proofNonce)) {
+    return response.status(400).json({ error: "Vérification antispam invalide." });
   }
   if (!nom || !emailValid || messageWordCount < 5 || !SUBJECTS[subjectCode]) {
     return response.status(400).json({ error: "Informations invalides." });
@@ -195,3 +209,4 @@ export default async function handler(request, response) {
     return response.status(500).json({ error: "Échec de l’envoi." });
   }
 }
+import { createHash } from "node:crypto";

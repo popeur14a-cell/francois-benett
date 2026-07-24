@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
 import { getArtworkEntries, getArtworkAlt } from "../utils/artworks";
 import { ArrowIcon, CloseIcon, ZoomIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import FullscreenToggle from "../components/FullscreenToggle";
+import ResponsiveImage from "../components/ResponsiveImage";
 
 const selection = [
   ["scene-d-intimite", "Modèle 2"],
@@ -30,9 +31,13 @@ const elements = [
 export default function Home() {
   const { language } = useLanguage();
   const en = language === "en";
+  const pageUrl = en ? "https://www.benett-peintre.fr/en" : "https://www.benett-peintre.fr/";
   const [index, setIndex] = useState(1);
   const [direction, setDirection] = useState("next");
   const [openedArtwork, setOpenedArtwork] = useState(null);
+  const [mobileCarousel, setMobileCarousel] = useState(() =>
+    window.matchMedia("(max-width: 760px)").matches
+  );
   const closeButtonRef = useRef(null);
   const lightboxRef = useRef(null);
 
@@ -53,6 +58,13 @@ export default function Home() {
     };
   }, [openedArtwork]);
 
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 760px)");
+    const updateCarouselMode = (event) => setMobileCarousel(event.matches);
+    media.addEventListener("change", updateCarouselMode);
+    return () => media.removeEventListener("change", updateCarouselMode);
+  }, []);
+
   const changeSlide = (nextIndex, nextDirection) => {
     setDirection(nextDirection);
     setIndex(nextIndex);
@@ -62,11 +74,14 @@ export default function Home() {
   const previous = () =>
     changeSlide((index - 1 + elements.length) % elements.length, "previous");
 
-  const visibleElements = [
-    elements[(index - 1 + elements.length) % elements.length],
-    elements[index],
-    elements[(index + 1) % elements.length],
-  ];
+  const visibleElements = mobileCarousel
+    ? [elements[index]]
+    : [
+        elements[(index - 1 + elements.length) % elements.length],
+        elements[index],
+        elements[(index + 1) % elements.length],
+      ];
+  const centerPosition = mobileCarousel ? 0 : 1;
   const homeDescription = en
     ? "Discover original works by French contemporary painter François Benett, from Venice and Spain to tango and intimate scenes."
     : "Découvrez les œuvres originales de François Benett, artiste peintre contemporain : Venise, Espagne, tango et scènes d’intimité.";
@@ -119,8 +134,8 @@ export default function Home() {
         />
         <meta name="author" content="François Benett" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.benett-peintre.fr/" />
-        <link rel="author" href="https://www.benett-peintre.fr/parcours" />
+        <link rel="canonical" href={pageUrl} />
+        <link rel="author" href={`https://www.benett-peintre.fr${en ? "/en" : ""}/parcours`} />
         <meta property="og:title" content="François Benett — Artiste peintre contemporain" />
         <meta
           property="og:description"
@@ -130,7 +145,7 @@ export default function Home() {
         <meta property="og:image:width" content="2400" />
         <meta property="og:image:height" content="1813" />
         <meta property="og:image:alt" content="Œuvre de François Benett, artiste peintre contemporain" />
-        <meta property="og:url" content="https://www.benett-peintre.fr/" />
+        <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content={en ? "en_GB" : "fr_FR"} />
         <meta property="og:site_name" content="Galerie François Benett" />
@@ -220,9 +235,10 @@ export default function Home() {
                       className="carousel-artwork-link"
                       aria-label={`${en ? "Open the artwork page for" : "Ouvrir la fiche de l’œuvre"} ${element.titre}`}
                     >
-                      <img
+                      <ResponsiveImage
                         src={element.thumbnail || element.image}
-                        className={`${position === 1 ? "active" : ""} ${
+                        sizes={mobileCarousel ? "82vw" : "28vw"}
+                        className={`${position === centerPosition ? "active" : ""} ${
                           ["La marionnettiste", "Les belles histoires avec Billy"].includes(element.titre)
                             ? "carousel-artwork-image-enlarged"
                             : ""

@@ -26,13 +26,25 @@ const collectionPages = Object.keys(collectionsData).map((slug) => [
   "0.8",
 ]);
 
-const standardEntry = ([path, changefreq, priority]) => `  <url>
-    <loc>${SITE_URL}${path}</loc>
+const localizedLinks = (path) => {
+  const frenchUrl = `${SITE_URL}${path}`;
+  const englishUrl = `${SITE_URL}/en${path === "/" ? "" : path}`;
+  return `    <xhtml:link rel="alternate" hreflang="fr" href="${frenchUrl}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${englishUrl}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${frenchUrl}" />`;
+};
+
+const standardEntry = ([path, changefreq, priority], language = "fr") => {
+  const localizedPath = language === "en" ? `/en${path === "/" ? "" : path}` : path;
+  return `  <url>
+    <loc>${SITE_URL}${localizedPath}</loc>
+${localizedLinks(path)}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
+};
 
-const artworkEntry = (artwork) => {
+const artworkEntry = (artwork, language = "fr") => {
   const images = getArtworkImageList(artwork)
     .map(
       (image) => `    <image:image>
@@ -43,7 +55,8 @@ const artworkEntry = (artwork) => {
     .join("\n");
 
   return `  <url>
-    <loc>${SITE_URL}${artwork.path}</loc>
+    <loc>${SITE_URL}${language === "en" ? `/en${artwork.path}` : artwork.path}</loc>
+${localizedLinks(artwork.path)}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 ${images}
@@ -52,11 +65,12 @@ ${images}
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${[...staticPages, ...collectionPages].map(standardEntry).join("\n")}
-${getAllArtworks().map(artworkEntry).join("\n")}
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${[...staticPages, ...collectionPages].flatMap((entry) => [standardEntry(entry), standardEntry(entry, "en")]).join("\n")}
+${getAllArtworks().flatMap((artwork) => [artworkEntry(artwork), artworkEntry(artwork, "en")]).join("\n")}
 </urlset>
 `;
 
 await writeFile(new URL("../public/sitemap.xml", import.meta.url), xml, "utf8");
-console.log(`Sitemap generated with ${staticPages.length + collectionPages.length + getAllArtworks().length} URLs.`);
+console.log(`Sitemap generated with ${(staticPages.length + collectionPages.length + getAllArtworks().length) * 2} URLs.`);

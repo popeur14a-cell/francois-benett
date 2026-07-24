@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
 import { ArtistLink, ArtistLinkedText } from "../components/ArtistName";
 
@@ -7,6 +7,7 @@ const PAGE_URL = "https://www.benett-peintre.fr/mentions-legales";
 export default function LegalNotice() {
   const { language } = useLanguage();
   const en = language === "en";
+  const pageUrl = en ? "https://www.benett-peintre.fr/en/mentions-legales" : PAGE_URL;
 
   return (
     <>
@@ -18,7 +19,7 @@ export default function LegalNotice() {
           content={en ? "Legal information for the official François Benett website." : "Informations légales du site officiel de François Benett."}
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={PAGE_URL} />
+        <link rel="canonical" href={pageUrl} />
       </Helmet>
 
       <main className="legal-page">

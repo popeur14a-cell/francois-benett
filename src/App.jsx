@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet-async";
-import { Navigate, Routes, Route } from "react-router-dom";
+import { Helmet } from "./components/Helmet";
+import { Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
 
 import Navbar from "./components/Navbar";
@@ -21,6 +21,10 @@ const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
 
 export default function App() {
+  const location = useLocation();
+  const pathWithoutLanguage = location.pathname.replace(/^\/en(?=\/|$)/, "") || "/";
+  const frenchUrl = `${SITE_URL}${pathWithoutLanguage === "/" ? "/" : pathWithoutLanguage}`;
+  const englishUrl = `${SITE_URL}/en${pathWithoutLanguage === "/" ? "" : pathWithoutLanguage}`;
   useEffect(() => {
     const blockContextMenu = (event) => event.preventDefault();
     const blockImageDrag = (event) => {
@@ -79,6 +83,9 @@ export default function App() {
   return (
     <>
       <Helmet>
+        <link rel="alternate" hrefLang="fr" href={frenchUrl} />
+        <link rel="alternate" hrefLang="en" href={englishUrl} />
+        <link rel="alternate" hrefLang="x-default" href={frenchUrl} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
@@ -88,56 +95,71 @@ export default function App() {
       <ScrollToTop />
 
       <Suspense fallback={<main className="route-loading" aria-busy="true"><span className="sr-only">Chargement de la page</span></main>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-
-        <Route
-          path="/collections"
-          element={<Collections />}
-        />
-
-        <Route
-          path="/collections/:collectionId"
-          element={<CollectionDetail />}
-        />
-
-        <Route
-          path="/collections/paris/les-parieurs"
-          element={<Navigate to="/collections/paris/les-dernieres-nouvelles" replace />}
-        />
-
-        <Route
-          path="/collections/:collectionId/:artworkSlug"
-          element={<ArtworkDetail />}
-        />
-
-        <Route
-          path="/parcours"
-          element={<Parcours />}
-        />
-
-        <Route
-          path="/contact"
-          element={<Contact />}
-        />
-
-        <Route path="/favoris" element={<Favorites />} />
-
-        <Route
-          path="/mentions-legales"
-          element={<LegalNotice />}
-        />
-
-        <Route
-          path="/confidentialite"
-          element={<PrivacyPolicy />}
-        />
-
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <GalleryRoutes />
       </Suspense>
 
       <Footer />
     </>
+  );
+}
+
+function GalleryRoutes() {
+  return (
+    <Routes>
+      {["", "/en"].flatMap((prefix) => [
+        <Route key={`${prefix}-home`} path={prefix || "/"} element={<Home />} />,
+
+        <Route
+          key={`${prefix}-collections`}
+          path={`${prefix}/collections`}
+          element={<Collections />}
+        />,
+
+        <Route
+          key={`${prefix}-collection`}
+          path={`${prefix}/collections/:collectionId`}
+          element={<CollectionDetail />}
+        />,
+
+        <Route
+          key={`${prefix}-legacy-artwork`}
+          path={`${prefix}/collections/paris/les-parieurs`}
+          element={<Navigate to={`${prefix}/collections/paris/les-dernieres-nouvelles`} replace />}
+        />,
+
+        <Route
+          key={`${prefix}-artwork`}
+          path={`${prefix}/collections/:collectionId/:artworkSlug`}
+          element={<ArtworkDetail />}
+        />,
+
+        <Route
+          key={`${prefix}-parcours`}
+          path={`${prefix}/parcours`}
+          element={<Parcours />}
+        />,
+
+        <Route
+          key={`${prefix}-contact`}
+          path={`${prefix}/contact`}
+          element={<Contact />}
+        />,
+
+        <Route key={`${prefix}-favoris`} path={`${prefix}/favoris`} element={<Favorites />} />,
+
+        <Route
+          key={`${prefix}-legal`}
+          path={`${prefix}/mentions-legales`}
+          element={<LegalNotice />}
+        />,
+
+        <Route
+          key={`${prefix}-privacy`}
+          path={`${prefix}/confidentialite`}
+          element={<PrivacyPolicy />}
+        />,
+      ])}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }

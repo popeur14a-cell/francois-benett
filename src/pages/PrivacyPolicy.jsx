@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
 import { ArtistLinkedText } from "../components/ArtistName";
 
@@ -7,6 +7,7 @@ const PAGE_URL = "https://www.benett-peintre.fr/confidentialite";
 export default function PrivacyPolicy() {
   const { language } = useLanguage();
   const en = language === "en";
+  const pageUrl = en ? "https://www.benett-peintre.fr/en/confidentialite" : PAGE_URL;
 
   return (
     <>
@@ -18,7 +19,7 @@ export default function PrivacyPolicy() {
           content={en ? "How the François Benett website protects and uses personal data." : "Comment le site de François Benett protège et utilise les données personnelles."}
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={PAGE_URL} />
+        <link rel="canonical" href={pageUrl} />
       </Helmet>
 
       <main className="legal-page">

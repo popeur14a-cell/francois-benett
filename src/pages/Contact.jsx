@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import { Link, useSearchParams } from "react-router-dom";
 import { ArrowIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
@@ -7,9 +7,20 @@ import useLanguage from "../context/useLanguage";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 
+async function createSpamProof(startedAt, requestId) {
+  const encoder = new TextEncoder();
+  for (let nonce = 0; nonce <= 10_000_000; nonce += 1) {
+    const value = encoder.encode(`${startedAt}:${requestId}:${nonce}`);
+    const hash = new Uint8Array(await window.crypto.subtle.digest("SHA-256", value));
+    if (hash[0] === 0 && hash[1] < 16) return nonce;
+  }
+  throw new Error("proof-failed");
+}
+
 export default function Contact() {
   const { language } = useLanguage();
   const en = language === "en";
+  const pageUrl = `${SITE_URL}${en ? "/en" : ""}/contact`;
   const [searchParams] = useSearchParams();
   const startedAt = useRef(0);
   const artwork = searchParams.get("artwork") || "";
@@ -80,6 +91,10 @@ export default function Contact() {
 
     setStatus("sending");
     try {
+      const requestId =
+        window.crypto?.randomUUID?.() ||
+        `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+      const proofNonce = await createSpamProof(startedAt.current, requestId);
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -92,9 +107,8 @@ export default function Contact() {
           groupedWorks,
           language,
           startedAt: startedAt.current,
-          requestId:
-            window.crypto?.randomUUID?.() ||
-            `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+          requestId,
+          proofNonce,
         }),
       });
       if (!response.ok) throw new Error("send-failed");
@@ -118,11 +132,11 @@ export default function Contact() {
         <title>{en ? "Contact François Benett — Contemporary painter" : "Contacter François Benett — Artiste peintre"}</title>
         <meta name="description" content={description} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`${SITE_URL}/contact`} />
+        <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content={en ? "Contact François Benett" : "Contacter François Benett"} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={`${SITE_URL}/images/portrait-2.jpg`} />
-        <meta property="og:url" content={`${SITE_URL}/contact`} />
+        <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
       </Helmet>
 

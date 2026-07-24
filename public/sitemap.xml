@@ -1,88 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.benett-peintre.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/parcours</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/parcours" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/parcours" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/parcours" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/parcours</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/parcours" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/parcours" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/parcours" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/contact" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/mentions-legales" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/mentions-legales" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/confidentialite" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/confidentialite" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/maroc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/maroc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/bretonnes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/bretonnes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/bretonnes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/bretonnes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/bretonnes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/bretonnes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/bretonnes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/bretonnes" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/amsterdam</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/amsterdam" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/amsterdam</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/amsterdam" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/palais-des-doges</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/palais-des-doges" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/palais-des-doges" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/palais-des-doges" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/palais-des-doges.webp</image:loc>
+      <image:title>Palais des Doges — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/palais-des-doges</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/palais-des-doges" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/palais-des-doges" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/palais-des-doges" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -92,6 +284,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/le-chant-de-l-oiseau</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/le-chant-de-l-oiseau" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/le-chant-de-l-oiseau" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/le-chant-de-l-oiseau" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/chant-oiseau.jpg</image:loc>
+      <image:title>Le chant de l’oiseau — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/le-chant-de-l-oiseau</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/le-chant-de-l-oiseau" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/le-chant-de-l-oiseau" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/le-chant-de-l-oiseau" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -101,6 +308,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/la-diva</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-diva" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-diva" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-diva" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/la-diva.jpg</image:loc>
+      <image:title>La diva — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/la-diva</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-diva" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-diva" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-diva" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -110,6 +332,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/l-oeuf-bleu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/l-oeuf-bleu" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/oeuf-bleu.jpg</image:loc>
+      <image:title>L’œuf bleu — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/l-oeuf-bleu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/l-oeuf-bleu" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -119,6 +356,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/la-marionnettiste</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-marionnettiste" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-marionnettiste" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-marionnettiste" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/marionnettiste.jpg</image:loc>
+      <image:title>La marionnettiste — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/la-marionnettiste</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-marionnettiste" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-marionnettiste" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-marionnettiste" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -128,6 +380,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/la-belle-violoniste</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-belle-violoniste" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-belle-violoniste" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-belle-violoniste" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/belle-violoniste.jpg</image:loc>
+      <image:title>La belle violoniste — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/la-belle-violoniste</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-belle-violoniste" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-belle-violoniste" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-belle-violoniste" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -137,6 +404,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/escale-a-venise</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/escale-a-venise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/escale-a-venise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/escale-a-venise" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/escale-venise.jpg</image:loc>
+      <image:title>Escale à Venise — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/escale-a-venise</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/escale-a-venise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/escale-a-venise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/escale-a-venise" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -146,6 +428,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/le-bal-des-oiseaux</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/le-bal-des-oiseaux" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/le-bal-des-oiseaux" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/le-bal-des-oiseaux" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/bal-des-oiseaux.jpg</image:loc>
+      <image:title>Le bal des oiseaux — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/le-bal-des-oiseaux</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/le-bal-des-oiseaux" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/le-bal-des-oiseaux" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/le-bal-des-oiseaux" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -155,6 +452,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/la-diva-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-diva-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-diva-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-diva-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/la-diva-2.jpg</image:loc>
+      <image:title>La diva 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/la-diva-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-diva-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-diva-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-diva-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -164,6 +476,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/attente</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/attente" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/attente" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/attente" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/attente.jpg</image:loc>
+      <image:title>Attente — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/attente</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/attente" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/attente" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/attente" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -173,6 +500,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/attente-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/attente-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/attente-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/attente-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/attente-2.jpg</image:loc>
+      <image:title>Attente 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/attente-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/attente-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/attente-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/attente-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -182,6 +524,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/venise/plenitude</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/plenitude" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/plenitude" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/plenitude" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/plenitude.jpg</image:loc>
+      <image:title>Plénitude — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/plenitude</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/plenitude" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/plenitude" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/plenitude" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -191,6 +548,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-deux-andalouses.jpg</image:loc>
+      <image:title>Les deux andalouses — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -200,6 +572,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-deux-andalouses-2.jpg</image:loc>
+      <image:title>Les deux andalouses 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -209,6 +596,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/les-amazones-au-rideau</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-amazones-au-rideau" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-amazones-au-rideau" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-amazones-au-rideau" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/amazones-rideau.jpg</image:loc>
+      <image:title>Les amazones au rideau — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/les-amazones-au-rideau</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-amazones-au-rideau" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-amazones-au-rideau" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-amazones-au-rideau" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -218,6 +620,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/les-andalouses-dans-l-alcove</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-andalouses-dans-l-alcove" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-andalouses-dans-l-alcove" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-andalouses-dans-l-alcove" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-andalouses-dans-l-alcove.jpg</image:loc>
+      <image:title>Les andalouses dans l’alcôve — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/les-andalouses-dans-l-alcove</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-andalouses-dans-l-alcove" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-andalouses-dans-l-alcove" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-andalouses-dans-l-alcove" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -227,6 +644,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-3" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/les-deux-andalouses-3.jpg</image:loc>
+      <image:title>Les deux andalouses 3 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/les-deux-andalouses-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/les-deux-andalouses-3" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -236,6 +668,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/au-cafe</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/au-cafe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/au-cafe" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/au-cafe" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/au-cafe.jpg</image:loc>
+      <image:title>Au Café — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/au-cafe</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/au-cafe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/au-cafe" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/au-cafe" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -245,6 +692,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/flamenco-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/flamenco-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/flamenco-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/flamenco-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/flamenco-2.jpg</image:loc>
+      <image:title>Flamenco 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/flamenco-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/flamenco-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/flamenco-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/flamenco-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -254,6 +716,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/place-d-espagne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/place-d-espagne" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/place-d-espagne.jpg</image:loc>
+      <image:title>Place d’Espagne — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/place-d-espagne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/place-d-espagne" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -263,6 +740,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/le-cafe-bleu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/le-cafe-bleu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/le-cafe-bleu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/le-cafe-bleu" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/le-cafe-bleu.jpg</image:loc>
+      <image:title>Le café bleu — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/le-cafe-bleu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/le-cafe-bleu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/le-cafe-bleu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/le-cafe-bleu" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -272,6 +764,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/espagne/andalouses-sur-la-place-d-espagne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/andalouses-sur-la-place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/andalouses-sur-la-place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/andalouses-sur-la-place-d-espagne" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/espagne/andalouses-sur-la-place-d-espagne.jpg</image:loc>
+      <image:title>Andalouses sur la place d’Espagne — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/espagne/andalouses-sur-la-place-d-espagne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/espagne/andalouses-sur-la-place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/espagne/andalouses-sur-la-place-d-espagne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/espagne/andalouses-sur-la-place-d-espagne" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -281,6 +788,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/maroc/les-colombes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/les-colombes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/les-colombes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/les-colombes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/les-colombes.jpg</image:loc>
+      <image:title>Les colombes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/maroc/les-colombes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/les-colombes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/les-colombes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/les-colombes" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -290,6 +812,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/maroc/deux-poids-deux-mesures</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/deux-poids-deux-mesures" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/deux-poids-deux-mesures" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/deux-poids-deux-mesures" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/deux-poids-deux-mesures.jpg</image:loc>
+      <image:title>Deux poids deux mesures — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/maroc/deux-poids-deux-mesures</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/deux-poids-deux-mesures" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/deux-poids-deux-mesures" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/deux-poids-deux-mesures" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -299,6 +836,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/maroc/les-deux-odalisques-au-siamois</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/les-deux-odalisques-au-siamois" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/les-deux-odalisques-au-siamois" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/les-deux-odalisques-au-siamois" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/les-deux-odalisques-au-siamois.jpg</image:loc>
+      <image:title>Les deux odalisques au siamois — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/maroc/les-deux-odalisques-au-siamois</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/les-deux-odalisques-au-siamois" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/les-deux-odalisques-au-siamois" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/les-deux-odalisques-au-siamois" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -308,6 +860,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/maroc/le-tri-des-fleurs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/le-tri-des-fleurs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/le-tri-des-fleurs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/le-tri-des-fleurs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/maroc/le-tri-des-fleurs.jpg</image:loc>
+      <image:title>Le tri des fleurs — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/maroc/le-tri-des-fleurs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/maroc/le-tri-des-fleurs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/maroc/le-tri-des-fleurs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/maroc/le-tri-des-fleurs" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -317,6 +884,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/l-heure-du-the</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/l-heure-du-the" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/heure-du-the.jpg</image:loc>
+      <image:title>L’heure du thé — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/l-heure-du-the</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/l-heure-du-the" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -326,6 +908,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/attente-en-jaune</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/attente-en-jaune" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/attente-en-jaune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/attente-en-jaune" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/attente-en-jaune.jpg</image:loc>
+      <image:title>Attente en jaune — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/attente-en-jaune</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/attente-en-jaune" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/attente-en-jaune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/attente-en-jaune" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -335,6 +932,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/les-dernieres-nouvelles</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/les-dernieres-nouvelles" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/les-dernieres-nouvelles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/les-dernieres-nouvelles" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/les-dernieres-nouvelles.jpg</image:loc>
+      <image:title>Les Dernières Nouvelles — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/les-dernieres-nouvelles</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/les-dernieres-nouvelles" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/les-dernieres-nouvelles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/les-dernieres-nouvelles" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -344,6 +956,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/jeu-de-cartes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/jeu-de-cartes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/jeu-de-cartes.jpg</image:loc>
+      <image:title>Jeu de cartes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/jeu-de-cartes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/jeu-de-cartes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -353,6 +980,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/attente-au-procope</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/attente-au-procope" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/attente-au-procope" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/attente-au-procope" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/attente-au-procope.jpg</image:loc>
+      <image:title>Attente au Procope — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/attente-au-procope</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/attente-au-procope" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/attente-au-procope" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/attente-au-procope" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -362,6 +1004,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/cafe-de-flore</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore.jpg</image:loc>
+      <image:title>Café de Flore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -371,6 +1028,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/rencontre-au-procope</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/rencontre-au-procope" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/rencontre-au-procope" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/rencontre-au-procope" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/rencontre-au-procope.jpg</image:loc>
+      <image:title>Rencontre au Procope — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/rencontre-au-procope</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/rencontre-au-procope" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/rencontre-au-procope" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/rencontre-au-procope" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -380,6 +1052,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/concerto-au-flore</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/concerto-au-flore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/concerto-au-flore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/concerto-au-flore" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/concerto-au-flore.jpg</image:loc>
+      <image:title>Concerto au Flore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/concerto-au-flore</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/concerto-au-flore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/concerto-au-flore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/concerto-au-flore" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -389,6 +1076,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/confidence-au-procope</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/confidence-au-procope" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/confidence-au-procope" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/confidence-au-procope" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/confidence-au-procope.jpg</image:loc>
+      <image:title>Confidence au Procope — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/confidence-au-procope</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/confidence-au-procope" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/confidence-au-procope" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/confidence-au-procope" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -398,6 +1100,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/cafe-de-flore-collection-particuliere</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-collection-particuliere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore-collection-particuliere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-collection-particuliere" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore.jpg</image:loc>
+      <image:title>Café de Flore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore-collection-particuliere</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-collection-particuliere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore-collection-particuliere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-collection-particuliere" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -407,6 +1124,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/cafe-de-flore-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore-2.jpg</image:loc>
+      <image:title>Café de Flore 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/cafe-de-flore-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/cafe-de-flore-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -416,6 +1148,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/modeles-rue-chappe</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/modeles-rue-chappe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/modeles-rue-chappe" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/modeles-rue-chappe" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/modeles-rue-chappe.jpg</image:loc>
+      <image:title>Modèles Rue Chappe — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/modeles-rue-chappe</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/modeles-rue-chappe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/modeles-rue-chappe" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/modeles-rue-chappe" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -425,6 +1172,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/montmartre-in-blue</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/montmartre-in-blue" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/montmartre-in-blue" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/montmartre-in-blue" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/montmartre-in-blue.jpg</image:loc>
+      <image:title>Montmartre in blue — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/montmartre-in-blue</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/montmartre-in-blue" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/montmartre-in-blue" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/montmartre-in-blue" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -434,6 +1196,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/moulin-rouge</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/moulin-rouge" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/moulin-rouge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/moulin-rouge" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/moulin-rouge.jpg</image:loc>
+      <image:title>Moulin Rouge — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/moulin-rouge</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/moulin-rouge" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/moulin-rouge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/moulin-rouge" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -443,6 +1220,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/nuit-parisienne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/nuit-parisienne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/nuit-parisienne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/nuit-parisienne" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/nuit-parisienne.jpg</image:loc>
+      <image:title>Nuit Parisienne — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/nuit-parisienne</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/nuit-parisienne" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/nuit-parisienne" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/nuit-parisienne" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -452,6 +1244,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/repos-a-montmartre</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/repos-a-montmartre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/repos-a-montmartre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/repos-a-montmartre" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/repos-a-montmartre.jpg</image:loc>
+      <image:title>Repos à Montmartre — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/repos-a-montmartre</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/repos-a-montmartre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/repos-a-montmartre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/repos-a-montmartre" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -461,6 +1268,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/paris/la-rotonde</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/la-rotonde" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/la-rotonde" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/la-rotonde" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/la-rotonde.jpg</image:loc>
+      <image:title>La Rotonde — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/la-rotonde</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/la-rotonde" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/la-rotonde" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/la-rotonde" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -470,6 +1292,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/bretonnes/les-belles-histoires-avec-billy</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/bretonnes/les-belles-histoires-avec-billy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/bretonnes/les-belles-histoires-avec-billy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/bretonnes/les-belles-histoires-avec-billy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/bretonnes/les-belles-histoires-avec-billy.jpg</image:loc>
+      <image:title>Les belles histoires avec Billy — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/bretonnes/les-belles-histoires-avec-billy</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/bretonnes/les-belles-histoires-avec-billy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/bretonnes/les-belles-histoires-avec-billy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/bretonnes/les-belles-histoires-avec-billy" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -479,6 +1316,25 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/bretonnes/le-secret-de-guemene-penfao</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/bretonnes/le-secret-de-guemene-penfao" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/bretonnes/le-secret-de-guemene-penfao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/bretonnes/le-secret-de-guemene-penfao" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/bretonnes/le-secret-de-guemene-penfao-2.jpg</image:loc>
+      <image:title>Le secret de Guémené-Penfao — François Benett</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/bretonnes/le-secret-de-guemene-penfao-1.jpg</image:loc>
+      <image:title>Le secret de Guémené-Penfao — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/bretonnes/le-secret-de-guemene-penfao</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/bretonnes/le-secret-de-guemene-penfao" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/bretonnes/le-secret-de-guemene-penfao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/bretonnes/le-secret-de-guemene-penfao" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -492,6 +1348,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/amsterdam/amsterdam</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/amsterdam/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/amsterdam/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/amsterdam/amsterdam" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/amsterdam/amsterdam.jpg</image:loc>
+      <image:title>Amsterdam — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/amsterdam/amsterdam</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/amsterdam/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/amsterdam/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/amsterdam/amsterdam" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -501,6 +1372,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango.jpg</image:loc>
+      <image:title>Tango — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -510,6 +1396,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/blue-tango</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/blue-tango" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/blue-tango" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/blue-tango" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/blue-tango.jpg</image:loc>
+      <image:title>Blue tango — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/blue-tango</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/blue-tango" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/blue-tango" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/blue-tango" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -519,6 +1420,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-love</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-love" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-love" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-love" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-love.jpg</image:loc>
+      <image:title>Tango love — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-love</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-love" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-love" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-love" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -528,6 +1444,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-in-the-night</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-in-the-night.jpg</image:loc>
+      <image:title>Tango in the night — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -537,6 +1468,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-2.jpg</image:loc>
+      <image:title>Tango 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -546,6 +1492,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-in-the-night-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-in-the-night-2.jpg</image:loc>
+      <image:title>Tango in the night 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -555,6 +1516,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-dream</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-dream" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-dream" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-dream" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-dream.jpg</image:loc>
+      <image:title>Tango dream — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-dream</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-dream" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-dream" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-dream" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -564,6 +1540,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-in-the-night-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-3" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-in-the-night-3.jpg</image:loc>
+      <image:title>Tango in the night 3 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night-3</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-in-the-night-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-in-the-night-3" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -573,6 +1564,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/tango/tango-love-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-love-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-love-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-love-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/tango/tango-love-2.jpg</image:loc>
+      <image:title>Tango love 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/tango/tango-love-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/tango/tango-love-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/tango/tango-love-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/tango/tango-love-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -582,6 +1588,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/les-cavalieres-aux-etendards</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-cavalieres-aux-etendards" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-cavalieres-aux-etendards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-cavalieres-aux-etendards" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-cavalieres-aux-etendards.jpg</image:loc>
+      <image:title>Les cavalières aux étendards — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/les-cavalieres-aux-etendards</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-cavalieres-aux-etendards" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-cavalieres-aux-etendards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-cavalieres-aux-etendards" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -591,6 +1612,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/les-trompettes-de-la-renommee</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-trompettes-de-la-renommee" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-trompettes-de-la-renommee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-trompettes-de-la-renommee" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-trompettes-de-la-renommee.jpg</image:loc>
+      <image:title>Les trompettes de la renommée — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/les-trompettes-de-la-renommee</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-trompettes-de-la-renommee" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-trompettes-de-la-renommee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-trompettes-de-la-renommee" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -600,6 +1636,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/l-echappee</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/l-echappee" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/l-echappee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/l-echappee" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/echappee.jpg</image:loc>
+      <image:title>L’échappée — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/l-echappee</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/l-echappee" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/l-echappee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/l-echappee" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -609,6 +1660,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/les-trois-amazones</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-trois-amazones" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-trois-amazones" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-trois-amazones" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-trois-amazones.jpg</image:loc>
+      <image:title>Les trois amazones — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/les-trois-amazones</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-trois-amazones" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-trois-amazones" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-trois-amazones" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -618,6 +1684,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/les-etendards</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-etendards" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-etendards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-etendards" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-etendards.jpg</image:loc>
+      <image:title>Les étendards — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/les-etendards</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-etendards" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-etendards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-etendards" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -627,6 +1708,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/la-mesange-bleue</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/la-mesange-bleue" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/la-mesange-bleue" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/la-mesange-bleue" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/la-mesange-bleue.jpg</image:loc>
+      <image:title>La mésange bleue — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/la-mesange-bleue</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/la-mesange-bleue" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/la-mesange-bleue" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/la-mesange-bleue" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -636,6 +1732,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/les-messagers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-messagers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-messagers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-messagers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/les-messagers.jpg</image:loc>
+      <image:title>Les Messagers — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/les-messagers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/les-messagers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/les-messagers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/les-messagers" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -645,6 +1756,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/messagers/le-retour</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/le-retour" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/le-retour" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/le-retour" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/messagers/le-retour.jpg</image:loc>
+      <image:title>Le retour — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/messagers/le-retour</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/messagers/le-retour" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/messagers/le-retour" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/messagers/le-retour" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -654,6 +1780,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/le-chat-blanc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chat-blanc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chat-blanc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chat-blanc" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/le-chat-blanc.jpg</image:loc>
+      <image:title>Le chat blanc — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chat-blanc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chat-blanc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chat-blanc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chat-blanc" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -663,6 +1804,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/violoncellistes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/violoncellistes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/violoncellistes.jpg</image:loc>
+      <image:title>Violoncellistes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/violoncellistes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/violoncellistes" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -672,6 +1828,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modele-1</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-1" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modele-1.jpg</image:loc>
+      <image:title>Modèle 1 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-1</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-1" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -681,6 +1852,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modele-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modele-2.jpg</image:loc>
+      <image:title>Modèle 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -690,6 +1876,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/passion</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/passion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passion" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/passion.jpg</image:loc>
+      <image:title>Passion — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/passion</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/passion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passion" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -699,6 +1900,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/passionata</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passionata" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/passionata" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passionata" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/passionata.jpg</image:loc>
+      <image:title>Passionata — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/passionata</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passionata" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/passionata" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/passionata" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -708,6 +1924,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/tea-time</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/tea-time" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/tea-time" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/tea-time" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/tea-time.jpg</image:loc>
+      <image:title>Tea time — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/tea-time</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/tea-time" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/tea-time" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/tea-time" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -717,6 +1948,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/nature-morte-au-bouquet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/nature-morte-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/nature-morte-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/nature-morte-au-bouquet" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/nature-morte-au-bouquet-jaune.jpg</image:loc>
+      <image:title>Nature morte au bouquet — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/nature-morte-au-bouquet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/nature-morte-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/nature-morte-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/nature-morte-au-bouquet" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -726,6 +1972,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-chat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-chat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modeles-au-chat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-chat" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modeles-au-chat.jpg</image:loc>
+      <image:title>Modèles au chat — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/modeles-au-chat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-chat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modeles-au-chat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-chat" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -735,6 +1996,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-bouquet-jaune</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-bouquet-jaune" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modeles-au-bouquet-jaune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-bouquet-jaune" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modeles-au-bouquet-jaune.jpg</image:loc>
+      <image:title>Modèles au bouquet jaune — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/modeles-au-bouquet-jaune</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-bouquet-jaune" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modeles-au-bouquet-jaune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modeles-au-bouquet-jaune" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -744,6 +2020,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/modele-au-bouquet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-au-bouquet" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/modele-au-bouquet.jpg</image:loc>
+      <image:title>Modèle au bouquet — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-au-bouquet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/modele-au-bouquet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/modele-au-bouquet" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -753,6 +2044,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/les-violoncellistes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-violoncellistes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/les-violoncellistes.jpg</image:loc>
+      <image:title>Les violoncellistes — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-violoncellistes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-violoncellistes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-violoncellistes" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -762,6 +2068,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/les-joueurs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-joueurs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-joueurs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-joueurs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/les-joueurs.jpg</image:loc>
+      <image:title>Les joueurs — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-joueurs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-joueurs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-joueurs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-joueurs" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -771,6 +2092,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chant-du-roitelet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/le-chant-du-roitelet.jpg</image:loc>
+      <image:title>Le chant du roitelet — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chant-du-roitelet</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chant-du-roitelet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -780,6 +2116,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chant-du-roitelet-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/le-chant-du-roitelet-2.jpg</image:loc>
+      <image:title>Le chant du roitelet 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chant-du-roitelet-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/le-chant-du-roitelet-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/le-chant-du-roitelet-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -789,6 +2140,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/harmonie-jaune</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/harmonie-jaune" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/harmonie-jaune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/harmonie-jaune" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/harmonie-jaune.jpg</image:loc>
+      <image:title>Harmonie jaune — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/harmonie-jaune</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/harmonie-jaune" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/harmonie-jaune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/harmonie-jaune" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -798,6 +2164,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/evasion</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/evasion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/evasion.jpg</image:loc>
+      <image:title>Évasion — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/evasion</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/evasion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -807,6 +2188,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/evasion-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/evasion-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/evasion-2.jpg</image:loc>
+      <image:title>Évasion 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/evasion-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/evasion-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/evasion-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -816,6 +2212,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/l-heure-du-the</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/l-heure-du-the" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/heure-du-the.jpg</image:loc>
+      <image:title>L’heure du thé — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/l-heure-du-the</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/l-heure-du-the" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/l-heure-du-the" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -825,6 +2236,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/je-crois-qu-il-m-aime-encore.jpg</image:loc>
+      <image:title>Je crois qu’il m’aime encore — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -834,6 +2260,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/les-grenadines-de-la-paix</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-grenadines-de-la-paix" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-grenadines-de-la-paix" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-grenadines-de-la-paix" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/les-grenadines-de-la-paix.jpg</image:loc>
+      <image:title>Les grenadines de la paix — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-grenadines-de-la-paix</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-grenadines-de-la-paix" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/les-grenadines-de-la-paix" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/les-grenadines-de-la-paix" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -843,6 +2284,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/scene-d-intimite/ton-dessin-est-tres-beau</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/ton-dessin-est-tres-beau" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/ton-dessin-est-tres-beau" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/ton-dessin-est-tres-beau" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/scene-d-intimite/ton-dessin-est-tres-beau.jpg</image:loc>
+      <image:title>Ton dessin est très beau — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/scene-d-intimite/ton-dessin-est-tres-beau</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/scene-d-intimite/ton-dessin-est-tres-beau" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/scene-d-intimite/ton-dessin-est-tres-beau" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/scene-d-intimite/ton-dessin-est-tres-beau" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -852,6 +2308,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/les-inseparables</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-inseparables" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-inseparables.jpg</image:loc>
+      <image:title>Les inséparables — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/les-inseparables</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-inseparables" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -861,6 +2332,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/le-bas-de-laine</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/le-bas-de-laine" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/le-bas-de-laine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/le-bas-de-laine" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/le-bas-de-laine.jpg</image:loc>
+      <image:title>Le bas de laine — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/le-bas-de-laine</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/le-bas-de-laine" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/le-bas-de-laine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/le-bas-de-laine" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -870,6 +2356,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/les-bulles</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-bulles" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-bulles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-bulles" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-bulles.jpg</image:loc>
+      <image:title>Les bulles — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/les-bulles</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-bulles" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-bulles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-bulles" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -879,6 +2380,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/les-inseparables-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-inseparables-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables-2" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-inseparables-2.jpg</image:loc>
+      <image:title>Les inséparables 2 — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/les-inseparables-2</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-inseparables-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-inseparables-2" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -888,6 +2404,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/l-oeuf-bleu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/l-oeuf-bleu" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/loeuf-bleu.jpg</image:loc>
+      <image:title>L’œuf bleu — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/l-oeuf-bleu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/l-oeuf-bleu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/l-oeuf-bleu" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -897,6 +2428,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/tambour-et-cornemuse</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/tambour-et-cornemuse" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/tambour-et-cornemuse" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/tambour-et-cornemuse" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/tambour-et-cornemuse.jpg</image:loc>
+      <image:title>Tambour et cornemuse — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/tambour-et-cornemuse</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/tambour-et-cornemuse" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/tambour-et-cornemuse" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/tambour-et-cornemuse" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -906,6 +2452,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/le-trio</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/le-trio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/le-trio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/le-trio" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/le-trio.jpg</image:loc>
+      <image:title>Le trio — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/le-trio</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/le-trio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/le-trio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/le-trio" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -915,6 +2476,21 @@
   </url>
   <url>
     <loc>https://www.benett-peintre.fr/collections/clowns/les-dresseurs-de-poissons-au-triangle</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-dresseurs-de-poissons-au-triangle" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-dresseurs-de-poissons-au-triangle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-dresseurs-de-poissons-au-triangle" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/clowns/les-dresseurs-de-poissons-au-triangle.jpg</image:loc>
+      <image:title>Les dresseurs de poissons au triangle — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/clowns/les-dresseurs-de-poissons-au-triangle</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/clowns/les-dresseurs-de-poissons-au-triangle" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/clowns/les-dresseurs-de-poissons-au-triangle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/clowns/les-dresseurs-de-poissons-au-triangle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>

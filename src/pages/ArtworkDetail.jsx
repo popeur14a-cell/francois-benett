@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../components/Helmet";
 import { Link, useParams } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
 import InteriorViewer from "../components/InteriorViewer";
@@ -23,6 +23,7 @@ import {
 import useFavorites from "../context/useFavorites";
 import useLanguage from "../context/useLanguage";
 import FullscreenToggle from "../components/FullscreenToggle";
+import ResponsiveImage from "../components/ResponsiveImage";
 
 export default function ArtworkDetail() {
   const { collectionId, artworkSlug } = useParams();
@@ -82,7 +83,7 @@ export default function ArtworkDetail() {
   const collectionName = en
     ? collectionMeta[collectionId]?.en || artwork.collectionName
     : artwork.collectionName;
-  const pageUrl = `${SITE_URL}${artwork.path}`;
+  const pageUrl = `${SITE_URL}${en ? "/en" : ""}${artwork.path}`;
   const imageUrl = getAbsoluteUrl(artwork.image);
   const title = artwork.dimensions
     ? `${artwork.titre}, ${artwork.dimensions} — François Benett`
@@ -294,9 +295,10 @@ export default function ArtworkDetail() {
                   <Link key={item.path} to={item.path}>
                     <span className={`related-artwork-visual ${relatedImages.length > 1 ? "is-diptych" : ""}`}>
                       {relatedImages.map((image, index) => (
-                        <img
+                        <ResponsiveImage
                           key={image}
                           src={image}
+                          sizes="(max-width: 760px) 45vw, 28vw"
                           alt={relatedImages.length > 1
                             ? `${getArtworkAlt(item, en)}, ${getPanelName(index, en)}`
                             : getArtworkAlt(item, en)}
