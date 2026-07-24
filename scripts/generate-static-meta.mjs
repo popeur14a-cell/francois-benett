@@ -151,7 +151,11 @@ function render(page) {
     <meta name="twitter:image" content="${escapeHtml(image)}" />
     <script type="application/ld+json">${jsonLd(page.structuredData || siteData)}</script>`;
 
-  return template
+  const routeTemplate = page.path === "/"
+    ? template
+    : template.replace(/\s*<link[^>]*data-home-hero[^>]*\/>/i, "");
+
+  return routeTemplate
     .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(page.title)}</title>`)
     .replace(
       /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i,
