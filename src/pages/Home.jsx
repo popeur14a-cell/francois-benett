@@ -146,7 +146,7 @@ export default function Home() {
           <h1 className="sr-only">François Benett — Artiste peintre contemporain</h1>
           <img
             src="/images/benett-cover-1280.webp"
-            srcSet="/images/benett-cover-640.webp 640w, /images/benett-cover-1280.webp 1280w, /images/benett-cover-1920.webp 1920w"
+            srcSet="/images/benett-cover-640.webp 640w, /images/benett-cover-960.webp 960w, /images/benett-cover-1280.webp 1280w"
             sizes="100vw"
             alt={en ? "Artwork by contemporary painter François Benett" : "Œuvre de François Benett, artiste peintre contemporain"}
             fetchPriority="high"
