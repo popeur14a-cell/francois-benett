@@ -46,6 +46,7 @@ for source_path in IMAGES.rglob("*"):
         not source_path.is_file()
         or RESPONSIVE in source_path.parents
         or source_path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}
+        or source_path.name == "benett-cover.webp"
         or source_path.name.startswith("benett-cover-")
         or "interieurs" in source_path.parts
     ):

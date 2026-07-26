@@ -1,9 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
 import { ArrowIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import ResponsiveImage from "../components/ResponsiveImage";
+
+const ArtworkSearch = lazy(() => import("../components/ArtworkSearch"));
 
 const SITE_URL = "https://www.benett-peintre.fr";
 
@@ -13,7 +16,7 @@ const collections = [
     nomEn: "Venice",
     categorie: "lieux",
     slug: "venise",
-    image: "/images/venise/palais-des-doges.webp",
+    image: "/images/venise/bal-des-oiseaux.jpg",
     descriptionEn: "Venetian light, architecture and atmosphere.",
     description:
       "Lumières, architectures et atmosphères vénitiennes.",
@@ -23,7 +26,7 @@ const collections = [
     nomEn: "Spain",
     categorie: "lieux",
     slug: "espagne",
-    image: "/images/espagne/les-deux-andalouses.jpg",
+    image: "/images/espagne/place-d-espagne.jpg",
     descriptionEn: "Colours, traditions and scenes inspired by Spanish culture.",
     description:
       "Couleurs, traditions et scènes inspirées de la culture espagnole.",
@@ -74,7 +77,7 @@ const collections = [
     nomEn: "Tango",
     categorie: "personnages",
     slug: "tango",
-    image: "/images/tango/tango.jpg",
+    image: "/images/tango/tango-in-the-night.jpg",
     descriptionEn: "Movement, elegance and the passion of dance.",
     description:
       "Mouvement, élégance et passion autour de la danse.",
@@ -84,7 +87,7 @@ const collections = [
     nomEn: "The Messengers",
     categorie: "personnages",
     slug: "messagers",
-    image: "/images/messagers/les-messagers.jpg",
+    image: "/images/messagers/les-etendards.jpg",
     descriptionEn: "A series of symbolic and poetic figures.",
     description:
       "Une série de personnages symboliques et poétiques.",
@@ -104,7 +107,7 @@ const collections = [
     nomEn: "Clowns",
     categorie: "personnages",
     slug: "clowns",
-    image: "/images/clowns/les-inseparables.jpg",
+    image: "/images/clowns/tambour-et-cornemuse.jpg",
     descriptionEn: "Expressive figures combining emotion, poetry and depth.",
     description:
       "Des personnages expressifs entre émotion, poésie et profondeur.",
@@ -237,9 +240,13 @@ export default function Collections() {
           <h1><ArtistLinkedText>{en ? "François Benett Collections" : "Collections de François Benett"}</ArtistLinkedText></h1>
 
           <p>
-            <ArtistLinkedText>{en ? "Explore the different worlds of François Benett through journeys, places, figures and emotions. Each collection reveals its own atmosphere through original works." : "Découvrez les différents univers de François Benett, entre voyages, lieux, personnages et émotions. Chaque collection révèle une atmosphère particulière à travers des œuvres originales."}</ArtistLinkedText>
+            <ArtistLinkedText>{en ? "Ten worlds shaped by light, movement and silence." : "Dix univers, entre lumière, mouvement et silence."}</ArtistLinkedText>
           </p>
         </section>
+
+        <Suspense fallback={null}>
+          <ArtworkSearch />
+        </Suspense>
 
         <div
           className="collections-groups"

@@ -31,9 +31,9 @@ export default function Favorites() {
             <div className="favorites-grid">
               {artworks.map((artwork) => (
                 <article key={artwork.path}>
-                  <Link to={artwork.path}><ResponsiveImage src={artwork.thumbnail || artwork.image} sizes="(max-width: 760px) 92vw, 30vw" alt={getArtworkAlt(artwork, en)} loading="lazy" decoding="async" /></Link>
+                  <Link to={artwork.path} viewTransition><ResponsiveImage src={artwork.thumbnail || artwork.image} sizes="(max-width: 760px) 92vw, 30vw" alt={getArtworkAlt(artwork, en)} loading="lazy" decoding="async" /></Link>
                   <div>
-                    <h2><Link to={artwork.path}>{artwork.titre}</Link></h2>
+                    <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
                     {artwork.dimensions && <p>{artwork.dimensions}</p>}
                     <button type="button" onClick={() => removeFavorite(artwork.path)}><HeartIcon filled /> {en ? "Remove" : "Retirer"}</button>
                   </div>

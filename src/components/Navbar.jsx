@@ -185,6 +185,7 @@ export default function Navbar() {
           <span>{en ? "Contemporary painting" : "Peinture contemporaine"}</span>
         </div>
       </aside>
+
     </>
   );
 }

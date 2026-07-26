@@ -1051,6 +1051,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.benett-peintre.fr/collections/paris/les-parieurs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/les-parieurs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/les-parieurs.jpg</image:loc>
+      <image:title>Les parieurs — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/paris/les-parieurs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/les-parieurs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/paris/les-parieurs.jpg</image:loc>
+      <image:title>Les parieurs — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.benett-peintre.fr/collections/paris/concerto-au-flore</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/concerto-au-flore" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/concerto-au-flore" />
@@ -1106,7 +1130,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore.jpg</image:loc>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore-3.jpg</image:loc>
       <image:title>Café de Flore — François Benett</image:title>
     </image:image>
   </url>
@@ -1118,7 +1142,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore.jpg</image:loc>
+      <image:loc>https://www.benett-peintre.fr/images/paris/cafe-de-flore-3.jpg</image:loc>
       <image:title>Café de Flore — François Benett</image:title>
     </image:image>
   </url>

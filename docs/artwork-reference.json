@@ -1,0 +1,5173 @@
+{
+  "generated_from": [
+    "src/data/collectionsData.js",
+    "public/images"
+  ],
+  "artwork_count": 94,
+  "analysis_notes": {
+    "colors_and_orientation": "Calculated from the image pixels.",
+    "subjects_people_actions": "Curated from titles and collections; use as search aids, not as an art-historical attribution."
+  },
+  "artworks": [
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Palais des Doges",
+      "url": "/collections/venise/palais-des-doges",
+      "declared_dimensions": "116 × 89 cm",
+      "format_tags": [
+        "grand format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/palais-des-doges.webp",
+          "pixels": {
+            "width": 2400,
+            "height": 1821
+          },
+          "orientation": "paysage",
+          "colors": [
+            "bleu",
+            "gris",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "blanc",
+        "bleu",
+        "chapeau",
+        "costume vénitien",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "lieu",
+        "paysage",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Le chant de l’oiseau",
+      "url": "/collections/venise/le-chant-de-l-oiseau",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/chant-oiseau.jpg",
+          "pixels": {
+            "width": 841,
+            "height": 850
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "jaune",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "costume vénitien",
+        "faune",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "carré",
+        "costume vénitien",
+        "faune",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "jaune",
+        "lieu",
+        "orange",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "La diva",
+      "url": "/collections/venise/la-diva",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/la-diva.jpg",
+          "pixels": {
+            "width": 872,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "blanc",
+            "rouge",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "blanc",
+        "carré",
+        "chapeau",
+        "costume vénitien",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "noir",
+        "personnage",
+        "rouge",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "L’œuf bleu",
+      "url": "/collections/venise/l-oeuf-bleu",
+      "declared_dimensions": "73 × 60 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/oeuf-bleu.jpg",
+          "pixels": {
+            "width": 1073,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "costume vénitien",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "paysage",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "La marionnettiste",
+      "url": "/collections/venise/la-marionnettiste",
+      "declared_dimensions": "25F",
+      "format_tags": [
+        "format moyen"
+      ],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/venise/marionnettiste.jpg",
+          "pixels": {
+            "width": 659,
+            "height": 849
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "blanc",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "costume vénitien",
+        "lieu",
+        "marionnette",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "manipuler une marionnette"
+      ],
+      "search_tags": [
+        "blanc",
+        "chapeau",
+        "costume vénitien",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "manipuler une marionnette",
+        "marionnette",
+        "personnage",
+        "rouge",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "La belle violoniste",
+      "url": "/collections/venise/la-belle-violoniste",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/venise/belle-violoniste.jpg",
+          "pixels": {
+            "width": 941,
+            "height": 930
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "costume vénitien",
+        "instrument",
+        "lieu",
+        "musique",
+        "orchestre",
+        "personnage",
+        "ville",
+        "violon",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "jouer de la musique",
+        "jouer du violon"
+      ],
+      "search_tags": [
+        "costume vénitien",
+        "femme",
+        "gris",
+        "groupe",
+        "instrument",
+        "jouer de la musique",
+        "jouer du violon",
+        "lieu",
+        "musique",
+        "orange",
+        "orchestre",
+        "personnage",
+        "ville",
+        "violon",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Escale à Venise",
+      "url": "/collections/venise/escale-a-venise",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/venise/escale-venise.jpg",
+          "pixels": {
+            "width": 849,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "Venise",
+        "architecture",
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "Venise",
+        "architecture",
+        "costume vénitien",
+        "femme",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "personnage",
+        "rouge",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Le bal des oiseaux",
+      "url": "/collections/venise/le-bal-des-oiseaux",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/bal-des-oiseaux.jpg",
+          "pixels": {
+            "width": 846,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "chapeau",
+        "costume vénitien",
+        "faune",
+        "instrument",
+        "lieu",
+        "oiseau",
+        "orchestre",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "jouer de la musique"
+      ],
+      "search_tags": [
+        "animal",
+        "carré",
+        "chapeau",
+        "costume vénitien",
+        "faune",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "instrument",
+        "jouer de la musique",
+        "lieu",
+        "oiseau",
+        "orange",
+        "orchestre",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "La diva 2",
+      "url": "/collections/venise/la-diva-2",
+      "declared_dimensions": "40F",
+      "format_tags": [
+        "grand format"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/la-diva-2.jpg",
+          "pixels": {
+            "width": 1041,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "rouge",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "blanc",
+        "chapeau",
+        "costume vénitien",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "lieu",
+        "personnage",
+        "rouge",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Attente",
+      "url": "/collections/venise/attente",
+      "declared_dimensions": "55 × 46 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/attente.jpg",
+          "pixels": {
+            "width": 693,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "attendre"
+      ],
+      "search_tags": [
+        "attendre",
+        "costume vénitien",
+        "femme",
+        "groupe",
+        "lieu",
+        "orange",
+        "paysage",
+        "personnage",
+        "petit format",
+        "rouge",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Attente 2",
+      "url": "/collections/venise/attente-2",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/attente-2.jpg",
+          "pixels": {
+            "width": 852,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "bleu",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "attendre"
+      ],
+      "search_tags": [
+        "attendre",
+        "bleu",
+        "costume vénitien",
+        "femme",
+        "groupe",
+        "lieu",
+        "noir",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Plénitude",
+      "url": "/collections/venise/plenitude",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/plenitude.jpg",
+          "pixels": {
+            "width": 2400,
+            "height": 2437
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "blanc",
+        "carré",
+        "chapeau",
+        "costume vénitien",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Les deux andalouses",
+      "url": "/collections/espagne/les-deux-andalouses",
+      "declared_dimensions": "46 × 38 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/les-deux-andalouses.jpg",
+          "pixels": {
+            "width": 712,
+            "height": 850
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "paysage",
+        "personnage",
+        "petit format",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Les deux andalouses 2",
+      "url": "/collections/espagne/les-deux-andalouses-2",
+      "declared_dimensions": "100 × 81 cm",
+      "format_tags": [
+        "grand format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/les-deux-andalouses-2.jpg",
+          "pixels": {
+            "width": 677,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "orange",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "paysage",
+        "personnage",
+        "rouge",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Les amazones au rideau",
+      "url": "/collections/espagne/les-amazones-au-rideau",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/amazones-rideau.jpg",
+          "pixels": {
+            "width": 1087,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "cheval",
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage",
+        "équestre"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "animal",
+        "carré",
+        "cheval",
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "monter à cheval",
+        "orange",
+        "personnage",
+        "rouge",
+        "voyage",
+        "équestre"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Les andalouses dans l’alcôve",
+      "url": "/collections/espagne/les-andalouses-dans-l-alcove",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/les-andalouses-dans-l-alcove.jpg",
+          "pixels": {
+            "width": 686,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "rouge",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "personnage",
+        "rouge",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Les deux andalouses 3",
+      "url": "/collections/espagne/les-deux-andalouses-3",
+      "declared_dimensions": "81 × 65 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/les-deux-andalouses-3.jpg",
+          "pixels": {
+            "width": 693,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "jaune",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "format moyen",
+        "groupe",
+        "jaune",
+        "lieu",
+        "orange",
+        "paysage",
+        "personnage",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Au Café",
+      "url": "/collections/espagne/au-cafe",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/espagne/au-cafe.jpg",
+          "pixels": {
+            "width": 675,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café",
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "table",
+        "tasse",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café",
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "table",
+        "tasse",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Flamenco 2",
+      "url": "/collections/espagne/flamenco-2",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/flamenco-2.jpg",
+          "pixels": {
+            "width": 846,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "carré",
+        "coiffe",
+        "costume espagnol",
+        "danser",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "rouge",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Place d’Espagne",
+      "url": "/collections/espagne/place-d-espagne",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/place-d-espagne.jpg",
+          "pixels": {
+            "width": 839,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "jaune",
+            "gris",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "carré",
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "jaune",
+        "lieu",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Le café bleu",
+      "url": "/collections/espagne/le-cafe-bleu",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/espagne/le-cafe-bleu.jpg",
+          "pixels": {
+            "width": 672,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "bleu",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café",
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "table",
+        "tasse",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "bleu",
+        "boire",
+        "café",
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "gris",
+        "groupe",
+        "lieu",
+        "table",
+        "tasse",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Espagne",
+      "collection_id": "espagne",
+      "title": "Andalouses sur la place d’Espagne",
+      "url": "/collections/espagne/andalouses-sur-la-place-d-espagne",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/espagne/andalouses-sur-la-place-d-espagne.jpg",
+          "pixels": {
+            "width": 451,
+            "height": 460
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume espagnol",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "coiffe",
+        "costume espagnol",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "personnage",
+        "rouge",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Maroc",
+      "collection_id": "maroc",
+      "title": "Les colombes",
+      "url": "/collections/maroc/les-colombes",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/maroc/les-colombes.jpg",
+          "pixels": {
+            "width": 861,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "coiffe",
+        "colombe",
+        "costume oriental",
+        "faune",
+        "lieu",
+        "oiseau",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "carré",
+        "coiffe",
+        "colombe",
+        "costume oriental",
+        "faune",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "lieu",
+        "oiseau",
+        "orange",
+        "rouge",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Maroc",
+      "collection_id": "maroc",
+      "title": "Deux poids deux mesures",
+      "url": "/collections/maroc/deux-poids-deux-mesures",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/maroc/deux-poids-deux-mesures.jpg",
+          "pixels": {
+            "width": 849,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "jaune",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume oriental",
+        "lieu",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "coiffe",
+        "costume oriental",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "jaune",
+        "lieu",
+        "orange",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Maroc",
+      "collection_id": "maroc",
+      "title": "Les deux odalisques au siamois",
+      "url": "/collections/maroc/les-deux-odalisques-au-siamois",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/maroc/les-deux-odalisques-au-siamois.jpg",
+          "pixels": {
+            "width": 1044,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "chat",
+        "coiffe",
+        "costume oriental",
+        "faune",
+        "lieu",
+        "siamois",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "chat",
+        "coiffe",
+        "costume oriental",
+        "faune",
+        "femme",
+        "groupe",
+        "lieu",
+        "orange",
+        "personnage",
+        "siamois",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Maroc",
+      "collection_id": "maroc",
+      "title": "Le tri des fleurs",
+      "url": "/collections/maroc/le-tri-des-fleurs",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/maroc/le-tri-des-fleurs.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "noir",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe",
+        "costume oriental",
+        "fleurs",
+        "lieu",
+        "nature morte",
+        "table",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "trier des fleurs"
+      ],
+      "search_tags": [
+        "coiffe",
+        "costume oriental",
+        "femme",
+        "fleurs",
+        "gris",
+        "groupe",
+        "lieu",
+        "nature morte",
+        "noir",
+        "orange",
+        "rouge",
+        "table",
+        "trier des fleurs",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "L’heure du thé",
+      "url": "/collections/paris/l-heure-du-the",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/heure-du-the.jpg",
+          "pixels": {
+            "width": 1132,
+            "height": 850
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café parisien",
+        "femme",
+        "format moyen",
+        "gris",
+        "lieu",
+        "paysage",
+        "personnage",
+        "rouge",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Attente en jaune",
+      "url": "/collections/paris/attente-en-jaune",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/attente-en-jaune.jpg",
+          "pixels": {
+            "width": 1072,
+            "height": 850
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "jaune"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "chapeau",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "attendre"
+      ],
+      "search_tags": [
+        "attendre",
+        "café parisien",
+        "chapeau",
+        "femme",
+        "format moyen",
+        "gris",
+        "jaune",
+        "lieu",
+        "paysage",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Les Dernières Nouvelles",
+      "url": "/collections/paris/les-dernieres-nouvelles",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/les-dernieres-nouvelles.jpg",
+          "pixels": {
+            "width": 1079,
+            "height": 850
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "chapeau",
+        "journal",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "lire"
+      ],
+      "search_tags": [
+        "café parisien",
+        "chapeau",
+        "format moyen",
+        "gris",
+        "homme",
+        "journal",
+        "lieu",
+        "lire",
+        "noir",
+        "paysage",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Jeu de cartes",
+      "url": "/collections/paris/jeu-de-cartes",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/jeu-de-cartes.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 850
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "cartes",
+        "chapeau",
+        "lieu",
+        "scène urbaine",
+        "table",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer",
+        "jouer aux cartes"
+      ],
+      "search_tags": [
+        "blanc",
+        "café parisien",
+        "carré",
+        "cartes",
+        "chapeau",
+        "format moyen",
+        "gris",
+        "homme",
+        "jouer",
+        "jouer aux cartes",
+        "lieu",
+        "personnage",
+        "scène urbaine",
+        "table",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Attente au Procope",
+      "url": "/collections/paris/attente-au-procope",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/attente-au-procope.jpg",
+          "pixels": {
+            "width": 1088,
+            "height": 850
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "attendre",
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "attendre",
+        "boire",
+        "café parisien",
+        "femme",
+        "format moyen",
+        "gris",
+        "lieu",
+        "paysage",
+        "personnage",
+        "rouge",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Café de Flore",
+      "url": "/collections/paris/cafe-de-flore",
+      "declared_dimensions": "60 × 60 cm",
+      "format_tags": [
+        "petit format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/cafe-de-flore.jpg",
+          "pixels": {
+            "width": 848,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "bleu",
+        "boire",
+        "café parisien",
+        "carré",
+        "femme",
+        "gris",
+        "lieu",
+        "orange",
+        "personnage",
+        "petit format",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Rencontre au Procope",
+      "url": "/collections/paris/rencontre-au-procope",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/rencontre-au-procope.jpg",
+          "pixels": {
+            "width": 1064,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "rose",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café parisien",
+        "femme",
+        "format moyen",
+        "gris",
+        "lieu",
+        "paysage",
+        "personnage",
+        "rose",
+        "rouge",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Les parieurs",
+      "url": "/collections/paris/les-parieurs",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/les-parieurs.jpg",
+          "pixels": {
+            "width": 1067,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "bleu",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "chapeau",
+        "journal",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer",
+        "lire"
+      ],
+      "search_tags": [
+        "bleu",
+        "café parisien",
+        "chapeau",
+        "format moyen",
+        "gris",
+        "homme",
+        "jouer",
+        "journal",
+        "lieu",
+        "lire",
+        "noir",
+        "paysage",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Concerto au Flore",
+      "url": "/collections/paris/concerto-au-flore",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/concerto-au-flore.jpg",
+          "pixels": {
+            "width": 849,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "jaune",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "instrument",
+        "lieu",
+        "musique",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "jouer de la musique",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café parisien",
+        "carré",
+        "grand format",
+        "gris",
+        "instrument",
+        "jaune",
+        "jouer de la musique",
+        "lieu",
+        "musique",
+        "orange",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Confidence au Procope",
+      "url": "/collections/paris/confidence-au-procope",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/confidence-au-procope.jpg",
+          "pixels": {
+            "width": 825,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "rouge",
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café parisien",
+        "femme",
+        "gris",
+        "lieu",
+        "orange",
+        "personnage",
+        "rouge",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Café de Flore",
+      "url": "/collections/paris/cafe-de-flore-collection-particuliere",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/cafe-de-flore-3.jpg",
+          "pixels": {
+            "width": 1070,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "jaune",
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café parisien",
+        "femme",
+        "gris",
+        "jaune",
+        "lieu",
+        "orange",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Café de Flore 2",
+      "url": "/collections/paris/cafe-de-flore-2",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/cafe-de-flore-2.jpg",
+          "pixels": {
+            "width": 1041,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "jaune",
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "café parisien",
+        "femme",
+        "gris",
+        "jaune",
+        "lieu",
+        "orange",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Modèles Rue Chappe",
+      "url": "/collections/paris/modeles-rue-chappe",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/modeles-rue-chappe.jpg",
+          "pixels": {
+            "width": 846,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "poser"
+      ],
+      "search_tags": [
+        "café parisien",
+        "carré",
+        "femme",
+        "grand format",
+        "gris",
+        "lieu",
+        "orange",
+        "personnage",
+        "poser",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Montmartre in blue",
+      "url": "/collections/paris/montmartre-in-blue",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/montmartre-in-blue.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "bleu",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "café parisien",
+        "femme",
+        "gris",
+        "lieu",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Moulin Rouge",
+      "url": "/collections/paris/moulin-rouge",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/paris/moulin-rouge.jpg",
+          "pixels": {
+            "width": 840,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "café parisien",
+        "carré",
+        "femme",
+        "format moyen",
+        "gris",
+        "lieu",
+        "orange",
+        "personnage",
+        "rouge",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Nuit Parisienne",
+      "url": "/collections/paris/nuit-parisienne",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/nuit-parisienne.jpg",
+          "pixels": {
+            "width": 842,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "jaune",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "café parisien",
+        "femme",
+        "gris",
+        "jaune",
+        "lieu",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "Repos à Montmartre",
+      "url": "/collections/paris/repos-a-montmartre",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/repos-a-montmartre.jpg",
+          "pixels": {
+            "width": 848,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "bleu",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "attendre"
+      ],
+      "search_tags": [
+        "attendre",
+        "bleu",
+        "café parisien",
+        "femme",
+        "gris",
+        "lieu",
+        "personnage",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Paris",
+      "collection_id": "paris",
+      "title": "La Rotonde",
+      "url": "/collections/paris/la-rotonde",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/paris/la-rotonde.jpg",
+          "pixels": {
+            "width": 674,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "gris",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "café parisien",
+        "lieu",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "café parisien",
+        "femme",
+        "gris",
+        "lieu",
+        "orange",
+        "personnage",
+        "rouge",
+        "scène urbaine",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Bretonnes",
+      "collection_id": "bretonnes",
+      "title": "Les belles histoires avec Billy",
+      "url": "/collections/bretonnes/les-belles-histoires-avec-billy",
+      "declared_dimensions": "81 × 65 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/bretonnes/les-belles-histoires-avec-billy.jpg",
+          "pixels": {
+            "width": 671,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "chien",
+        "coiffe bretonne",
+        "costume traditionnel",
+        "faune",
+        "livre"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [
+        "lire"
+      ],
+      "search_tags": [
+        "animal",
+        "chien",
+        "coiffe bretonne",
+        "costume traditionnel",
+        "faune",
+        "femme",
+        "format moyen",
+        "gris",
+        "groupe",
+        "lire",
+        "livre",
+        "paysage"
+      ]
+    },
+    {
+      "collection": "Bretonnes",
+      "collection_id": "bretonnes",
+      "title": "Le secret de Guémené-Penfao",
+      "url": "/collections/bretonnes/le-secret-de-guemene-penfao",
+      "declared_dimensions": "2 panneaux de 80 × 80 cm",
+      "format_tags": [
+        "diptyque",
+        "deux panneaux",
+        "grand format"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/bretonnes/le-secret-de-guemene-penfao-2.jpg",
+          "pixels": {
+            "width": 828,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "noir"
+          ]
+        },
+        {
+          "file": "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "coiffe bretonne",
+        "costume traditionnel"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "coiffe bretonne",
+        "costume traditionnel",
+        "deux panneaux",
+        "diptyque",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "noir"
+      ]
+    },
+    {
+      "collection": "Amsterdam",
+      "collection_id": "amsterdam",
+      "title": "Amsterdam",
+      "url": "/collections/amsterdam/amsterdam",
+      "declared_dimensions": "90 × 90 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/amsterdam/amsterdam.jpg",
+          "pixels": {
+            "width": 848,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "blanc",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "architecture",
+        "canal",
+        "lieu",
+        "parapluie",
+        "pluie",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "couple",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "marcher"
+      ],
+      "search_tags": [
+        "architecture",
+        "blanc",
+        "canal",
+        "carré",
+        "couple",
+        "femme",
+        "format moyen",
+        "gris",
+        "homme",
+        "lieu",
+        "marcher",
+        "orange",
+        "parapluie",
+        "pluie",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango",
+      "url": "/collections/tango/tango",
+      "declared_dimensions": "38 × 46 cm",
+      "format_tags": [
+        "petit format",
+        "portrait"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango.jpg",
+          "pixels": {
+            "width": 689,
+            "height": 850
+          },
+          "orientation": "portrait",
+          "colors": [
+            "blanc",
+            "rouge",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "bal",
+        "blanc",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "gris",
+        "homme",
+        "petit format",
+        "portrait",
+        "rouge"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Blue tango",
+      "url": "/collections/tango/blue-tango",
+      "declared_dimensions": "65 × 54 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/blue-tango.jpg",
+          "pixels": {
+            "width": 635,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "bal",
+        "bleu",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "format moyen",
+        "gris",
+        "homme",
+        "paysage"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango love",
+      "url": "/collections/tango/tango-love",
+      "declared_dimensions": "73 × 60 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-love.jpg",
+          "pixels": {
+            "width": 684,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "orange",
+            "blanc",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "bal",
+        "blanc",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "format moyen",
+        "gris",
+        "homme",
+        "orange",
+        "paysage",
+        "rouge"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango in the night",
+      "url": "/collections/tango/tango-in-the-night",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-in-the-night.jpg",
+          "pixels": {
+            "width": 843,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "chapeau",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "boire",
+        "danser",
+        "échanger"
+      ],
+      "search_tags": [
+        "bal",
+        "boire",
+        "carré",
+        "chapeau",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "grand format",
+        "gris",
+        "homme",
+        "noir",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango 2",
+      "url": "/collections/tango/tango-2",
+      "declared_dimensions": "46 × 38 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-2.jpg",
+          "pixels": {
+            "width": 678,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "bal",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "gris",
+        "homme",
+        "paysage",
+        "petit format"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango in the night 2",
+      "url": "/collections/tango/tango-in-the-night-2",
+      "declared_dimensions": "130 × 97 cm",
+      "format_tags": [
+        "grand format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-in-the-night-2.jpg",
+          "pixels": {
+            "width": 1145,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "chapeau",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "boire",
+        "danser",
+        "échanger"
+      ],
+      "search_tags": [
+        "bal",
+        "boire",
+        "chapeau",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "grand format",
+        "gris",
+        "homme",
+        "orange",
+        "paysage",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango dream",
+      "url": "/collections/tango/tango-dream",
+      "declared_dimensions": "120 × 120 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-dream.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "chapeau",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "bal",
+        "blanc",
+        "carré",
+        "chapeau",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "grand format",
+        "gris",
+        "homme"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango in the night 3",
+      "url": "/collections/tango/tango-in-the-night-3",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-in-the-night-3.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "chapeau",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "boire",
+        "danser",
+        "échanger"
+      ],
+      "search_tags": [
+        "bal",
+        "boire",
+        "carré",
+        "chapeau",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "grand format",
+        "gris",
+        "homme",
+        "orange",
+        "rouge",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Tango",
+      "collection_id": "tango",
+      "title": "Tango love 2",
+      "url": "/collections/tango/tango-love-2",
+      "declared_dimensions": "100 × 100 cm",
+      "format_tags": [
+        "grand format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/tango/tango-love-2.jpg",
+          "pixels": {
+            "width": 912,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "bal",
+        "chapeau",
+        "danse",
+        "danse de couple"
+      ],
+      "people": [
+        "couple",
+        "danseur",
+        "danseuse",
+        "femme",
+        "homme"
+      ],
+      "actions": [
+        "danser"
+      ],
+      "search_tags": [
+        "bal",
+        "carré",
+        "chapeau",
+        "couple",
+        "danse",
+        "danse de couple",
+        "danser",
+        "danseur",
+        "danseuse",
+        "femme",
+        "grand format",
+        "gris",
+        "homme"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "Les cavalières aux étendards",
+      "url": "/collections/messagers/les-cavalieres-aux-etendards",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/messagers/les-cavalieres-aux-etendards.jpg",
+          "pixels": {
+            "width": 1090,
+            "height": 850
+          },
+          "orientation": "paysage",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "personnage",
+        "équestre",
+        "étendard"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "groupe",
+        "monter à cheval",
+        "orange",
+        "paysage",
+        "personnage",
+        "équestre",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "Les trompettes de la renommée",
+      "url": "/collections/messagers/les-trompettes-de-la-renommee",
+      "declared_dimensions": "100 × 73 cm",
+      "format_tags": [
+        "grand format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/messagers/les-trompettes-de-la-renommee.jpg",
+          "pixels": {
+            "width": 668,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "instrument",
+        "musique",
+        "personnage",
+        "étendard"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "jouer de la musique",
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "grand format",
+        "gris",
+        "groupe",
+        "instrument",
+        "jouer de la musique",
+        "monter à cheval",
+        "musique",
+        "orange",
+        "paysage",
+        "personnage",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "L’échappée",
+      "url": "/collections/messagers/l-echappee",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/messagers/echappee.jpg",
+          "pixels": {
+            "width": 857,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "personnage",
+        "étendard"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "gris",
+        "groupe",
+        "monter à cheval",
+        "orange",
+        "personnage",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "Les trois amazones",
+      "url": "/collections/messagers/les-trois-amazones",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/messagers/les-trois-amazones.jpg",
+          "pixels": {
+            "width": 872,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "personnage",
+        "équestre",
+        "étendard"
+      ],
+      "people": [
+        "femme",
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "femme",
+        "figure",
+        "gris",
+        "groupe",
+        "monter à cheval",
+        "orange",
+        "personnage",
+        "équestre",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "Les étendards",
+      "url": "/collections/messagers/les-etendards",
+      "declared_dimensions": "90 × 90 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/messagers/les-etendards.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange",
+            "rouge"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "personnage",
+        "équestre",
+        "étendard"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "animal",
+        "carré",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "format moyen",
+        "gris",
+        "groupe",
+        "monter à cheval",
+        "orange",
+        "personnage",
+        "rouge",
+        "équestre",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "La mésange bleue",
+      "url": "/collections/messagers/la-mesange-bleue",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/messagers/la-mesange-bleue.jpg",
+          "pixels": {
+            "width": 884,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "faune",
+        "figure",
+        "mésange",
+        "oiseau",
+        "personnage",
+        "étendard"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "animal",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "faune",
+        "figure",
+        "gris",
+        "groupe",
+        "monter à cheval",
+        "mésange",
+        "oiseau",
+        "orange",
+        "personnage",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "Les Messagers",
+      "url": "/collections/messagers/les-messagers",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/messagers/les-messagers.jpg",
+          "pixels": {
+            "width": 681,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "gris",
+            "jaune"
+          ]
+        }
+      ],
+      "subjects": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "personnage",
+        "étendard"
+      ],
+      "people": [
+        "groupe",
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "gris",
+        "groupe",
+        "homme",
+        "jaune",
+        "monter à cheval",
+        "orange",
+        "personnage",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Les Messagers",
+      "collection_id": "messagers",
+      "title": "Le retour",
+      "url": "/collections/messagers/le-retour",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/messagers/le-retour.jpg",
+          "pixels": {
+            "width": 842,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "jaune"
+          ]
+        }
+      ],
+      "subjects": [
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "personnage",
+        "étendard"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "monter à cheval"
+      ],
+      "search_tags": [
+        "carré",
+        "cavalier",
+        "chapeau",
+        "cheval",
+        "drapeau",
+        "figure",
+        "format moyen",
+        "gris",
+        "groupe",
+        "jaune",
+        "monter à cheval",
+        "orange",
+        "personnage",
+        "étendard"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Le chat blanc",
+      "url": "/collections/scene-d-intimite/le-chat-blanc",
+      "declared_dimensions": "65 × 54 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/le-chat-blanc.jpg",
+          "pixels": {
+            "width": 1107,
+            "height": 850
+          },
+          "orientation": "paysage",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "chat",
+        "faune",
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "chat",
+        "faune",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "orange",
+        "paysage",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Violoncellistes",
+      "url": "/collections/scene-d-intimite/violoncellistes",
+      "declared_dimensions": "41 × 33 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/violoncellistes.jpg",
+          "pixels": {
+            "width": 853,
+            "height": 850
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "instrument",
+        "musique",
+        "personnage",
+        "violoncelle"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer de la musique",
+        "jouer du violoncelle"
+      ],
+      "search_tags": [
+        "blanc",
+        "femme",
+        "figure",
+        "instrument",
+        "jouer de la musique",
+        "jouer du violoncelle",
+        "musique",
+        "orange",
+        "paysage",
+        "personnage",
+        "petit format",
+        "violoncelle"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Modèle 1",
+      "url": "/collections/scene-d-intimite/modele-1",
+      "declared_dimensions": "41 × 33 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/modele-1.jpg",
+          "pixels": {
+            "width": 674,
+            "height": 850
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "poser"
+      ],
+      "search_tags": [
+        "blanc",
+        "femme",
+        "figure",
+        "orange",
+        "paysage",
+        "personnage",
+        "petit format",
+        "poser"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Modèle 2",
+      "url": "/collections/scene-d-intimite/modele-2",
+      "declared_dimensions": "41 × 33 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/modele-2.jpg",
+          "pixels": {
+            "width": 669,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "orange",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "poser"
+      ],
+      "search_tags": [
+        "blanc",
+        "femme",
+        "figure",
+        "orange",
+        "paysage",
+        "personnage",
+        "petit format",
+        "poser"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Passion",
+      "url": "/collections/scene-d-intimite/passion",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/passion.jpg",
+          "pixels": {
+            "width": 850,
+            "height": 850
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "carré",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Passionata",
+      "url": "/collections/scene-d-intimite/passionata",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/passionata.jpg",
+          "pixels": {
+            "width": 848,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "bleu",
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "carré",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "noir",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Tea time",
+      "url": "/collections/scene-d-intimite/tea-time",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/tea-time.jpg",
+          "pixels": {
+            "width": 846,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "figure",
+        "personnage",
+        "table",
+        "tasse",
+        "thé"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "blanc",
+        "boire",
+        "carré",
+        "chapeau",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "orange",
+        "personnage",
+        "table",
+        "tasse",
+        "thé",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Nature morte au bouquet",
+      "url": "/collections/scene-d-intimite/nature-morte-au-bouquet",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/nature-morte-au-bouquet-jaune.jpg",
+          "pixels": {
+            "width": 857,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "fleurs",
+        "nature morte",
+        "personnage"
+      ],
+      "people": [
+        "femme"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "femme",
+        "figure",
+        "fleurs",
+        "format moyen",
+        "gris",
+        "nature morte",
+        "noir",
+        "orange",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Modèles au chat",
+      "url": "/collections/scene-d-intimite/modeles-au-chat",
+      "declared_dimensions": "60 × 60 cm",
+      "format_tags": [
+        "petit format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/modeles-au-chat.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "jaune"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "chat",
+        "faune",
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "poser"
+      ],
+      "search_tags": [
+        "animal",
+        "carré",
+        "chat",
+        "faune",
+        "femme",
+        "figure",
+        "gris",
+        "jaune",
+        "orange",
+        "personnage",
+        "petit format",
+        "poser"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Modèles au bouquet jaune",
+      "url": "/collections/scene-d-intimite/modeles-au-bouquet-jaune",
+      "declared_dimensions": "73 × 60 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/modeles-au-bouquet-jaune.jpg",
+          "pixels": {
+            "width": 1083,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "orange",
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "fleurs",
+        "nature morte",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "poser"
+      ],
+      "search_tags": [
+        "femme",
+        "figure",
+        "fleurs",
+        "format moyen",
+        "gris",
+        "nature morte",
+        "noir",
+        "orange",
+        "paysage",
+        "personnage",
+        "poser"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Modèle au bouquet",
+      "url": "/collections/scene-d-intimite/modele-au-bouquet",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/modele-au-bouquet.jpg",
+          "pixels": {
+            "width": 1023,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "noir",
+            "orange",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "fleurs",
+        "nature morte",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "poser"
+      ],
+      "search_tags": [
+        "blanc",
+        "carré",
+        "femme",
+        "figure",
+        "fleurs",
+        "format moyen",
+        "gris",
+        "nature morte",
+        "noir",
+        "orange",
+        "personnage",
+        "poser"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Les violoncellistes",
+      "url": "/collections/scene-d-intimite/les-violoncellistes",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/les-violoncellistes.jpg",
+          "pixels": {
+            "width": 833,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "instrument",
+        "musique",
+        "personnage",
+        "violoncelle"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer de la musique",
+        "jouer du violoncelle"
+      ],
+      "search_tags": [
+        "carré",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "instrument",
+        "jouer de la musique",
+        "jouer du violoncelle",
+        "musique",
+        "orange",
+        "personnage",
+        "violoncelle"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Les joueurs",
+      "url": "/collections/scene-d-intimite/les-joueurs",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/les-joueurs.jpg",
+          "pixels": {
+            "width": 851,
+            "height": 850
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer"
+      ],
+      "search_tags": [
+        "blanc",
+        "carré",
+        "chapeau",
+        "figure",
+        "format moyen",
+        "gris",
+        "homme",
+        "jouer",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Le chant du roitelet",
+      "url": "/collections/scene-d-intimite/le-chant-du-roitelet",
+      "declared_dimensions": "73 × 60 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/le-chant-du-roitelet.jpg",
+          "pixels": {
+            "width": 1110,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "orange",
+            "gris",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "faune",
+        "figure",
+        "oiseau",
+        "personnage",
+        "roitelet"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "bleu",
+        "faune",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "oiseau",
+        "orange",
+        "paysage",
+        "personnage",
+        "roitelet"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Le chant du roitelet 2",
+      "url": "/collections/scene-d-intimite/le-chant-du-roitelet-2",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/le-chant-du-roitelet-2.jpg",
+          "pixels": {
+            "width": 849,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "jaune",
+            "gris",
+            "blanc"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "faune",
+        "figure",
+        "oiseau",
+        "personnage",
+        "roitelet"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "blanc",
+        "carré",
+        "faune",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "jaune",
+        "oiseau",
+        "orange",
+        "personnage",
+        "roitelet"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Harmonie jaune",
+      "url": "/collections/scene-d-intimite/harmonie-jaune",
+      "declared_dimensions": "81 × 65 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/harmonie-jaune.jpg",
+          "pixels": {
+            "width": 1214,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "bleu",
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "chapeau",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "orange",
+        "paysage",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Évasion",
+      "url": "/collections/scene-d-intimite/evasion",
+      "declared_dimensions": "70 × 70 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/evasion.jpg",
+          "pixels": {
+            "width": 857,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "bleu"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "carré",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Évasion 2",
+      "url": "/collections/scene-d-intimite/evasion-2",
+      "declared_dimensions": "60 × 60 cm",
+      "format_tags": [
+        "petit format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/evasion-2.jpg",
+          "pixels": {
+            "width": 840,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "gris",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "femme",
+        "figure",
+        "gris",
+        "orange",
+        "personnage",
+        "petit format"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "L’heure du thé",
+      "url": "/collections/scene-d-intimite/l-heure-du-the",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/heure-du-the.jpg",
+          "pixels": {
+            "width": 818,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau",
+        "figure",
+        "personnage",
+        "table",
+        "tasse",
+        "thé"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [
+        "boire",
+        "échanger"
+      ],
+      "search_tags": [
+        "boire",
+        "carré",
+        "chapeau",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "noir",
+        "orange",
+        "personnage",
+        "table",
+        "tasse",
+        "thé",
+        "échanger"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Je crois qu’il m’aime encore",
+      "url": "/collections/scene-d-intimite/je-crois-qu-il-m-aime-encore",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/je-crois-qu-il-m-aime-encore.jpg",
+          "pixels": {
+            "width": 1068,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "rouge",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "orange",
+        "paysage",
+        "personnage",
+        "rouge"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Les grenadines de la paix",
+      "url": "/collections/scene-d-intimite/les-grenadines-de-la-paix",
+      "declared_dimensions": "90 × 90 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/les-grenadines-de-la-paix.jpg",
+          "pixels": {
+            "width": 854,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "fleurs",
+        "nature morte",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "femme",
+        "figure",
+        "fleurs",
+        "format moyen",
+        "gris",
+        "nature morte",
+        "orange",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Scènes d’intimité",
+      "collection_id": "scene-d-intimite",
+      "title": "Ton dessin est très beau",
+      "url": "/collections/scene-d-intimite/ton-dessin-est-tres-beau",
+      "declared_dimensions": "90 × 90 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/scene-d-intimite/ton-dessin-est-tres-beau.jpg",
+          "pixels": {
+            "width": 843,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "jaune"
+          ]
+        }
+      ],
+      "subjects": [
+        "figure",
+        "personnage"
+      ],
+      "people": [
+        "femme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "carré",
+        "femme",
+        "figure",
+        "format moyen",
+        "gris",
+        "jaune",
+        "orange",
+        "personnage"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Les inséparables",
+      "url": "/collections/clowns/les-inseparables",
+      "declared_dimensions": "100 × 81 cm",
+      "format_tags": [
+        "grand format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/les-inseparables.jpg",
+          "pixels": {
+            "width": 1028,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "bleu",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "oiseau",
+        "personnage",
+        "spectacle"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "grand format",
+        "gris",
+        "groupe",
+        "oiseau",
+        "paysage",
+        "personnage",
+        "spectacle"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Le bas de laine",
+      "url": "/collections/clowns/le-bas-de-laine",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/le-bas-de-laine.jpg",
+          "pixels": {
+            "width": 1058,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "bleu",
+            "jaune",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "personnage",
+        "singe",
+        "spectacle",
+        "violon"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "jouer du violon"
+      ],
+      "search_tags": [
+        "bleu",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "format moyen",
+        "gris",
+        "groupe",
+        "jaune",
+        "jouer du violon",
+        "paysage",
+        "personnage",
+        "singe",
+        "spectacle",
+        "violon"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Les bulles",
+      "url": "/collections/clowns/les-bulles",
+      "declared_dimensions": "46 × 38 cm",
+      "format_tags": [
+        "petit format",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/les-bulles.jpg",
+          "pixels": {
+            "width": 692,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "bleu",
+            "gris"
+          ]
+        }
+      ],
+      "subjects": [
+        "bulles",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "personnage",
+        "spectacle"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [
+        "jongler"
+      ],
+      "search_tags": [
+        "bleu",
+        "bulles",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "gris",
+        "groupe",
+        "jongler",
+        "paysage",
+        "personnage",
+        "petit format",
+        "spectacle"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Les inséparables 2",
+      "url": "/collections/clowns/les-inseparables-2",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/clowns/les-inseparables-2.jpg",
+          "pixels": {
+            "width": 704,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "orange",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "oiseau",
+        "personnage",
+        "spectacle"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "gris",
+        "groupe",
+        "noir",
+        "oiseau",
+        "orange",
+        "personnage",
+        "spectacle"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "L’œuf bleu",
+      "url": "/collections/clowns/l-oeuf-bleu",
+      "declared_dimensions": "",
+      "format_tags": [],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/clowns/loeuf-bleu.jpg",
+          "pixels": {
+            "width": 863,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "orange",
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "personnage",
+        "spectacle"
+      ],
+      "people": [
+        "groupe",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "gris",
+        "groupe",
+        "noir",
+        "orange",
+        "personnage",
+        "spectacle"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Tambour et cornemuse",
+      "url": "/collections/clowns/tambour-et-cornemuse",
+      "declared_dimensions": "60 × 60 cm",
+      "format_tags": [
+        "petit format",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/tambour-et-cornemuse.jpg",
+          "pixels": {
+            "width": 845,
+            "height": 851
+          },
+          "orientation": "carré",
+          "colors": [
+            "jaune",
+            "gris",
+            "orange",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "instrument",
+        "musique",
+        "personnage",
+        "spectacle"
+      ],
+      "people": [
+        "groupe",
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer de la musique"
+      ],
+      "search_tags": [
+        "carré",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "gris",
+        "groupe",
+        "homme",
+        "instrument",
+        "jaune",
+        "jouer de la musique",
+        "musique",
+        "noir",
+        "orange",
+        "personnage",
+        "petit format",
+        "spectacle"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Le trio",
+      "url": "/collections/clowns/le-trio",
+      "declared_dimensions": "40F",
+      "format_tags": [
+        "grand format"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/le-trio.jpg",
+          "pixels": {
+            "width": 1026,
+            "height": 851
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "noir"
+          ]
+        }
+      ],
+      "subjects": [
+        "accordéon",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "orchestre",
+        "personnage",
+        "spectacle",
+        "triangle"
+      ],
+      "people": [
+        "groupe",
+        "homme",
+        "personnage"
+      ],
+      "actions": [
+        "jouer de la musique"
+      ],
+      "search_tags": [
+        "accordéon",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "grand format",
+        "gris",
+        "groupe",
+        "homme",
+        "jouer de la musique",
+        "noir",
+        "orchestre",
+        "personnage",
+        "spectacle",
+        "triangle"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Les dresseurs de poissons au triangle",
+      "url": "/collections/clowns/les-dresseurs-de-poissons-au-triangle",
+      "declared_dimensions": "92 × 73 cm",
+      "format_tags": [
+        "format moyen",
+        "paysage"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/les-dresseurs-de-poissons-au-triangle.jpg",
+          "pixels": {
+            "width": 650,
+            "height": 851
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "rouge",
+            "orange"
+          ]
+        }
+      ],
+      "subjects": [
+        "animal",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "faune",
+        "figure",
+        "personnage",
+        "poisson",
+        "spectacle",
+        "triangle"
+      ],
+      "people": [
+        "groupe",
+        "homme",
+        "personnage"
+      ],
+      "actions": [],
+      "search_tags": [
+        "animal",
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "faune",
+        "figure",
+        "format moyen",
+        "gris",
+        "groupe",
+        "homme",
+        "orange",
+        "paysage",
+        "personnage",
+        "poisson",
+        "rouge",
+        "spectacle",
+        "triangle"
+      ]
+    }
+  ]
+}

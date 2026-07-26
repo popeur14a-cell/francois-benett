@@ -262,7 +262,7 @@ export default function ArtworkDetail() {
 
         <nav className="artwork-sibling-nav" aria-label={en ? "Other works in this collection" : "Autres œuvres de cette collection"}>
           {previous ? (
-            <Link to={previous.path}><ArrowIcon direction="left" /><span><small>{en ? "Previous work" : "Œuvre précédente"}</small>{previous.titre}</span></Link>
+            <Link to={previous.path} viewTransition><ArrowIcon direction="left" /><span><small>{en ? "Previous work" : "Œuvre précédente"}</small>{previous.titre}</span></Link>
           ) : (
             <Link to={`/collections/${previousCollectionId}`} className="artwork-previous-collection">
               <ArrowIcon direction="left" />
@@ -273,7 +273,7 @@ export default function ArtworkDetail() {
             </Link>
           )}
           {next ? (
-            <Link to={next.path}><span><small>{en ? "Next work" : "Œuvre suivante"}</small>{next.titre}</span><ArrowIcon direction="right" /></Link>
+            <Link to={next.path} viewTransition><span><small>{en ? "Next work" : "Œuvre suivante"}</small>{next.titre}</span><ArrowIcon direction="right" /></Link>
           ) : (
             <Link to={`/collections/${nextCollectionId}`} className="artwork-next-collection">
               <span>
@@ -292,7 +292,7 @@ export default function ArtworkDetail() {
               {related.map((item) => {
                 const relatedImages = getArtworkImageList(item);
                 return (
-                  <Link key={item.path} to={item.path}>
+                  <Link key={item.path} to={item.path} viewTransition>
                     <span className={`related-artwork-visual ${relatedImages.length > 1 ? "is-diptych" : ""}`}>
                       {relatedImages.map((image, index) => (
                         <ResponsiveImage

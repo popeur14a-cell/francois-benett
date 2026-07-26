@@ -232,6 +232,7 @@ export default function Home() {
                   <article className="carousel-artwork-card" key={`${element.path}-${position}`}>
                     <Link
                       to={element.path}
+                      viewTransition
                       className="carousel-artwork-link"
                       aria-label={`${en ? "Open the artwork page for" : "Ouvrir la fiche de l’œuvre"} ${element.titre}`}
                     >

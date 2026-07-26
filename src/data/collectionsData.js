@@ -1,7 +1,7 @@
 export const collectionsData = {
   venise: {
     nom: "Venise",
-    couverture: "/images/venise/palais-des-doges.webp",
+    couverture: "/images/venise/bal-des-oiseaux.jpg",
     oeuvres: [
       {
         titre: "Palais des Doges",
@@ -81,7 +81,7 @@ export const collectionsData = {
 
   espagne: {
     nom: "Espagne",
-    couverture: "/images/espagne/les-deux-andalouses.jpg",
+    couverture: "/images/espagne/place-d-espagne.jpg",
     oeuvres: [
       {
         titre: "Les deux andalouses",
@@ -224,6 +224,12 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
+        titre: "Les parieurs",
+        image: "/images/paris/les-parieurs.jpg",
+        dimensions: "92 × 73 cm",
+        collectionParticuliere: false,
+      },
+      {
         titre: "Concerto au Flore",
         image: "/images/paris/concerto-au-flore.jpg",
         dimensions: "100 × 100 cm",
@@ -237,7 +243,7 @@ export const collectionsData = {
       },
       {
         titre: "Café de Flore",
-        image: "/images/paris/cafe-de-flore.jpg",
+        image: "/images/paris/cafe-de-flore-3.jpg",
         dimensions: "",
         collectionParticuliere: true,
       },
@@ -325,7 +331,7 @@ export const collectionsData = {
 
   tango: {
     nom: "Tango",
-    couverture: "/images/tango/tango.jpg",
+    couverture: "/images/tango/tango-in-the-night.jpg",
     oeuvres: [
       {
         titre: "Tango",
@@ -360,7 +366,7 @@ export const collectionsData = {
       {
         titre: "Tango in the night 2",
         image: "/images/tango/tango-in-the-night-2.jpg",
-        dimensions: "50F",
+        dimensions: "130 × 97 cm",
         collectionParticuliere: false,
       },
       {
@@ -386,7 +392,7 @@ export const collectionsData = {
 
   messagers: {
     nom: "Les Messagers",
-    couverture: "/images/messagers/les-messagers.jpg",
+    couverture: "/images/messagers/les-etendards.jpg",
     oeuvres: [
       {
         titre: "Les cavalières aux étendards",
@@ -518,7 +524,7 @@ export const collectionsData = {
       {
         titre: "Les joueurs",
         image: "/images/scene-d-intimite/les-joueurs.jpg",
-        dimensions: "70 × 70 cm",
+        dimensions: "80 × 80 cm",
         collectionParticuliere: false,
       },
       {
@@ -580,7 +586,7 @@ export const collectionsData = {
 
   clowns: {
     nom: "Clowns",
-    couverture: "/images/clowns/les-inseparables.jpg",
+    couverture: "/images/clowns/tambour-et-cornemuse.jpg",
     oeuvres: [
       {
         titre: "Les inséparables",

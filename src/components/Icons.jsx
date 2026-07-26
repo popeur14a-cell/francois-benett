@@ -59,6 +59,15 @@ export function ZoomIcon() {
   );
 }
 
+export function SearchIcon() {
+  return (
+    <svg className="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="10.5" cy="10.5" r="5.5" />
+      <path d="m15 15 4.5 4.5" />
+    </svg>
+  );
+}
+
 export function RoomIcon() {
   return (
     <svg className="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">

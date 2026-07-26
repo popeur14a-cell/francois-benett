@@ -184,6 +184,7 @@ export default function CollectionDetail() {
             <article className="artwork-card" key={artwork.path}>
               <Link
                 to={artwork.path}
+                viewTransition
                 className="artwork-image-container artwork-open"
                 aria-label={`${en ? "Open" : "Ouvrir"} ${artwork.titre}`}
               >
@@ -239,7 +240,7 @@ export default function CollectionDetail() {
               )}
 
               <div className="artwork-information">
-                <h2><Link to={artwork.path}>{artwork.titre}</Link></h2>
+                <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
                 <div className="artwork-metadata">
                   {artwork.dimensions && (
                     <p className="artwork-dimensions">

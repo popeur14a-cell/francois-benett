@@ -502,6 +502,175 @@ h3 {
   color: #786d62;
 }
 
+/* ========================= */
+/* RECHERCHE D’ŒUVRES */
+/* ========================= */
+
+.artwork-search {
+  width: min(680px, 100%);
+  margin: 0 0 44px;
+}
+
+.artwork-search-body {
+  position: relative;
+}
+
+.artwork-search-field {
+  padding: 15px 22px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border: 1px solid rgba(88, 72, 59, 0.14);
+  border-radius: 999px;
+  background: rgba(233, 226, 216, 0.62);
+  transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.artwork-search-field:focus-within {
+  border-color: rgba(143, 104, 67, 0.38);
+  background: #f3eee6;
+  box-shadow: 0 12px 32px rgba(53, 42, 33, 0.08);
+}
+
+.artwork-search-field .icon {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 auto;
+  color: #776a5f;
+}
+
+.artwork-search-field input {
+  width: 100%;
+  padding: 0;
+  color: var(--text);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 400;
+}
+
+.artwork-search-field input::placeholder {
+  color: #aaa096;
+  opacity: 1;
+}
+
+.artwork-search-content {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  left: 0;
+  z-index: 30;
+  max-height: min(520px, 65vh);
+  overflow-y: auto;
+  background: #faf7f1;
+  box-shadow: 0 22px 55px rgba(35, 27, 21, 0.14);
+}
+
+.artwork-search-empty {
+  margin: 0;
+  padding: 20px 22px;
+  color: #746b62;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.artwork-search-count {
+  margin: 0;
+  padding: 15px 18px 10px;
+  color: #92877d;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.artwork-search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.artwork-search-results li {
+  border-bottom: 1px solid rgba(69, 57, 46, 0.13);
+}
+
+.artwork-search-results a {
+  min-height: 88px;
+  padding: 10px 4px;
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  transition: background 180ms ease, padding 220ms ease;
+}
+
+.artwork-search-results a:hover,
+.artwork-search-results a:focus-visible {
+  padding-right: 11px;
+  padding-left: 11px;
+  background: rgba(181, 138, 90, 0.08);
+}
+
+.artwork-search-thumbnail {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #eee8df;
+}
+
+.artwork-search-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 300ms ease;
+}
+
+.artwork-search-results a:hover .artwork-search-thumbnail img,
+.artwork-search-results a:focus-visible .artwork-search-thumbnail img {
+  transform: scale(1.035);
+}
+
+.artwork-search-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.artwork-search-copy strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.artwork-search-copy small {
+  overflow: hidden;
+  color: #81776d;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.artwork-search-arrow {
+  color: #8b7764;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  transition: color 180ms ease, transform 220ms ease;
+}
+
+.artwork-search-results a:hover .artwork-search-arrow,
+.artwork-search-results a:focus-visible .artwork-search-arrow {
+  color: var(--gold);
+  transform: translate(3px, -3px);
+}
 
 /* ========================= */
 /* COUVERTURE */
@@ -848,7 +1017,7 @@ h3 {
 
 .collections-header {
   max-width: 850px;
-  margin-bottom: 70px;
+  margin-bottom: 38px;
 }
 
 .collections-header h1 {
@@ -908,7 +1077,8 @@ h3 {
 .collection-card-page {
   position: relative;
 
-  height: 430px;
+  height: auto;
+  aspect-ratio: 4 / 5;
 
   display: block;
 
@@ -919,9 +1089,10 @@ h3 {
 .collection-card-page img {
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 0;
 
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 
   transition:
     transform 0.8s ease,
@@ -2595,6 +2766,34 @@ h3 {
     font-size: 9px;
   }
 
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .artwork-search {
+    margin-top: 0;
+    margin-bottom: 38px;
+  }
+
+  .artwork-search-field {
+    padding: 13px 18px;
+  }
+
+  .artwork-search-results a {
+    grid-template-columns: 62px minmax(0, 1fr) auto;
+    min-height: 86px;
+    gap: 13px;
+  }
+
+  .artwork-search-thumbnail {
+    width: 62px;
+    height: 62px;
+  }
+
+  .artwork-search-copy strong {
+    font-size: 22px;
+  }
+
   .navbar-logo-link {
     width: 58px;
     height: 58px;
@@ -2650,8 +2849,12 @@ h3 {
   }
 
   .oeuvres-slider {
-    justify-content: flex-start;
+    justify-content: center;
     overflow: hidden;
+  }
+
+  .carousel-artwork-card {
+    margin-inline: auto;
   }
 
   .carousel-artwork-button,
@@ -2666,10 +2869,6 @@ h3 {
 
   .collections-grid {
     grid-template-columns: 1fr;
-  }
-
-  .collection-card-page {
-    height: 430px;
   }
 
   .parcours-introduction {
@@ -2796,6 +2995,14 @@ h3 {
     gap: 8px;
   }
 
+  .navbar-actions {
+    gap: 6px;
+  }
+
+  .language-switch {
+    gap: 3px;
+  }
+
   .menu-toggle-label {
     font-size: 9px;
   }
@@ -2808,10 +3015,6 @@ h3 {
   .decouvrir h1,
   .collections-header h1 {
     font-size: 46px;
-  }
-
-  .collection-card-page {
-    height: 380px;
   }
 
   .collection-overlay h2 {
@@ -4842,14 +5045,50 @@ img {
   transition: transform 550ms cubic-bezier(.22, .61, .36, 1);
 }
 
+::view-transition-old(root) {
+  animation: artwork-page-out 180ms ease both;
+}
+
+::view-transition-new(root) {
+  animation: artwork-page-in 380ms cubic-bezier(.22, .61, .36, 1) both;
+}
+
+@keyframes artwork-page-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.35;
+    transform: scale(0.995);
+  }
+}
+
+@keyframes artwork-page-in {
+  from {
+    opacity: 0.35;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .slide-animation,
   .lightbox,
   .carousel-artwork-link img,
   .interior-background,
-  .interior-artwork {
+  .interior-artwork,
+  .artwork-search-thumbnail img {
     animation: none !important;
     transition: none !important;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
   }
 }
 
