@@ -112,24 +112,37 @@ h3 {
 .language-switch {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
+  padding: 3px;
   color: #9a9187;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(58, 49, 41, 0.14);
+  border-radius: 999px;
   font-size: 11px;
   letter-spacing: 0.12em;
+  box-shadow: 0 3px 12px rgba(44, 36, 30, 0.035);
 }
 
 .language-switch button {
-  padding: 4px 0;
+  min-width: 31px;
+  padding: 5px 7px;
   color: #6d655d;
   background: transparent;
   border: 0;
+  border-radius: 999px;
   cursor: pointer;
   font: inherit;
+  transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
-.language-switch button.active,
 .language-switch button:hover {
   color: var(--text);
+}
+
+.language-switch button.active {
+  color: #fff;
+  background: #29231f;
+  box-shadow: 0 2px 7px rgba(41, 35, 31, 0.16);
 }
 
 .navbar-logo-link {
@@ -360,21 +373,25 @@ h3 {
 
 .menu-panel {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
   z-index: 1100;
 
-  width: min(470px, 92vw);
-  height: 100vh;
-  padding: 35px 45px;
+  width: min(420px, calc(100vw - 24px));
+  height: auto;
+  padding: 32px 38px;
 
   display: flex;
   flex-direction: column;
 
   background: rgba(243, 234, 223, 0.99);
-  border-left: 1px solid rgba(181, 138, 90, 0.3);
+  border: 1px solid rgba(181, 138, 90, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 22px 70px rgba(28, 22, 17, 0.16);
+  overflow: hidden;
 
-  transform: translateX(105%);
+  transform: translateX(calc(100% + 24px));
 
   transition:
     transform 0.65s cubic-bezier(0.77, 0, 0.18, 1);
@@ -385,13 +402,13 @@ h3 {
 }
 
 .menu-panel-header {
-  padding-bottom: 25px;
+  padding-bottom: 12px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid rgba(181, 138, 90, 0.3);
+  border-bottom: 0;
 
   font-size: 11px;
   font-weight: 500;
@@ -425,7 +442,7 @@ h3 {
 }
 
 .menu-panel-links {
-  margin-top: 55px;
+  margin-top: 16px;
 
   display: flex;
   flex-direction: column;
@@ -494,7 +511,7 @@ h3 {
   justify-content: space-between;
   gap: 25px;
 
-  border-top: 1px solid rgba(181, 138, 90, 0.3);
+  border-top: 0;
 
   font-size: 10px;
   letter-spacing: 1.5px;
@@ -520,15 +537,15 @@ h3 {
   display: flex;
   align-items: center;
   gap: 13px;
-  border: 1px solid rgba(88, 72, 59, 0.14);
+  border: 1px solid rgba(88, 72, 59, 0.12);
   border-radius: 999px;
-  background: rgba(233, 226, 216, 0.62);
+  background: rgba(255, 255, 255, 0.72);
   transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
 .artwork-search-field:focus-within {
-  border-color: rgba(143, 104, 67, 0.38);
-  background: #f3eee6;
+  border-color: rgba(110, 91, 75, 0.24);
+  background: #fff;
   box-shadow: 0 12px 32px rgba(53, 42, 33, 0.08);
 }
 
@@ -554,6 +571,39 @@ h3 {
 .artwork-search-field input::placeholder {
   color: #aaa096;
   opacity: 1;
+}
+
+.artwork-search-clear {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #766b61;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.48);
+  cursor: pointer;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.artwork-search-clear .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.artwork-search-clear:hover,
+.artwork-search-clear:focus-visible {
+  color: #352c25;
+  background: rgba(255, 255, 255, 0.82);
+  transform: rotate(5deg);
+}
+
+.artwork-search-clear:focus-visible {
+  outline: 1px solid rgba(80, 65, 53, 0.36);
+  outline-offset: 2px;
 }
 
 .artwork-search-content {
@@ -815,8 +865,8 @@ h3 {
   color: #3e3026;
   border: 1px solid rgba(111, 82, 57, 0.14);
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.82), transparent 36%),
-    linear-gradient(145deg, #f4eee7 0%, #e4d3c0 100%);
+    radial-gradient(circle at 82% 18%, #fff, transparent 38%),
+    linear-gradient(145deg, #fbfaf7 0%, #f1eee8 100%);
   transition:
     transform 0.45s ease,
     box-shadow 0.45s ease,
@@ -1275,6 +1325,25 @@ h3 {
   box-shadow: 0 30px 65px rgba(31, 24, 18, 0.18);
 }
 
+.parcours-portrait figcaption {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #746b63;
+  font: 400 15px/1.35 "Cormorant Garamond", serif;
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+.parcours-portrait figcaption::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  flex: 0 0 auto;
+  background: rgba(122, 94, 67, 0.48);
+}
+
 .parcours-content,
 .parcours-suite {
   max-width: 1000px;
@@ -1350,19 +1419,18 @@ h3 {
   position: relative;
   padding: 72px 68px 66px;
   overflow: hidden;
-  color: #3e3026;
-  border: 1px solid rgba(111, 82, 57, 0.12);
-  background:
-    radial-gradient(circle at 92% 8%, rgba(255, 255, 255, 0.72), transparent 30%),
-    linear-gradient(145deg, #f4eee7 0%, #e4d3c0 100%);
-  box-shadow: 0 32px 75px rgba(77, 55, 37, 0.1);
+  color: #302a26;
+  border: 1px solid rgba(65, 55, 47, 0.1);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: 0 24px 70px rgba(54, 45, 38, 0.06);
 }
 
 .parcours-expositions::before {
   position: absolute;
   top: 20px;
   right: -28px;
-  color: rgba(76, 54, 37, 0.035);
+  color: rgba(54, 46, 40, 0.022);
   content: "EXPOSITIONS";
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(68px, 9vw, 128px);
@@ -1408,31 +1476,56 @@ h3 {
 }
 
 .parcours-expositions .parcours-timeline {
-  border-top-color: rgba(62, 48, 38, 0.18);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 38px 26px;
+  border-top: 0;
 }
 
 .parcours-expositions .parcours-event {
   position: relative;
-  grid-template-columns: 150px 1fr;
-  gap: 38px;
-  padding: 25px 22px 25px 0;
-  border-bottom-color: rgba(62, 48, 38, 0.14);
-  transition: background 0.3s ease, padding 0.3s ease;
+  min-width: 0;
+  min-height: 118px;
+  padding: 24px 0 0;
+  display: block;
+  border: 0;
+  animation: exposition-reveal 420ms both;
+  transition: transform 260ms ease, opacity 260ms ease;
 }
 
-.parcours-expositions .parcours-event:first-child {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.38), transparent 72%);
+.parcours-expositions .parcours-event::before {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  background: rgba(55, 47, 41, 0.2);
+}
+
+.parcours-expositions .parcours-event::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #faf9f6;
+  border-radius: 50%;
+  content: "";
+  background: #746557;
+  box-shadow: 0 0 0 1px rgba(55, 47, 41, 0.18);
 }
 
 .parcours-expositions .parcours-event:hover {
-  padding-left: 18px;
-  background: rgba(255, 255, 255, 0.32);
+  padding-left: 0;
+  background: transparent;
+  transform: translateY(-4px);
 }
 
 .parcours-expositions .parcours-event time {
-  color: #8a6546;
+  color: #5f554c;
   font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
+  font-size: 29px;
   font-weight: 500;
   line-height: 1;
 }
@@ -1443,10 +1536,10 @@ h3 {
 
 .parcours-expositions .parcours-event li {
   position: relative;
-  margin: 0 0 7px;
-  padding-left: 24px;
-  color: rgba(62, 48, 38, 0.84);
-  font-size: 15px;
+  margin: 8px 0 0;
+  padding-left: 0;
+  color: rgba(48, 42, 38, 0.72);
+  font-size: 13px;
   letter-spacing: 0.015em;
   line-height: 1.55;
 }
@@ -1456,13 +1549,50 @@ h3 {
 }
 
 .parcours-expositions .parcours-event li::before {
-  position: absolute;
-  top: 0.78em;
-  left: 0;
-  width: 11px;
-  height: 1px;
-  background: #a77b54;
-  content: "";
+  display: none;
+}
+
+.parcours-expositions-toggle {
+  position: relative;
+  z-index: 1;
+  margin: 34px 0 0 auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #5f554c;
+  border: 0;
+  border-bottom: 1px solid rgba(70, 59, 51, 0.28);
+  background: transparent;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.parcours-expositions-toggle .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.parcours-expositions-toggle:hover,
+.parcours-expositions-toggle:focus-visible {
+  color: #211d1a;
+  border-color: #211d1a;
+}
+
+@keyframes exposition-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .parcours-two-columns {
@@ -1629,12 +1759,32 @@ h3 {
 }
 
 .footer-contact-title {
+  position: relative;
   margin: 0;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 27px;
   font-weight: 500;
   line-height: 1;
+}
+
+.footer-contact-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 240ms ease;
+}
+
+.footer-contact-title:hover::after,
+.footer-contact-title:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .footer-contact-links {
@@ -2210,6 +2360,7 @@ h3 {
 
 .artwork-detail-actions {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 9px;
 }
 
@@ -2227,12 +2378,14 @@ h3 {
   font-size: 12px;
   letter-spacing: .06em;
   border: 1px solid rgba(76, 61, 48, .18);
-  background: transparent;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
   cursor: pointer;
   transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
 .artwork-detail-actions .primary-artwork-action {
+  grid-column: 1 / -1;
   color: #fff;
   border-color: #6f5b4b;
   background: #6f5b4b;
@@ -2256,21 +2409,36 @@ h3 {
 
 .artwork-sibling-nav {
   max-width: 1400px;
-  margin: 80px auto 0;
-  padding-top: 24px;
+  margin: 68px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  border-top: 1px solid rgba(70, 58, 47, .14);
+  gap: 60px;
 }
 
 .artwork-sibling-nav a {
+  width: fit-content;
+  max-width: min(100%, 380px);
+  min-height: 54px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 11px;
+  justify-self: start;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(70, 58, 47, 0.1);
+  border-radius: 999px;
+  transition: color 180ms ease, transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.artwork-sibling-nav a:hover,
+.artwork-sibling-nav a:focus-visible {
+  color: var(--gold);
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(70, 58, 47, 0.18);
 }
 
 .artwork-sibling-nav a:last-child {
+  justify-self: end;
   justify-content: flex-end;
   text-align: right;
 }
@@ -2383,14 +2551,29 @@ h3 {
 
 .favorites-grid article > a {
   height: 420px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #ede9e2;
+}
+
+.favorites-artwork-visual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
 }
 
 .favorites-grid img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.favorites-artwork-visual.is-diptych img {
+  width: calc((100% - 7px) / 2);
 }
 
 .favorites-grid article > div {
@@ -2511,6 +2694,7 @@ h3 {
 }
 
 .parcours-portrait-studio figcaption {
+  padding-top: 2px;
   background: var(--background, #f7f4ef);
 }
 
@@ -2652,6 +2836,7 @@ h3 {
   }
 
   .artwork-sibling-nav {
+    grid-template-columns: 1fr;
     gap: 12px;
     font-size: 12px;
   }
@@ -3298,14 +3483,16 @@ h3 {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #d9d3c9;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.42);
+  border-radius: 12px;
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.38);
 }
 
 .interior-background {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  filter: saturate(0.94) contrast(0.98);
 }
 
 .interior-artwork {
@@ -3317,7 +3504,12 @@ h3 {
   gap: 0;
   overflow: visible;
   transform: translate(-50%, -50%);
-  transition: width 0.35s ease, opacity 0.25s ease;
+  filter: drop-shadow(0 11px 13px rgba(28, 22, 18, 0.24));
+  transition:
+    width 450ms cubic-bezier(.22, .61, .36, 1),
+    top 450ms cubic-bezier(.22, .61, .36, 1),
+    left 450ms cubic-bezier(.22, .61, .36, 1),
+    opacity 250ms ease;
 }
 
 .interior-artwork-diptych {
@@ -3332,9 +3524,8 @@ h3 {
   overflow: hidden;
   background: transparent;
   box-shadow:
-    2px 3px 2px rgba(41, 33, 26, 0.45),
-    5px 7px 12px rgba(41, 33, 26, 0.22),
-    0 17px 34px rgba(18, 14, 11, 0.24);
+    1px 1px 1px rgba(37, 30, 24, 0.34),
+    3px 5px 8px rgba(31, 25, 20, 0.2);
   isolation: isolate;
 }
 
@@ -3414,6 +3605,14 @@ h3 {
   letter-spacing: 0.12em;
 }
 
+.interior-toolbar .interior-match {
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .interior-diptych-names {
   display: flex;
   flex-wrap: wrap;
@@ -3447,7 +3646,8 @@ h3 {
   gap: 6px;
   color: rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
   cursor: pointer;
   font: inherit;
   transition:
@@ -3462,6 +3662,7 @@ h3 {
   aspect-ratio: 16 / 9;
   display: block;
   overflow: hidden;
+  border-radius: 6px;
   background: #292622;
 }
 
@@ -4524,24 +4725,33 @@ h3 {
 
 .collection-navigation {
   max-width: 1400px;
-  margin: 82px auto 0;
-  padding: 30px 0;
+  margin: 70px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 40px;
-  border-top: 1px solid rgba(70, 58, 47, 0.16);
-  border-bottom: 1px solid rgba(70, 58, 47, 0.16);
+  gap: 60px;
 }
 
 .collection-navigation-link {
+  width: fit-content;
+  min-width: 138px;
+  min-height: 54px;
+  padding: 10px 14px;
   display: flex;
   align-items: center;
-  gap: 18px;
-  transition: color 180ms ease, transform 180ms ease;
+  gap: 11px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(70, 58, 47, 0.1);
+  border-radius: 999px;
+  transition: color 180ms ease, transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.collection-navigation-previous {
+  justify-self: start;
 }
 
 .collection-navigation-next {
+  justify-self: end;
   justify-content: flex-end;
   text-align: right;
 }
@@ -4560,18 +4770,20 @@ h3 {
 
 .collection-navigation-link strong {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(30px, 3.5vw, 46px);
+  font-size: clamp(21px, 2vw, 27px);
   font-weight: 400;
 }
 
 .collection-navigation-link .icon {
-  width: 23px;
-  height: 23px;
+  width: 17px;
+  height: 17px;
 }
 
 .collection-navigation-link:hover,
 .collection-navigation-link:focus-visible {
   color: var(--gold);
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(70, 58, 47, 0.18);
 }
 
 .collection-navigation-previous:hover,
@@ -4956,10 +5168,7 @@ img {
 }
 
 .parcours-portraits figcaption {
-  color: #857d74;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  color: #746b63;
 }
 
 .contact-form-section {
@@ -5045,6 +5254,58 @@ img {
   transition: transform 550ms cubic-bezier(.22, .61, .36, 1);
 }
 
+/* Surfaces douces inspirées des interfaces éditoriales contemporaines.
+   Les œuvres elles-mêmes conservent volontairement leurs angles naturels. */
+.hero-artwork-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.collection-card,
+.parcours-expositions,
+.parcours-critique,
+.contact-card,
+.contact-form-section,
+.favorites-empty,
+.legal-content section,
+.artwork-search-content,
+.interior-scene {
+  border-radius: clamp(16px, 1.5vw, 22px);
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  border-radius: 14px;
+}
+
+.contact-submit,
+.artwork-detail-actions a,
+.artwork-detail-actions button,
+.artwork-primary-link,
+.artwork-room-button,
+.favorites-contact,
+.favorites-empty a,
+.lightbox-room-button,
+.home-lightbox-link,
+.interior-back,
+.parcours-expositions-toggle,
+.diptych-view-options button {
+  border-radius: 999px;
+}
+
+@media (max-width: 760px) {
+  .parcours-expositions .parcours-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 18px;
+  }
+
+  .parcours-expositions .parcours-event {
+    min-height: 108px;
+  }
+}
+
 ::view-transition-old(root) {
   animation: artwork-page-out 180ms ease both;
 }
@@ -5107,8 +5368,7 @@ img {
   }
 
   .collection-navigation-next {
-    padding-top: 22px;
-    border-top: 1px solid rgba(70, 58, 47, 0.12);
+    padding-top: 10px;
   }
 
   .lightbox-fullscreen-toggle {

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Helmet } from "../components/Helmet";
 import { Link } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
@@ -7,7 +8,7 @@ import { ArtistLink, ArtistLinkedText } from "../components/ArtistName";
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
 const PAGE_URL = `${SITE_URL}/parcours`;
-const PORTRAIT_URL = `${SITE_URL}/images/portrait.jpg`;
+const PORTRAIT_URL = `${SITE_URL}/images/portraits/portrait.jpg`;
 
 const DESCRIPTION =
   "Découvrez le parcours, les expositions et les critiques consacrées à François Benett, peintre contemporain diplômé des Beaux-Arts.";
@@ -48,6 +49,17 @@ const expositions = [
   ],
   ["2023", ["Collégiale Saint-André — Chartres"]],
 ];
+
+const expositionHighlights = new Set([
+  "1975",
+  "1993",
+  "2000",
+  "2007",
+  "2011",
+  "2016",
+  "2017",
+  "2023",
+]);
 
 const bibliographie = [
   "Préface de Raymond Chelet, directeur de l’École des Beaux-Arts du Mans, pour son exposition au Musée de Tessé au Mans (1975).",
@@ -164,6 +176,7 @@ const regardsEn = [
 export default function Parcours() {
   const { language } = useLanguage();
   const en = language === "en";
+  const [showAllExhibitions, setShowAllExhibitions] = useState(false);
   const pageUrl = en ? `${SITE_URL}/en/parcours` : PAGE_URL;
   const critiques = en ? regardsEn : regards;
   const bibliographieActive = en ? bibliographieEn : bibliographie;
@@ -225,7 +238,7 @@ export default function Parcours() {
             <p><ArtistLinkedText>{en ? "François Benett has exhibited in numerous galleries and art fairs in France and has been guest of honour at several artistic events." : "François Benett a exposé dans de nombreuses galeries et salons en France. Il a également été invité d’honneur dans différents salons artistiques."}</ArtistLinkedText></p>
           </div>
           <figure className="parcours-portrait parcours-portrait-main">
-            <img src="/images/portrait.jpg" alt={en ? "Portrait of François Benett, contemporary painter" : "Portrait de François Benett, peintre contemporain"} fetchPriority="high" decoding="async" width="800" height="1000" />
+            <img src="/images/portraits/portrait.jpg" alt={en ? "Portrait of François Benett, contemporary painter" : "Portrait de François Benett, peintre contemporain"} fetchPriority="high" decoding="async" width="800" height="1000" />
             <figcaption><ArtistLinkedText>{en ? "François Benett — Studio portrait" : "François Benett — Portrait d’atelier"}</ArtistLinkedText></figcaption>
           </figure>
         </section>
@@ -236,7 +249,7 @@ export default function Parcours() {
             <p><ArtistLinkedText>{en ? "François Benett is a graduate of the National School of Fine Arts. His career includes numerous solo exhibitions, invitations as guest of honour and representation in several French galleries. His work has been presented to collectors in France and abroad." : "François Benett est diplômé National des Beaux-Arts. Son parcours artistique est marqué par de nombreuses expositions personnelles, des invitations d’honneur et une présence dans plusieurs galeries françaises. Son travail a été présenté auprès de collectionneurs en France et à l’étranger."}</ArtistLinkedText></p>
           </div>
           <figure className="parcours-portrait parcours-portrait-studio">
-            <img src="/images/portrait-2.jpg" alt={en ? "François Benett painting in his studio" : "François Benett dans son atelier"} loading="lazy" decoding="async" width="500" height="700" />
+            <img src="/images/portraits/portrait-2.jpg" alt={en ? "François Benett painting in his studio" : "François Benett dans son atelier"} loading="lazy" decoding="async" width="500" height="700" />
             <figcaption><ArtistLinkedText>{en ? "François Benett — At work" : "François Benett — Au travail"}</ArtistLinkedText></figcaption>
           </figure>
         </section>
@@ -257,8 +270,11 @@ export default function Parcours() {
                 : "Une sélection d’expositions, de présentations en galerie et d’invitations qui jalonnent le parcours de François Benett."}</ArtistLinkedText>
             </p>
           </header>
-          <div className="parcours-timeline">
-            {[...expositions].reverse().map(([annee, lieux]) => (
+          <div className={`parcours-timeline${showAllExhibitions ? " is-expanded" : ""}`}>
+            {[...expositions]
+              .reverse()
+              .filter(([annee]) => showAllExhibitions || expositionHighlights.has(annee))
+              .map(([annee, lieux]) => (
               <article className="parcours-event" key={annee}>
                 <time dateTime={annee}>{annee}</time>
                 <ul>
@@ -271,6 +287,21 @@ export default function Parcours() {
               </article>
             ))}
           </div>
+          <button
+            className="parcours-expositions-toggle"
+            type="button"
+            aria-expanded={showAllExhibitions}
+            onClick={() => setShowAllExhibitions((current) => !current)}
+          >
+            {showAllExhibitions
+              ? en
+                ? "Show selected dates"
+                : "Réduire la chronologie"
+              : en
+                ? "View the full chronology"
+                : "Voir toute la chronologie"}
+            <ArrowIcon direction={showAllExhibitions ? "up" : "down"} />
+          </button>
         </section>
 
         <section className="parcours-section parcours-two-columns" aria-label="Collections et bibliographie">

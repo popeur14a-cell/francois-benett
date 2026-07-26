@@ -32,7 +32,7 @@ const staticPages = [
       "Découvrez l’univers de François Benett, peintre contemporain français, ses collections et ses œuvres originales disponibles.",
     enDescription:
       "Discover the world of French contemporary painter François Benett, his collections and available original artworks.",
-    image: "/images/benett-cover-1920.webp",
+    image: "/images/hero/benett-cover-1920.webp",
   },
   {
     path: "/collections",
@@ -51,7 +51,7 @@ const staticPages = [
       "Découvrez le parcours, la démarche artistique et les principales expositions de François Benett, peintre contemporain.",
     enDescription:
       "Discover contemporary painter François Benett’s journey, artistic approach and major exhibitions.",
-    image: "/images/portrait.jpg",
+    image: "/images/portraits/portrait.jpg",
   },
   {
     path: "/contact",
@@ -61,7 +61,7 @@ const staticPages = [
       "Contactez François Benett pour une œuvre originale, une exposition ou un projet artistique.",
     enDescription:
       "Contact François Benett about an original artwork, an exhibition or an artistic project.",
-    image: "/images/portrait-2.jpg",
+    image: "/images/portraits/portrait-2.jpg",
   },
   {
     path: "/mentions-legales",
@@ -159,7 +159,7 @@ const siteData = {
 
 function render(page) {
   const canonical = `${SITE_URL}${page.path === "/" ? "/" : page.path}`;
-  const image = getAbsoluteUrl(page.image || "/logo-b.png");
+  const image = getAbsoluteUrl(page.image || "/images/branding/logo-b.png");
   const extraHead = `
     <link rel="canonical" href="${escapeHtml(canonical)}" />
     <meta name="robots" content="${page.robots || "index, follow"}" />

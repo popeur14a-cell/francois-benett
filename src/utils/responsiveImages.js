@@ -3,6 +3,13 @@ export function getResponsiveImage(path) {
     return { src: path };
   }
 
+  if (path.includes("/images/hero/benett-cover")) {
+    return {
+      src: "/images/hero/benett-cover-1280.webp",
+      srcSet: "/images/hero/benett-cover-640.webp 640w, /images/hero/benett-cover-960.webp 960w, /images/hero/benett-cover-1280.webp 1280w",
+    };
+  }
+
   const extensionIndex = path.lastIndexOf(".");
   if (extensionIndex === -1) {
     return { src: path };

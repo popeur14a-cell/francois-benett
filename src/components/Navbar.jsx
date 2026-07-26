@@ -8,33 +8,35 @@ export default function Navbar() {
   const [menuOuvert, setMenuOuvert] = useState(false);
   const { language, setLanguage } = useLanguage();
   const en = language === "en";
+  const pagePath = location.pathname.replace(/^\/en(?=\/|$)/, "") || "/";
+  const languagePrefix = en ? "/en" : "";
 
   const obtenirTitrePage = () => {
-    if (location.pathname === "/") {
+    if (pagePath === "/") {
       return en ? "HOME" : "ACCUEIL";
     }
 
-    if (location.pathname.startsWith("/collections")) {
+    if (pagePath.startsWith("/collections")) {
       return "COLLECTIONS";
     }
 
-    if (location.pathname.startsWith("/parcours")) {
+    if (pagePath.startsWith("/parcours")) {
       return en ? "ABOUT" : "PARCOURS";
     }
 
-    if (location.pathname.startsWith("/contact")) {
+    if (pagePath.startsWith("/contact")) {
       return "CONTACT";
     }
 
-    if (location.pathname.startsWith("/favoris")) {
+    if (pagePath.startsWith("/favoris")) {
       return en ? "FAVORITES" : "FAVORIS";
     }
 
-    if (location.pathname.startsWith("/mentions-legales")) {
+    if (pagePath.startsWith("/mentions-legales")) {
       return en ? "LEGAL NOTICE" : "MENTIONS LÉGALES";
     }
 
-    if (location.pathname.startsWith("/confidentialite")) {
+    if (pagePath.startsWith("/confidentialite")) {
       return en ? "PRIVACY" : "CONFIDENTIALITÉ";
     }
 
@@ -42,13 +44,13 @@ export default function Navbar() {
   };
 
   const obtenirLienPage = () => {
-    if (location.pathname.startsWith("/collections")) return "/collections";
-    if (location.pathname.startsWith("/parcours")) return "/parcours";
-    if (location.pathname.startsWith("/contact")) return "/contact";
-    if (location.pathname.startsWith("/favoris")) return "/favoris";
-    if (location.pathname.startsWith("/mentions-legales")) return "/mentions-legales";
-    if (location.pathname.startsWith("/confidentialite")) return "/confidentialite";
-    return "/";
+    if (pagePath.startsWith("/collections")) return `${languagePrefix}/collections`;
+    if (pagePath.startsWith("/parcours")) return `${languagePrefix}/parcours`;
+    if (pagePath.startsWith("/contact")) return `${languagePrefix}/contact`;
+    if (pagePath.startsWith("/favoris")) return `${languagePrefix}/favoris`;
+    if (pagePath.startsWith("/mentions-legales")) return `${languagePrefix}/mentions-legales`;
+    if (pagePath.startsWith("/confidentialite")) return `${languagePrefix}/confidentialite`;
+    return languagePrefix || "/";
   };
 
   const fermerMenu = () => {
@@ -75,7 +77,7 @@ export default function Navbar() {
             onClick={fermerMenu}
           >
             <img
-              src="/logo-b.png"
+              src="/images/branding/logo-b.png"
               alt="Logo François Benett"
               className="navbar-logo"
             />
@@ -109,7 +111,6 @@ export default function Navbar() {
         <div className="navbar-actions">
           <div className="language-switch" aria-label={en ? "Choose language" : "Choisir la langue"}>
             <button type="button" className={!en ? "active" : ""} onClick={() => setLanguage("fr")} aria-pressed={!en}>FR</button>
-            <span aria-hidden="true">/</span>
             <button type="button" className={en ? "active" : ""} onClick={() => setLanguage("en")} aria-pressed={en}>EN</button>
           </div>
 

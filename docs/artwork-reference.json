@@ -3,7 +3,7 @@
     "src/data/collectionsData.js",
     "public/images"
   ],
-  "artwork_count": 94,
+  "artwork_count": 95,
   "analysis_notes": {
     "colors_and_orientation": "Calculated from the image pixels.",
     "subjects_people_actions": "Curated from titles and collections; use as search aids, not as an art-historical attribution."
@@ -22,16 +22,30 @@
       "availability": "disponible sur demande",
       "images": [
         {
-          "file": "/images/venise/palais-des-doges.webp",
+          "file": "/images/venise/palais-des-doges.jpg",
           "pixels": {
-            "width": 2400,
-            "height": 1821
+            "width": 2343,
+            "height": 1793
           },
           "orientation": "paysage",
           "colors": [
             "bleu",
             "gris",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.554
+            },
+            {
+              "name": "gris",
+              "share": 0.198
+            },
+            {
+              "name": "blanc",
+              "share": 0.158
+            }
           ]
         }
       ],
@@ -87,6 +101,20 @@
             "gris",
             "jaune",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.338
+            },
+            {
+              "name": "jaune",
+              "share": 0.306
+            },
+            {
+              "name": "orange",
+              "share": 0.186
+            }
           ]
         }
       ],
@@ -145,6 +173,24 @@
             "blanc",
             "rouge",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.331
+            },
+            {
+              "name": "blanc",
+              "share": 0.222
+            },
+            {
+              "name": "rouge",
+              "share": 0.17
+            },
+            {
+              "name": "noir",
+              "share": 0.146
+            }
           ]
         }
       ],
@@ -201,6 +247,16 @@
           "colors": [
             "gris",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.593
+            },
+            {
+              "name": "bleu",
+              "share": 0.392
+            }
           ]
         }
       ],
@@ -252,6 +308,20 @@
             "gris",
             "blanc",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.395
+            },
+            {
+              "name": "blanc",
+              "share": 0.23
+            },
+            {
+              "name": "rouge",
+              "share": 0.205
+            }
           ]
         }
       ],
@@ -308,6 +378,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.505
+            },
+            {
+              "name": "gris",
+              "share": 0.268
+            }
           ]
         }
       ],
@@ -369,6 +449,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.429
+            },
+            {
+              "name": "gris",
+              "share": 0.319
+            },
+            {
+              "name": "rouge",
+              "share": 0.166
+            }
           ]
         }
       ],
@@ -423,6 +517,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.583
+            },
+            {
+              "name": "gris",
+              "share": 0.213
+            }
           ]
         }
       ],
@@ -489,6 +593,20 @@
             "gris",
             "rouge",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.518
+            },
+            {
+              "name": "rouge",
+              "share": 0.164
+            },
+            {
+              "name": "blanc",
+              "share": 0.135
+            }
           ]
         }
       ],
@@ -543,6 +661,16 @@
           "colors": [
             "orange",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.721
+            },
+            {
+              "name": "rouge",
+              "share": 0.175
+            }
           ]
         }
       ],
@@ -594,6 +722,16 @@
           "colors": [
             "bleu",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.58
+            },
+            {
+              "name": "noir",
+              "share": 0.285
+            }
           ]
         }
       ],
@@ -646,6 +784,16 @@
           "colors": [
             "gris",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.582
+            },
+            {
+              "name": "blanc",
+              "share": 0.14
+            }
           ]
         }
       ],
@@ -678,6 +826,73 @@
       ]
     },
     {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Venise",
+      "url": "/collections/venise/venise",
+      "declared_dimensions": "116 × 89 cm",
+      "format_tags": [
+        "grand format",
+        "paysage"
+      ],
+      "availability": "collection particulière",
+      "images": [
+        {
+          "file": "/images/hero/benett-cover-1920.webp",
+          "pixels": {
+            "width": 1920,
+            "height": 1450
+          },
+          "orientation": "paysage",
+          "colors": [
+            "gris",
+            "bleu",
+            "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.478
+            },
+            {
+              "name": "bleu",
+              "share": 0.333
+            },
+            {
+              "name": "orange",
+              "share": 0.127
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        "costume vénitien",
+        "lieu",
+        "personnage",
+        "ville",
+        "voyage"
+      ],
+      "people": [
+        "femme",
+        "groupe"
+      ],
+      "actions": [],
+      "search_tags": [
+        "bleu",
+        "costume vénitien",
+        "femme",
+        "grand format",
+        "gris",
+        "groupe",
+        "lieu",
+        "orange",
+        "paysage",
+        "personnage",
+        "ville",
+        "voyage"
+      ]
+    },
+    {
       "collection": "Espagne",
       "collection_id": "espagne",
       "title": "Les deux andalouses",
@@ -699,6 +914,16 @@
           "colors": [
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.662
+            },
+            {
+              "name": "orange",
+              "share": 0.192
+            }
           ]
         }
       ],
@@ -751,6 +976,20 @@
             "gris",
             "orange",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.381
+            },
+            {
+              "name": "orange",
+              "share": 0.28
+            },
+            {
+              "name": "rouge",
+              "share": 0.222
+            }
           ]
         }
       ],
@@ -804,6 +1043,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.322
+            },
+            {
+              "name": "gris",
+              "share": 0.282
+            },
+            {
+              "name": "rouge",
+              "share": 0.184
+            }
           ]
         }
       ],
@@ -866,6 +1119,20 @@
             "gris",
             "rouge",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.369
+            },
+            {
+              "name": "rouge",
+              "share": 0.287
+            },
+            {
+              "name": "orange",
+              "share": 0.235
+            }
           ]
         }
       ],
@@ -918,6 +1185,16 @@
           "colors": [
             "jaune",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "jaune",
+              "share": 0.515
+            },
+            {
+              "name": "orange",
+              "share": 0.317
+            }
           ]
         }
       ],
@@ -966,6 +1243,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.511
+            },
+            {
+              "name": "gris",
+              "share": 0.265
+            }
           ]
         }
       ],
@@ -1025,6 +1312,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.425
+            },
+            {
+              "name": "gris",
+              "share": 0.371
+            },
+            {
+              "name": "rouge",
+              "share": 0.135
+            }
           ]
         }
       ],
@@ -1079,6 +1380,20 @@
             "jaune",
             "gris",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "jaune",
+              "share": 0.333
+            },
+            {
+              "name": "gris",
+              "share": 0.323
+            },
+            {
+              "name": "bleu",
+              "share": 0.193
+            }
           ]
         }
       ],
@@ -1126,6 +1441,16 @@
           "colors": [
             "bleu",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.719
+            },
+            {
+              "name": "gris",
+              "share": 0.21
+            }
           ]
         }
       ],
@@ -1185,6 +1510,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.341
+            },
+            {
+              "name": "gris",
+              "share": 0.24
+            },
+            {
+              "name": "rouge",
+              "share": 0.139
+            }
           ]
         }
       ],
@@ -1238,6 +1577,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.516
+            },
+            {
+              "name": "gris",
+              "share": 0.236
+            },
+            {
+              "name": "rouge",
+              "share": 0.152
+            }
           ]
         }
       ],
@@ -1297,6 +1650,20 @@
             "gris",
             "jaune",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.327
+            },
+            {
+              "name": "jaune",
+              "share": 0.249
+            },
+            {
+              "name": "orange",
+              "share": 0.189
+            }
           ]
         }
       ],
@@ -1343,6 +1710,12 @@
           "orientation": "paysage",
           "colors": [
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.788
+            }
           ]
         }
       ],
@@ -1398,6 +1771,24 @@
             "gris",
             "noir",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.424
+            },
+            {
+              "name": "gris",
+              "share": 0.219
+            },
+            {
+              "name": "noir",
+              "share": 0.16
+            },
+            {
+              "name": "rouge",
+              "share": 0.14
+            }
           ]
         }
       ],
@@ -1456,6 +1847,16 @@
           "colors": [
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.589
+            },
+            {
+              "name": "rouge",
+              "share": 0.23
+            }
           ]
         }
       ],
@@ -1512,6 +1913,16 @@
           "colors": [
             "gris",
             "jaune"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.458
+            },
+            {
+              "name": "jaune",
+              "share": 0.321
+            }
           ]
         }
       ],
@@ -1568,6 +1979,16 @@
           "colors": [
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.8
+            },
+            {
+              "name": "noir",
+              "share": 0.162
+            }
           ]
         }
       ],
@@ -1626,6 +2047,16 @@
           "colors": [
             "gris",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.655
+            },
+            {
+              "name": "blanc",
+              "share": 0.145
+            }
           ]
         }
       ],
@@ -1688,6 +2119,16 @@
           "colors": [
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.544
+            },
+            {
+              "name": "rouge",
+              "share": 0.287
+            }
           ]
         }
       ],
@@ -1747,6 +2188,20 @@
             "gris",
             "orange",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.409
+            },
+            {
+              "name": "orange",
+              "share": 0.286
+            },
+            {
+              "name": "bleu",
+              "share": 0.19
+            }
           ]
         }
       ],
@@ -1805,6 +2260,20 @@
             "gris",
             "rose",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.421
+            },
+            {
+              "name": "rose",
+              "share": 0.274
+            },
+            {
+              "name": "rouge",
+              "share": 0.173
+            }
           ]
         }
       ],
@@ -1863,6 +2332,20 @@
             "gris",
             "bleu",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.629
+            },
+            {
+              "name": "bleu",
+              "share": 0.176
+            },
+            {
+              "name": "noir",
+              "share": 0.144
+            }
           ]
         }
       ],
@@ -1925,6 +2408,20 @@
             "gris",
             "jaune",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.419
+            },
+            {
+              "name": "jaune",
+              "share": 0.262
+            },
+            {
+              "name": "orange",
+              "share": 0.184
+            }
           ]
         }
       ],
@@ -1984,6 +2481,20 @@
             "rouge",
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "rouge",
+              "share": 0.341
+            },
+            {
+              "name": "gris",
+              "share": 0.293
+            },
+            {
+              "name": "orange",
+              "share": 0.264
+            }
           ]
         }
       ],
@@ -2037,6 +2548,20 @@
             "jaune",
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "jaune",
+              "share": 0.391
+            },
+            {
+              "name": "gris",
+              "share": 0.294
+            },
+            {
+              "name": "orange",
+              "share": 0.123
+            }
           ]
         }
       ],
@@ -2090,6 +2615,20 @@
             "jaune",
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "jaune",
+              "share": 0.494
+            },
+            {
+              "name": "orange",
+              "share": 0.228
+            },
+            {
+              "name": "gris",
+              "share": 0.165
+            }
           ]
         }
       ],
@@ -2145,6 +2684,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.47
+            },
+            {
+              "name": "gris",
+              "share": 0.244
+            }
           ]
         }
       ],
@@ -2196,6 +2745,16 @@
           "colors": [
             "bleu",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.683
+            },
+            {
+              "name": "gris",
+              "share": 0.154
+            }
           ]
         }
       ],
@@ -2246,6 +2805,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.407
+            },
+            {
+              "name": "gris",
+              "share": 0.307
+            },
+            {
+              "name": "rouge",
+              "share": 0.124
+            }
           ]
         }
       ],
@@ -2295,6 +2868,16 @@
           "colors": [
             "jaune",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "jaune",
+              "share": 0.531
+            },
+            {
+              "name": "gris",
+              "share": 0.264
+            }
           ]
         }
       ],
@@ -2341,6 +2924,16 @@
           "colors": [
             "bleu",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.633
+            },
+            {
+              "name": "gris",
+              "share": 0.227
+            }
           ]
         }
       ],
@@ -2391,6 +2984,20 @@
             "orange",
             "gris",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.315
+            },
+            {
+              "name": "gris",
+              "share": 0.297
+            },
+            {
+              "name": "rouge",
+              "share": 0.137
+            }
           ]
         }
       ],
@@ -2440,6 +3047,12 @@
           "orientation": "portrait",
           "colors": [
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.66
+            }
           ]
         }
       ],
@@ -2496,6 +3109,16 @@
           "colors": [
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.606
+            },
+            {
+              "name": "noir",
+              "share": 0.194
+            }
           ]
         },
         {
@@ -2508,6 +3131,16 @@
           "colors": [
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.597
+            },
+            {
+              "name": "noir",
+              "share": 0.146
+            }
           ]
         }
       ],
@@ -2555,6 +3188,20 @@
             "orange",
             "blanc",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.5
+            },
+            {
+              "name": "blanc",
+              "share": 0.21
+            },
+            {
+              "name": "gris",
+              "share": 0.197
+            }
           ]
         }
       ],
@@ -2617,6 +3264,20 @@
             "blanc",
             "rouge",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "blanc",
+              "share": 0.362
+            },
+            {
+              "name": "rouge",
+              "share": 0.227
+            },
+            {
+              "name": "gris",
+              "share": 0.222
+            }
           ]
         }
       ],
@@ -2674,6 +3335,16 @@
           "colors": [
             "gris",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.444
+            },
+            {
+              "name": "bleu",
+              "share": 0.35
+            }
           ]
         }
       ],
@@ -2732,6 +3403,24 @@
             "orange",
             "blanc",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.392
+            },
+            {
+              "name": "orange",
+              "share": 0.205
+            },
+            {
+              "name": "blanc",
+              "share": 0.168
+            },
+            {
+              "name": "rouge",
+              "share": 0.134
+            }
           ]
         }
       ],
@@ -2790,6 +3479,16 @@
           "colors": [
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.785
+            },
+            {
+              "name": "noir",
+              "share": 0.13
+            }
           ]
         }
       ],
@@ -2851,6 +3550,12 @@
           "orientation": "portrait",
           "colors": [
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.941
+            }
           ]
         }
       ],
@@ -2906,6 +3611,16 @@
           "colors": [
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.453
+            },
+            {
+              "name": "orange",
+              "share": 0.335
+            }
           ]
         }
       ],
@@ -2968,6 +3683,16 @@
           "colors": [
             "gris",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.482
+            },
+            {
+              "name": "blanc",
+              "share": 0.127
+            }
           ]
         }
       ],
@@ -3027,6 +3752,20 @@
             "gris",
             "orange",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.504
+            },
+            {
+              "name": "orange",
+              "share": 0.261
+            },
+            {
+              "name": "rouge",
+              "share": 0.12
+            }
           ]
         }
       ],
@@ -3089,6 +3828,12 @@
           "orientation": "carré",
           "colors": [
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.868
+            }
           ]
         }
       ],
@@ -3146,6 +3891,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.49
+            },
+            {
+              "name": "gris",
+              "share": 0.346
+            }
           ]
         }
       ],
@@ -3209,6 +3964,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.408
+            },
+            {
+              "name": "gris",
+              "share": 0.399
+            }
           ]
         }
       ],
@@ -3269,6 +4034,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.421
+            },
+            {
+              "name": "gris",
+              "share": 0.308
+            }
           ]
         }
       ],
@@ -3321,6 +4096,16 @@
           "colors": [
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.449
+            },
+            {
+              "name": "orange",
+              "share": 0.261
+            }
           ]
         }
       ],
@@ -3383,6 +4168,20 @@
             "gris",
             "orange",
             "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.386
+            },
+            {
+              "name": "orange",
+              "share": 0.359
+            },
+            {
+              "name": "rouge",
+              "share": 0.13
+            }
           ]
         }
       ],
@@ -3442,6 +4241,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.487
+            },
+            {
+              "name": "gris",
+              "share": 0.323
+            }
           ]
         }
       ],
@@ -3503,6 +4312,20 @@
             "orange",
             "gris",
             "jaune"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.325
+            },
+            {
+              "name": "gris",
+              "share": 0.295
+            },
+            {
+              "name": "jaune",
+              "share": 0.233
+            }
           ]
         }
       ],
@@ -3562,6 +4385,20 @@
             "orange",
             "gris",
             "jaune"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.391
+            },
+            {
+              "name": "gris",
+              "share": 0.337
+            },
+            {
+              "name": "jaune",
+              "share": 0.161
+            }
           ]
         }
       ],
@@ -3620,6 +4457,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.728
+            },
+            {
+              "name": "gris",
+              "share": 0.212
+            }
           ]
         }
       ],
@@ -3670,6 +4517,16 @@
           "colors": [
             "orange",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.483
+            },
+            {
+              "name": "blanc",
+              "share": 0.278
+            }
           ]
         }
       ],
@@ -3725,6 +4582,16 @@
           "colors": [
             "orange",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.615
+            },
+            {
+              "name": "blanc",
+              "share": 0.251
+            }
           ]
         }
       ],
@@ -3772,6 +4639,16 @@
           "colors": [
             "orange",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.628
+            },
+            {
+              "name": "blanc",
+              "share": 0.257
+            }
           ]
         }
       ],
@@ -3819,6 +4696,16 @@
           "colors": [
             "gris",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.652
+            },
+            {
+              "name": "bleu",
+              "share": 0.2
+            }
           ]
         }
       ],
@@ -3864,6 +4751,20 @@
             "bleu",
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.61
+            },
+            {
+              "name": "gris",
+              "share": 0.138
+            },
+            {
+              "name": "noir",
+              "share": 0.121
+            }
           ]
         }
       ],
@@ -3910,6 +4811,20 @@
             "gris",
             "orange",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.429
+            },
+            {
+              "name": "orange",
+              "share": 0.289
+            },
+            {
+              "name": "blanc",
+              "share": 0.144
+            }
           ]
         }
       ],
@@ -3969,6 +4884,20 @@
             "gris",
             "orange",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.484
+            },
+            {
+              "name": "orange",
+              "share": 0.183
+            },
+            {
+              "name": "noir",
+              "share": 0.122
+            }
           ]
         }
       ],
@@ -4018,6 +4947,20 @@
             "orange",
             "gris",
             "jaune"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.344
+            },
+            {
+              "name": "gris",
+              "share": 0.325
+            },
+            {
+              "name": "jaune",
+              "share": 0.145
+            }
           ]
         }
       ],
@@ -4073,6 +5016,20 @@
             "orange",
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.431
+            },
+            {
+              "name": "gris",
+              "share": 0.197
+            },
+            {
+              "name": "noir",
+              "share": 0.14
+            }
           ]
         }
       ],
@@ -4127,6 +5084,24 @@
             "noir",
             "orange",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.25
+            },
+            {
+              "name": "noir",
+              "share": 0.248
+            },
+            {
+              "name": "orange",
+              "share": 0.192
+            },
+            {
+              "name": "blanc",
+              "share": 0.188
+            }
           ]
         }
       ],
@@ -4180,6 +5155,16 @@
           "colors": [
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.338
+            },
+            {
+              "name": "orange",
+              "share": 0.337
+            }
           ]
         }
       ],
@@ -4235,6 +5220,16 @@
           "colors": [
             "gris",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.655
+            },
+            {
+              "name": "blanc",
+              "share": 0.145
+            }
           ]
         }
       ],
@@ -4285,6 +5280,20 @@
             "orange",
             "gris",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.393
+            },
+            {
+              "name": "gris",
+              "share": 0.331
+            },
+            {
+              "name": "bleu",
+              "share": 0.127
+            }
           ]
         }
       ],
@@ -4340,6 +5349,24 @@
             "jaune",
             "gris",
             "blanc"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.287
+            },
+            {
+              "name": "jaune",
+              "share": 0.185
+            },
+            {
+              "name": "gris",
+              "share": 0.142
+            },
+            {
+              "name": "blanc",
+              "share": 0.127
+            }
           ]
         }
       ],
@@ -4395,6 +5422,20 @@
             "bleu",
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.297
+            },
+            {
+              "name": "gris",
+              "share": 0.271
+            },
+            {
+              "name": "orange",
+              "share": 0.258
+            }
           ]
         }
       ],
@@ -4442,6 +5483,16 @@
           "colors": [
             "gris",
             "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.672
+            },
+            {
+              "name": "bleu",
+              "share": 0.258
+            }
           ]
         }
       ],
@@ -4486,6 +5537,16 @@
           "colors": [
             "gris",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.653
+            },
+            {
+              "name": "orange",
+              "share": 0.236
+            }
           ]
         }
       ],
@@ -4531,6 +5592,20 @@
             "orange",
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.446
+            },
+            {
+              "name": "gris",
+              "share": 0.346
+            },
+            {
+              "name": "noir",
+              "share": 0.139
+            }
           ]
         }
       ],
@@ -4590,6 +5665,20 @@
             "gris",
             "rouge",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.376
+            },
+            {
+              "name": "rouge",
+              "share": 0.251
+            },
+            {
+              "name": "orange",
+              "share": 0.197
+            }
           ]
         }
       ],
@@ -4635,6 +5724,16 @@
           "colors": [
             "orange",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.633
+            },
+            {
+              "name": "gris",
+              "share": 0.132
+            }
           ]
         }
       ],
@@ -4684,6 +5783,20 @@
             "orange",
             "gris",
             "jaune"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.5
+            },
+            {
+              "name": "gris",
+              "share": 0.215
+            },
+            {
+              "name": "jaune",
+              "share": 0.128
+            }
           ]
         }
       ],
@@ -4729,6 +5842,16 @@
           "colors": [
             "bleu",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.583
+            },
+            {
+              "name": "gris",
+              "share": 0.168
+            }
           ]
         }
       ],
@@ -4784,6 +5907,20 @@
             "bleu",
             "jaune",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.253
+            },
+            {
+              "name": "jaune",
+              "share": 0.248
+            },
+            {
+              "name": "gris",
+              "share": 0.24
+            }
           ]
         }
       ],
@@ -4844,6 +5981,16 @@
           "colors": [
             "bleu",
             "gris"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.764
+            },
+            {
+              "name": "gris",
+              "share": 0.18
+            }
           ]
         }
       ],
@@ -4899,6 +6046,20 @@
             "gris",
             "orange",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.385
+            },
+            {
+              "name": "orange",
+              "share": 0.263
+            },
+            {
+              "name": "noir",
+              "share": 0.131
+            }
           ]
         }
       ],
@@ -4950,6 +6111,20 @@
             "orange",
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "orange",
+              "share": 0.297
+            },
+            {
+              "name": "gris",
+              "share": 0.283
+            },
+            {
+              "name": "noir",
+              "share": 0.206
+            }
           ]
         }
       ],
@@ -5003,6 +6178,24 @@
             "gris",
             "orange",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "jaune",
+              "share": 0.32
+            },
+            {
+              "name": "gris",
+              "share": 0.245
+            },
+            {
+              "name": "orange",
+              "share": 0.151
+            },
+            {
+              "name": "noir",
+              "share": 0.121
+            }
           ]
         }
       ],
@@ -5065,6 +6258,16 @@
           "colors": [
             "gris",
             "noir"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.461
+            },
+            {
+              "name": "noir",
+              "share": 0.213
+            }
           ]
         }
       ],
@@ -5128,6 +6331,20 @@
             "gris",
             "rouge",
             "orange"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.552
+            },
+            {
+              "name": "rouge",
+              "share": 0.184
+            },
+            {
+              "name": "orange",
+              "share": 0.16
+            }
           ]
         }
       ],

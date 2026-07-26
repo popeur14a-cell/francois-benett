@@ -7,7 +7,7 @@ const publicImages = path.join(projectRoot, "public", "images");
 const usedImages = new Set();
 
 // Master used by scripts/optimize-images.py to regenerate the hero variants.
-usedImages.add("/images/benett-cover.webp");
+usedImages.add("/images/hero/benett-cover.webp");
 
 for (const collection of Object.values(collectionsData)) {
   if (collection.couverture) usedImages.add(collection.couverture);
@@ -25,8 +25,11 @@ for (const collection of Object.values(collectionsData)) {
 
 for (const relativeFile of [
   "index.html",
+  "public/site.webmanifest",
   "src/App.jsx",
+  "src/components/Footer.jsx",
   "src/components/InteriorViewer.jsx",
+  "src/components/Navbar.jsx",
   "src/pages/Collections.jsx",
   "src/pages/Home.jsx",
   "src/pages/Parcours.jsx",
@@ -43,6 +46,7 @@ const responsiveImages = new Set();
 for (const image of usedImages) {
   if (
     !image.startsWith("/images/") ||
+    image.includes("/branding/") ||
     image.includes("/interieurs/") ||
     image.includes("benett-cover")
   ) {

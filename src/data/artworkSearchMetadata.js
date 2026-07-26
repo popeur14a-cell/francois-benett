@@ -94,4 +94,5 @@ export const artworkSearchMetadata = {
   "/collections/venise/le-chant-de-l-oiseau": ["animal", "carré", "costume vénitien", "faune", "femme", "format moyen", "gris", "groupe", "jaune", "lieu", "orange", "personnage", "ville", "voyage"],
   "/collections/venise/palais-des-doges": ["blanc", "bleu", "chapeau", "costume vénitien", "femme", "grand format", "gris", "groupe", "lieu", "paysage", "personnage", "ville", "voyage"],
   "/collections/venise/plenitude": ["blanc", "carré", "chapeau", "costume vénitien", "femme", "format moyen", "gris", "groupe", "lieu", "personnage", "ville", "voyage"],
+  "/collections/venise/venise": ["bleu", "costume vénitien", "femme", "grand format", "gris", "groupe", "lieu", "orange", "paysage", "personnage", "ville", "voyage"],
 };

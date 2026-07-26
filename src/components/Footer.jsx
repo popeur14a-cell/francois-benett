@@ -14,7 +14,7 @@ export default function Footer() {
             aria-label={en ? "Back to home" : "Retour à l’accueil"}
           >
             <img
-              src="/logo-b.png"
+              src="/images/branding/logo-b.png"
               alt="Logo François Benett"
               className="footer-logo"
             />

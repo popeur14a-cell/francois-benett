@@ -31,7 +31,24 @@ export default function Favorites() {
             <div className="favorites-grid">
               {artworks.map((artwork) => (
                 <article key={artwork.path}>
-                  <Link to={artwork.path} viewTransition><ResponsiveImage src={artwork.thumbnail || artwork.image} sizes="(max-width: 760px) 92vw, 30vw" alt={getArtworkAlt(artwork, en)} loading="lazy" decoding="async" /></Link>
+                  <Link
+                    to={artwork.path}
+                    viewTransition
+                    aria-label={`${en ? "Open" : "Ouvrir"} ${artwork.titre}`}
+                  >
+                    <span className={`favorites-artwork-visual ${artwork.images?.length > 1 ? "is-diptych" : ""}`}>
+                      {(artwork.images?.length > 1 ? artwork.images : [artwork.thumbnail || artwork.image]).map((image, index) => (
+                        <ResponsiveImage
+                          key={image}
+                          src={image}
+                          sizes={artwork.images?.length > 1 ? "(max-width: 760px) 44vw, 15vw" : "(max-width: 760px) 92vw, 30vw"}
+                          alt={artwork.images?.length > 1 ? `${getArtworkAlt(artwork, en)} — ${en ? `panel ${index + 1}` : `panneau ${index + 1}`}` : getArtworkAlt(artwork, en)}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      ))}
+                    </span>
+                  </Link>
                   <div>
                     <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
                     {artwork.dimensions && <p>{artwork.dimensions}</p>}

@@ -16,7 +16,7 @@ const collections = [
     nomEn: "Venice",
     categorie: "lieux",
     slug: "venise",
-    image: "/images/venise/bal-des-oiseaux.jpg",
+    image: "/images/hero/benett-cover-1280.webp",
     descriptionEn: "Venetian light, architecture and atmosphere.",
     description:
       "Lumières, architectures et atmosphères vénitiennes.",
@@ -124,7 +124,7 @@ const PAGE_URL = `${SITE_URL}/collections`;
 const PAGE_DESCRIPTION =
   "Découvrez les collections de François Benett, peintre contemporain français : Venise, Espagne, Maroc, Paris, Bretagne, Amsterdam, Tango, Les Messagers, scènes d’intimité et clowns.";
 
-const SHARE_IMAGE = `${SITE_URL}/images/venise/palais-des-doges.webp`;
+const SHARE_IMAGE = `${SITE_URL}/images/venise/palais-des-doges.jpg`;
 
 export default function Collections() {
   const { language } = useLanguage();

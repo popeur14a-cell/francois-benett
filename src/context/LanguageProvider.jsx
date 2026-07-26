@@ -22,9 +22,11 @@ export default function LanguageProvider({ children }) {
     const hasEnglishPrefix =
       location.pathname === "/en" || location.pathname.startsWith("/en/");
     if (language === "en" && !hasEnglishPrefix) {
+      window.__benettLanguageScroll = window.scrollY;
       navigate(`/en${location.pathname === "/" ? "" : location.pathname}${location.search}${location.hash}`, { replace: true });
     } else if (language === "fr" && hasEnglishPrefix) {
       const frenchPath = location.pathname.replace(/^\/en(?=\/|$)/, "") || "/";
+      window.__benettLanguageScroll = window.scrollY;
       navigate(`${frenchPath}${location.search}${location.hash}`, { replace: true });
     }
   }, [language, location.hash, location.pathname, location.search, navigate]);

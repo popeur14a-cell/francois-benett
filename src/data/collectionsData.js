@@ -1,11 +1,11 @@
 export const collectionsData = {
   venise: {
     nom: "Venise",
-    couverture: "/images/venise/bal-des-oiseaux.jpg",
+    couverture: "/images/hero/benett-cover-1280.webp",
     oeuvres: [
       {
         titre: "Palais des Doges",
-        image: "/images/venise/palais-des-doges.webp",
+        image: "/images/venise/palais-des-doges.jpg",
         dimensions: "116 × 89 cm",
         collectionParticuliere: false,
       },
@@ -75,6 +75,13 @@ export const collectionsData = {
         thumbnail: "/images/venise/plenitude-preview.jpg",
         dimensions: "70 × 70 cm",
         collectionParticuliere: false,
+      },
+      {
+        titre: "Venise",
+        image: "/images/hero/benett-cover-1920.webp",
+        thumbnail: "/images/hero/benett-cover-1280.webp",
+        dimensions: "116 × 89 cm",
+        collectionParticuliere: true,
       },
     ],
   },

@@ -1,5 +1,51 @@
 import { collectionsData } from "../data/collectionsData.js";
 import { collectionMeta, SITE_URL } from "../data/collectionMeta.js";
+import { artworkColorMetadata } from "../data/artworkColorMetadata.js";
+
+const FIGURE_FORMATS = {
+  25: [81, 65],
+  40: [100, 81],
+  50: [116, 89],
+};
+
+export function getArtworkFormatMetrics(dimensions = "", diptych = false) {
+  const classic = dimensions.match(/(\d+(?:[.,]\d+)?)\s*[×x]\s*(\d+(?:[.,]\d+)?)/i);
+  const figure = dimensions.match(/(\d+)\s*F/i);
+  const values = classic
+    ? classic.slice(1, 3).map((value) => Number(value.replace(",", ".")))
+    : figure
+      ? FIGURE_FORMATS[Number(figure[1])] || []
+      : [];
+  const [height = 0, width = 0] = values;
+  const largestSide = Math.max(height, width);
+  const sizeGroup = largestSide >= 100 ? 0 : largestSide > 60 ? 1 : largestSide ? 2 : 3;
+  const area = height * width * (diptych ? 2 : 1);
+
+  return { area, sizeGroup };
+}
+
+export function compareArtworksByFormatColorSize(a, b) {
+  if (a.collectionParticuliere !== b.collectionParticuliere) {
+    return a.collectionParticuliere ? 1 : -1;
+  }
+
+  const aFormat = getArtworkFormatMetrics(a.dimensions, a.images?.length === 2);
+  const bFormat = getArtworkFormatMetrics(b.dimensions, b.images?.length === 2);
+  if (aFormat.sizeGroup !== bFormat.sizeGroup) {
+    return aFormat.sizeGroup - bFormat.sizeGroup;
+  }
+
+  const aColor = artworkColorMetadata[a.path]?.[0]?.[0] || "zz";
+  const bColor = artworkColorMetadata[b.path]?.[0]?.[0] || "zz";
+  const colorOrder = aColor.localeCompare(bColor, "fr", { sensitivity: "base" });
+  if (colorOrder) return colorOrder;
+  if (aFormat.area !== bFormat.area) return bFormat.area - aFormat.area;
+
+  return a.titre.localeCompare(b.titre, "fr", {
+    sensitivity: "base",
+    numeric: true,
+  });
+}
 
 export function slugify(value = "") {
   return value
@@ -53,15 +99,7 @@ export function getArtworkEntries(collectionId) {
 }
 
 export function getSortedArtworkEntries(collectionId) {
-  return getArtworkEntries(collectionId).sort((a, b) => {
-    if (a.collectionParticuliere !== b.collectionParticuliere) {
-      return a.collectionParticuliere ? 1 : -1;
-    }
-    return a.titre.localeCompare(b.titre, "fr", {
-      sensitivity: "base",
-      numeric: true,
-    });
-  });
+  return getArtworkEntries(collectionId).sort(compareArtworksByFormatColorSize);
 }
 
 export function findArtwork(collectionId, artworkSlug) {

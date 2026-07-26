@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { artworkSearchMetadata } from "../data/artworkSearchMetadata";
 
 const interiors = [
   {
@@ -6,67 +7,87 @@ const interiors = [
     fr: "Contemporain",
     en: "Contemporary",
     sceneWidthCm: 590,
+    position: { x: 52, y: 40 },
+    palette: ["rouge", "orange", "jaune", "beige", "blanc", "gris"],
+    collections: ["scene-d-intimite", "messagers", "maroc"],
   },
   {
     image: "/images/interieurs/salon-classique-cocooning.webp",
     fr: "Haussmannien",
     en: "Parisian",
     sceneWidthCm: 620,
+    position: { x: 50, y: 42 },
+    palette: ["rouge", "orange", "jaune", "rose", "beige", "noir"],
+    collections: ["paris", "venise", "clowns"],
   },
   {
     image: "/images/interieurs/salon-japandi-cocooning.webp",
     fr: "Japandi",
     en: "Japandi",
     sceneWidthCm: 570,
+    position: { x: 48, y: 43 },
+    palette: ["bleu", "vert", "gris", "blanc", "noir", "beige"],
+    collections: ["amsterdam", "bretonnes", "espagne"],
   },
   {
     image: "/images/interieurs/salon-industriel-chaleureux.jpg",
     fr: "Industriel",
     en: "Industrial",
     sceneWidthCm: 430,
+    position: { x: 57, y: 37 },
+    palette: ["rouge", "orange", "noir", "gris", "blanc", "bleu"],
+    collections: ["tango", "clowns", "messagers"],
   },
   {
     image: "/images/interieurs/salon-occidental-contemporain.jpg",
     fr: "Contemporain doux",
     en: "Soft contemporary",
     sceneWidthCm: 380,
+    position: { x: 56, y: 40 },
+    palette: ["vert", "bleu", "gris", "blanc", "rose", "beige"],
+    collections: ["espagne", "maroc", "scene-d-intimite"],
   },
   {
     image: "/images/interieurs/salon-vintage-elegant.jpg",
     fr: "Vintage",
     en: "Vintage",
     sceneWidthCm: 400,
+    position: { x: 55, y: 41 },
+    palette: ["rouge", "orange", "jaune", "rose", "vert", "bleu"],
+    collections: ["tango", "paris", "venise"],
   },
 ];
 
 function obtenirInterieursAdaptes(artwork) {
   const format = obtenirDimensions(artwork.dimensions);
   const plusGrandCote = format ? Math.max(...format) : null;
+  const artworkTags = new Set(artworkSearchMetadata[artwork.path] || []);
 
-  if (plusGrandCote && plusGrandCote <= 60) {
-    return [interiors[4], interiors[3], interiors[5]];
-  }
+  return interiors
+    .map((interior, index) => {
+      const paletteScore = interior.palette.reduce(
+        (score, color) => score + (artworkTags.has(color) ? 3 : 0),
+        0
+      );
+      const collectionScore = interior.collections.includes(artwork.collectionId)
+        ? 4
+        : 0;
+      const sizeScore =
+        plusGrandCote && plusGrandCote <= 60
+          ? interior.sceneWidthCm <= 430
+            ? 3
+            : 0
+          : plusGrandCote && plusGrandCote >= 100
+            ? interior.sceneWidthCm >= 570
+              ? 3
+              : 0
+            : 1;
 
-  switch (artwork.collectionId) {
-    case "tango":
-    case "clowns":
-      return [interiors[3], interiors[5], interiors[0]];
-    case "venise":
-    case "paris":
-      return [interiors[1], interiors[5], interiors[4]];
-    case "espagne":
-    case "maroc":
-      return [interiors[4], interiors[2], interiors[5]];
-    case "messagers":
-      return [interiors[0], interiors[3], interiors[1]];
-    case "bretonnes":
-    case "amsterdam":
-      return [interiors[2], interiors[4], interiors[5]];
-    case "scene-d-intimite":
-      return [interiors[4], interiors[5], interiors[0]];
-    default:
-      return [interiors[0], interiors[4], interiors[5]];
-  }
+      return { interior, index, score: paletteScore + collectionScore + sizeScore };
+    })
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .slice(0, 3)
+    .map(({ interior }) => interior);
 }
 
 const ecartDiptyqueCm = 3;
@@ -203,6 +224,8 @@ export default function InteriorViewer({ artwork, language, onBack }) {
             width: artworkScale.width,
             aspectRatio: artworkScale.aspectRatio,
             "--diptych-gap": artworkScale.gap,
+            left: `${interior.position.x}%`,
+            top: `${interior.position.y}%`,
           }}
           role="img"
           aria-label={`${artwork.titre} ${
@@ -221,6 +244,9 @@ export default function InteriorViewer({ artwork, language, onBack }) {
         <div>
           <strong>{artwork.titre}</strong>
           {artwork.dimensions && <span>{artwork.dimensions}</span>}
+          <span className="interior-match">
+            {en ? "Room matched to this artwork" : "Décor accordé à cette œuvre"}
+          </span>
         </div>
 
         <div className="interior-choices" aria-label={en ? "Choose an interior" : "Choisir un intérieur"}>

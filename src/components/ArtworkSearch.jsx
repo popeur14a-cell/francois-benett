@@ -1,9 +1,14 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
 import { artworkSearchMetadata } from "../data/artworkSearchMetadata";
-import { getAllArtworks, getArtworkAlt } from "../utils/artworks";
-import { SearchIcon } from "./Icons";
+import { artworkColorMetadata } from "../data/artworkColorMetadata";
+import {
+  compareArtworksByFormatColorSize,
+  getAllArtworks,
+  getArtworkAlt,
+} from "../utils/artworks";
+import { CloseIcon, SearchIcon } from "./Icons";
 import ResponsiveImage from "./ResponsiveImage";
 
 const artworks = getAllArtworks();
@@ -95,6 +100,29 @@ const COLOR_ALIASES = {
   neutre: ["noir", "blanc", "gris", "black", "white", "grey", "monochrome"],
 };
 
+const COLOR_QUERIES = {
+  bleu: "bleu",
+  blue: "bleu",
+  rouge: "rouge",
+  red: "rouge",
+  jaune: "jaune",
+  yellow: "jaune",
+  vert: "vert",
+  green: "vert",
+  rose: "rose",
+  pink: "rose",
+  violet: "violet",
+  purple: "violet",
+  orange: "orange",
+  noir: "noir",
+  black: "noir",
+  blanc: "blanc",
+  white: "blanc",
+  gris: "gris",
+  grey: "gris",
+  gray: "gris",
+};
+
 function getCatalogTags(artwork) {
   return (artworkSearchMetadata[artwork.path] || []).flatMap((tag) => [
     tag,
@@ -106,14 +134,37 @@ export default function ArtworkSearch() {
   const { language } = useLanguage();
   const en = language === "en";
   const [query, setQuery] = useState("");
+  const searchRef = useRef(null);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    const closeSearch = (event) => {
+      if (!searchRef.current?.contains(event.target)) setQuery("");
+    };
+
+    document.addEventListener("pointerdown", closeSearch);
+    return () => document.removeEventListener("pointerdown", closeSearch);
+  }, []);
+
+  const clearSearch = () => {
+    setQuery("");
+    inputRef.current?.focus();
+  };
 
   const normalizedQuery = normalizeSearch(query);
+  const colorQuery = COLOR_QUERIES[normalizedQuery];
   const results = useMemo(() => {
     if (!normalizedQuery) return [];
 
     return artworks
-      .filter((artwork) =>
-        normalizeSearch(
+      .filter((artwork) => {
+        if (colorQuery) {
+          return (artworkColorMetadata[artwork.path] || [])
+            .slice(0, 2)
+            .some(([color, share]) => color === colorQuery && share >= 0.12);
+        }
+
+        return normalizeSearch(
           [
             artwork.titre,
             artwork.collectionName,
@@ -123,21 +174,17 @@ export default function ArtworkSearch() {
             ...getCatalogTags(artwork),
             ...(artwork.searchTags || []),
           ].join(" ")
-        ).includes(normalizedQuery)
-      )
-      .sort((a, b) => {
-        const aStarts = normalizeSearch(a.titre).startsWith(normalizedQuery);
-        const bStarts = normalizeSearch(b.titre).startsWith(normalizedQuery);
-        if (aStarts !== bStarts) return aStarts ? -1 : 1;
-        return a.titre.localeCompare(b.titre, language, {
-          sensitivity: "base",
-          numeric: true,
-        });
-      });
-  }, [language, normalizedQuery]);
+        ).includes(normalizedQuery);
+      })
+      .sort(compareArtworksByFormatColorSize);
+  }, [colorQuery, normalizedQuery]);
 
   return (
-    <section className="artwork-search" aria-label={en ? "Search the gallery" : "Rechercher dans la galerie"}>
+    <section
+      className="artwork-search"
+      aria-label={en ? "Search the gallery" : "Rechercher dans la galerie"}
+      ref={searchRef}
+    >
       <div className="artwork-search-body">
         <label className="artwork-search-field">
           <SearchIcon />
@@ -145,9 +192,14 @@ export default function ArtworkSearch() {
             {en ? "Artwork title or collection" : "Titre de l’œuvre ou collection"}
           </span>
           <input
-            type="search"
+            ref={inputRef}
+            type="text"
+            role="searchbox"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") clearSearch();
+            }}
             placeholder={
               en
                 ? "Title, colour, subject or format…"
@@ -155,6 +207,16 @@ export default function ArtworkSearch() {
             }
             autoComplete="off"
           />
+          {query ? (
+            <button
+              className="artwork-search-clear"
+              type="button"
+              onClick={clearSearch}
+              aria-label={en ? "Clear search" : "Effacer la recherche"}
+            >
+              <CloseIcon />
+            </button>
+          ) : null}
         </label>
 
         <div className="artwork-search-content" aria-live="polite">

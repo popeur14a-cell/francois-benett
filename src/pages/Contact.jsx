@@ -135,7 +135,7 @@ export default function Contact() {
         <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content={en ? "Contact François Benett" : "Contacter François Benett"} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${SITE_URL}/images/portrait-2.jpg`} />
+        <meta property="og:image" content={`${SITE_URL}/images/portraits/portrait-2.jpg`} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
       </Helmet>

@@ -59,7 +59,7 @@ export default function App() {
         "@id": `${SITE_URL}/#person`,
         name: "François Benett",
         jobTitle: "Peintre contemporain",
-        image: `${SITE_URL}/images/portrait.jpg`,
+        image: `${SITE_URL}/images/portraits/portrait.jpg`,
         url: SITE_URL,
         sameAs: [
           "https://www.instagram.com/benett_gallery/",
@@ -75,7 +75,7 @@ export default function App() {
         "@id": `${SITE_URL}/#organization`,
         name: SITE_NAME,
         url: SITE_URL,
-        logo: `${SITE_URL}/logo-b.png`,
+        logo: `${SITE_URL}/images/branding/logo-b.png`,
       },
     ],
   };

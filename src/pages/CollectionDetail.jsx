@@ -95,7 +95,7 @@ export default function CollectionDetail() {
 
   const collectionUrl = `${SITE_URL}${en ? "/en" : ""}/collections/${collectionId}`;
   const description = en ? meta.enText : meta.fr;
-  const firstImage = getAbsoluteUrl(artworks[0]?.image || "/images/benett-cover-1920.webp");
+  const firstImage = getAbsoluteUrl(artworks[0]?.image || "/images/hero/benett-cover-1920.webp");
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -272,26 +272,23 @@ export default function CollectionDetail() {
         </section>
 
         <nav className="collection-navigation" aria-label={en ? "Browse collections" : "Parcourir les collections"}>
-          <Link to={`/collections/${previousCollectionId}`} className="collection-navigation-link collection-navigation-previous">
+          <Link
+            to={`/collections/${previousCollectionId}`}
+            className="collection-navigation-link collection-navigation-previous"
+            aria-label={`${en ? "Previous collection" : "Collection précédente"} : ${previousCollectionName}`}
+          >
             <ArrowIcon direction="left" />
-            <span>
-              <small>{en ? "Previous collection" : "Collection précédente"}</small>
-              <strong>{previousCollectionName}</strong>
-            </span>
+            <strong>{previousCollectionName}</strong>
           </Link>
-          <Link to={`/collections/${nextCollectionId}`} className="collection-navigation-link collection-navigation-next">
-            <span>
-              <small>{en ? "Next collection" : "Collection suivante"}</small>
-              <strong>{nextCollectionName}</strong>
-            </span>
+          <Link
+            to={`/collections/${nextCollectionId}`}
+            className="collection-navigation-link collection-navigation-next"
+            aria-label={`${en ? "Next collection" : "Collection suivante"} : ${nextCollectionName}`}
+          >
+            <strong>{nextCollectionName}</strong>
             <ArrowIcon direction="right" />
           </Link>
         </nav>
-
-        <Link to="/collections" className="collection-floating-back">
-          <ArrowIcon direction="left" />
-          <span>{en ? "Collections" : "Collections"}</span>
-        </Link>
 
         {activeArtwork && (
           <div

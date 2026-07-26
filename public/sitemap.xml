@@ -266,7 +266,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/venise/palais-des-doges.webp</image:loc>
+      <image:loc>https://www.benett-peintre.fr/images/venise/palais-des-doges.jpg</image:loc>
       <image:title>Palais des Doges — François Benett</image:title>
     </image:image>
   </url>
@@ -278,7 +278,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/venise/palais-des-doges.webp</image:loc>
+      <image:loc>https://www.benett-peintre.fr/images/venise/palais-des-doges.jpg</image:loc>
       <image:title>Palais des Doges — François Benett</image:title>
     </image:image>
   </url>
@@ -544,6 +544,30 @@
     <image:image>
       <image:loc>https://www.benett-peintre.fr/images/venise/plenitude.jpg</image:loc>
       <image:title>Plénitude — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/venise</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/venise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/venise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/venise" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/hero/benett-cover-1920.webp</image:loc>
+      <image:title>Venise — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/venise</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/venise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/venise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/venise" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/hero/benett-cover-1920.webp</image:loc>
+      <image:title>Venise — François Benett</image:title>
     </image:image>
   </url>
   <url>
