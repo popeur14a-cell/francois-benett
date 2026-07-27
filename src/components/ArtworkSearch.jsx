@@ -7,6 +7,7 @@ import {
   compareArtworksByFormatColorSize,
   getAllArtworks,
   getArtworkAlt,
+  getArtworkDimensionsLabel,
 } from "../utils/artworks";
 import { CloseIcon, SearchIcon } from "./Icons";
 import ResponsiveImage from "./ResponsiveImage";
@@ -252,7 +253,7 @@ export default function ArtworkSearch() {
                         <strong>{artwork.titre}</strong>
                         <small>
                           {en ? artwork.collectionNameEn : artwork.collectionName}
-                          {artwork.dimensions ? ` · ${artwork.dimensions}` : ""}
+                          {artwork.dimensions ? ` · ${getArtworkDimensionsLabel(artwork.dimensions, en)}` : ""}
                         </small>
                       </span>
                       <span className="artwork-search-arrow" aria-hidden="true">

@@ -979,30 +979,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.benett-peintre.fr/collections/paris/jeu-de-cartes</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/jeu-de-cartes" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/paris/jeu-de-cartes.jpg</image:loc>
-      <image:title>Jeu de cartes — François Benett</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.benett-peintre.fr/en/collections/paris/jeu-de-cartes</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/jeu-de-cartes" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/jeu-de-cartes" />
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/paris/jeu-de-cartes.jpg</image:loc>
-      <image:title>Jeu de cartes — François Benett</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.benett-peintre.fr/collections/paris/attente-au-procope</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/attente-au-procope" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/attente-au-procope" />
@@ -1072,30 +1048,6 @@
     <image:image>
       <image:loc>https://www.benett-peintre.fr/images/paris/rencontre-au-procope.jpg</image:loc>
       <image:title>Rencontre au Procope — François Benett</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.benett-peintre.fr/collections/paris/les-parieurs</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/les-parieurs" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/paris/les-parieurs.jpg</image:loc>
-      <image:title>Les parieurs — François Benett</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.benett-peintre.fr/en/collections/paris/les-parieurs</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/paris/les-parieurs" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/paris/les-parieurs" />
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.benett-peintre.fr/images/paris/les-parieurs.jpg</image:loc>
-      <image:title>Les parieurs — François Benett</image:title>
     </image:image>
   </url>
   <url>

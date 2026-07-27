@@ -17,6 +17,7 @@ import {
   findArtwork,
   getAbsoluteUrl,
   getArtworkAlt,
+  getArtworkDimensionsLabel,
   getArtworkImageList,
   getSortedArtworkEntries,
 } from "../utils/artworks";
@@ -85,11 +86,12 @@ export default function ArtworkDetail() {
     : artwork.collectionName;
   const pageUrl = `${SITE_URL}${en ? "/en" : ""}${artwork.path}`;
   const imageUrl = getAbsoluteUrl(artwork.image);
+  const dimensionsLabel = getArtworkDimensionsLabel(artwork.dimensions, en);
   const title = artwork.dimensions
-    ? `${artwork.titre}, ${artwork.dimensions} — François Benett`
+    ? `${artwork.titre}, ${dimensionsLabel} — François Benett`
     : `${artwork.titre} — François Benett`;
   const description = en
-    ? `${artwork.titre}, original artwork by François Benett from the ${collectionName} collection${artwork.dimensions ? `, ${artwork.dimensions}` : ""}.`
+    ? `${artwork.titre}, original artwork by François Benett from the ${collectionName} collection${artwork.dimensions ? `, ${dimensionsLabel}` : ""}.`
     : `${artwork.titre}, œuvre originale de François Benett dans la collection ${collectionName}${artwork.dimensions ? `, format ${artwork.dimensions}` : ""}.`;
   const favorite = isFavorite(artwork.path);
   const contactParams = new URLSearchParams({
@@ -97,7 +99,7 @@ export default function ArtworkDetail() {
     collection: artwork.collectionName,
     url: pageUrl,
   });
-  if (artwork.dimensions) contactParams.set("dimensions", artwork.dimensions);
+  if (artwork.dimensions) contactParams.set("dimensions", dimensionsLabel);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -113,7 +115,7 @@ export default function ArtworkDetail() {
           url: SITE_URL,
         },
         artform: "Peinture",
-        ...(artwork.dimensions ? { size: artwork.dimensions } : {}),
+        ...(artwork.dimensions ? { size: dimensionsLabel } : {}),
         ...(artwork.technique ? { artMedium: artwork.technique } : {}),
         isPartOf: {
           "@type": "CollectionPage",
@@ -233,7 +235,7 @@ export default function ArtworkDetail() {
             <span className="artwork-detail-collection">{en ? "Collection" : "Collection"} {collectionName}</span>
             <h1>{artwork.titre}</h1>
             <dl>
-              {artwork.dimensions && <div><dt>{en ? "Dimensions" : "Format"}</dt><dd>{artwork.dimensions}</dd></div>}
+              {artwork.dimensions && <div><dt>{en ? "Dimensions" : "Format"}</dt><dd>{dimensionsLabel}</dd></div>}
               {artwork.technique && <div><dt>{en ? "Medium" : "Technique"}</dt><dd>{artwork.technique}</dd></div>}
               <div>
                 <dt>{en ? "Availability" : "Disponibilité"}</dt>

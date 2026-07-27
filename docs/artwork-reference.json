@@ -3,10 +3,12 @@
     "src/data/collectionsData.js",
     "public/images"
   ],
-  "artwork_count": 95,
+  "artwork_count": 93,
   "analysis_notes": {
     "colors_and_orientation": "Calculated from the image pixels.",
-    "subjects_people_actions": "Curated from titles and collections; use as search aids, not as an art-historical attribution."
+    "visual_character": "Luminance, contrast, saturation, warmth and edge density are measured from every artwork image.",
+    "subjects_people_actions": "Curated from titles and collections; use as search aids, not as an art-historical attribution.",
+    "movement_atmosphere_composition": "Structured visual reading based on the reviewed images, titles and series; intended for discovery and search."
   },
   "artworks": [
     {
@@ -46,7 +48,21 @@
               "name": "blanc",
               "share": 0.158
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.601,
+            "contrast": 0.192,
+            "saturation": 0.196,
+            "warmth": -0.099,
+            "edge_density": 0.26,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -62,18 +78,40 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "blanc",
         "bleu",
         "chapeau",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette froide",
         "paysage",
         "personnage",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -115,7 +153,21 @@
               "name": "orange",
               "share": 0.186
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.551,
+            "contrast": 0.211,
+            "saturation": 0.243,
+            "warmth": 0.12,
+            "edge_density": 0.185,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -132,10 +184,27 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
+        "atmosphérique",
         "carré",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs nuancées",
         "faune",
         "femme",
         "format moyen",
@@ -143,8 +212,13 @@
         "groupe",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "personnage",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -191,7 +265,21 @@
               "name": "noir",
               "share": 0.146
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.551,
+            "contrast": 0.282,
+            "saturation": 0.171,
+            "warmth": 0.048,
+            "edge_density": 0.176,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -208,19 +296,41 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "blanc",
         "carré",
         "chapeau",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste fort",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
         "noir",
+        "palette équilibrée",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -257,7 +367,21 @@
               "name": "bleu",
               "share": 0.392
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.573,
+            "contrast": 0.159,
+            "saturation": 0.156,
+            "warmth": -0.077,
+            "edge_density": 0.192,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -272,16 +396,38 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "bleu",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette froide",
         "paysage",
         "personnage",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -322,7 +468,21 @@
               "name": "rouge",
               "share": 0.205
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.625,
+            "contrast": 0.242,
+            "saturation": 0.169,
+            "warmth": 0.076,
+            "edge_density": 0.193,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -342,19 +502,41 @@
       "actions": [
         "manipuler une marionnette"
       ],
+      "movement": [
+        "mouvement gestuel"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "blanc",
         "chapeau",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste fort",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
         "manipuler une marionnette",
         "marionnette",
+        "mouvement gestuel",
+        "palette chaude",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -388,7 +570,21 @@
               "name": "gris",
               "share": 0.268
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.418,
+            "contrast": 0.205,
+            "saturation": 0.281,
+            "warmth": 0.134,
+            "edge_density": 0.151,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -411,8 +607,27 @@
         "jouer de la musique",
         "jouer du violon"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs nuancées",
         "femme",
         "gris",
         "groupe",
@@ -420,10 +635,17 @@
         "jouer de la musique",
         "jouer du violon",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
         "musique",
         "orange",
         "orchestre",
+        "palette chaude",
         "personnage",
+        "rythme",
+        "scène de groupe",
+        "urbain",
         "ville",
         "violon",
         "voyage"
@@ -463,7 +685,21 @@
               "name": "rouge",
               "share": 0.166
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.488,
+            "contrast": 0.19,
+            "saturation": 0.221,
+            "warmth": 0.109,
+            "edge_density": 0.192,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -480,17 +716,39 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
         "Venise",
         "architecture",
+        "atmosphérique",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -527,7 +785,21 @@
               "name": "gris",
               "share": 0.213
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.517,
+            "contrast": 0.183,
+            "saturation": 0.387,
+            "warmth": 0.242,
+            "edge_density": 0.264,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -550,11 +822,30 @@
       "actions": [
         "jouer de la musique"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
+        "atmosphérique",
         "carré",
         "chapeau",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs nuancées",
         "faune",
         "femme",
         "format moyen",
@@ -563,10 +854,17 @@
         "instrument",
         "jouer de la musique",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
         "oiseau",
         "orange",
         "orchestre",
+        "palette chaude",
         "personnage",
+        "rythme",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -607,7 +905,21 @@
               "name": "blanc",
               "share": 0.135
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.543,
+            "contrast": 0.249,
+            "saturation": 0.121,
+            "warmth": 0.042,
+            "edge_density": 0.21,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -624,17 +936,39 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "blanc",
         "chapeau",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste fort",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette équilibrée",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -671,7 +1005,21 @@
               "name": "rouge",
               "share": 0.175
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.589,
+            "contrast": 0.202,
+            "saturation": 0.462,
+            "warmth": 0.341,
+            "edge_density": 0.184,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs vives",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -688,17 +1036,45 @@
       "actions": [
         "attendre"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "calme",
+        "suspendu",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "attendre",
+        "calme",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs vives",
         "femme",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "petit format",
         "rouge",
+        "scène contemplative",
+        "scène de groupe",
+        "suspendu",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -732,7 +1108,21 @@
               "name": "noir",
               "share": 0.285
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.307,
+            "contrast": 0.177,
+            "saturation": 0.32,
+            "warmth": -0.097,
+            "edge_density": 0.136,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs nuancées",
+              "ambiance sombre",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -749,15 +1139,43 @@
       "actions": [
         "attendre"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "calme",
+        "suspendu",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "ambiance sombre",
+        "atmosphérique",
         "attendre",
         "bleu",
+        "calme",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs nuancées",
         "femme",
         "groupe",
         "lieu",
+        "mouvement calme",
         "noir",
+        "palette froide",
         "personnage",
+        "scène contemplative",
+        "scène de groupe",
+        "suspendu",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -794,7 +1212,21 @@
               "name": "blanc",
               "share": 0.14
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.524,
+            "contrast": 0.244,
+            "saturation": 0.129,
+            "warmth": 0.048,
+            "edge_density": 0.21,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -810,17 +1242,43 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "calme",
+        "suspendu",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "blanc",
+        "calme",
         "carré",
         "chapeau",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste fort",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette équilibrée",
         "personnage",
+        "scène de groupe",
+        "suspendu",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -862,7 +1320,21 @@
               "name": "orange",
               "share": 0.127
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.571,
+            "contrast": 0.194,
+            "saturation": 0.173,
+            "warmth": -0.025,
+            "edge_density": 0.336,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -877,17 +1349,39 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "atmosphérique",
         "bleu",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
         "costume vénitien",
+        "couleurs douces",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette équilibrée",
         "paysage",
         "personnage",
+        "scène de groupe",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -924,7 +1418,21 @@
               "name": "orange",
               "share": 0.192
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.578,
+            "contrast": 0.185,
+            "saturation": 0.171,
+            "warmth": 0.098,
+            "edge_density": 0.176,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -939,17 +1447,37 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "duo"
+      ],
       "search_tags": [
         "coiffe",
+        "composition équilibrée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs douces",
+        "duo",
         "femme",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "petit format",
+        "tradition",
         "voyage"
       ]
     },
@@ -990,7 +1518,21 @@
               "name": "rouge",
               "share": 0.222
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.506,
+            "contrast": 0.182,
+            "saturation": 0.233,
+            "warmth": 0.094,
+            "edge_density": 0.212,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1005,18 +1547,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "duo"
+      ],
       "search_tags": [
         "coiffe",
+        "composition équilibrée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs douces",
+        "duo",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "rouge",
+        "tradition",
         "voyage"
       ]
     },
@@ -1057,7 +1619,21 @@
               "name": "rouge",
               "share": 0.184
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.521,
+            "contrast": 0.226,
+            "saturation": 0.256,
+            "warmth": 0.115,
+            "edge_density": 0.234,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1077,22 +1653,46 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "carré",
         "cheval",
         "coiffe",
+        "composition très détaillée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs nuancées",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "tradition",
         "voyage",
+        "élan",
         "équestre"
       ]
     },
@@ -1133,7 +1733,21 @@
               "name": "orange",
               "share": 0.235
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.528,
+            "contrast": 0.194,
+            "saturation": 0.233,
+            "warmth": 0.102,
+            "edge_density": 0.242,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1148,18 +1762,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
         "coiffe",
+        "composition très détaillée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs douces",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "tradition",
         "voyage"
       ]
     },
@@ -1195,7 +1829,21 @@
               "name": "orange",
               "share": 0.317
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.575,
+            "contrast": 0.204,
+            "saturation": 0.335,
+            "warmth": 0.203,
+            "edge_density": 0.172,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1210,17 +1858,37 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "duo"
+      ],
       "search_tags": [
         "coiffe",
+        "composition équilibrée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs nuancées",
+        "duo",
         "femme",
         "format moyen",
         "groupe",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
+        "tradition",
         "voyage"
       ]
     },
@@ -1253,7 +1921,21 @@
               "name": "gris",
               "share": 0.265
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.534,
+            "contrast": 0.191,
+            "saturation": 0.3,
+            "warmth": 0.159,
+            "edge_density": 0.234,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1273,18 +1955,40 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "boire",
         "café",
         "coiffe",
+        "composition très détaillée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs nuancées",
         "femme",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
+        "scène contemplative",
+        "scène de groupe",
         "table",
         "tasse",
+        "tradition",
         "voyage",
         "échanger"
       ]
@@ -1326,7 +2030,21 @@
               "name": "rouge",
               "share": 0.135
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.554,
+            "contrast": 0.177,
+            "saturation": 0.237,
+            "warmth": 0.117,
+            "edge_density": 0.191,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1342,18 +2060,42 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
         "coiffe",
+        "composition équilibrée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs douces",
         "danser",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "narratif",
         "orange",
+        "palette chaude",
         "rouge",
+        "rythme",
+        "scène de groupe",
+        "tradition",
         "voyage"
       ]
     },
@@ -1394,7 +2136,21 @@
               "name": "bleu",
               "share": 0.193
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.497,
+            "contrast": 0.204,
+            "saturation": 0.268,
+            "warmth": 0.029,
+            "edge_density": 0.18,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1408,17 +2164,37 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "bleu",
         "carré",
         "coiffe",
+        "composition équilibrée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs nuancées",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
+        "palette équilibrée",
+        "scène de groupe",
+        "tradition",
         "voyage"
       ]
     },
@@ -1451,7 +2227,21 @@
               "name": "gris",
               "share": 0.21
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.485,
+            "contrast": 0.173,
+            "saturation": 0.284,
+            "warmth": -0.153,
+            "edge_density": 0.232,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1471,18 +2261,40 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "bleu",
         "boire",
         "café",
         "coiffe",
+        "composition très détaillée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs nuancées",
         "femme",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette froide",
+        "scène contemplative",
+        "scène de groupe",
         "table",
         "tasse",
+        "tradition",
         "voyage",
         "échanger"
       ]
@@ -1524,7 +2336,21 @@
               "name": "rouge",
               "share": 0.139
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.422,
+            "contrast": 0.205,
+            "saturation": 0.371,
+            "warmth": 0.14,
+            "edge_density": 0.25,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1539,18 +2365,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
         "coiffe",
+        "composition très détaillée",
+        "contraste modéré",
         "costume espagnol",
+        "couleurs nuancées",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
+        "scène de groupe",
+        "tradition",
         "voyage"
       ]
     },
@@ -1591,7 +2437,21 @@
               "name": "rouge",
               "share": 0.152
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.499,
+            "contrast": 0.191,
+            "saturation": 0.307,
+            "warmth": 0.158,
+            "edge_density": 0.238,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1609,21 +2469,41 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "carré",
         "coiffe",
         "colombe",
+        "composition très détaillée",
+        "contraste modéré",
         "costume oriental",
+        "couleurs nuancées",
         "faune",
         "femme",
         "grand format",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "oiseau",
         "orange",
+        "palette chaude",
         "rouge",
+        "scène de groupe",
+        "tradition",
         "voyage"
       ]
     },
@@ -1664,7 +2544,21 @@
               "name": "orange",
               "share": 0.189
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.524,
+            "contrast": 0.236,
+            "saturation": 0.246,
+            "warmth": 0.13,
+            "edge_density": 0.212,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1678,17 +2572,37 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "duo"
+      ],
       "search_tags": [
         "carré",
         "coiffe",
+        "composition équilibrée",
+        "contraste fort",
         "costume oriental",
+        "couleurs nuancées",
+        "duo",
         "femme",
         "format moyen",
         "gris",
         "groupe",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
+        "tradition",
         "voyage"
       ]
     },
@@ -1716,7 +2630,21 @@
               "name": "orange",
               "share": 0.788
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.53,
+            "contrast": 0.206,
+            "saturation": 0.403,
+            "warmth": 0.232,
+            "edge_density": 0.181,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1735,18 +2663,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "duo"
+      ],
       "search_tags": [
         "animal",
         "chat",
         "coiffe",
+        "composition équilibrée",
+        "contraste modéré",
         "costume oriental",
+        "couleurs nuancées",
+        "duo",
         "faune",
         "femme",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "siamois",
+        "tradition",
         "voyage"
       ]
     },
@@ -1789,7 +2737,21 @@
               "name": "rouge",
               "share": 0.14
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.432,
+            "contrast": 0.248,
+            "saturation": 0.288,
+            "warmth": 0.148,
+            "edge_density": 0.228,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1808,19 +2770,41 @@
       "actions": [
         "trier des fleurs"
       ],
+      "movement": [
+        "mouvement gestuel"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "composition d’objets",
+        "scène de groupe"
+      ],
       "search_tags": [
         "coiffe",
+        "composition d’objets",
+        "composition équilibrée",
+        "contraste fort",
         "costume oriental",
+        "couleurs nuancées",
         "femme",
         "fleurs",
         "gris",
         "groupe",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "narratif",
         "nature morte",
         "noir",
         "orange",
+        "palette chaude",
         "rouge",
+        "scène de groupe",
         "table",
+        "tradition",
         "trier des fleurs",
         "voyage"
       ]
@@ -1857,7 +2841,21 @@
               "name": "rouge",
               "share": 0.23
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.558,
+            "contrast": 0.189,
+            "saturation": 0.15,
+            "warmth": 0.051,
+            "edge_density": 0.249,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1875,17 +2873,42 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "boire",
         "café parisien",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette équilibrée",
         "paysage",
         "personnage",
         "rouge",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -1923,7 +2946,21 @@
               "name": "jaune",
               "share": 0.321
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.484,
+            "contrast": 0.214,
+            "saturation": 0.169,
+            "warmth": 0.078,
+            "edge_density": 0.219,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -1941,18 +2978,47 @@
       "actions": [
         "attendre"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "calme",
+        "narratif",
+        "suspendu",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "attendre",
         "café parisien",
+        "calme",
         "chapeau",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette chaude",
         "paysage",
         "personnage",
+        "scène contemplative",
         "scène urbaine",
+        "suspendu",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -1989,7 +3055,21 @@
               "name": "noir",
               "share": 0.162
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.464,
+            "contrast": 0.232,
+            "saturation": 0.043,
+            "warmth": -0.005,
+            "edge_density": 0.247,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2008,91 +3088,44 @@
       "actions": [
         "lire"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
         "café parisien",
         "chapeau",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste fort",
+        "couleurs douces",
         "format moyen",
         "gris",
         "homme",
         "journal",
         "lieu",
         "lire",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "noir",
+        "palette équilibrée",
         "paysage",
         "personnage",
+        "scène contemplative",
+        "scène de groupe",
         "scène urbaine",
-        "ville",
-        "voyage"
-      ]
-    },
-    {
-      "collection": "Paris",
-      "collection_id": "paris",
-      "title": "Jeu de cartes",
-      "url": "/collections/paris/jeu-de-cartes",
-      "declared_dimensions": "80 × 80 cm",
-      "format_tags": [
-        "format moyen",
-        "carré"
-      ],
-      "availability": "disponible sur demande",
-      "images": [
-        {
-          "file": "/images/paris/jeu-de-cartes.jpg",
-          "pixels": {
-            "width": 851,
-            "height": 850
-          },
-          "orientation": "carré",
-          "colors": [
-            "gris",
-            "blanc"
-          ],
-          "color_profile": [
-            {
-              "name": "gris",
-              "share": 0.655
-            },
-            {
-              "name": "blanc",
-              "share": 0.145
-            }
-          ]
-        }
-      ],
-      "subjects": [
-        "café parisien",
-        "cartes",
-        "chapeau",
-        "lieu",
-        "scène urbaine",
-        "table",
-        "ville",
-        "voyage"
-      ],
-      "people": [
-        "homme",
-        "personnage"
-      ],
-      "actions": [
-        "jouer",
-        "jouer aux cartes"
-      ],
-      "search_tags": [
-        "blanc",
-        "café parisien",
-        "carré",
-        "cartes",
-        "chapeau",
-        "format moyen",
-        "gris",
-        "homme",
-        "jouer",
-        "jouer aux cartes",
-        "lieu",
-        "personnage",
-        "scène urbaine",
-        "table",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -2129,7 +3162,21 @@
               "name": "rouge",
               "share": 0.287
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.508,
+            "contrast": 0.197,
+            "saturation": 0.177,
+            "warmth": 0.062,
+            "edge_density": 0.244,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2148,18 +3195,47 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "calme",
+        "narratif",
+        "suspendu",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "attendre",
         "boire",
         "café parisien",
+        "calme",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette chaude",
         "paysage",
         "personnage",
         "rouge",
+        "scène contemplative",
         "scène urbaine",
+        "suspendu",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -2202,7 +3278,21 @@
               "name": "bleu",
               "share": 0.19
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.504,
+            "contrast": 0.175,
+            "saturation": 0.205,
+            "warmth": 0.038,
+            "edge_density": 0.2,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2220,18 +3310,43 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "bleu",
         "boire",
         "café parisien",
         "carré",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
+        "figure solitaire",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette équilibrée",
         "personnage",
         "petit format",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -2274,7 +3389,21 @@
               "name": "rouge",
               "share": 0.173
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.409,
+            "contrast": 0.166,
+            "saturation": 0.229,
+            "warmth": 0.033,
+            "edge_density": 0.193,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2292,97 +3421,46 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "duo"
+      ],
       "search_tags": [
         "boire",
         "café parisien",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
+        "duo",
         "femme",
         "format moyen",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette équilibrée",
         "paysage",
         "personnage",
         "rose",
         "rouge",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
-      ]
-    },
-    {
-      "collection": "Paris",
-      "collection_id": "paris",
-      "title": "Les parieurs",
-      "url": "/collections/paris/les-parieurs",
-      "declared_dimensions": "92 × 73 cm",
-      "format_tags": [
-        "format moyen",
-        "paysage"
-      ],
-      "availability": "disponible sur demande",
-      "images": [
-        {
-          "file": "/images/paris/les-parieurs.jpg",
-          "pixels": {
-            "width": 1067,
-            "height": 851
-          },
-          "orientation": "paysage",
-          "colors": [
-            "gris",
-            "bleu",
-            "noir"
-          ],
-          "color_profile": [
-            {
-              "name": "gris",
-              "share": 0.629
-            },
-            {
-              "name": "bleu",
-              "share": 0.176
-            },
-            {
-              "name": "noir",
-              "share": 0.144
-            }
-          ]
-        }
-      ],
-      "subjects": [
-        "café parisien",
-        "chapeau",
-        "journal",
-        "lieu",
-        "scène urbaine",
-        "ville",
-        "voyage"
-      ],
-      "people": [
-        "homme",
-        "personnage"
-      ],
-      "actions": [
-        "jouer",
-        "lire"
-      ],
-      "search_tags": [
-        "bleu",
-        "café parisien",
-        "chapeau",
-        "format moyen",
-        "gris",
-        "homme",
-        "jouer",
-        "journal",
-        "lieu",
-        "lire",
-        "noir",
-        "paysage",
-        "personnage",
-        "scène urbaine",
-        "ville",
-        "voyage"
       ]
     },
     {
@@ -2422,7 +3500,21 @@
               "name": "orange",
               "share": 0.184
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.559,
+            "contrast": 0.197,
+            "saturation": 0.205,
+            "warmth": 0.104,
+            "edge_density": 0.222,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2442,20 +3534,51 @@
         "jouer de la musique",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "boire",
         "café parisien",
         "carré",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
+        "figure solitaire",
         "grand format",
         "gris",
         "instrument",
         "jaune",
         "jouer de la musique",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "mouvement gestuel",
+        "mouvement musical",
         "musique",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
+        "rythme",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -2495,7 +3618,21 @@
               "name": "orange",
               "share": 0.264
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.5,
+            "contrast": 0.199,
+            "saturation": 0.277,
+            "warmth": 0.151,
+            "edge_density": 0.246,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2513,16 +3650,41 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "duo"
+      ],
       "search_tags": [
         "boire",
         "café parisien",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs nuancées",
+        "duo",
         "femme",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -2562,7 +3724,21 @@
               "name": "orange",
               "share": 0.123
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.497,
+            "contrast": 0.21,
+            "saturation": 0.25,
+            "warmth": 0.11,
+            "edge_density": 0.247,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2580,16 +3756,41 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "boire",
         "café parisien",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "gris",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -2629,7 +3830,21 @@
               "name": "gris",
               "share": 0.165
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.512,
+            "contrast": 0.187,
+            "saturation": 0.325,
+            "warmth": 0.168,
+            "edge_density": 0.234,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2647,16 +3862,41 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "boire",
         "café parisien",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "gris",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
+        "scène contemplative",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage",
         "échanger"
@@ -2694,7 +3934,21 @@
               "name": "gris",
               "share": 0.244
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.474,
+            "contrast": 0.213,
+            "saturation": 0.287,
+            "warmth": 0.13,
+            "edge_density": 0.221,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2711,17 +3965,42 @@
       "actions": [
         "poser"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "scène de groupe"
+      ],
       "search_tags": [
         "café parisien",
         "carré",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
         "grand format",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "poser",
+        "scène contemplative",
+        "scène de groupe",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -2755,7 +4034,21 @@
               "name": "gris",
               "share": 0.154
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.513,
+            "contrast": 0.205,
+            "saturation": 0.313,
+            "warmth": -0.194,
+            "edge_density": 0.252,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2770,14 +4063,37 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "bleu",
         "café parisien",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette froide",
         "personnage",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -2819,7 +4135,21 @@
               "name": "rouge",
               "share": 0.124
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.535,
+            "contrast": 0.225,
+            "saturation": 0.257,
+            "warmth": 0.134,
+            "edge_density": 0.189,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2834,17 +4164,40 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "café parisien",
         "carré",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -2878,7 +4231,21 @@
               "name": "gris",
               "share": 0.264
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.533,
+            "contrast": 0.201,
+            "saturation": 0.271,
+            "warmth": 0.13,
+            "edge_density": 0.209,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2893,14 +4260,39 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "nocturne",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "café parisien",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "gris",
         "jaune",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "nocturne",
+        "palette chaude",
         "personnage",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -2934,7 +4326,21 @@
               "name": "gris",
               "share": 0.227
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.49,
+            "contrast": 0.204,
+            "saturation": 0.309,
+            "warmth": -0.185,
+            "edge_density": 0.241,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -2951,15 +4357,44 @@
       "actions": [
         "attendre"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "calme",
+        "narratif",
+        "suspendu",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "attendre",
         "bleu",
         "café parisien",
+        "calme",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette froide",
         "personnage",
+        "scène contemplative",
         "scène urbaine",
+        "suspendu",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -2998,7 +4433,21 @@
               "name": "rouge",
               "share": 0.137
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.516,
+            "contrast": 0.213,
+            "saturation": 0.287,
+            "warmth": 0.165,
+            "edge_density": 0.25,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3013,15 +4462,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "narratif",
+        "urbain",
+        "vie quotidienne"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "café parisien",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
+        "figure solitaire",
         "gris",
         "lieu",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
         "orange",
+        "palette chaude",
         "personnage",
         "rouge",
         "scène urbaine",
+        "urbain",
+        "vie quotidienne",
         "ville",
         "voyage"
       ]
@@ -3053,7 +4525,21 @@
               "name": "gris",
               "share": 0.66
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.515,
+            "contrast": 0.215,
+            "saturation": 0.076,
+            "warmth": 0.001,
+            "edge_density": 0.2,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3071,11 +4557,26 @@
       "actions": [
         "lire"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "chien",
         "coiffe bretonne",
+        "composition équilibrée",
+        "contraste modéré",
         "costume traditionnel",
+        "couleurs douces",
         "faune",
         "femme",
         "format moyen",
@@ -3083,7 +4584,15 @@
         "groupe",
         "lire",
         "livre",
-        "paysage"
+        "lumière intermédiaire",
+        "mouvement calme",
+        "narratif",
+        "palette équilibrée",
+        "paysage",
+        "scène contemplative",
+        "scène de groupe",
+        "tradition",
+        "voyage"
       ]
     },
     {
@@ -3119,7 +4628,21 @@
               "name": "noir",
               "share": 0.194
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.415,
+            "contrast": 0.231,
+            "saturation": 0.108,
+            "warmth": -0.008,
+            "edge_density": 0.226,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         },
         {
           "file": "/images/bretonnes/le-secret-de-guemene-penfao-1.jpg",
@@ -3141,7 +4664,21 @@
               "name": "noir",
               "share": 0.146
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.456,
+            "contrast": 0.236,
+            "saturation": 0.095,
+            "warmth": -0.004,
+            "edge_density": 0.219,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3153,16 +4690,37 @@
         "groupe"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "narratif",
+        "tradition",
+        "voyage"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "coiffe bretonne",
+        "composition équilibrée",
+        "contraste fort",
         "costume traditionnel",
+        "couleurs douces",
         "deux panneaux",
         "diptyque",
         "femme",
         "grand format",
         "gris",
         "groupe",
-        "noir"
+        "lumière intermédiaire",
+        "mouvement suggéré",
+        "narratif",
+        "noir",
+        "palette équilibrée",
+        "scène de groupe",
+        "tradition",
+        "voyage"
       ]
     },
     {
@@ -3202,7 +4760,21 @@
               "name": "gris",
               "share": 0.197
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.656,
+            "contrast": 0.177,
+            "saturation": 0.234,
+            "warmth": 0.13,
+            "edge_density": 0.179,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3222,21 +4794,45 @@
       "actions": [
         "marcher"
       ],
+      "movement": [
+        "marche",
+        "mouvement directionnel"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
       "search_tags": [
         "architecture",
+        "atmosphérique",
         "blanc",
         "canal",
         "carré",
+        "composition urbaine",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
         "couple",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "homme",
         "lieu",
+        "lumière intermédiaire",
+        "marche",
         "marcher",
+        "mouvement directionnel",
         "orange",
+        "palette chaude",
         "parapluie",
         "pluie",
+        "urbain",
         "ville",
         "voyage"
       ]
@@ -3278,7 +4874,21 @@
               "name": "gris",
               "share": 0.222
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.625,
+            "contrast": 0.24,
+            "saturation": 0.205,
+            "warmth": 0.06,
+            "edge_density": 0.202,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3296,9 +4906,25 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "intensité",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "blanc",
+        "composition équilibrée",
+        "contraste fort",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3306,11 +4932,20 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "gris",
         "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "palette chaude",
+        "passion",
         "petit format",
         "portrait",
-        "rouge"
+        "rouge",
+        "rythme",
+        "théâtral"
       ]
     },
     {
@@ -3345,7 +4980,21 @@
               "name": "bleu",
               "share": 0.35
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.452,
+            "contrast": 0.224,
+            "saturation": 0.161,
+            "warmth": -0.065,
+            "edge_density": 0.134,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3363,9 +5012,25 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "intensité",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "bleu",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3373,10 +5038,19 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "homme",
-        "paysage"
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "palette froide",
+        "passion",
+        "paysage",
+        "rythme",
+        "théâtral"
       ]
     },
     {
@@ -3421,7 +5095,21 @@
               "name": "rouge",
               "share": 0.134
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.531,
+            "contrast": 0.251,
+            "saturation": 0.178,
+            "warmth": 0.079,
+            "edge_density": 0.223,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3439,9 +5127,26 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "intensité",
+        "passion",
+        "romantique",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "blanc",
+        "composition équilibrée",
+        "contraste fort",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3449,12 +5154,22 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "format moyen",
         "gris",
         "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
         "orange",
+        "palette chaude",
+        "passion",
         "paysage",
-        "rouge"
+        "romantique",
+        "rouge",
+        "rythme",
+        "théâtral"
       ]
     },
     {
@@ -3489,7 +5204,21 @@
               "name": "noir",
               "share": 0.13
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.502,
+            "contrast": 0.222,
+            "saturation": 0.079,
+            "warmth": -0.02,
+            "edge_density": 0.244,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3510,11 +5239,30 @@
         "danser",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "intensité",
+        "nocturne",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "boire",
         "carré",
         "chapeau",
+        "composition très détaillée",
+        "contraste modéré",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3522,10 +5270,22 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "grand format",
         "gris",
         "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "nocturne",
         "noir",
+        "palette équilibrée",
+        "passion",
+        "rythme",
+        "scène contemplative",
+        "théâtral",
         "échanger"
       ]
     },
@@ -3556,7 +5316,21 @@
               "name": "gris",
               "share": 0.941
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.589,
+            "contrast": 0.14,
+            "saturation": 0.033,
+            "warmth": -0.011,
+            "edge_density": 0.122,
+            "tags": [
+              "palette équilibrée",
+              "contraste doux",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3574,8 +5348,24 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "intensité",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
+        "composition équilibrée",
+        "contraste doux",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3583,10 +5373,19 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "gris",
         "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "palette équilibrée",
+        "passion",
         "paysage",
-        "petit format"
+        "petit format",
+        "rythme",
+        "théâtral"
       ]
     },
     {
@@ -3621,7 +5420,21 @@
               "name": "orange",
               "share": 0.335
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.522,
+            "contrast": 0.22,
+            "saturation": 0.158,
+            "warmth": 0.066,
+            "edge_density": 0.225,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3642,10 +5455,29 @@
         "danser",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "intensité",
+        "nocturne",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "boire",
         "chapeau",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3653,11 +5485,23 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "grand format",
         "gris",
         "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "nocturne",
         "orange",
+        "palette chaude",
+        "passion",
         "paysage",
+        "rythme",
+        "scène contemplative",
+        "théâtral",
         "échanger"
       ]
     },
@@ -3693,7 +5537,21 @@
               "name": "blanc",
               "share": 0.127
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.548,
+            "contrast": 0.246,
+            "saturation": 0.168,
+            "warmth": 0.072,
+            "edge_density": 0.212,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3712,11 +5570,27 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "intensité",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "blanc",
         "carré",
         "chapeau",
+        "composition équilibrée",
+        "contraste fort",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3724,9 +5598,18 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "grand format",
         "gris",
-        "homme"
+        "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "palette chaude",
+        "passion",
+        "rythme",
+        "théâtral"
       ]
     },
     {
@@ -3766,7 +5649,21 @@
               "name": "rouge",
               "share": 0.12
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.496,
+            "contrast": 0.199,
+            "saturation": 0.17,
+            "warmth": 0.074,
+            "edge_density": 0.176,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3787,11 +5684,30 @@
         "danser",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "intensité",
+        "nocturne",
+        "passion",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "boire",
         "carré",
         "chapeau",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3799,11 +5715,23 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "grand format",
         "gris",
         "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "nocturne",
         "orange",
+        "palette chaude",
+        "passion",
         "rouge",
+        "rythme",
+        "scène contemplative",
+        "théâtral",
         "échanger"
       ]
     },
@@ -3834,7 +5762,21 @@
               "name": "gris",
               "share": 0.868
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.535,
+            "contrast": 0.197,
+            "saturation": 0.028,
+            "warmth": -0.002,
+            "edge_density": 0.256,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3853,10 +5795,27 @@
       "actions": [
         "danser"
       ],
+      "movement": [
+        "mouvement dansé",
+        "mouvement dynamique",
+        "rythme"
+      ],
+      "atmosphere": [
+        "intensité",
+        "passion",
+        "romantique",
+        "théâtral"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bal",
         "carré",
         "chapeau",
+        "composition très détaillée",
+        "contraste modéré",
+        "couleurs douces",
         "couple",
         "danse",
         "danse de couple",
@@ -3864,9 +5823,19 @@
         "danseur",
         "danseuse",
         "femme",
+        "figure solitaire",
         "grand format",
         "gris",
-        "homme"
+        "homme",
+        "intensité",
+        "lumière intermédiaire",
+        "mouvement dansé",
+        "mouvement dynamique",
+        "palette équilibrée",
+        "passion",
+        "romantique",
+        "rythme",
+        "théâtral"
       ]
     },
     {
@@ -3901,7 +5870,21 @@
               "name": "gris",
               "share": 0.346
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.534,
+            "contrast": 0.184,
+            "saturation": 0.271,
+            "warmth": 0.144,
+            "edge_density": 0.193,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3923,21 +5906,46 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "cavalier",
         "chapeau",
         "cheval",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "femme",
         "figure",
         "format moyen",
         "gris",
         "groupe",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
+        "poétique",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "équestre",
         "étendard"
       ]
@@ -3974,7 +5982,21 @@
               "name": "gris",
               "share": 0.399
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.54,
+            "contrast": 0.21,
+            "saturation": 0.272,
+            "warmth": 0.124,
+            "edge_density": 0.216,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -3996,10 +6018,29 @@
         "jouer de la musique",
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement gestuel",
+        "mouvement musical",
+        "mouvement équestre",
+        "rythme",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "cavalier",
         "chapeau",
         "cheval",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "figure",
         "grand format",
@@ -4007,11 +6048,23 @@
         "groupe",
         "instrument",
         "jouer de la musique",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement gestuel",
+        "mouvement musical",
+        "mouvement équestre",
         "musique",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
+        "poétique",
+        "rythme",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "étendard"
       ]
     },
@@ -4044,7 +6097,21 @@
               "name": "gris",
               "share": 0.308
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.549,
+            "contrast": 0.236,
+            "saturation": 0.274,
+            "warmth": 0.134,
+            "edge_density": 0.171,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4063,17 +6130,42 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "cavalier",
         "chapeau",
         "cheval",
+        "composition équilibrée",
+        "contraste fort",
+        "couleurs nuancées",
         "drapeau",
         "figure",
         "gris",
         "groupe",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "orange",
+        "palette chaude",
         "personnage",
+        "poétique",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "étendard"
       ]
     },
@@ -4106,7 +6198,21 @@
               "name": "orange",
               "share": 0.261
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.516,
+            "contrast": 0.189,
+            "saturation": 0.252,
+            "warmth": 0.133,
+            "edge_density": 0.218,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4128,19 +6234,44 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "trio"
+      ],
       "search_tags": [
         "animal",
         "cavalier",
         "chapeau",
         "cheval",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "femme",
         "figure",
         "gris",
         "groupe",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "orange",
+        "palette chaude",
         "personnage",
+        "poétique",
+        "symbolique",
+        "trio",
+        "élan",
+        "épique",
         "équestre",
         "étendard"
       ]
@@ -4182,7 +6313,21 @@
               "name": "rouge",
               "share": 0.13
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.57,
+            "contrast": 0.187,
+            "saturation": 0.284,
+            "warmth": 0.174,
+            "edge_density": 0.171,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4203,21 +6348,46 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "carré",
         "cavalier",
         "chapeau",
         "cheval",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "figure",
         "format moyen",
         "gris",
         "groupe",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "orange",
+        "palette chaude",
         "personnage",
+        "poétique",
         "rouge",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "équestre",
         "étendard"
       ]
@@ -4251,7 +6421,21 @@
               "name": "gris",
               "share": 0.323
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.537,
+            "contrast": 0.192,
+            "saturation": 0.309,
+            "warmth": 0.167,
+            "edge_density": 0.244,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4274,21 +6458,46 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "cavalier",
         "chapeau",
         "cheval",
+        "composition très détaillée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "faune",
         "figure",
         "gris",
         "groupe",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "mésange",
         "oiseau",
         "orange",
+        "palette chaude",
         "personnage",
+        "poétique",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "étendard"
       ]
     },
@@ -4326,7 +6535,21 @@
               "name": "jaune",
               "share": 0.233
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.497,
+            "contrast": 0.2,
+            "saturation": 0.273,
+            "warmth": 0.13,
+            "edge_density": 0.24,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4346,19 +6569,44 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "cavalier",
         "chapeau",
         "cheval",
+        "composition très détaillée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "figure",
         "gris",
         "groupe",
         "homme",
         "jaune",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "orange",
+        "palette chaude",
         "personnage",
+        "poétique",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "étendard"
       ]
     },
@@ -4399,7 +6647,21 @@
               "name": "jaune",
               "share": 0.161
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.473,
+            "contrast": 0.178,
+            "saturation": 0.299,
+            "warmth": 0.133,
+            "edge_density": 0.164,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4418,20 +6680,45 @@
       "actions": [
         "monter à cheval"
       ],
+      "movement": [
+        "mouvement directionnel",
+        "mouvement équestre",
+        "élan"
+      ],
+      "atmosphere": [
+        "poétique",
+        "symbolique",
+        "épique"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
         "cavalier",
         "chapeau",
         "cheval",
+        "composition équilibrée",
+        "contraste modéré",
+        "couleurs nuancées",
         "drapeau",
         "figure",
         "format moyen",
         "gris",
         "groupe",
         "jaune",
+        "lumière intermédiaire",
         "monter à cheval",
+        "mouvement directionnel",
+        "mouvement équestre",
         "orange",
+        "palette chaude",
         "personnage",
+        "poétique",
+        "scène de groupe",
+        "symbolique",
+        "élan",
+        "épique",
         "étendard"
       ]
     },
@@ -4467,7 +6754,21 @@
               "name": "gris",
               "share": 0.212
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.57,
+            "contrast": 0.142,
+            "saturation": 0.235,
+            "warmth": 0.137,
+            "edge_density": 0.148,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4482,17 +6783,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "animal",
         "chat",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "faune",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "paysage",
-        "personnage"
+        "personnage",
+        "silencieux"
       ]
     },
     {
@@ -4527,7 +6849,21 @@
               "name": "blanc",
               "share": 0.278
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.65,
+            "contrast": 0.223,
+            "saturation": 0.276,
+            "warmth": 0.17,
+            "edge_density": 0.163,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4545,18 +6881,43 @@
         "jouer de la musique",
         "jouer du violoncelle"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "blanc",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
         "figure",
+        "figure solitaire",
         "instrument",
+        "intimiste",
         "jouer de la musique",
         "jouer du violoncelle",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
         "musique",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "petit format",
+        "rythme",
+        "silencieux",
         "violoncelle"
       ]
     },
@@ -4592,7 +6953,21 @@
               "name": "blanc",
               "share": 0.251
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.689,
+            "contrast": 0.175,
+            "saturation": 0.2,
+            "warmth": 0.128,
+            "edge_density": 0.119,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "ambiance lumineuse",
+              "composition épurée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4606,15 +6981,38 @@
       "actions": [
         "poser"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
+        "ambiance lumineuse",
         "blanc",
+        "composition épurée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
+        "intimiste",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "petit format",
-        "poser"
+        "poser",
+        "scène contemplative",
+        "silencieux"
       ]
     },
     {
@@ -4649,7 +7047,21 @@
               "name": "blanc",
               "share": 0.257
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.68,
+            "contrast": 0.174,
+            "saturation": 0.227,
+            "warmth": 0.134,
+            "edge_density": 0.094,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition épurée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4663,15 +7075,38 @@
       "actions": [
         "poser"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "blanc",
+        "composition épurée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "petit format",
-        "poser"
+        "poser",
+        "scène contemplative",
+        "silencieux"
       ]
     },
     {
@@ -4706,7 +7141,21 @@
               "name": "bleu",
               "share": 0.2
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.567,
+            "contrast": 0.175,
+            "saturation": 0.118,
+            "warmth": -0.026,
+            "edge_density": 0.149,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4718,14 +7167,37 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "romantique",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bleu",
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
-        "personnage"
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette équilibrée",
+        "personnage",
+        "romantique",
+        "silencieux"
       ]
     },
     {
@@ -4765,7 +7237,21 @@
               "name": "noir",
               "share": 0.121
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.458,
+            "contrast": 0.243,
+            "saturation": 0.245,
+            "warmth": -0.111,
+            "edge_density": 0.15,
+            "tags": [
+              "palette froide",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4777,15 +7263,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "romantique",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bleu",
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs nuancées",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "noir",
-        "personnage"
+        "palette froide",
+        "personnage",
+        "romantique",
+        "silencieux"
       ]
     },
     {
@@ -4825,7 +7334,21 @@
               "name": "blanc",
               "share": 0.144
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.543,
+            "contrast": 0.252,
+            "saturation": 0.124,
+            "warmth": 0.043,
+            "edge_density": 0.231,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4844,17 +7367,40 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "blanc",
         "boire",
         "carré",
         "chapeau",
+        "composition très détaillée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette équilibrée",
         "personnage",
+        "scène contemplative",
+        "silencieux",
         "table",
         "tasse",
         "thé",
@@ -4898,7 +7444,21 @@
               "name": "noir",
               "share": 0.122
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.481,
+            "contrast": 0.212,
+            "saturation": 0.166,
+            "warmth": 0.04,
+            "edge_density": 0.176,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4911,17 +7471,40 @@
         "femme"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "composition d’objets",
+        "figure solitaire"
+      ],
       "search_tags": [
         "carré",
+        "composition d’objets",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "fleurs",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "nature morte",
         "noir",
         "orange",
-        "personnage"
+        "palette équilibrée",
+        "personnage",
+        "silencieux"
       ]
     },
     {
@@ -4961,7 +7544,21 @@
               "name": "jaune",
               "share": 0.145
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.511,
+            "contrast": 0.215,
+            "saturation": 0.229,
+            "warmth": 0.076,
+            "edge_density": 0.157,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -4978,19 +7575,42 @@
       "actions": [
         "poser"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "carré",
         "chat",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "faune",
         "femme",
         "figure",
         "gris",
+        "intimiste",
         "jaune",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "personnage",
         "petit format",
-        "poser"
+        "poser",
+        "scène contemplative",
+        "scène de groupe",
+        "silencieux"
       ]
     },
     {
@@ -5030,7 +7650,21 @@
               "name": "noir",
               "share": 0.14
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.511,
+            "contrast": 0.243,
+            "saturation": 0.22,
+            "warmth": 0.064,
+            "edge_density": 0.157,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5046,18 +7680,43 @@
       "actions": [
         "poser"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "composition d’objets",
+        "scène de groupe"
+      ],
       "search_tags": [
+        "composition d’objets",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs douces",
         "femme",
         "figure",
         "fleurs",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "nature morte",
         "noir",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
-        "poser"
+        "poser",
+        "scène contemplative",
+        "scène de groupe",
+        "silencieux"
       ]
     },
     {
@@ -5102,7 +7761,21 @@
               "name": "blanc",
               "share": 0.188
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.496,
+            "contrast": 0.309,
+            "saturation": 0.128,
+            "warmth": 0.035,
+            "edge_density": 0.15,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5118,19 +7791,44 @@
       "actions": [
         "poser"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "composition d’objets",
+        "figure solitaire"
+      ],
       "search_tags": [
         "blanc",
         "carré",
+        "composition d’objets",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "fleurs",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "nature morte",
         "noir",
         "orange",
+        "palette équilibrée",
         "personnage",
-        "poser"
+        "poser",
+        "scène contemplative",
+        "silencieux"
       ]
     },
     {
@@ -5165,7 +7863,21 @@
               "name": "orange",
               "share": 0.337
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.581,
+            "contrast": 0.247,
+            "saturation": 0.232,
+            "warmth": 0.083,
+            "edge_density": 0.199,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5183,18 +7895,43 @@
         "jouer de la musique",
         "jouer du violoncelle"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs douces",
         "femme",
         "figure",
         "format moyen",
         "gris",
         "instrument",
+        "intimiste",
         "jouer de la musique",
         "jouer du violoncelle",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
         "musique",
         "orange",
+        "palette chaude",
         "personnage",
+        "rythme",
+        "scène de groupe",
+        "silencieux",
         "violoncelle"
       ]
     },
@@ -5230,7 +7967,21 @@
               "name": "blanc",
               "share": 0.145
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.543,
+            "contrast": 0.227,
+            "saturation": 0.068,
+            "warmth": -0.017,
+            "edge_density": 0.209,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5245,16 +7996,37 @@
       "actions": [
         "jouer"
       ],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "blanc",
         "carré",
         "chapeau",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "figure",
         "format moyen",
         "gris",
         "homme",
+        "intimiste",
         "jouer",
-        "personnage"
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette équilibrée",
+        "personnage",
+        "scène de groupe",
+        "silencieux"
       ]
     },
     {
@@ -5294,7 +8066,21 @@
               "name": "bleu",
               "share": 0.127
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.535,
+            "contrast": 0.197,
+            "saturation": 0.233,
+            "warmth": 0.071,
+            "edge_density": 0.176,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5310,19 +8096,40 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "animal",
         "bleu",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "faune",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "oiseau",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
-        "roitelet"
+        "roitelet",
+        "silencieux"
       ]
     },
     {
@@ -5367,7 +8174,21 @@
               "name": "blanc",
               "share": 0.127
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.549,
+            "contrast": 0.244,
+            "saturation": 0.28,
+            "warmth": 0.15,
+            "edge_density": 0.217,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5383,20 +8204,41 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "animal",
         "blanc",
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs nuancées",
         "faune",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
         "jaune",
+        "lumière intermédiaire",
+        "mouvement calme",
         "oiseau",
         "orange",
+        "palette chaude",
         "personnage",
-        "roitelet"
+        "roitelet",
+        "silencieux"
       ]
     },
     {
@@ -5436,7 +8278,21 @@
               "name": "orange",
               "share": 0.258
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.43,
+            "contrast": 0.18,
+            "saturation": 0.305,
+            "warmth": 0.049,
+            "edge_density": 0.201,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5449,16 +8305,37 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bleu",
         "chapeau",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette équilibrée",
         "paysage",
-        "personnage"
+        "personnage",
+        "silencieux"
       ]
     },
     {
@@ -5493,7 +8370,21 @@
               "name": "bleu",
               "share": 0.258
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.635,
+            "contrast": 0.163,
+            "saturation": 0.104,
+            "warmth": -0.063,
+            "edge_density": 0.138,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5505,14 +8396,35 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "bleu",
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
-        "personnage"
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
+        "palette froide",
+        "personnage",
+        "silencieux"
       ]
     },
     {
@@ -5547,7 +8459,21 @@
               "name": "orange",
               "share": 0.236
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.617,
+            "contrast": 0.193,
+            "saturation": 0.108,
+            "warmth": 0.034,
+            "edge_density": 0.181,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5559,14 +8485,35 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette équilibrée",
         "personnage",
-        "petit format"
+        "petit format",
+        "silencieux"
       ]
     },
     {
@@ -5606,7 +8553,21 @@
               "name": "noir",
               "share": 0.139
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.501,
+            "contrast": 0.25,
+            "saturation": 0.199,
+            "warmth": 0.086,
+            "edge_density": 0.222,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5625,17 +8586,40 @@
         "boire",
         "échanger"
       ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "boire",
         "carré",
         "chapeau",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste fort",
+        "couleurs douces",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "noir",
         "orange",
+        "palette chaude",
         "personnage",
+        "scène contemplative",
+        "silencieux",
         "table",
         "tasse",
         "thé",
@@ -5679,7 +8663,21 @@
               "name": "orange",
               "share": 0.197
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.499,
+            "contrast": 0.203,
+            "saturation": 0.281,
+            "warmth": 0.153,
+            "edge_density": 0.243,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5691,15 +8689,36 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
+        "composition très détaillée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
-        "rouge"
+        "rouge",
+        "silencieux"
       ]
     },
     {
@@ -5734,7 +8753,21 @@
               "name": "gris",
               "share": 0.132
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.558,
+            "contrast": 0.178,
+            "saturation": 0.373,
+            "warmth": 0.245,
+            "edge_density": 0.23,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5748,16 +8781,39 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "composition d’objets",
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
+        "composition d’objets",
+        "composition très détaillée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
         "figure",
         "fleurs",
         "format moyen",
         "gris",
+        "intimiste",
+        "lumière intermédiaire",
+        "mouvement calme",
         "nature morte",
         "orange",
-        "personnage"
+        "palette chaude",
+        "personnage",
+        "scène de groupe",
+        "silencieux"
       ]
     },
     {
@@ -5797,7 +8853,21 @@
               "name": "jaune",
               "share": 0.128
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.53,
+            "contrast": 0.223,
+            "saturation": 0.389,
+            "warmth": 0.236,
+            "edge_density": 0.184,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5809,15 +8879,36 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement calme"
+      ],
+      "atmosphere": [
+        "contemplatif",
+        "intimiste",
+        "silencieux"
+      ],
+      "composition": [
+        "figure solitaire"
+      ],
       "search_tags": [
         "carré",
+        "composition équilibrée",
+        "contemplatif",
+        "contraste modéré",
+        "couleurs nuancées",
         "femme",
         "figure",
+        "figure solitaire",
         "format moyen",
         "gris",
+        "intimiste",
         "jaune",
+        "lumière intermédiaire",
+        "mouvement calme",
         "orange",
-        "personnage"
+        "palette chaude",
+        "personnage",
+        "silencieux"
       ]
     },
     {
@@ -5852,7 +8943,21 @@
               "name": "gris",
               "share": 0.168
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.487,
+            "contrast": 0.225,
+            "saturation": 0.247,
+            "warmth": -0.092,
+            "edge_density": 0.174,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5869,19 +8974,39 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "bleu",
         "chapeau pointu",
         "clown",
+        "composition équilibrée",
+        "contraste modéré",
         "costume de scène",
+        "couleurs nuancées",
         "figure",
         "grand format",
         "gris",
         "groupe",
+        "lumière intermédiaire",
+        "mouvement suggéré",
         "oiseau",
+        "palette froide",
         "paysage",
         "personnage",
-        "spectacle"
+        "poétique",
+        "scène de groupe",
+        "spectacle",
+        "théâtral"
       ]
     },
     {
@@ -5921,7 +9046,21 @@
               "name": "gris",
               "share": 0.24
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.517,
+            "contrast": 0.231,
+            "saturation": 0.271,
+            "warmth": 0.009,
+            "edge_density": 0.203,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -5941,21 +9080,45 @@
       "actions": [
         "jouer du violon"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "bleu",
         "chapeau pointu",
         "clown",
+        "composition équilibrée",
+        "contraste fort",
         "costume de scène",
+        "couleurs nuancées",
         "figure",
         "format moyen",
         "gris",
         "groupe",
         "jaune",
         "jouer du violon",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
+        "palette équilibrée",
         "paysage",
         "personnage",
+        "poétique",
+        "rythme",
+        "scène de groupe",
         "singe",
         "spectacle",
+        "théâtral",
         "violon"
       ]
     },
@@ -5991,7 +9154,21 @@
               "name": "gris",
               "share": 0.18
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.506,
+            "contrast": 0.193,
+            "saturation": 0.325,
+            "warmth": -0.175,
+            "edge_density": 0.21,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -6010,20 +9187,40 @@
       "actions": [
         "jongler"
       ],
+      "movement": [
+        "mouvement gestuel"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "bleu",
         "bulles",
         "chapeau pointu",
         "clown",
+        "composition équilibrée",
+        "contraste modéré",
         "costume de scène",
+        "couleurs nuancées",
         "figure",
         "gris",
         "groupe",
         "jongler",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "palette froide",
         "paysage",
         "personnage",
         "petit format",
-        "spectacle"
+        "poétique",
+        "scène de groupe",
+        "spectacle",
+        "théâtral"
       ]
     },
     {
@@ -6060,7 +9257,21 @@
               "name": "noir",
               "share": 0.131
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.506,
+            "contrast": 0.245,
+            "saturation": 0.259,
+            "warmth": 0.052,
+            "edge_density": 0.18,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -6077,18 +9288,38 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "chapeau pointu",
         "clown",
+        "composition équilibrée",
+        "contraste fort",
         "costume de scène",
+        "couleurs nuancées",
         "figure",
         "gris",
         "groupe",
+        "lumière intermédiaire",
+        "mouvement suggéré",
         "noir",
         "oiseau",
         "orange",
+        "palette équilibrée",
         "personnage",
-        "spectacle"
+        "poétique",
+        "scène de groupe",
+        "spectacle",
+        "théâtral"
       ]
     },
     {
@@ -6125,7 +9356,21 @@
               "name": "noir",
               "share": 0.206
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.393,
+            "contrast": 0.241,
+            "saturation": 0.212,
+            "warmth": 0.06,
+            "edge_density": 0.233,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -6141,17 +9386,37 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "chapeau pointu",
         "clown",
+        "composition très détaillée",
+        "contraste fort",
         "costume de scène",
+        "couleurs douces",
         "figure",
         "gris",
         "groupe",
+        "lumière intermédiaire",
+        "mouvement suggéré",
         "noir",
         "orange",
+        "palette chaude",
         "personnage",
-        "spectacle"
+        "poétique",
+        "scène de groupe",
+        "spectacle",
+        "théâtral"
       ]
     },
     {
@@ -6196,7 +9461,21 @@
               "name": "noir",
               "share": 0.121
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.507,
+            "contrast": 0.235,
+            "saturation": 0.262,
+            "warmth": 0.112,
+            "edge_density": 0.22,
+            "tags": [
+              "palette chaude",
+              "contraste fort",
+              "couleurs nuancées",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -6217,11 +9496,27 @@
       "actions": [
         "jouer de la musique"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "carré",
         "chapeau pointu",
         "clown",
+        "composition équilibrée",
+        "contraste fort",
         "costume de scène",
+        "couleurs nuancées",
         "figure",
         "gris",
         "groupe",
@@ -6229,12 +9524,20 @@
         "instrument",
         "jaune",
         "jouer de la musique",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
         "musique",
         "noir",
         "orange",
+        "palette chaude",
         "personnage",
         "petit format",
-        "spectacle"
+        "poétique",
+        "rythme",
+        "scène de groupe",
+        "spectacle",
+        "théâtral"
       ]
     },
     {
@@ -6268,7 +9571,21 @@
               "name": "noir",
               "share": 0.213
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.469,
+            "contrast": 0.292,
+            "saturation": 0.131,
+            "warmth": 0.018,
+            "edge_density": 0.273,
+            "tags": [
+              "palette équilibrée",
+              "contraste fort",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -6290,22 +9607,46 @@
       "actions": [
         "jouer de la musique"
       ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "trio"
+      ],
       "search_tags": [
         "accordéon",
         "chapeau pointu",
         "clown",
+        "composition très détaillée",
+        "contraste fort",
         "costume de scène",
+        "couleurs douces",
         "figure",
         "grand format",
         "gris",
         "groupe",
         "homme",
         "jouer de la musique",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
         "noir",
         "orchestre",
+        "palette équilibrée",
         "personnage",
+        "poétique",
+        "rythme",
         "spectacle",
-        "triangle"
+        "théâtral",
+        "triangle",
+        "trio"
       ]
     },
     {
@@ -6345,7 +9686,21 @@
               "name": "orange",
               "share": 0.16
             }
-          ]
+          ],
+          "visual_character": {
+            "luminance": 0.514,
+            "contrast": 0.185,
+            "saturation": 0.187,
+            "warmth": 0.075,
+            "edge_density": 0.225,
+            "tags": [
+              "palette chaude",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
         }
       ],
       "subjects": [
@@ -6366,23 +9721,43 @@
         "personnage"
       ],
       "actions": [],
+      "movement": [
+        "mouvement suggéré"
+      ],
+      "atmosphere": [
+        "poétique",
+        "spectacle",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
       "search_tags": [
         "animal",
         "chapeau pointu",
         "clown",
+        "composition équilibrée",
+        "contraste modéré",
         "costume de scène",
+        "couleurs douces",
         "faune",
         "figure",
         "format moyen",
         "gris",
         "groupe",
         "homme",
+        "lumière intermédiaire",
+        "mouvement suggéré",
         "orange",
+        "palette chaude",
         "paysage",
         "personnage",
         "poisson",
+        "poétique",
         "rouge",
+        "scène de groupe",
         "spectacle",
+        "théâtral",
         "triangle"
       ]
     }

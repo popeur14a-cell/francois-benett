@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { artworkSearchMetadata } from "../data/artworkSearchMetadata";
+import { getArtworkDimensionsLabel } from "../utils/artworks";
 
 const interiors = [
   {
@@ -243,7 +244,7 @@ export default function InteriorViewer({ artwork, language, onBack }) {
       <div className="interior-toolbar">
         <div>
           <strong>{artwork.titre}</strong>
-          {artwork.dimensions && <span>{artwork.dimensions}</span>}
+          {artwork.dimensions && <span>{getArtworkDimensionsLabel(artwork.dimensions, en)}</span>}
           <span className="interior-match">
             {en ? "Room matched to this artwork" : "Décor accordé à cette œuvre"}
           </span>

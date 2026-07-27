@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
-import { getArtworkEntries, getArtworkAlt } from "../utils/artworks";
+import { getArtworkDimensionsLabel, getArtworkEntries, getArtworkAlt } from "../utils/artworks";
 import { ArrowIcon, CloseIcon, ZoomIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import FullscreenToggle from "../components/FullscreenToggle";
@@ -306,7 +306,7 @@ export default function Home() {
             <img src={openedArtwork.image} alt={getArtworkAlt(openedArtwork, en)} />
             <figcaption className="home-lightbox-caption">
               <strong>{openedArtwork.titre}</strong>
-              {openedArtwork.dimensions && <span>{openedArtwork.dimensions}</span>}
+              {openedArtwork.dimensions && <span>{getArtworkDimensionsLabel(openedArtwork.dimensions, en)}</span>}
             </figcaption>
           </figure>
         </div>

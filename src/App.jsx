@@ -122,9 +122,15 @@ function GalleryRoutes() {
         />,
 
         <Route
-          key={`${prefix}-legacy-artwork`}
+          key={`${prefix}-legacy-parieurs`}
           path={`${prefix}/collections/paris/les-parieurs`}
           element={<Navigate to={`${prefix}/collections/paris/les-dernieres-nouvelles`} replace />}
+        />,
+
+        <Route
+          key={`${prefix}-legacy-jeu-de-cartes`}
+          path={`${prefix}/collections/paris/jeu-de-cartes`}
+          element={<Navigate to={`${prefix}/collections/scene-d-intimite/les-joueurs`} replace />}
         />,
 
         <Route

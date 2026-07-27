@@ -21,6 +21,21 @@
       "source": "/collections/paris/les-parieurs",
       "destination": "/collections/paris/les-dernieres-nouvelles",
       "permanent": true
+    },
+    {
+      "source": "/en/collections/paris/les-parieurs",
+      "destination": "/en/collections/paris/les-dernieres-nouvelles",
+      "permanent": true
+    },
+    {
+      "source": "/collections/paris/jeu-de-cartes",
+      "destination": "/collections/scene-d-intimite/les-joueurs",
+      "permanent": true
+    },
+    {
+      "source": "/en/collections/paris/jeu-de-cartes",
+      "destination": "/en/collections/scene-d-intimite/les-joueurs",
+      "permanent": true
     }
   ],
   "headers": [

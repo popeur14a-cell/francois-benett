@@ -134,15 +134,19 @@ export default function Navbar() {
         }`}
         onClick={fermerMenu}
         aria-label={en ? "Close menu" : "Fermer le menu"}
+        aria-hidden={!menuOuvert}
+        tabIndex={menuOuvert ? 0 : -1}
       />
 
       <aside
         className={`menu-panel ${
           menuOuvert ? "menu-panel-open" : ""
         }`}
+        aria-hidden={!menuOuvert}
+        inert={menuOuvert ? undefined : ""}
       >
         <div className="menu-panel-header">
-          <span>{en ? "Navigation" : "Navigation"}</span>
+          <span>Menu</span>
 
           <button
             type="button"

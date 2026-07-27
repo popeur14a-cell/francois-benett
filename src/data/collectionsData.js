@@ -1,7 +1,7 @@
 export const collectionsData = {
   venise: {
     nom: "Venise",
-    couverture: "/images/hero/benett-cover-1280.webp",
+    couverture: "/images/venise/marionnettiste.jpg",
     oeuvres: [
       {
         titre: "Palais des Doges",
@@ -207,12 +207,6 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
-        titre: "Jeu de cartes",
-        image: "/images/paris/jeu-de-cartes.jpg",
-        dimensions: "80 × 80 cm",
-        collectionParticuliere: false,
-      },
-      {
         titre: "Attente au Procope",
         image: "/images/paris/attente-au-procope.jpg",
         dimensions: "92 × 73 cm",
@@ -227,12 +221,6 @@ export const collectionsData = {
       {
         titre: "Rencontre au Procope",
         image: "/images/paris/rencontre-au-procope.jpg",
-        dimensions: "92 × 73 cm",
-        collectionParticuliere: false,
-      },
-      {
-        titre: "Les parieurs",
-        image: "/images/paris/les-parieurs.jpg",
         dimensions: "92 × 73 cm",
         collectionParticuliere: false,
       },

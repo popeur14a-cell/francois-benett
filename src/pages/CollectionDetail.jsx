@@ -6,6 +6,7 @@ import { COLLECTION_ORDER, collectionMeta, SITE_URL } from "../data/collectionMe
 import {
   getAbsoluteUrl,
   getArtworkAlt,
+  getArtworkDimensionsLabel,
   getSortedArtworkEntries,
 } from "../utils/artworks";
 import InteriorViewer from "../components/InteriorViewer";
@@ -17,8 +18,8 @@ import FullscreenToggle from "../components/FullscreenToggle";
 import ResponsiveImage from "../components/ResponsiveImage";
 
 function getPanelName(index, en) {
-  if (en) return index === 0 ? "First part" : "Second part";
-  return index === 0 ? "Première partie" : "Deuxième partie";
+  if (en) return index === 0 ? "Left panel" : "Right panel";
+  return index === 0 ? "Partie gauche" : "Partie droite";
 }
 
 export default function CollectionDetail() {
@@ -245,7 +246,7 @@ export default function CollectionDetail() {
                   {artwork.dimensions && (
                     <p className="artwork-dimensions">
                       <span className="artwork-meta-label">{en ? "Dimensions" : "Format"}</span>
-                      {artwork.dimensions}
+                      {getArtworkDimensionsLabel(artwork.dimensions, en)}
                     </p>
                   )}
                   {artwork.technique && (

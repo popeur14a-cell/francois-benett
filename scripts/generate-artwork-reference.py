@@ -6,7 +6,7 @@ import unicodedata
 from collections import Counter
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageFilter, ImageStat
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -63,11 +63,84 @@ def detect_colors(image: Image.Image) -> list[dict]:
     ][:4]
 
 
+def analyze_visual_character(image: Image.Image) -> dict:
+    sample = image.convert("RGB")
+    sample.thumbnail((160, 160), Image.Resampling.LANCZOS)
+    pixels = list(sample.get_flattened_data())
+    hsv_pixels = [
+        colorsys.rgb_to_hsv(red / 255, green / 255, blue / 255)
+        for red, green, blue in pixels
+    ]
+    grayscale = sample.convert("L")
+    luminance = ImageStat.Stat(grayscale)
+    edge_image = grayscale.filter(ImageFilter.FIND_EDGES)
+    edge_pixels = list(edge_image.get_flattened_data())
+    edge_density = sum(value >= 36 for value in edge_pixels) / len(edge_pixels)
+    mean_saturation = sum(saturation for _, saturation, _ in hsv_pixels) / len(
+        hsv_pixels
+    )
+    mean_warmth = sum((red - blue) / 255 for red, _, blue in pixels) / len(pixels)
+    lightness = luminance.mean[0] / 255
+    contrast_value = luminance.stddev[0] / 255
+
+    temperature = (
+        "palette chaude"
+        if mean_warmth >= 0.055
+        else "palette froide"
+        if mean_warmth <= -0.055
+        else "palette équilibrée"
+    )
+    contrast = (
+        "contraste fort"
+        if contrast_value >= 0.23
+        else "contraste doux"
+        if contrast_value <= 0.14
+        else "contraste modéré"
+    )
+    saturation = (
+        "couleurs vives"
+        if mean_saturation >= 0.43
+        else "couleurs douces"
+        if mean_saturation <= 0.24
+        else "couleurs nuancées"
+    )
+    luminosity = (
+        "ambiance lumineuse"
+        if lightness >= 0.68
+        else "ambiance sombre"
+        if lightness <= 0.38
+        else "lumière intermédiaire"
+    )
+    visual_density = (
+        "composition très détaillée"
+        if edge_density >= 0.23
+        else "composition épurée"
+        if edge_density <= 0.12
+        else "composition équilibrée"
+    )
+
+    return {
+        "luminance": round(lightness, 3),
+        "contrast": round(contrast_value, 3),
+        "saturation": round(mean_saturation, 3),
+        "warmth": round(mean_warmth, 3),
+        "edge_density": round(edge_density, 3),
+        "tags": [
+            temperature,
+            contrast,
+            saturation,
+            luminosity,
+            visual_density,
+        ],
+    }
+
+
 def inspect_image(public_path: str) -> dict:
     disk_path = PUBLIC / public_path.removeprefix("/")
     with Image.open(disk_path) as source:
         width, height = source.size
         color_profile = detect_colors(source)
+        visual_character = analyze_visual_character(source)
 
     ratio = width / height
     orientation = (
@@ -83,6 +156,7 @@ def inspect_image(public_path: str) -> dict:
         "orientation": orientation,
         "colors": [entry["name"] for entry in color_profile],
         "color_profile": color_profile,
+        "visual_character": visual_character,
     }
 
 
@@ -335,6 +409,91 @@ def semantic_tags(artwork: dict) -> tuple[list[str], list[str], list[str]]:
     )
 
 
+def narrative_profile(
+    artwork: dict,
+    subjects: list[str],
+    people: list[str],
+    actions: list[str],
+) -> tuple[list[str], list[str], list[str]]:
+    title = normalize(artwork["titre"])
+    collection_id = artwork["collectionId"]
+    movement = []
+    atmosphere = []
+    composition = []
+
+    if any("danser" in action for action in actions) or collection_id == "tango":
+        movement.extend(["mouvement dansé", "mouvement dynamique", "rythme"])
+    if any("cheval" in action for action in actions):
+        movement.extend(["mouvement équestre", "mouvement directionnel", "élan"])
+    if any("musique" in action or "violon" in action or "violoncelle" in action for action in actions):
+        movement.extend(["mouvement musical", "mouvement gestuel", "rythme"])
+    if "marcher" in actions:
+        movement.extend(["marche", "mouvement directionnel"])
+    if any(
+        fragment in " ".join(actions)
+        for fragment in ["jongler", "manipuler", "trier", "jouer aux cartes"]
+    ):
+        movement.append("mouvement gestuel")
+    if any(
+        fragment in " ".join(actions)
+        for fragment in ["attendre", "poser", "lire", "boire", "échanger"]
+    ):
+        movement.extend(["mouvement calme", "scène contemplative"])
+    if not movement:
+        movement.append(
+            "mouvement calme"
+            if collection_id in {"scene-d-intimite", "paris", "venise", "maroc"}
+            else "mouvement suggéré"
+        )
+
+    if collection_id == "tango":
+        atmosphere.extend(["passion", "théâtral", "intensité"])
+    elif collection_id == "clowns":
+        atmosphere.extend(["théâtral", "poétique", "spectacle"])
+    elif collection_id == "messagers":
+        atmosphere.extend(["symbolique", "épique", "poétique"])
+    elif collection_id == "scene-d-intimite":
+        atmosphere.extend(["intimiste", "silencieux", "contemplatif"])
+    elif collection_id == "paris":
+        atmosphere.extend(["urbain", "narratif", "vie quotidienne"])
+    elif collection_id in {"amsterdam", "venise"}:
+        atmosphere.extend(["urbain", "voyage", "atmosphérique"])
+    elif collection_id in {"espagne", "maroc", "bretonnes"}:
+        atmosphere.extend(["tradition", "voyage", "narratif"])
+
+    if "night" in title or "nuit" in title:
+        atmosphere.append("nocturne")
+    if "attente" in title or "repos" in title or "plenitude" in title:
+        atmosphere.extend(["calme", "suspendu"])
+    if "passion" in title or "love" in title:
+        atmosphere.append("romantique")
+
+    if re.search(r"\b(deux|couple|confidence|rencontre)\b", title):
+        composition.append("duo")
+    elif re.search(r"\b(trois|trio)\b", title):
+        composition.append("trio")
+    elif "groupe" in people or re.search(
+        r"\b(les|modeles|joueurs|parieurs|messagers|cavalieres|amazones)\b",
+        title,
+    ):
+        composition.append("scène de groupe")
+    elif people:
+        composition.append("figure solitaire")
+    else:
+        composition.append("sans personnage")
+
+    if "architecture" in subjects or "ville" in subjects:
+        composition.append("composition urbaine")
+    if "nature morte" in subjects:
+        composition.append("composition d’objets")
+
+    return (
+        sorted(set(movement)),
+        sorted(set(atmosphere)),
+        sorted(set(composition)),
+    )
+
+
 node_script = """
 import { getAllArtworks } from "./src/utils/artworks.js";
 console.log(JSON.stringify(getAllArtworks()));
@@ -356,6 +515,9 @@ for artwork in artworks:
     image_paths = artwork.get("images") or [artwork["image"]]
     image_analysis = [inspect_image(image_path) for image_path in image_paths]
     subjects, people, actions = semantic_tags(artwork)
+    movement, atmosphere, composition = narrative_profile(
+        artwork, subjects, people, actions
+    )
     format_tags = get_format_tags(
         artwork.get("dimensions", ""), artwork.get("diptyque", False)
     )
@@ -365,10 +527,18 @@ for artwork in artworks:
             + subjects
             + people
             + actions
+            + movement
+            + atmosphere
+            + composition
             + [
                 color
                 for image_item in image_analysis
                 for color in image_item["colors"]
+            ]
+            + [
+                tag
+                for image_item in image_analysis
+                for tag in image_item["visual_character"]["tags"]
             ]
         )
     )
@@ -398,6 +568,9 @@ for artwork in artworks:
             "subjects": subjects,
             "people": people,
             "actions": actions,
+            "movement": movement,
+            "atmosphere": atmosphere,
+            "composition": composition,
             "search_tags": search_tags,
         }
     )
@@ -413,7 +586,9 @@ REFERENCE_OUTPUT.write_text(
             "artwork_count": len(catalog),
             "analysis_notes": {
                 "colors_and_orientation": "Calculated from the image pixels.",
+                "visual_character": "Luminance, contrast, saturation, warmth and edge density are measured from every artwork image.",
                 "subjects_people_actions": "Curated from titles and collections; use as search aids, not as an art-historical attribution.",
+                "movement_atmosphere_composition": "Structured visual reading based on the reviewed images, titles and series; intended for discovery and search.",
             },
             "artworks": catalog,
         },

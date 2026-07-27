@@ -4,7 +4,7 @@ import { ArrowIcon, HeartIcon } from "../components/Icons";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useFavorites from "../context/useFavorites";
 import useLanguage from "../context/useLanguage";
-import { findArtworkByPath, getArtworkAlt } from "../utils/artworks";
+import { findArtworkByPath, getArtworkAlt, getArtworkDimensionsLabel } from "../utils/artworks";
 
 export default function Favorites() {
   const { language } = useLanguage();
@@ -51,7 +51,7 @@ export default function Favorites() {
                   </Link>
                   <div>
                     <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
-                    {artwork.dimensions && <p>{artwork.dimensions}</p>}
+                    {artwork.dimensions && <p>{getArtworkDimensionsLabel(artwork.dimensions, en)}</p>}
                     <button type="button" onClick={() => removeFavorite(artwork.path)}><HeartIcon filled /> {en ? "Remove" : "Retirer"}</button>
                   </div>
                 </article>

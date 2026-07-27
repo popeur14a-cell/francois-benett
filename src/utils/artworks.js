@@ -120,10 +120,23 @@ export function getArtworkImageList(artwork) {
   return artwork.images?.length ? artwork.images : [artwork.image];
 }
 
+export function getArtworkDimensionsLabel(dimensions = "", en = false) {
+  if (!dimensions || !en) return dimensions;
+
+  const diptych = dimensions.match(/^(\d+)\s+panneaux?\s+de\s+(.+)$/i);
+  if (diptych) {
+    const [, panelCount, panelDimensions] = diptych;
+    return `${panelCount} panels, ${panelDimensions} each`;
+  }
+
+  return dimensions;
+}
+
 export function getArtworkAlt(artwork, en = false) {
+  const dimensionsLabel = getArtworkDimensionsLabel(artwork.dimensions, en);
   const dimensions = artwork.dimensions
     ? en
-      ? `, ${artwork.dimensions}`
+      ? `, ${dimensionsLabel}`
       : `, format ${artwork.dimensions}`
     : "";
   return en

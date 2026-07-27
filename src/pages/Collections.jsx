@@ -16,7 +16,7 @@ const collections = [
     nomEn: "Venice",
     categorie: "lieux",
     slug: "venise",
-    image: "/images/hero/benett-cover-1280.webp",
+    image: "/images/venise/marionnettiste.jpg",
     descriptionEn: "Venetian light, architecture and atmosphere.",
     description:
       "Lumières, architectures et atmosphères vénitiennes.",
