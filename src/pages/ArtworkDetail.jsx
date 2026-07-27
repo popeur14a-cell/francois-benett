@@ -323,7 +323,7 @@ export default function ArtworkDetail() {
             {viewerMode === "interior" ? (
               <InteriorViewer artwork={artwork} language={language} onBack={() => setViewerMode("zoom")} />
             ) : (
-              <>
+              <div className="artwork-detail-zoom-view">
                 {artwork.images?.length === 2 && (
                   <div className="diptych-view-options diptych-zoom-options" aria-label={en ? "Choose the diptych view" : "Choisir la vue du diptyque"}>
                     {[
@@ -352,7 +352,14 @@ export default function ArtworkDetail() {
                     return <img key={image} src={image} alt={artwork.images?.length > 1 ? `${getArtworkAlt(artwork, en)}, ${getPanelName(panelIndex, en)}` : getArtworkAlt(artwork, en)} />;
                   })}
                 </div>
-              </>
+                <button
+                  type="button"
+                  className="lightbox-room-button artwork-detail-lightbox-room"
+                  onClick={() => setViewerMode("interior")}
+                >
+                  <RoomIcon /> {en ? "View in a room" : "Voir dans un intérieur"}
+                </button>
+              </div>
             )}
           </div>
         )}

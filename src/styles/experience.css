@@ -473,6 +473,29 @@
   gap: 12px;
 }
 
+.artwork-detail-zoom-view {
+  width: 100%;
+  max-height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.artwork-detail-zoom-view .artwork-zoom-content {
+  max-height: calc(100vh - 120px);
+}
+
+.artwork-detail-zoom-view .artwork-zoom-content img {
+  max-height: calc(100vh - 120px);
+}
+
+.artwork-detail-lightbox-room {
+  flex: 0 0 auto;
+  gap: 9px;
+}
+
 .artwork-zoom-content img {
   max-width: 92vw;
   max-height: 88vh;
@@ -829,14 +852,46 @@
     font-size: 0;
   }
 
+  .artwork-detail-visual figure > button > span .icon {
+    width: 17px;
+    height: 17px;
+  }
+
   .artwork-detail-info h1 {
     font-size: 46px;
   }
 
   .artwork-sibling-nav {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+    gap: 8px;
     font-size: 12px;
+  }
+
+  .artwork-sibling-nav a {
+    width: fit-content;
+    max-width: 100%;
+    min-height: 100%;
+    padding: 9px 11px;
+  }
+
+  .artwork-sibling-nav a:last-child {
+    justify-self: end;
+  }
+
+  .artwork-sibling-nav span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .artwork-detail-zoom-view {
+    max-height: calc(100vh - 86px);
+    gap: 12px;
+  }
+
+  .artwork-detail-zoom-view .artwork-zoom-content,
+  .artwork-detail-zoom-view .artwork-zoom-content img {
+    max-height: calc(100vh - 150px);
   }
 
   .related-artworks > div {
