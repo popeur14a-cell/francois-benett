@@ -119,6 +119,23 @@ const categories = [
   { id: "personnages", fr: "Personnages et scènes", en: "Figures and scenes" },
 ];
 
+const collectionDisplayOrder = [
+  "amsterdam",
+  "bretonnes",
+  "espagne",
+  "maroc",
+  "paris",
+  "venise",
+  "clowns",
+  "messagers",
+  "scene-d-intimite",
+  "tango",
+];
+
+const collectionDisplayRank = new Map(
+  collectionDisplayOrder.map((slug, index) => [slug, index])
+);
+
 const PAGE_URL = `${SITE_URL}/collections`;
 
 const PAGE_DESCRIPTION =
@@ -255,12 +272,10 @@ export default function Collections() {
           {categories.map((categorie) => {
             const collectionsCategorie = collections
               .filter((collection) => collection.categorie === categorie.id)
-              .sort((a, b) =>
-                (en ? a.nomEn : a.nom).localeCompare(
-                  en ? b.nomEn : b.nom,
-                  language,
-                  { sensitivity: "base" }
-                )
+              .sort(
+                (a, b) =>
+                  collectionDisplayRank.get(a.slug) -
+                  collectionDisplayRank.get(b.slug)
               );
 
             return (

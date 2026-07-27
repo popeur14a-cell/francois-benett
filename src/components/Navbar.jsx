@@ -143,7 +143,7 @@ export default function Navbar() {
           menuOuvert ? "menu-panel-open" : ""
         }`}
         aria-hidden={!menuOuvert}
-        inert={menuOuvert ? undefined : ""}
+        inert={!menuOuvert}
       >
         <div className="menu-panel-header">
           <span>Menu</span>
