@@ -85,6 +85,7 @@ export const artworkColorMetadata = {
   "/collections/venise/escale-a-venise": [["orange", 0.429], ["gris", 0.319], ["rouge", 0.166]],
   "/collections/venise/l-oeuf-bleu": [["gris", 0.593], ["bleu", 0.392]],
   "/collections/venise/la-belle-violoniste": [["orange", 0.505], ["gris", 0.268]],
+  "/collections/venise/la-decouverte": [["gris", 0.478], ["bleu", 0.333], ["orange", 0.127]],
   "/collections/venise/la-diva": [["gris", 0.331], ["blanc", 0.222], ["rouge", 0.17], ["noir", 0.146]],
   "/collections/venise/la-diva-2": [["gris", 0.518], ["rouge", 0.164], ["blanc", 0.135]],
   "/collections/venise/la-marionnettiste": [["gris", 0.395], ["blanc", 0.23], ["rouge", 0.205]],
@@ -92,5 +93,4 @@ export const artworkColorMetadata = {
   "/collections/venise/le-chant-de-l-oiseau": [["gris", 0.338], ["jaune", 0.306], ["orange", 0.186]],
   "/collections/venise/palais-des-doges": [["bleu", 0.554], ["gris", 0.198], ["blanc", 0.158]],
   "/collections/venise/plenitude": [["gris", 0.582], ["blanc", 0.14]],
-  "/collections/venise/venise": [["gris", 0.478], ["bleu", 0.333], ["orange", 0.127]],
 };

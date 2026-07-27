@@ -134,6 +134,12 @@ function GalleryRoutes() {
         />,
 
         <Route
+          key={`${prefix}-legacy-venise-artwork`}
+          path={`${prefix}/collections/venise/venise`}
+          element={<Navigate to={`${prefix}/collections/venise/la-decouverte`} replace />}
+        />,
+
+        <Route
           key={`${prefix}-artwork`}
           path={`${prefix}/collections/:collectionId/:artworkSlug`}
           element={<ArtworkDetail />}

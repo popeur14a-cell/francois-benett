@@ -547,27 +547,27 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.benett-peintre.fr/collections/venise/venise</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/venise" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/venise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/venise" />
+    <loc>https://www.benett-peintre.fr/collections/venise/la-decouverte</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-decouverte" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-decouverte" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-decouverte" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.benett-peintre.fr/images/hero/benett-cover-1920.webp</image:loc>
-      <image:title>Venise — François Benett</image:title>
+      <image:title>La Découverte — François Benett</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.benett-peintre.fr/en/collections/venise/venise</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/venise" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/venise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/venise" />
+    <loc>https://www.benett-peintre.fr/en/collections/venise/la-decouverte</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/la-decouverte" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/la-decouverte" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/la-decouverte" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.benett-peintre.fr/images/hero/benett-cover-1920.webp</image:loc>
-      <image:title>Venise — François Benett</image:title>
+      <image:title>La Découverte — François Benett</image:title>
     </image:image>
   </url>
   <url>

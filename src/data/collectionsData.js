@@ -77,10 +77,10 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
-        titre: "Venise",
+        titre: "La Découverte",
         image: "/images/hero/benett-cover-1920.webp",
         thumbnail: "/images/hero/benett-cover-1280.webp",
-        dimensions: "116 × 89 cm",
+        dimensions: "156 × 116 cm",
         collectionParticuliere: true,
       },
     ],

@@ -36,6 +36,16 @@
       "source": "/en/collections/paris/jeu-de-cartes",
       "destination": "/en/collections/scene-d-intimite/les-joueurs",
       "permanent": true
+    },
+    {
+      "source": "/collections/venise/venise",
+      "destination": "/collections/venise/la-decouverte",
+      "permanent": true
+    },
+    {
+      "source": "/en/collections/venise/venise",
+      "destination": "/en/collections/venise/la-decouverte",
+      "permanent": true
     }
   ],
   "headers": [
