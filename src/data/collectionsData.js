@@ -70,6 +70,13 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
+        titre: "Miroir",
+        image: "/images/venise/miroir.jpg",
+        dimensions: "41 × 33 cm",
+        orientation: "portrait",
+        collectionParticuliere: false,
+      },
+      {
         titre: "Plénitude",
         image: "/images/venise/plenitude.jpg",
         thumbnail: "/images/venise/plenitude-preview.jpg",

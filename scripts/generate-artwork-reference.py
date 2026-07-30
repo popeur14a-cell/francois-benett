@@ -352,6 +352,12 @@ def semantic_tags(artwork: dict) -> tuple[list[str], list[str], list[str]]:
     elif collection_id == "venise":
         subjects.extend(["costume vénitien", "personnage"])
         people.extend(["femme", "groupe"])
+        if "miroir" in title:
+            subjects.extend(
+                ["miroir", "masque", "masque vénitien", "flacon", "portrait", "visage"]
+            )
+            actions.extend(["poser", "se regarder"])
+            people.remove("groupe")
         if any(
             fragment in title
             for fragment in [
@@ -521,6 +527,12 @@ for artwork in artworks:
     format_tags = get_format_tags(
         artwork.get("dimensions", ""), artwork.get("diptyque", False)
     )
+    declared_orientation = artwork.get("orientation")
+    if declared_orientation:
+        format_tags = [
+            tag for tag in format_tags if tag not in {"carré", "paysage", "portrait"}
+        ]
+        format_tags.append(declared_orientation)
     search_tags = sorted(
         set(
             format_tags

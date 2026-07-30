@@ -49,6 +49,7 @@ for source_path in IMAGES.rglob("*"):
         or source_path.name == "benett-cover.webp"
         or source_path.name.startswith("benett-cover-")
         or "interieurs" in source_path.parts
+        or "branding" in source_path.parts
     ):
         continue
 
@@ -59,9 +60,15 @@ for source_path in IMAGES.rglob("*"):
     with Image.open(source_path) as source:
         converted = source.convert("RGB")
         for width in (480, 640, 960):
+            output_path = output_directory / f"{source_path.stem}-{width}.webp"
+            if (
+                output_path.exists()
+                and output_path.stat().st_mtime >= source_path.stat().st_mtime
+            ):
+                continue
             output = resize_to_width(converted, width)
             output.save(
-                output_directory / f"{source_path.stem}-{width}.webp",
+                output_path,
                 "WEBP",
                 quality=78 if width == 480 else 80 if width == 640 else 82,
                 method=6,

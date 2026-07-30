@@ -91,6 +91,7 @@ export const artworkColorMetadata = {
   "/collections/venise/la-marionnettiste": [["gris", 0.395], ["blanc", 0.23], ["rouge", 0.205]],
   "/collections/venise/le-bal-des-oiseaux": [["orange", 0.583], ["gris", 0.213]],
   "/collections/venise/le-chant-de-l-oiseau": [["gris", 0.338], ["jaune", 0.306], ["orange", 0.186]],
+  "/collections/venise/miroir": [["gris", 0.358], ["rouge", 0.23]],
   "/collections/venise/palais-des-doges": [["bleu", 0.554], ["gris", 0.198], ["blanc", 0.158]],
   "/collections/venise/plenitude": [["gris", 0.582], ["blanc", 0.14]],
 };

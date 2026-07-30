@@ -237,7 +237,7 @@
   width: 100%;
   height: 100%;
   max-height: none;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .artwork-detail-visual figure > button > span {
@@ -506,7 +506,7 @@
   width: min(44vw, 78vh);
   height: min(44vw, 78vh);
   max-width: 45vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .favorites-page > header,
@@ -578,7 +578,7 @@
   width: calc((100% - 7px) / 2);
   height: auto;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .favorites-grid article > div {
@@ -849,12 +849,14 @@
     bottom: 8px;
     padding: 0;
     justify-content: center;
+    gap: 0;
     font-size: 0;
   }
 
   .artwork-detail-visual figure > button > span .icon {
     width: 17px;
     height: 17px;
+    transform: none;
   }
 
   .artwork-detail-info h1 {

@@ -177,7 +177,7 @@
   max-width: 100%;
   max-height: none;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.42);
 }
 
@@ -368,7 +368,7 @@
 
 .interior-artwork-diptych .interior-canvas-panel img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .interior-toolbar {
@@ -661,7 +661,7 @@
   height: auto;
   max-height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   transition: none;
 }
 

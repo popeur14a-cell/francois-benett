@@ -523,6 +523,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.benett-peintre.fr/collections/venise/miroir</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/miroir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/miroir" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/miroir" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/miroir.jpg</image:loc>
+      <image:title>Miroir — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.benett-peintre.fr/en/collections/venise/miroir</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/miroir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/miroir" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.benett-peintre.fr/collections/venise/miroir" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.benett-peintre.fr/images/venise/miroir.jpg</image:loc>
+      <image:title>Miroir — François Benett</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.benett-peintre.fr/collections/venise/plenitude</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.benett-peintre.fr/collections/venise/plenitude" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.benett-peintre.fr/en/collections/venise/plenitude" />

@@ -9,7 +9,7 @@ import FullscreenToggle from "../components/FullscreenToggle";
 import ResponsiveImage from "../components/ResponsiveImage";
 
 const selection = [
-  ["scene-d-intimite", "Modèle 2"],
+  ["venise", "Miroir"],
   ["venise", "La marionnettiste"],
   ["bretonnes", "Les belles histoires avec Billy"],
   ["tango", "Blue tango"],

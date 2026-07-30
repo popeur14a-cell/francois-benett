@@ -312,11 +312,11 @@ img {
 .related-artwork-visual.is-diptych img {
   width: calc((100% - 8px) / 2);
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .related-artwork-visual.is-diptych {
-  transform: scale(1.09);
+  transform: none;
 }
 
 .diptych-view-options {
@@ -549,7 +549,7 @@ img {
 
 .interior-artwork-diptych .interior-canvas-panel img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .interior-canvas-panel {

@@ -3,7 +3,7 @@
     "src/data/collectionsData.js",
     "public/images"
   ],
-  "artwork_count": 93,
+  "artwork_count": 94,
   "analysis_notes": {
     "colors_and_orientation": "Calculated from the image pixels.",
     "visual_character": "Luminance, contrast, saturation, warmth and edge density are measured from every artwork image.",
@@ -1177,6 +1177,119 @@
         "suspendu",
         "urbain",
         "ville",
+        "voyage"
+      ]
+    },
+    {
+      "collection": "Venise",
+      "collection_id": "venise",
+      "title": "Miroir",
+      "url": "/collections/venise/miroir",
+      "declared_dimensions": "41 × 33 cm",
+      "format_tags": [
+        "petit format",
+        "portrait"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/venise/miroir.jpg",
+          "pixels": {
+            "width": 1289,
+            "height": 1650
+          },
+          "orientation": "portrait",
+          "colors": [
+            "gris",
+            "rouge"
+          ],
+          "color_profile": [
+            {
+              "name": "gris",
+              "share": 0.358
+            },
+            {
+              "name": "rouge",
+              "share": 0.23
+            }
+          ],
+          "visual_character": {
+            "luminance": 0.505,
+            "contrast": 0.23,
+            "saturation": 0.218,
+            "warmth": 0.04,
+            "edge_density": 0.254,
+            "tags": [
+              "palette équilibrée",
+              "contraste modéré",
+              "couleurs douces",
+              "lumière intermédiaire",
+              "composition très détaillée"
+            ]
+          }
+        }
+      ],
+      "subjects": [
+        "costume vénitien",
+        "flacon",
+        "lieu",
+        "masque",
+        "masque vénitien",
+        "miroir",
+        "personnage",
+        "portrait",
+        "ville",
+        "visage",
+        "voyage"
+      ],
+      "people": [
+        "femme"
+      ],
+      "actions": [
+        "poser",
+        "se regarder"
+      ],
+      "movement": [
+        "mouvement calme",
+        "scène contemplative"
+      ],
+      "atmosphere": [
+        "atmosphérique",
+        "urbain",
+        "voyage"
+      ],
+      "composition": [
+        "composition urbaine",
+        "figure solitaire"
+      ],
+      "search_tags": [
+        "atmosphérique",
+        "composition très détaillée",
+        "composition urbaine",
+        "contraste modéré",
+        "costume vénitien",
+        "couleurs douces",
+        "femme",
+        "figure solitaire",
+        "flacon",
+        "gris",
+        "lieu",
+        "lumière intermédiaire",
+        "masque",
+        "masque vénitien",
+        "miroir",
+        "mouvement calme",
+        "palette équilibrée",
+        "personnage",
+        "petit format",
+        "portrait",
+        "poser",
+        "rouge",
+        "scène contemplative",
+        "se regarder",
+        "urbain",
+        "ville",
+        "visage",
         "voyage"
       ]
     },
