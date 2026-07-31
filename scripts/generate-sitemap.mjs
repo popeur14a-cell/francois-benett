@@ -3,6 +3,8 @@ import { collectionsData } from "../src/data/collectionsData.js";
 import { SITE_URL } from "../src/data/collectionMeta.js";
 import { getAllArtworks, getArtworkImageList } from "../src/utils/artworks.js";
 
+const lastModified = new Date().toISOString().slice(0, 10);
+
 const escapeXml = (value) =>
   String(value)
     .replaceAll("&", "&amp;")
@@ -39,6 +41,7 @@ const standardEntry = ([path, changefreq, priority], language = "fr") => {
   return `  <url>
     <loc>${SITE_URL}${localizedPath}</loc>
 ${localizedLinks(path)}
+    <lastmod>${lastModified}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
@@ -57,6 +60,7 @@ const artworkEntry = (artwork, language = "fr") => {
   return `  <url>
     <loc>${SITE_URL}${language === "en" ? `/en${artwork.path}` : artwork.path}</loc>
 ${localizedLinks(artwork.path)}
+    <lastmod>${lastModified}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 ${images}

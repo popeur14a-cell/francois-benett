@@ -6,6 +6,7 @@ import { collectionMeta, SITE_URL } from "../src/data/collectionMeta.js";
 import {
   getAbsoluteUrl,
   getAllArtworks,
+  getArtworkEntries,
   getArtworkImageList,
 } from "../src/utils/artworks.js";
 
@@ -22,6 +23,24 @@ const escapeHtml = (value) =>
 
 const jsonLd = (value) =>
   JSON.stringify(value).replaceAll("<", "\\u003c");
+
+const localizedPath = (path, language) =>
+  language === "en" ? `/en${path === "/" ? "" : path}` : path;
+
+const renderLinkList = (items, language) => {
+  if (!items?.length) return "";
+
+  return `<nav aria-label="${language === "en" ? "Explore the gallery" : "Explorer la galerie"}">
+      <ul>
+${items
+  .map(
+    ({ path, label }) =>
+      `        <li><a href="${escapeHtml(localizedPath(path, language))}">${escapeHtml(label)}</a></li>`
+  )
+  .join("\n")}
+      </ul>
+    </nav>`;
+};
 
 const staticPages = [
   {
@@ -101,12 +120,35 @@ const collectionPages = Object.entries(collectionsData).map(([slug, collection])
     `Discover the works in François Benett’s ${collectionMeta[slug]?.en || collection.nom} collection.`,
   image: collection.couverture,
   type: "collection",
+  collectionId: slug,
   structuredData: {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: `Collection ${collection.nom} — François Benett`,
-    url: `${SITE_URL}/collections/${slug}`,
-    description: collectionMeta[slug]?.fr,
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: `Collection ${collection.nom} — François Benett`,
+        url: `${SITE_URL}/collections/${slug}`,
+        description: collectionMeta[slug]?.fr,
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: collection.oeuvres.length,
+          itemListElement: getArtworkEntries(slug).map((artwork, position) => ({
+            "@type": "ListItem",
+            position: position + 1,
+            name: artwork.titre,
+            url: `${SITE_URL}${artwork.path}`,
+          })),
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Collections", item: `${SITE_URL}/collections` },
+          { "@type": "ListItem", position: 3, name: collection.nom, item: `${SITE_URL}/collections/${slug}` },
+        ],
+      },
+    ],
   },
 }));
 
@@ -128,34 +170,124 @@ const artworkPages = getAllArtworks().map((artwork) => {
     enDescription,
     image: getArtworkImageList(artwork)[0],
     type: "article",
+    artwork,
     structuredData: {
       "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: artwork.titre,
-      creator: {
-        "@type": "Person",
-        name: "François Benett",
-        url: SITE_URL,
-      },
-      image: images,
-      url: `${SITE_URL}${artwork.path}`,
-      ...(artwork.dimensions ? { size: artwork.dimensions } : {}),
-      isPartOf: {
-        "@type": "CollectionPage",
-        name: collectionName,
-        url: `${SITE_URL}/collections/${artwork.collectionId}`,
-      },
+      "@graph": [
+        {
+          "@type": "VisualArtwork",
+          name: artwork.titre,
+          description,
+          artform: "Peinture",
+          creator: {
+            "@type": "Person",
+            name: "François Benett",
+            url: SITE_URL,
+          },
+          copyrightHolder: {
+            "@type": "Person",
+            name: "François Benett",
+          },
+          image: images,
+          url: `${SITE_URL}${artwork.path}`,
+          mainEntityOfPage: `${SITE_URL}${artwork.path}`,
+          ...(artwork.dimensions ? { size: artwork.dimensions } : {}),
+          ...(artwork.technique ? { artMedium: artwork.technique } : {}),
+          isPartOf: {
+            "@type": "CollectionPage",
+            name: collectionName,
+            url: `${SITE_URL}/collections/${artwork.collectionId}`,
+          },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+            { "@type": "ListItem", position: 2, name: "Collections", item: `${SITE_URL}/collections` },
+            { "@type": "ListItem", position: 3, name: collectionName, item: `${SITE_URL}/collections/${artwork.collectionId}` },
+            { "@type": "ListItem", position: 4, name: artwork.titre, item: `${SITE_URL}${artwork.path}` },
+          ],
+        },
+      ],
     },
   };
 });
 
 const siteData = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Galerie François Benett",
-  url: SITE_URL,
-  inLanguage: "fr-FR",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: "Galerie François Benett",
+      url: SITE_URL,
+      inLanguage: ["fr-FR", "en-GB"],
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#person`,
+      name: "François Benett",
+      url: `${SITE_URL}/parcours`,
+      jobTitle: "Artiste peintre contemporain",
+      sameAs: [
+        "https://www.instagram.com/benett_gallery/",
+        "https://www.singulart.com/fr/artiste/fran%C3%A7ois-benett-31295",
+      ],
+    },
+  ],
 };
+
+function renderSeoFallback(page) {
+  const language = page.language || "fr";
+  const en = language === "en";
+  const basePath = page.path.replace(/^\/en(?=\/|$)/, "") || "/";
+  let links = [];
+
+  if (basePath === "/") {
+    links = [
+      { path: "/collections", label: en ? "Explore the collections" : "Explorer les collections" },
+      { path: "/parcours", label: en ? "About François Benett" : "Parcours de François Benett" },
+      { path: "/contact", label: en ? "Contact the artist" : "Contacter l’artiste" },
+    ];
+  } else if (basePath === "/collections") {
+    links = Object.entries(collectionsData).map(([slug, collection]) => ({
+      path: `/collections/${slug}`,
+      label: en ? collectionMeta[slug]?.en || collection.nom : collection.nom,
+    }));
+  } else if (page.collectionId) {
+    links = getArtworkEntries(page.collectionId).map((artwork) => ({
+      path: artwork.path,
+      label: artwork.titre,
+    }));
+  } else if (page.artwork) {
+    links = [
+      {
+        path: `/collections/${page.artwork.collectionId}`,
+        label: en
+          ? `${page.artwork.collectionNameEn} collection`
+          : `Collection ${page.artwork.collectionName}`,
+      },
+      { path: "/collections", label: en ? "All collections" : "Toutes les collections" },
+    ];
+  }
+
+  const image = page.image
+    ? `<img src="${escapeHtml(page.image)}" alt="${escapeHtml(
+        page.artwork
+          ? en
+            ? `${page.artwork.titre}, artwork by François Benett`
+            : `${page.artwork.titre}, œuvre de François Benett`
+          : page.title
+      )}" width="960" height="720" />`
+    : "";
+
+  return `<main data-seo-fallback>
+    <h1>${escapeHtml(page.title)}</h1>
+    <p>${escapeHtml(page.description)}</p>
+    ${image}
+    ${renderLinkList(links, language)}
+  </main>`;
+}
 
 function render(page) {
   const canonical = `${SITE_URL}${page.path === "/" ? "/" : page.path}`;
@@ -203,7 +335,8 @@ function render(page) {
     <link rel="alternate" hreflang="en" href="${englishUrl}" />
     <link rel="alternate" hreflang="x-default" href="${frenchUrl}" />
 ${extraHead}\n  </head>`
-    );
+    )
+    .replace('<div id="root"></div>', `<div id="root">${renderSeoFallback(page)}</div>`);
 }
 
 async function writePage(page) {
