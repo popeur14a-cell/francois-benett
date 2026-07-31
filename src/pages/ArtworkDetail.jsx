@@ -43,10 +43,11 @@ export default function ArtworkDetail() {
   const nextCollectionId = collectionIds[(collectionIndex + 1) % collectionIds.length];
   const previousCollection = collectionsData[previousCollectionId];
   const nextCollection = collectionsData[nextCollectionId];
-  const related = artworks.filter((item) => item.slug !== artworkSlug).slice(0, 3);
+  const related = artworks.filter((item) => item.slug !== artworkSlug);
   const { isFavorite, toggleFavorite } = useFavorites();
   const [viewerMode, setViewerMode] = useState(null);
   const [zoomPanel, setZoomPanel] = useState(null);
+  const [relatedCarousel, setRelatedCarousel] = useState({ path: "", index: 0 });
   const [shareStatus, setShareStatus] = useState("");
   const closeButtonRef = useRef(null);
   const lightboxRef = useRef(null);
@@ -94,6 +95,22 @@ export default function ArtworkDetail() {
     ? `${artwork.titre}, original artwork by François Benett from the ${collectionName} collection${artwork.dimensions ? `, ${dimensionsLabel}` : ""}.`
     : `${artwork.titre}, œuvre originale de François Benett dans la collection ${collectionName}${artwork.dimensions ? `, format ${artwork.dimensions}` : ""}.`;
   const favorite = isFavorite(artwork.path);
+  const relatedIndex = relatedCarousel.path === artwork.path
+    ? relatedCarousel.index
+    : 0;
+  const visibleRelated = Array.from(
+    { length: Math.min(3, related.length) },
+    (_, offset) => related[(relatedIndex + offset) % related.length]
+  );
+  const moveRelated = (step) => {
+    setRelatedCarousel((current) => {
+      const currentIndex = current.path === artwork.path ? current.index : 0;
+      return {
+        path: artwork.path,
+        index: (currentIndex + step + related.length) % related.length,
+      };
+    });
+  };
   const contactParams = new URLSearchParams({
     artwork: artwork.titre,
     collection: artwork.collectionName,
@@ -203,14 +220,20 @@ export default function ArtworkDetail() {
                   }}
                   aria-label={`${en ? "Enlarge" : "Agrandir"} ${artwork.titre}${artwork.images?.length > 1 ? `, ${getPanelName(index, en)}` : ""}`}
                 >
-                  <img
+                  <ResponsiveImage
                     src={image}
+                    sizes={artwork.images?.length > 1
+                      ? "(max-width: 760px) 46vw, 28vw"
+                      : "(max-width: 760px) 92vw, 56vw"}
                     alt={artwork.images?.length > 1 ? `${getArtworkAlt(artwork, en)}, ${getPanelName(index, en)}` : getArtworkAlt(artwork, en)}
                     fetchPriority={index === 0 ? "high" : "auto"}
                     decoding="async"
                   />
                   {!artwork.images?.length && (
-                    <span><ZoomIcon /> {en ? "Enlarge" : "Agrandir"}</span>
+                    <span>
+                      <ZoomIcon />
+                      <span className="artwork-zoom-label">{en ? "Enlarge" : "Agrandir"}</span>
+                    </span>
                   )}
                 </button>
                 {artwork.images?.length > 1 && <figcaption>{getPanelName(index, en)}</figcaption>}
@@ -290,28 +313,46 @@ export default function ArtworkDetail() {
         {related.length > 0 && (
           <section className="related-artworks">
             <h2>{en ? `More works from ${collectionName}` : `D’autres œuvres de la collection ${collectionName}`}</h2>
-            <div>
-              {related.map((item) => {
-                const relatedImages = getArtworkImageList(item);
-                return (
-                  <Link key={item.path} to={item.path} viewTransition>
-                    <span className={`related-artwork-visual ${relatedImages.length > 1 ? "is-diptych" : ""}`}>
-                      {relatedImages.map((image, index) => (
-                        <ResponsiveImage
-                          key={image}
-                          src={image}
-                          sizes="(max-width: 760px) 45vw, 28vw"
-                          alt={relatedImages.length > 1
-                            ? `${getArtworkAlt(item, en)}, ${getPanelName(index, en)}`
-                            : getArtworkAlt(item, en)}
-                          loading="lazy"
-                        />
-                      ))}
-                    </span>
-                    <span>{item.titre}</span>
-                  </Link>
-                );
-              })}
+            <div className={`related-artworks-carousel ${related.length === 1 ? "is-single-related" : ""}`}>
+              <button
+                type="button"
+                className="related-artworks-arrow related-artworks-arrow-previous"
+                onClick={() => moveRelated(-1)}
+                aria-label={en ? "Show previous artworks" : "Afficher les œuvres précédentes"}
+              >
+                <ArrowIcon direction="left" />
+              </button>
+              <div className="related-artworks-track" key={`${artwork.path}-${relatedIndex}`}>
+                {visibleRelated.map((item) => {
+                  const relatedImages = getArtworkImageList(item);
+                  return (
+                    <Link key={item.path} to={item.path} viewTransition>
+                      <span className={`related-artwork-visual ${relatedImages.length > 1 ? "is-diptych" : ""}`}>
+                        {relatedImages.map((image, index) => (
+                          <ResponsiveImage
+                            key={image}
+                            src={image}
+                            sizes="(max-width: 760px) 72vw, 24vw"
+                            alt={relatedImages.length > 1
+                              ? `${getArtworkAlt(item, en)}, ${getPanelName(index, en)}`
+                              : getArtworkAlt(item, en)}
+                            loading="lazy"
+                          />
+                        ))}
+                      </span>
+                      <span>{item.titre}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+              <button
+                type="button"
+                className="related-artworks-arrow related-artworks-arrow-next"
+                onClick={() => moveRelated(1)}
+                aria-label={en ? "Show next artworks" : "Afficher les œuvres suivantes"}
+              >
+                <ArrowIcon direction="right" />
+              </button>
             </div>
           </section>
         )}

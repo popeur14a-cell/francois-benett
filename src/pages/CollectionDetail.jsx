@@ -22,6 +22,17 @@ function getPanelName(index, en) {
   return index === 0 ? "Partie gauche" : "Partie droite";
 }
 
+function alignInformationWithArtwork(event) {
+  const image = event.currentTarget;
+  if (!image.naturalWidth || !image.naturalHeight) return;
+  image
+    .closest(".artwork-card")
+    ?.style.setProperty(
+      "--artwork-image-ratio",
+      String(image.naturalWidth / image.naturalHeight)
+    );
+}
+
 export default function CollectionDetail() {
   const { language } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -214,6 +225,7 @@ export default function CollectionDetail() {
                     loading={index === 0 ? "eager" : "lazy"}
                     fetchPriority={index === 0 ? "high" : "auto"}
                     decoding="async"
+                    onLoad={alignInformationWithArtwork}
                   />
                 )}
               </Link>

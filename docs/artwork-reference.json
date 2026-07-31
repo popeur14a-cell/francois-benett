@@ -3,7 +3,7 @@
     "src/data/collectionsData.js",
     "public/images"
   ],
-  "artwork_count": 94,
+  "artwork_count": 95,
   "analysis_notes": {
     "colors_and_orientation": "Calculated from the image pixels.",
     "visual_character": "Luminance, contrast, saturation, warmth and edge density are measured from every artwork image.",
@@ -441,7 +441,7 @@
       "format_tags": [
         "format moyen"
       ],
-      "availability": "collection particulière",
+      "availability": "disponible sur demande",
       "images": [
         {
           "file": "/images/venise/marionnettiste.jpg",
@@ -1406,7 +1406,7 @@
         "grand format",
         "paysage"
       ],
-      "availability": "collection particulière",
+      "availability": "disponible sur demande",
       "images": [
         {
           "file": "/images/hero/benett-cover-1920.webp",
@@ -9022,6 +9022,131 @@
         "palette chaude",
         "personnage",
         "silencieux"
+      ]
+    },
+    {
+      "collection": "Clowns",
+      "collection_id": "clowns",
+      "title": "Adagio",
+      "url": "/collections/clowns/adagio",
+      "declared_dimensions": "80 × 80 cm",
+      "format_tags": [
+        "format moyen",
+        "carré"
+      ],
+      "availability": "disponible sur demande",
+      "images": [
+        {
+          "file": "/images/clowns/adagio.jpg",
+          "pixels": {
+            "width": 1352,
+            "height": 1320
+          },
+          "orientation": "carré",
+          "colors": [
+            "bleu"
+          ],
+          "color_profile": [
+            {
+              "name": "bleu",
+              "share": 0.878
+            }
+          ],
+          "visual_character": {
+            "luminance": 0.615,
+            "contrast": 0.202,
+            "saturation": 0.464,
+            "warmth": -0.387,
+            "edge_density": 0.172,
+            "tags": [
+              "palette froide",
+              "contraste modéré",
+              "couleurs vives",
+              "lumière intermédiaire",
+              "composition équilibrée"
+            ]
+          }
+        }
+      ],
+      "subjects": [
+        "chapeau pointu",
+        "clown",
+        "costume de scène",
+        "figure",
+        "flûte",
+        "instrument",
+        "musique",
+        "orchestre",
+        "personnage",
+        "spectacle",
+        "trio",
+        "violon"
+      ],
+      "people": [
+        "groupe",
+        "musiciens",
+        "personnage",
+        "trois personnages"
+      ],
+      "actions": [
+        "jouer de la flûte",
+        "jouer de la musique",
+        "jouer du violon"
+      ],
+      "movement": [
+        "mouvement gestuel",
+        "mouvement musical",
+        "rythme"
+      ],
+      "atmosphere": [
+        "calme",
+        "harmonieux",
+        "musical",
+        "poétique",
+        "spectacle",
+        "suspendu",
+        "théâtral"
+      ],
+      "composition": [
+        "scène de groupe"
+      ],
+      "search_tags": [
+        "bleu",
+        "calme",
+        "carré",
+        "chapeau pointu",
+        "clown",
+        "composition équilibrée",
+        "contraste modéré",
+        "costume de scène",
+        "couleurs vives",
+        "figure",
+        "flûte",
+        "format moyen",
+        "groupe",
+        "harmonieux",
+        "instrument",
+        "jouer de la flûte",
+        "jouer de la musique",
+        "jouer du violon",
+        "lumière intermédiaire",
+        "mouvement gestuel",
+        "mouvement musical",
+        "musical",
+        "musiciens",
+        "musique",
+        "orchestre",
+        "palette froide",
+        "personnage",
+        "poétique",
+        "rythme",
+        "scène de groupe",
+        "spectacle",
+        "suspendu",
+        "théâtral",
+        "trio",
+        "trois personnages",
+        "violon"
       ]
     },
     {

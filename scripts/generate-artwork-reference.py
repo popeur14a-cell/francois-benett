@@ -279,6 +279,19 @@ def semantic_tags(artwork: dict) -> tuple[list[str], list[str], list[str]]:
     elif collection_id == "clowns":
         subjects.extend(["chapeau pointu", "costume de scène"])
         people.extend(["personnage", "groupe"])
+        if "adagio" in title:
+            subjects.extend(
+                [
+                    "musique",
+                    "instrument",
+                    "flûte",
+                    "violon",
+                    "orchestre",
+                    "trio",
+                ]
+            )
+            people.extend(["trois personnages", "musiciens"])
+            actions.extend(["jouer de la flûte", "jouer du violon", "jouer de la musique"])
         if "bas de laine" in title:
             subjects.extend(["singe", "violon"])
             actions.append("jouer du violon")
@@ -471,6 +484,8 @@ def narrative_profile(
         atmosphere.append("nocturne")
     if "attente" in title or "repos" in title or "plenitude" in title:
         atmosphere.extend(["calme", "suspendu"])
+    if "adagio" in title:
+        atmosphere.extend(["calme", "harmonieux", "musical", "suspendu"])
     if "passion" in title or "love" in title:
         atmosphere.append("romantique")
 

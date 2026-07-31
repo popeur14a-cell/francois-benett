@@ -2,7 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "../components/Helmet";
 import useLanguage from "../context/useLanguage";
-import { getArtworkDimensionsLabel, getArtworkEntries, getArtworkAlt } from "../utils/artworks";
+import {
+  getArtworkAlt,
+  getArtworkDimensionsLabel,
+  getArtworkEntries,
+  getArtworkFormatMetrics,
+} from "../utils/artworks";
 import { ArrowIcon, CloseIcon, ZoomIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import FullscreenToggle from "../components/FullscreenToggle";
@@ -235,7 +240,23 @@ export default function Home() {
                     </span>
                   </Link>
                 ) : (
-                  <article className="carousel-artwork-card" key={`${element.path}-${position}`}>
+                  <article
+                    className={`carousel-artwork-card ${
+                      getArtworkFormatMetrics(element.dimensions).aspectRatio
+                        ? "has-format-ratio"
+                        : ""
+                    }`}
+                    key={`${element.path}-${position}`}
+                    style={
+                      getArtworkFormatMetrics(element.dimensions).aspectRatio
+                        ? {
+                            aspectRatio: getArtworkFormatMetrics(
+                              element.dimensions
+                            ).aspectRatio,
+                          }
+                        : undefined
+                    }
+                  >
                     <Link
                       to={element.path}
                       viewTransition
@@ -245,12 +266,7 @@ export default function Home() {
                       <ResponsiveImage
                         src={element.thumbnail || element.image}
                         sizes={mobileCarousel ? "82vw" : "28vw"}
-                        className={`${position === centerPosition ? "active" : ""} ${
-                          ["La marionnettiste", "Les belles histoires avec Billy", "Les deux andalouses 2"].includes(element.titre)
-                            || element.titre.startsWith("Modèle")
-                            ? "carousel-artwork-image-enlarged"
-                            : ""
-                        }`}
+                        className={position === centerPosition ? "active" : ""}
                         alt={getArtworkAlt(element, en)}
                         loading="lazy"
                         decoding="async"

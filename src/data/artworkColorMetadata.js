@@ -3,6 +3,7 @@ export const artworkColorMetadata = {
   "/collections/amsterdam/amsterdam": [["orange", 0.5], ["blanc", 0.21], ["gris", 0.197]],
   "/collections/bretonnes/le-secret-de-guemene-penfao": [["gris", 0.601], ["noir", 0.17]],
   "/collections/bretonnes/les-belles-histoires-avec-billy": [["gris", 0.66]],
+  "/collections/clowns/adagio": [["bleu", 0.878]],
   "/collections/clowns/l-oeuf-bleu": [["orange", 0.297], ["gris", 0.283], ["noir", 0.206]],
   "/collections/clowns/le-bas-de-laine": [["bleu", 0.253], ["jaune", 0.248], ["gris", 0.24]],
   "/collections/clowns/le-trio": [["gris", 0.461], ["noir", 0.213]],

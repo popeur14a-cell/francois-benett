@@ -31,7 +31,7 @@ export const collectionsData = {
         titre: "La marionnettiste",
         image: "/images/venise/marionnettiste.jpg",
         dimensions: "25F",
-        collectionParticuliere: true,
+        collectionParticuliere: false,
       },
       {
         titre: "La belle violoniste",
@@ -88,7 +88,7 @@ export const collectionsData = {
         image: "/images/hero/benett-cover-1920.webp",
         thumbnail: "/images/hero/benett-cover-1280.webp",
         dimensions: "156 × 116 cm",
-        collectionParticuliere: true,
+        collectionParticuliere: false,
       },
     ],
   },
@@ -590,6 +590,12 @@ export const collectionsData = {
     nom: "Clowns",
     couverture: "/images/clowns/tambour-et-cornemuse.jpg",
     oeuvres: [
+      {
+        titre: "Adagio",
+        image: "/images/clowns/adagio.jpg",
+        dimensions: "80 × 80 cm",
+        collectionParticuliere: false,
+      },
       {
         titre: "Les inséparables",
         image: "/images/clowns/les-inseparables.jpg",

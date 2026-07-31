@@ -148,6 +148,16 @@ img {
   user-select: none;
 }
 
+.navbar-logo {
+  filter: grayscale(1) contrast(1.4) brightness(.5);
+}
+
+.navbar-logo-link:hover .navbar-logo,
+.navbar-logo-link:focus-visible .navbar-logo {
+  filter: grayscale(1) contrast(1.45) brightness(.46);
+  transform: scale(1.035);
+}
+
 .carousel-artwork-link img.carousel-artwork-image-enlarged {
   transform: scale(1.075);
 }
@@ -270,7 +280,7 @@ img {
 }
 
 .related-artworks {
-  max-width: 900px;
+  max-width: 1100px;
   margin-top: 64px;
 }
 
@@ -296,7 +306,7 @@ img {
 
 .related-artwork-visual {
   width: 100%;
-  height: min(22vw, 260px);
+  height: min(25vw, 300px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +314,8 @@ img {
 }
 
 .related-artwork-visual img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: 100%;
   object-fit: contain;
 }
@@ -419,6 +430,26 @@ img {
 .artwork-card,
 .artwork-detail-visual {
   position: relative;
+}
+
+@media (min-width: 761px) {
+  .artwork-card {
+    --artwork-frame-height: 480px;
+  }
+
+  .artwork-information {
+    width: min(
+      100%,
+      calc(var(--artwork-frame-height) * var(--artwork-image-ratio, 100))
+    );
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .artwork-card {
+    --artwork-frame-height: 450px;
+  }
 }
 
 .artwork-open {
@@ -589,6 +620,103 @@ img {
 .slider-container .slider-arrow:last-child:hover,
 .slider-container .slider-arrow:last-child:focus-visible {
   transform: translate(6px, -50%);
+}
+
+.oeuvres-section .slider-container {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.carousel-artwork-card,
+.collection-card {
+  height: 330px;
+}
+
+.carousel-artwork-card.has-format-ratio {
+  width: auto;
+}
+
+.related-artworks-carousel {
+  position: relative;
+  padding-inline: 42px;
+}
+
+.related-artworks > .related-artworks-carousel {
+  display: block;
+}
+
+.related-artworks-track {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  animation: related-artworks-in 320ms cubic-bezier(.22, .61, .36, 1);
+}
+
+.related-artworks-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 34px;
+  height: 42px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-70%);
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.related-artworks-arrow .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.related-artworks-arrow:hover,
+.related-artworks-arrow:focus-visible {
+  color: var(--accent);
+}
+
+.related-artworks-arrow-previous {
+  left: 0;
+}
+
+.related-artworks-arrow-previous:hover,
+.related-artworks-arrow-previous:focus-visible {
+  transform: translate(-3px, -70%);
+}
+
+.related-artworks-arrow-next {
+  right: 0;
+}
+
+.related-artworks-arrow-next:hover,
+.related-artworks-arrow-next:focus-visible {
+  transform: translate(3px, -70%);
+}
+
+.related-artworks-carousel.is-single-related {
+  width: min(100%, 430px);
+  margin-inline: auto;
+}
+
+.related-artworks-carousel.is-single-related .related-artworks-track {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@keyframes related-artworks-in {
+  from {
+    opacity: 0.45;
+    transform: translateX(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .interior-background {
@@ -831,7 +959,71 @@ img {
   }
 
   .related-artwork-visual {
-    height: min(54vw, 230px);
+    height: min(66vw, 280px);
+  }
+
+  .related-artworks-carousel {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 280px) 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding-inline: 0;
+  }
+
+  .related-artworks > .related-artworks-carousel {
+    display: grid;
+  }
+
+  .related-artworks-track {
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .related-artworks-track > a:not(:first-child) {
+    display: none;
+  }
+
+  .related-artworks-arrow {
+    position: static;
+    grid-row: 1;
+    width: 30px;
+    transform: none;
+  }
+
+  .related-artworks-arrow-previous {
+    grid-column: 1;
+  }
+
+  .related-artworks-arrow-next {
+    grid-column: 3;
+  }
+
+  .related-artworks-arrow-previous:hover,
+  .related-artworks-arrow-previous:focus-visible {
+    transform: translateX(-3px);
+  }
+
+  .related-artworks-arrow-next:hover,
+  .related-artworks-arrow-next:focus-visible {
+    transform: translateX(3px);
+  }
+
+  .artwork-detail-visual figure > button > span {
+    display: grid;
+    place-items: center;
+    line-height: 0;
+  }
+
+  .artwork-detail-visual figure > button > span .icon {
+    display: block;
+    margin: 0;
+    transform: translate(-1px, -1px);
+  }
+
+  .artwork-detail-visual .artwork-zoom-label {
+    display: none;
   }
 
   .parcours-introduction > .parcours-portrait {

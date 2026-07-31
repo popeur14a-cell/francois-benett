@@ -21,7 +21,13 @@ export function getArtworkFormatMetrics(dimensions = "", diptych = false) {
   const sizeGroup = largestSide >= 100 ? 0 : largestSide > 60 ? 1 : largestSide ? 2 : 3;
   const area = height * width * (diptych ? 2 : 1);
 
-  return { area, sizeGroup };
+  return {
+    area,
+    sizeGroup,
+    height,
+    width,
+    aspectRatio: height && width ? width / height : null,
+  };
 }
 
 export function compareArtworksByFormatColorSize(a, b) {
