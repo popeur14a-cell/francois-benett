@@ -64,12 +64,6 @@ export const collectionsData = {
         collectionParticuliere: false,
       },
       {
-        titre: "Attente 2",
-        image: "/images/venise/attente-2.jpg",
-        dimensions: "",
-        collectionParticuliere: false,
-      },
-      {
         titre: "Miroir",
         image: "/images/venise/miroir.jpg",
         dimensions: "41 × 33 cm",

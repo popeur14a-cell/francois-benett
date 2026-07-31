@@ -82,7 +82,6 @@ export const artworkColorMetadata = {
   "/collections/tango/tango-love": [["gris", 0.392], ["orange", 0.205], ["blanc", 0.168], ["rouge", 0.134]],
   "/collections/tango/tango-love-2": [["gris", 0.868]],
   "/collections/venise/attente": [["orange", 0.721], ["rouge", 0.175]],
-  "/collections/venise/attente-2": [["bleu", 0.58], ["noir", 0.285]],
   "/collections/venise/escale-a-venise": [["orange", 0.429], ["gris", 0.319], ["rouge", 0.166]],
   "/collections/venise/l-oeuf-bleu": [["gris", 0.593], ["bleu", 0.392]],
   "/collections/venise/la-belle-violoniste": [["orange", 0.505], ["gris", 0.268]],

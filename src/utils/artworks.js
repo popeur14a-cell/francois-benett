@@ -8,6 +8,41 @@ const FIGURE_FORMATS = {
   50: [116, 89],
 };
 
+const COLOR_FLOW = {
+  blanc: 0,
+  jaune: 1,
+  orange: 2,
+  rouge: 3,
+  rose: 4,
+  bleu: 5,
+  gris: 6,
+  noir: 7,
+};
+
+function getArtworkPalettePosition(artwork) {
+  const palette = artworkColorMetadata[artwork.path] || [];
+  if (!palette.length) return 99;
+
+  const chromaticColors = palette.filter(
+    ([color]) => !["blanc", "gris", "noir"].includes(color)
+  );
+  const colors = chromaticColors.length ? chromaticColors : palette;
+  const totalShare = colors.reduce((sum, [, share]) => sum + share, 0) || 1;
+
+  return colors.reduce(
+    (position, [color, share]) =>
+      position + (COLOR_FLOW[color] ?? 8) * (share / totalShare),
+    0
+  );
+}
+
+function getArtworkOrientationPosition(format) {
+  if (!format.aspectRatio) return 3;
+  if (format.aspectRatio < 0.9) return 0;
+  if (format.aspectRatio <= 1.1) return 1;
+  return 2;
+}
+
 export function getArtworkFormatMetrics(dimensions = "", diptych = false) {
   const classic = dimensions.match(/(\d+(?:[.,]\d+)?)\s*[×x]\s*(\d+(?:[.,]\d+)?)/i);
   const figure = dimensions.match(/(\d+)\s*F/i);
@@ -41,10 +76,14 @@ export function compareArtworksByFormatColorSize(a, b) {
     return aFormat.sizeGroup - bFormat.sizeGroup;
   }
 
-  const aColor = artworkColorMetadata[a.path]?.[0]?.[0] || "zz";
-  const bColor = artworkColorMetadata[b.path]?.[0]?.[0] || "zz";
-  const colorOrder = aColor.localeCompare(bColor, "fr", { sensitivity: "base" });
-  if (colorOrder) return colorOrder;
+  const aOrientation = getArtworkOrientationPosition(aFormat);
+  const bOrientation = getArtworkOrientationPosition(bFormat);
+  if (aOrientation !== bOrientation) return aOrientation - bOrientation;
+
+  const paletteOrder =
+    getArtworkPalettePosition(a) - getArtworkPalettePosition(b);
+  if (Math.abs(paletteOrder) > 0.01) return paletteOrder;
+
   if (aFormat.area !== bFormat.area) return bFormat.area - aFormat.area;
 
   return a.titre.localeCompare(b.titre, "fr", {

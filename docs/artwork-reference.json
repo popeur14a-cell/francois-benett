@@ -3,7 +3,7 @@
     "src/data/collectionsData.js",
     "public/images"
   ],
-  "artwork_count": 95,
+  "artwork_count": 94,
   "analysis_notes": {
     "colors_and_orientation": "Calculated from the image pixels.",
     "visual_character": "Luminance, contrast, saturation, warmth and edge density are measured from every artwork image.",
@@ -1071,107 +1071,6 @@
         "personnage",
         "petit format",
         "rouge",
-        "scène contemplative",
-        "scène de groupe",
-        "suspendu",
-        "urbain",
-        "ville",
-        "voyage"
-      ]
-    },
-    {
-      "collection": "Venise",
-      "collection_id": "venise",
-      "title": "Attente 2",
-      "url": "/collections/venise/attente-2",
-      "declared_dimensions": "",
-      "format_tags": [],
-      "availability": "disponible sur demande",
-      "images": [
-        {
-          "file": "/images/venise/attente-2.jpg",
-          "pixels": {
-            "width": 852,
-            "height": 851
-          },
-          "orientation": "carré",
-          "colors": [
-            "bleu",
-            "noir"
-          ],
-          "color_profile": [
-            {
-              "name": "bleu",
-              "share": 0.58
-            },
-            {
-              "name": "noir",
-              "share": 0.285
-            }
-          ],
-          "visual_character": {
-            "luminance": 0.307,
-            "contrast": 0.177,
-            "saturation": 0.32,
-            "warmth": -0.097,
-            "edge_density": 0.136,
-            "tags": [
-              "palette froide",
-              "contraste modéré",
-              "couleurs nuancées",
-              "ambiance sombre",
-              "composition équilibrée"
-            ]
-          }
-        }
-      ],
-      "subjects": [
-        "costume vénitien",
-        "lieu",
-        "personnage",
-        "ville",
-        "voyage"
-      ],
-      "people": [
-        "femme",
-        "groupe"
-      ],
-      "actions": [
-        "attendre"
-      ],
-      "movement": [
-        "mouvement calme",
-        "scène contemplative"
-      ],
-      "atmosphere": [
-        "atmosphérique",
-        "calme",
-        "suspendu",
-        "urbain",
-        "voyage"
-      ],
-      "composition": [
-        "composition urbaine",
-        "scène de groupe"
-      ],
-      "search_tags": [
-        "ambiance sombre",
-        "atmosphérique",
-        "attendre",
-        "bleu",
-        "calme",
-        "composition urbaine",
-        "composition équilibrée",
-        "contraste modéré",
-        "costume vénitien",
-        "couleurs nuancées",
-        "femme",
-        "groupe",
-        "lieu",
-        "mouvement calme",
-        "noir",
-        "palette froide",
-        "personnage",
         "scène contemplative",
         "scène de groupe",
         "suspendu",

@@ -254,20 +254,22 @@ export default function CollectionDetail() {
 
               <div className="artwork-information">
                 <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
-                <div className="artwork-metadata">
-                  {artwork.dimensions && (
-                    <p className="artwork-dimensions">
-                      <span className="artwork-meta-label">{en ? "Dimensions" : "Format"}</span>
-                      {getArtworkDimensionsLabel(artwork.dimensions, en)}
-                    </p>
-                  )}
-                  {artwork.technique && (
-                    <p className="artwork-technique">
-                      <span className="artwork-meta-label">{en ? "Medium" : "Technique"}</span>
-                      {artwork.technique}
-                    </p>
-                  )}
-                </div>
+                {(artwork.dimensions || artwork.technique) && (
+                  <div className="artwork-metadata">
+                    {artwork.dimensions && (
+                      <p className="artwork-dimensions">
+                        <span className="artwork-meta-label">{en ? "Dimensions" : "Format"}</span>
+                        {getArtworkDimensionsLabel(artwork.dimensions, en)}
+                      </p>
+                    )}
+                    {artwork.technique && (
+                      <p className="artwork-technique">
+                        <span className="artwork-meta-label">{en ? "Medium" : "Technique"}</span>
+                        {artwork.technique}
+                      </p>
+                    )}
+                  </div>
+                )}
                 <p className={`artwork-state ${artwork.collectionParticuliere ? "artwork-state-private" : "artwork-state-available"}`}>
                   {artwork.collectionParticuliere
                     ? en ? "Private collection" : "Collection particulière"
