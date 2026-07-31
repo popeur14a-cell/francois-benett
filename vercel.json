@@ -51,6 +51,16 @@
       "source": "/en/collections/venise/venise",
       "destination": "/en/collections/venise/la-decouverte",
       "permanent": true
+    },
+    {
+      "source": "/collections/venise/attente-2",
+      "destination": "/collections/scene-d-intimite/passionata",
+      "permanent": true
+    },
+    {
+      "source": "/en/collections/venise/attente-2",
+      "destination": "/en/collections/scene-d-intimite/passionata",
+      "permanent": true
     }
   ],
   "headers": [
