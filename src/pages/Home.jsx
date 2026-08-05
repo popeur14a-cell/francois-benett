@@ -141,15 +141,15 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={pageUrl} />
         <link rel="author" href={`https://www.benett-peintre.fr${en ? "/en" : ""}/parcours`} />
-        <meta property="og:title" content="François Benett — Artiste peintre contemporain" />
+        <meta property="og:title" content={en ? "François Benett — Contemporary painter" : "François Benett — Artiste peintre contemporain"} />
         <meta
           property="og:description"
-          content="Découvrez les œuvres originales et l’univers poétique et contemporain de François Benett."
+          content={homeDescription}
         />
         <meta property="og:image" content="https://www.benett-peintre.fr/images/hero/benett-cover-1920.webp" />
         <meta property="og:image:width" content="2400" />
         <meta property="og:image:height" content="1813" />
-        <meta property="og:image:alt" content="Œuvre de François Benett, artiste peintre contemporain" />
+        <meta property="og:image:alt" content={en ? "Artwork by contemporary painter François Benett" : "Œuvre de François Benett, artiste peintre contemporain"} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content={en ? "en_GB" : "fr_FR"} />
@@ -183,11 +183,18 @@ export default function Home() {
 
         <section className="home-brief">
           <p>
-            <ArtistLinkedText>
+            <span className="home-brief-lead">
+              <ArtistLinkedText>
+                {en
+                  ? "Between light, colour and emotion, François Benett creates worlds in which every painting tells a story."
+                  : "Entre lumière, couleur et émotion, François Benett compose des univers où chaque tableau raconte une histoire."}
+              </ArtistLinkedText>
+            </span>
+            <span className="home-brief-followup">
               {en
-                ? "Between light, colour and emotion, François Benett creates worlds in which every painting tells a story. Original works conceived as suspended moments. Explore the collections and discover the available artworks."
-                : "Entre lumière, couleur et émotion, François Benett compose des univers où chaque tableau raconte une histoire. Des œuvres originales, pensées comme des instants suspendus. Parcourez les collections et découvrez les œuvres disponibles."}
-            </ArtistLinkedText>
+                ? "Original works conceived as suspended moments. Explore the collections and discover the available artworks."
+                : "Des œuvres originales, pensées comme des instants suspendus. Parcourez les collections et découvrez les œuvres disponibles."}
+            </span>
           </p>
         </section>
 

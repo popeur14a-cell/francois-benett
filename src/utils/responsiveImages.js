@@ -19,7 +19,7 @@ export function getResponsiveImage(path) {
   const responsiveBase = `/images/responsive/${basePath}`;
 
   return {
-    src: `${responsiveBase}-960.webp`,
-    srcSet: `${responsiveBase}-480.webp 480w, ${responsiveBase}-640.webp 640w, ${responsiveBase}-960.webp 960w`,
+    src: `${responsiveBase}-1280.webp`,
+    srcSet: `${responsiveBase}-480.webp 480w, ${responsiveBase}-640.webp 640w, ${responsiveBase}-960.webp 960w, ${responsiveBase}-1280.webp 1280w`,
   };
 }

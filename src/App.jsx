@@ -1,6 +1,7 @@
 import { Helmet } from "./components/Helmet";
 import { Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -99,6 +100,7 @@ export default function App() {
       </Suspense>
 
       <Footer />
+      <SpeedInsights route={location.pathname} />
     </>
   );
 }

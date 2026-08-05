@@ -138,8 +138,10 @@ const collectionDisplayRank = new Map(
 
 const PAGE_URL = `${SITE_URL}/collections`;
 
-const PAGE_DESCRIPTION =
+const PAGE_DESCRIPTION_FR =
   "Découvrez les collections de François Benett, peintre contemporain français : Venise, Espagne, Maroc, Paris, Bretagne, Amsterdam, Tango, Les Messagers, scènes d’intimité et clowns.";
+const PAGE_DESCRIPTION_EN =
+  "Explore François Benett’s collections: Venice, Spain, Morocco, Paris, Brittany, Amsterdam, Tango, The Messengers, intimate scenes and clowns.";
 
 const SHARE_IMAGE = `${SITE_URL}/images/venise/palais-des-doges.jpg`;
 
@@ -147,14 +149,18 @@ export default function Collections() {
   const { language } = useLanguage();
   const en = language === "en";
   const pageUrl = en ? `${SITE_URL}/en/collections` : PAGE_URL;
+  const pageDescription = en ? PAGE_DESCRIPTION_EN : PAGE_DESCRIPTION_FR;
+  const pageTitle = en
+    ? "Collections by François Benett | Contemporary painter"
+    : "Collections de François Benett | Peintre contemporain";
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Collections de François Benett",
-    description: PAGE_DESCRIPTION,
+    name: en ? "Collections by François Benett" : "Collections de François Benett",
+    description: pageDescription,
     url: pageUrl,
     image: SHARE_IMAGE,
-    inLanguage: "fr-FR",
+    inLanguage: en ? "en-GB" : "fr-FR",
     isPartOf: {
       "@type": "WebSite",
       name: "Galerie François Benett",
@@ -185,12 +191,12 @@ export default function Collections() {
         <html lang={language} />
 
         <title>
-          {en ? "François Benett Collections | Contemporary painter" : "Collections de François Benett | Peintre contemporain"}
+          {pageTitle}
         </title>
 
         <meta
           name="description"
-          content={PAGE_DESCRIPTION}
+          content={pageDescription}
         />
 
         <meta name="robots" content="index, follow" />
@@ -199,26 +205,26 @@ export default function Collections() {
 
         <meta
           property="og:title"
-          content="Collections de François Benett | Peintre contemporain"
+          content={pageTitle}
         />
 
         <meta
           property="og:description"
-          content={PAGE_DESCRIPTION}
+          content={pageDescription}
         />
 
         <meta property="og:image" content={SHARE_IMAGE} />
 
         <meta
           property="og:image:alt"
-          content="Œuvre de la collection Venise de François Benett"
+          content={en ? "Artwork from François Benett’s Venice collection" : "Œuvre de la collection Venise de François Benett"}
         />
 
         <meta property="og:url" content={pageUrl} />
 
         <meta property="og:type" content="website" />
 
-        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:locale" content={en ? "en_GB" : "fr_FR"} />
 
         <meta
           property="og:site_name"
@@ -232,19 +238,19 @@ export default function Collections() {
 
         <meta
           name="twitter:title"
-          content="Collections de François Benett | Peintre contemporain"
+          content={pageTitle}
         />
 
         <meta
           name="twitter:description"
-          content={PAGE_DESCRIPTION}
+          content={pageDescription}
         />
 
         <meta name="twitter:image" content={SHARE_IMAGE} />
 
         <meta
           name="twitter:image:alt"
-          content="Œuvre de la collection Venise de François Benett"
+          content={en ? "Artwork from François Benett’s Venice collection" : "Œuvre de la collection Venise de François Benett"}
         />
 
         <script type="application/ld+json">
@@ -254,7 +260,7 @@ export default function Collections() {
 
       <main className="collections-page">
         <section className="collections-header">
-          <h1><ArtistLinkedText>{en ? "François Benett Collections" : "Collections de François Benett"}</ArtistLinkedText></h1>
+          <h1><ArtistLinkedText>{en ? "Collections by François Benett" : "Collections de François Benett"}</ArtistLinkedText></h1>
 
           <p>
             <ArtistLinkedText>{en ? "Ten worlds shaped by light, movement and silence." : "Dix univers, entre lumière, mouvement et silence."}</ArtistLinkedText>

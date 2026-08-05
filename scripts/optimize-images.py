@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageFilter
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +13,13 @@ def resize_to_width(image: Image.Image, width: int) -> Image.Image:
         return image.copy()
     height = round(image.height * width / image.width)
     return image.resize((width, height), Image.Resampling.LANCZOS)
+
+
+def prepare_responsive_image(image: Image.Image, width: int) -> Image.Image:
+    """Create an exact-width Web image with restrained, artwork-safe sharpening."""
+    height = round(image.height * width / image.width)
+    resized = image.resize((width, height), Image.Resampling.LANCZOS)
+    return resized.filter(ImageFilter.UnsharpMask(radius=0.65, percent=45, threshold=4))
 
 
 with Image.open(IMAGES / "hero" / "benett-cover.webp") as source:
@@ -57,21 +64,20 @@ for source_path in IMAGES.rglob("*"):
     output_directory = RESPONSIVE / relative.parent
     output_directory.mkdir(parents=True, exist_ok=True)
 
+    full_size_output = output_directory / f"{source_path.stem}-1280.webp"
+    if full_size_output.exists():
+        continue
+
     with Image.open(source_path) as source:
         converted = source.convert("RGB")
-        for width in (480, 640, 960):
+        for width in (480, 640, 960, 1280):
             output_path = output_directory / f"{source_path.stem}-{width}.webp"
-            if (
-                output_path.exists()
-                and output_path.stat().st_mtime >= source_path.stat().st_mtime
-            ):
-                continue
-            output = resize_to_width(converted, width)
+            output = prepare_responsive_image(converted, width)
             output.save(
                 output_path,
                 "WEBP",
-                quality=78 if width == 480 else 80 if width == 640 else 82,
-                method=6,
+                quality=84 if width == 480 else 86 if width == 640 else 87,
+                method=4,
             )
 
 print("Responsive cover, gallery images, logo and Plénitude image optimized.")

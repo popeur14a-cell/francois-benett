@@ -12,6 +12,8 @@ const PORTRAIT_URL = `${SITE_URL}/images/portraits/portrait.jpg`;
 
 const DESCRIPTION =
   "Découvrez le parcours, les expositions et les critiques consacrées à François Benett, peintre contemporain diplômé des Beaux-Arts.";
+const DESCRIPTION_EN =
+  "Explore the career, exhibitions and critical writing devoted to François Benett, a contemporary painter and Fine Arts graduate.";
 
 const expositions = [
   ["1974", ["Hôtel de Ville de Sablé"]],
@@ -178,19 +180,23 @@ export default function Parcours() {
   const en = language === "en";
   const [showAllExhibitions, setShowAllExhibitions] = useState(false);
   const pageUrl = en ? `${SITE_URL}/en/parcours` : PAGE_URL;
+  const pageTitle = en
+    ? "About François Benett | Contemporary painter"
+    : "Parcours de François Benett | Peintre contemporain";
+  const pageDescription = en ? DESCRIPTION_EN : DESCRIPTION;
   const critiques = en ? regardsEn : regards;
   const bibliographieActive = en ? bibliographieEn : bibliographie;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    name: "Parcours de François Benett",
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    inLanguage: "fr-FR",
+    name: en ? "About François Benett" : "Parcours de François Benett",
+    description: pageDescription,
+    url: pageUrl,
+    inLanguage: en ? "en-GB" : "fr-FR",
     mainEntity: {
       "@type": "Person",
       name: "François Benett",
-      jobTitle: "Peintre contemporain",
+      jobTitle: en ? "Contemporary painter" : "Peintre contemporain",
       image: PORTRAIT_URL,
       url: SITE_URL,
       homeLocation: { "@type": "Place", name: "Région nantaise, France" },
@@ -202,21 +208,21 @@ export default function Parcours() {
     <>
       <Helmet>
         <html lang={language} />
-        <title>Parcours de François Benett | Peintre contemporain</title>
-        <meta name="description" content={DESCRIPTION} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={pageUrl} />
-        <meta property="og:title" content="Parcours de François Benett | Peintre contemporain" />
-        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content={PORTRAIT_URL} />
-        <meta property="og:image:alt" content="Portrait de François Benett, peintre contemporain" />
+        <meta property="og:image:alt" content={en ? "Portrait of François Benett, contemporary painter" : "Portrait de François Benett, peintre contemporain"} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="profile" />
-        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:locale" content={en ? "en_GB" : "fr_FR"} />
         <meta property="og:site_name" content={SITE_NAME} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Parcours de François Benett | Peintre contemporain" />
-        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={PORTRAIT_URL} />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>

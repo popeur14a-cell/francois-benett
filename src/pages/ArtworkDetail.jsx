@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "../components/Helmet";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
 import InteriorViewer from "../components/InteriorViewer";
 import {
@@ -25,12 +25,15 @@ import useFavorites from "../context/useFavorites";
 import useLanguage from "../context/useLanguage";
 import FullscreenToggle from "../components/FullscreenToggle";
 import ResponsiveImage from "../components/ResponsiveImage";
+import { SHARED_ARTWORK_TRANSITION } from "../utils/viewTransitions";
 
 export default function ArtworkDetail() {
   const { collectionId, artworkSlug } = useParams();
+  const location = useLocation();
   const { language } = useLanguage();
   const en = language === "en";
   const artwork = findArtwork(collectionId, artworkSlug);
+  const usesSharedArtworkTransition = location.state?.sharedArtwork === artwork?.path;
   const artworks = getSortedArtworkEntries(collectionId);
   const currentIndex = artworks.findIndex((item) => item.slug === artworkSlug);
   const previous = currentIndex > 0 ? artworks[currentIndex - 1] : null;
@@ -222,6 +225,9 @@ export default function ArtworkDetail() {
                 >
                   <ResponsiveImage
                     src={image}
+                    style={usesSharedArtworkTransition && index === 0
+                      ? { viewTransitionName: SHARED_ARTWORK_TRANSITION, contain: "paint" }
+                      : undefined}
                     sizes={artwork.images?.length > 1
                       ? "(max-width: 760px) 46vw, 28vw"
                       : "(max-width: 760px) 92vw, 56vw"}
@@ -284,6 +290,15 @@ export default function ArtworkDetail() {
             </div>
           </div>
         </article>
+
+        {!artwork.collectionParticuliere && (
+          <div className="mobile-inquiry-sticky">
+            <Link to={`/contact?${contactParams.toString()}`}>
+              {en ? "Request information" : "Demander des informations"}
+              <ArrowIcon direction="right" />
+            </Link>
+          </div>
+        )}
 
         <nav className="artwork-sibling-nav" aria-label={en ? "Other works in this collection" : "Autres œuvres de cette collection"}>
           {previous ? (

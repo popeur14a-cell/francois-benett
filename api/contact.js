@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+
 const SUBJECTS = {
   artwork: "Demande concernant une œuvre",
   exhibition: "Proposition d’exposition",
@@ -57,6 +59,11 @@ function hasValidOrigin(request) {
   }
 }
 
+function hasSafeFetchContext(request) {
+  const fetchSite = clean(request.headers["sec-fetch-site"], 30);
+  return !fetchSite || fetchSite === "same-origin" || fetchSite === "same-site";
+}
+
 function hasValidProof(startedAt, requestId, proofNonce) {
   if (!requestId || !Number.isInteger(proofNonce) || proofNonce < 0 || proofNonce > 10_000_000) {
     return false;
@@ -90,7 +97,11 @@ export default async function handler(request, response) {
   if (!request.headers["content-type"]?.toLowerCase().includes("application/json")) {
     return response.status(415).json({ error: "Format de requête non accepté." });
   }
-  if (!hasValidOrigin(request)) {
+  const contentLength = Number(request.headers["content-length"] || 0);
+  if (Number.isFinite(contentLength) && contentLength > 12_000) {
+    return response.status(413).json({ error: "Message trop volumineux." });
+  }
+  if (!hasValidOrigin(request) || !hasSafeFetchContext(request)) {
     return response.status(403).json({ error: "Origine de la requête non autorisée." });
   }
   if (!process.env.RESEND_API_KEY) {
@@ -209,4 +220,3 @@ export default async function handler(request, response) {
     return response.status(500).json({ error: "Échec de l’envoi." });
   }
 }
-import { createHash } from "node:crypto";

@@ -73,7 +73,6 @@ export const collectionsData = {
       {
         titre: "Plénitude",
         image: "/images/venise/plenitude.jpg",
-        thumbnail: "/images/venise/plenitude-preview.jpg",
         dimensions: "70 × 70 cm",
         collectionParticuliere: false,
       },

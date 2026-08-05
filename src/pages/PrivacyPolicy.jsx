@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
         <header className="legal-header">
           <span>{en ? "Your data" : "Vos données"}</span>
           <h1>{en ? "Privacy policy" : "Politique de confidentialité"}</h1>
-          <p>{en ? "Last updated: 19 July 2026" : "Dernière mise à jour : 19 juillet 2026"}</p>
+          <p>{en ? "Last updated: 5 August 2026" : "Dernière mise à jour : 5 août 2026"}</p>
         </header>
 
         <div className="legal-content">
@@ -82,13 +82,16 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2>{en ? "Performance measurement and cookies" : "Mesure de performance et cookies"}</h2>
+            <h2>{en ? "Audience, performance and cookies" : "Audience, performance et cookies"}</h2>
             <p>
               {en
-                ? "The website uses Vercel Speed Insights to measure technical performance. Vercel states that the collected data points are anonymous, are not associated with an individual visitor or IP address, and cannot be used to reconstruct navigation across pages. The website does not use advertising cookies or advertising trackers. Therefore, no consent banner is displayed at this time."
-                : "Le site utilise Vercel Speed Insights pour mesurer ses performances techniques. Vercel indique que les points de mesure collectés sont anonymes, ne sont associés ni à un visiteur individuel ni à une adresse IP et ne permettent pas de reconstituer une navigation entre les pages. Le site n’utilise ni cookies publicitaires ni traceurs publicitaires. Aucun bandeau de consentement n’est donc affiché actuellement."}
+                ? "The website uses Vercel Web Analytics to obtain anonymous, aggregated audience statistics and Vercel Speed Insights to measure technical performance. These services do not use advertising cookies and do not retain an IP address or any identifier that can track a visitor between different days or websites. The website does not use advertising trackers. Therefore, no consent banner is displayed at this time."
+                : "Le site utilise Vercel Web Analytics pour obtenir des statistiques d’audience anonymes et agrégées, ainsi que Vercel Speed Insights pour mesurer ses performances techniques. Ces services n’utilisent pas de cookies publicitaires et ne conservent ni adresse IP ni identifiant permettant de suivre un visiteur entre différents jours ou différents sites. Le site n’utilise aucun traceur publicitaire. Aucun bandeau de consentement n’est donc affiché actuellement."}
             </p>
             <p>
+              <a href="https://vercel.com/docs/analytics/privacy-policy" target="_blank" rel="noopener noreferrer">
+                {en ? "Learn about Web Analytics privacy" : "Consulter les informations de confidentialité de Web Analytics"}
+              </a>{" · "}
               <a href="https://vercel.com/docs/speed-insights/privacy-policy" target="_blank" rel="noopener noreferrer">
                 {en ? "Learn about Speed Insights privacy" : "Consulter les informations de confidentialité de Speed Insights"}
               </a>

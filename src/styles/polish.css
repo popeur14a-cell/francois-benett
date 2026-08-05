@@ -20,10 +20,21 @@
 }
 
 .home-brief {
-  max-width: 700px;
+  position: relative;
+  max-width: 780px;
   margin: 0 auto 0 70px;
-  padding: 42px 0 10px;
+  padding: 42px 0 26px 27px;
   text-align: left;
+}
+
+.home-brief::before {
+  position: absolute;
+  top: 27px;
+  bottom: 12px;
+  left: 0;
+  width: 1px;
+  content: "";
+  background: color-mix(in srgb, var(--accent) 42%, transparent);
 }
 
 .collection-navigation {
@@ -102,8 +113,27 @@
 .home-brief p {
   margin: 0;
   color: var(--text-soft);
-  font-size: clamp(15px, 1.45vw, 18px);
-  line-height: 1.85;
+  line-height: 1.7;
+}
+
+.home-brief-lead,
+.home-brief-followup {
+  display: block;
+}
+
+.home-brief-lead {
+  max-width: 760px;
+  color: var(--text);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(24px, 2.3vw, 34px);
+  line-height: 1.18;
+}
+
+.home-brief-followup {
+  max-width: 640px;
+  margin-top: 13px;
+  font-size: clamp(14px, 1.15vw, 16px);
+  line-height: 1.75;
 }
 
 .featured-title-link {
@@ -484,6 +514,19 @@ img {
   color: var(--accent);
 }
 
+.artwork-favorite-button[aria-pressed="true"] .icon,
+.favorites-grid button:has(.icon)[aria-pressed="true"] .icon {
+  transform-origin: center;
+  animation: favorite-heart-pop 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes favorite-heart-pop {
+  0% { transform: scale(1); }
+  32% { transform: scale(0.78); }
+  68% { transform: scale(1.28); }
+  100% { transform: scale(1); }
+}
+
 .artwork-favorite-button .icon {
   width: 19px;
   height: 19px;
@@ -785,6 +828,36 @@ img {
 }
 
 @media (max-width: 760px) {
+  .slider-container .slider-arrow,
+  .related-artworks-arrow,
+  .lightbox-arrow {
+    line-height: 0;
+  }
+
+  .slider-container .slider-arrow .icon,
+  .related-artworks-arrow .icon,
+  .lightbox-arrow .icon {
+    display: block;
+    margin: 0;
+  }
+
+  .slider-container .slider-arrow {
+    top: 50%;
+    display: grid;
+    place-items: center;
+    transform: translateY(-50%);
+  }
+
+  .slider-container .slider-arrow:first-child:hover,
+  .slider-container .slider-arrow:first-child:focus-visible {
+    transform: translate(-3px, -50%);
+  }
+
+  .slider-container .slider-arrow:last-child:hover,
+  .slider-container .slider-arrow:last-child:focus-visible {
+    transform: translate(3px, -50%);
+  }
+
   .parcours-expositions .parcours-timeline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px 18px;
@@ -835,12 +908,17 @@ img {
 @media (prefers-reduced-motion: reduce) {
   .slide-animation,
   .lightbox,
+  .artworks-grid.is-filtered .artwork-card,
   .carousel-artwork-link img,
   .interior-background,
   .interior-artwork,
   .artwork-search-thumbnail img {
     animation: none !important;
     transition: none !important;
+  }
+
+  .artwork-favorite-button[aria-pressed="true"] .icon {
+    animation: none !important;
   }
 
   ::view-transition-old(root),
@@ -882,8 +960,13 @@ img {
   .home-brief {
     max-width: none;
     margin: 0 24px;
-    padding: 30px 0 4px;
+    padding: 30px 0 14px 18px;
     text-align: left;
+  }
+
+  .home-brief::before {
+    top: 20px;
+    bottom: 8px;
   }
 
   .collection-navigation {
@@ -989,6 +1072,8 @@ img {
     position: static;
     grid-row: 1;
     width: 30px;
+    align-self: start;
+    margin-top: calc(min(66vw, 280px) / 2 - 21px);
     transform: none;
   }
 
@@ -1019,7 +1104,11 @@ img {
   .artwork-detail-visual figure > button > span .icon {
     display: block;
     margin: 0;
-    transform: translate(-1px, -1px);
+  }
+
+  .artwork-detail-visual figure > button > span .icon-zoom,
+  .carousel-zoom-button .icon-zoom {
+    transform: none;
   }
 
   .artwork-detail-visual .artwork-zoom-label {

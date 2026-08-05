@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { inject } from "@vercel/analytics";
 import { BrowserRouter } from "react-router-dom";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import LanguageProvider from "./context/LanguageProvider";
 import FavoritesProvider from "./context/FavoritesProvider";
 
 import App from "./App";
 import "./index.css";
+
+inject();
 
 ReactDOM.createRoot(
   document.getElementById("root")
@@ -20,6 +22,5 @@ ReactDOM.createRoot(
       </LanguageProvider>
     </BrowserRouter>
 
-    <SpeedInsights />
   </React.StrictMode>
 );

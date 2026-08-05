@@ -56,7 +56,7 @@ for (const image of usedImages) {
   const extensionIndex = image.lastIndexOf(".");
   const base = image.slice("/images/".length, extensionIndex);
 
-  for (const width of [480, 640, 960]) {
+  for (const width of [480, 640, 960, 1280]) {
     responsiveImages.add(`/images/responsive/${base}-${width}.webp`);
   }
 }

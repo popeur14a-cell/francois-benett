@@ -52,7 +52,7 @@ export function ShareIcon() {
 
 export function ZoomIcon() {
   return (
-    <svg className="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <svg className="icon icon-zoom" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <circle cx="10.5" cy="10.5" r="5.5" />
       <path d="m15 15 4.5 4.5M10.5 8v5M8 10.5h5" />
     </svg>

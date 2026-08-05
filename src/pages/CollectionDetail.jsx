@@ -16,6 +16,10 @@ import useLanguage from "../context/useLanguage";
 import useFavorites from "../context/useFavorites";
 import FullscreenToggle from "../components/FullscreenToggle";
 import ResponsiveImage from "../components/ResponsiveImage";
+import {
+  getArtworkTransitionState,
+  prepareArtworkTransition,
+} from "../utils/viewTransitions";
 
 function getPanelName(index, en) {
   if (en) return index === 0 ? "Left panel" : "Right panel";
@@ -40,12 +44,17 @@ export default function CollectionDetail() {
   const { collectionId } = useParams();
   const [openedIndex, setOpenedIndex] = useState(null);
   const [viewerMode, setViewerMode] = useState("artwork");
+  const [availableOnly, setAvailableOnly] = useState(false);
   const closeButtonRef = useRef(null);
   const lightboxRef = useRef(null);
 
   const collection = collectionsData[collectionId];
   const meta = collectionMeta[collectionId];
-  const artworks = getSortedArtworkEntries(collectionId);
+  const allArtworks = getSortedArtworkEntries(collectionId);
+  const availableCount = allArtworks.filter((artwork) => !artwork.collectionParticuliere).length;
+  const artworks = availableOnly
+    ? allArtworks.filter((artwork) => !artwork.collectionParticuliere)
+    : allArtworks;
   const count = artworks.length;
   const collectionName = en ? meta?.en || collection?.nom : collection?.nom;
   const activeArtwork = openedIndex === null ? null : artworks[openedIndex];
@@ -107,7 +116,10 @@ export default function CollectionDetail() {
 
   const collectionUrl = `${SITE_URL}${en ? "/en" : ""}/collections/${collectionId}`;
   const description = en ? meta.enText : meta.fr;
-  const firstImage = getAbsoluteUrl(artworks[0]?.image || "/images/hero/benett-cover-1920.webp");
+  const pageTitle = en
+    ? `${collectionName} collection — François Benett`
+    : `Collection ${collectionName} — François Benett`;
+  const firstImage = getAbsoluteUrl(allArtworks[0]?.image || "/images/hero/benett-cover-1920.webp");
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -120,8 +132,8 @@ export default function CollectionDetail() {
         inLanguage: en ? "en" : "fr",
         mainEntity: {
           "@type": "ItemList",
-          numberOfItems: count,
-          itemListElement: artworks.map((artwork, index) => ({
+          numberOfItems: allArtworks.length,
+          itemListElement: allArtworks.map((artwork, index) => ({
             "@type": "ListItem",
             position: index + 1,
             url: `${SITE_URL}${artwork.path}`,
@@ -154,11 +166,11 @@ export default function CollectionDetail() {
     <>
       <Helmet>
         <html lang={language} />
-        <title>{en ? `${collectionName} collection — François Benett` : `Collection ${collectionName} — François Benett`}</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={description} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={collectionUrl} />
-        <meta property="og:title" content={`Collection ${collectionName} — François Benett`} />
+        <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={firstImage} />
         <meta property="og:image:alt" content={`${en ? "Artwork from the" : "Œuvre de la collection"} ${collectionName}`} />
@@ -186,17 +198,35 @@ export default function CollectionDetail() {
           </Link>
           <h1>Collection {collectionName}</h1>
           <p className="collection-introduction">{description}</p>
-          <p className="collection-count">
-            {count} {en ? (count > 1 ? "works" : "work") : count > 1 ? "œuvres" : "œuvre"}
-          </p>
+          <div className="collection-toolbar">
+            <p className="collection-count">
+              {count} {en ? (count > 1 ? "works" : "work") : count > 1 ? "œuvres" : "œuvre"}
+            </p>
+            <button
+              type="button"
+              className="collection-availability-filter"
+              aria-pressed={availableOnly}
+              onClick={() => {
+                setOpenedIndex(null);
+                setViewerMode("artwork");
+                setAvailableOnly((current) => !current);
+              }}
+            >
+              <span aria-hidden="true" />
+              {en ? "Available works" : "Œuvres disponibles"}
+              <small>{availableCount}</small>
+            </button>
+          </div>
         </header>
 
-        <section className="artworks-grid" aria-label={`${en ? "Works in the" : "Œuvres de la collection"} ${collectionName}`}>
+        <section className={`artworks-grid ${availableOnly ? "is-filtered" : ""}`} aria-label={`${en ? "Works in the" : "Œuvres de la collection"} ${collectionName}`}>
           {artworks.map((artwork, index) => (
             <article className="artwork-card" key={artwork.path}>
               <Link
                 to={artwork.path}
                 viewTransition
+                state={getArtworkTransitionState(artwork.path)}
+                onClick={prepareArtworkTransition}
                 className="artwork-image-container artwork-open"
                 aria-label={`${en ? "Open" : "Ouvrir"} ${artwork.titre}`}
               >
@@ -284,6 +314,11 @@ export default function CollectionDetail() {
               </div>
             </article>
           ))}
+          {count === 0 && (
+            <p className="collection-filter-empty">
+              {en ? "No work is currently available in this collection." : "Aucune œuvre n’est actuellement disponible dans cette collection."}
+            </p>
+          )}
         </section>
 
         <nav className="collection-navigation" aria-label={en ? "Browse collections" : "Parcourir les collections"}>
