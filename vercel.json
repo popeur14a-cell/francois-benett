@@ -8,7 +8,17 @@
       "permanent": true
     },
     {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/PARCOURS.html",
+      "destination": "/parcours",
+      "permanent": true
+    },
+    {
+      "source": "/PARCOURS",
       "destination": "/parcours",
       "permanent": true
     },
@@ -18,7 +28,17 @@
       "permanent": true
     },
     {
+      "source": "/CONTACT",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
       "source": "/COLLECTIONS.html",
+      "destination": "/collections",
+      "permanent": true
+    },
+    {
+      "source": "/COLLECTIONS",
       "destination": "/collections",
       "permanent": true
     },

@@ -100,6 +100,7 @@ L'indexation sert à permettre à une page d'apparaître dans les résultats Goo
 - Les derniers contrôles connus de lint et de build étaient réussis.
 - Le site fonctionnait en production ; aucun incident de sécurité connu.
 - Cette session a créé la mémoire durable. L'accès automatique à Search Console a été bloqué par la liaison de l'extension Chrome ; aucune demande d'indexation n'a donc encore été envoyée.
+- Une erreur SEO a été trouvée : les anciennes URL en majuscules sans `.html` aboutissaient en 404 après le nettoyage automatique de Vercel. Des redirections intermédiaires ont été ajoutées dans `vercel.json`; elles doivent être publiées avant de demander les quatre indexations prioritaires.
 
 ## Priorités futures raisonnables
 
