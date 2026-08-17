@@ -20,6 +20,7 @@ import {
   getArtworkTransitionState,
   prepareArtworkTransition,
 } from "../utils/viewTransitions";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 function getPanelName(index, en) {
   if (en) return index === 0 ? "Left panel" : "Right panel";
@@ -104,7 +105,7 @@ export default function CollectionDetail() {
         <main className="collection-detail-page">
           <div className="collection-not-found">
             <h1>{en ? "Collection not found" : "Collection introuvable"}</h1>
-            <Link to="/collections" className="collection-back-link">
+            <Link to={getLocalizedPath("/collections", en)} className="collection-back-link">
               <ArrowIcon direction="left" />
               {en ? "Back to collections" : "Retour aux collections"}
             </Link>
@@ -187,12 +188,12 @@ export default function CollectionDetail() {
           <Breadcrumbs
             label={en ? "Breadcrumb" : "Fil d’Ariane"}
             items={[
-              { label: en ? "Home" : "Accueil", to: "/" },
-              { label: "Collections", to: "/collections" },
+              { label: en ? "Home" : "Accueil", to: getLocalizedPath("/", en) },
+              { label: "Collections", to: getLocalizedPath("/collections", en) },
               { label: collectionName },
             ]}
           />
-          <Link to="/collections" className="collection-back-link">
+          <Link to={getLocalizedPath("/collections", en)} className="collection-back-link">
             <ArrowIcon direction="left" />
             {en ? "Back to collections" : "Retour aux collections"}
           </Link>
@@ -223,7 +224,7 @@ export default function CollectionDetail() {
           {artworks.map((artwork, index) => (
             <article className="artwork-card" key={artwork.path}>
               <Link
-                to={artwork.path}
+                to={getLocalizedPath(artwork.path, en)}
                 viewTransition
                 state={getArtworkTransitionState(artwork.path)}
                 onClick={prepareArtworkTransition}
@@ -283,7 +284,7 @@ export default function CollectionDetail() {
               )}
 
               <div className="artwork-information">
-                <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
+                <h2><Link to={getLocalizedPath(artwork.path, en)} viewTransition>{artwork.titre}</Link></h2>
                 {(artwork.dimensions || artwork.technique) && (
                   <div className="artwork-metadata">
                     {artwork.dimensions && (
@@ -323,7 +324,7 @@ export default function CollectionDetail() {
 
         <nav className="collection-navigation" aria-label={en ? "Browse collections" : "Parcourir les collections"}>
           <Link
-            to={`/collections/${previousCollectionId}`}
+            to={getLocalizedPath(`/collections/${previousCollectionId}`, en)}
             className="collection-navigation-link collection-navigation-previous"
             aria-label={`${en ? "Previous collection" : "Collection précédente"} : ${previousCollectionName}`}
           >
@@ -331,7 +332,7 @@ export default function CollectionDetail() {
             <strong>{previousCollectionName}</strong>
           </Link>
           <Link
-            to={`/collections/${nextCollectionId}`}
+            to={getLocalizedPath(`/collections/${nextCollectionId}`, en)}
             className="collection-navigation-link collection-navigation-next"
             aria-label={`${en ? "Next collection" : "Collection suivante"} : ${nextCollectionName}`}
           >

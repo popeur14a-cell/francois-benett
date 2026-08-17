@@ -12,6 +12,7 @@ import { ArrowIcon, CloseIcon, ZoomIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import FullscreenToggle from "../components/FullscreenToggle";
 import ResponsiveImage from "../components/ResponsiveImage";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 const selection = [
   ["venise", "Miroir"],
@@ -165,7 +166,7 @@ export default function Home() {
         <section className="hero">
           <h1 className="sr-only">François Benett — Artiste peintre contemporain</h1>
           <Link
-            to="/collections"
+            to={getLocalizedPath("/collections", en)}
             className="hero-artwork-link"
             aria-label={en ? "Explore the collections" : "Découvrir les collections"}
           >
@@ -200,7 +201,7 @@ export default function Home() {
 
         <section className="oeuvres-section">
           <h2>
-            <Link to="/collections" className="featured-title-link">
+            <Link to={getLocalizedPath("/collections", en)} className="featured-title-link">
               {en ? "Featured works" : "Œuvres à découvrir"}
             </Link>
           </h2>
@@ -223,7 +224,7 @@ export default function Home() {
                 element.type === "collection" ? (
                   <Link
                     key={`collection-${position}`}
-                    to="/collections"
+                    to={getLocalizedPath("/collections", en)}
                     className="collection-card"
                     aria-label={en ? "View all François Benett collections" : "Voir toutes les collections de François Benett"}
                   >
@@ -265,7 +266,7 @@ export default function Home() {
                     }
                   >
                     <Link
-                      to={element.path}
+                      to={getLocalizedPath(element.path, en)}
                       viewTransition
                       className="carousel-artwork-link"
                       aria-label={`${en ? "Open the artwork page for" : "Ouvrir la fiche de l’œuvre"} ${element.titre}`}

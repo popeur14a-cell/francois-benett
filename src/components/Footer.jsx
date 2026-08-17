@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 export default function Footer() {
   const { language } = useLanguage();
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <Link
-            to="/"
+            to={getLocalizedPath("/", en)}
             className="footer-logo-link"
             aria-label={en ? "Back to home" : "Retour à l’accueil"}
           >
@@ -21,7 +22,7 @@ export default function Footer() {
           </Link>
 
           <div className="footer-identity">
-            <Link to="/parcours" className="footer-name">
+            <Link to={getLocalizedPath("/parcours", en)} className="footer-name">
               François Benett
             </Link>
 
@@ -32,7 +33,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-contact">
-          <Link to="/contact" className="footer-contact-title">
+          <Link to={getLocalizedPath("/contact", en)} className="footer-contact-title">
             {en ? "Contact:" : "Contact :"}
           </Link>
 
@@ -68,15 +69,15 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} <Link to="/parcours" className="artist-name-link">François Benett</Link> — {en ? "Official gallery · All rights reserved" : "Galerie officielle · Tous droits réservés"}
+          © {new Date().getFullYear()} <Link to={getLocalizedPath("/parcours", en)} className="artist-name-link">François Benett</Link> — {en ? "Official gallery · All rights reserved" : "Galerie officielle · Tous droits réservés"}
         </p>
 
         <nav className="footer-legal-links" aria-label={en ? "Legal information" : "Informations légales"}>
-          <Link to="/favoris">{en ? "Favorites" : "Favoris"}</Link>
-          <Link to="/mentions-legales">
+          <Link to={getLocalizedPath("/favoris", en)}>{en ? "Favorites" : "Favoris"}</Link>
+          <Link to={getLocalizedPath("/mentions-legales", en)}>
             {en ? "Legal notice" : "Mentions légales"}
           </Link>
-          <Link to="/confidentialite">
+          <Link to={getLocalizedPath("/confidentialite", en)}>
             {en ? "Privacy" : "Confidentialité"}
           </Link>
         </nav>

@@ -26,6 +26,7 @@ import useLanguage from "../context/useLanguage";
 import FullscreenToggle from "../components/FullscreenToggle";
 import ResponsiveImage from "../components/ResponsiveImage";
 import { SHARED_ARTWORK_TRANSITION } from "../utils/viewTransitions";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 export default function ArtworkDetail() {
   const { collectionId, artworkSlug } = useParams();
@@ -77,7 +78,7 @@ export default function ArtworkDetail() {
       <main className="artwork-detail-page">
         <div className="collection-not-found">
           <h1>{en ? "Artwork not found" : "Œuvre introuvable"}</h1>
-          <Link to={`/collections/${collectionId}`} className="collection-back-link">
+          <Link to={getLocalizedPath(`/collections/${collectionId}`, en)} className="collection-back-link">
             <ArrowIcon direction="left" /> {en ? "Back to the collection" : "Retour à la collection"}
           </Link>
         </div>
@@ -280,7 +281,7 @@ export default function ArtworkDetail() {
 
             <div className="artwork-detail-actions">
               {!artwork.collectionParticuliere && (
-                <Link to={`/contact?${contactParams.toString()}`} className="primary-artwork-action">
+                <Link to={getLocalizedPath(`/contact?${contactParams.toString()}`, en)} className="primary-artwork-action">
                   {en ? "Request information" : "Demander des informations"} <ArrowIcon direction="right" />
                 </Link>
               )}
@@ -293,7 +294,7 @@ export default function ArtworkDetail() {
 
         {!artwork.collectionParticuliere && (
           <div className="mobile-inquiry-sticky">
-            <Link to={`/contact?${contactParams.toString()}`}>
+            <Link to={getLocalizedPath(`/contact?${contactParams.toString()}`, en)}>
               {en ? "Request information" : "Demander des informations"}
               <ArrowIcon direction="right" />
             </Link>
@@ -302,9 +303,9 @@ export default function ArtworkDetail() {
 
         <nav className="artwork-sibling-nav" aria-label={en ? "Other works in this collection" : "Autres œuvres de cette collection"}>
           {previous ? (
-            <Link to={previous.path} viewTransition><ArrowIcon direction="left" /><span><small>{en ? "Previous work" : "Œuvre précédente"}</small>{previous.titre}</span></Link>
+            <Link to={getLocalizedPath(previous.path, en)} viewTransition><ArrowIcon direction="left" /><span><small>{en ? "Previous work" : "Œuvre précédente"}</small>{previous.titre}</span></Link>
           ) : (
-            <Link to={`/collections/${previousCollectionId}`} className="artwork-previous-collection">
+            <Link to={getLocalizedPath(`/collections/${previousCollectionId}`, en)} className="artwork-previous-collection">
               <ArrowIcon direction="left" />
               <span>
                 <small>{en ? "Previous collection" : "Collection précédente"}</small>
@@ -313,9 +314,9 @@ export default function ArtworkDetail() {
             </Link>
           )}
           {next ? (
-            <Link to={next.path} viewTransition><span><small>{en ? "Next work" : "Œuvre suivante"}</small>{next.titre}</span><ArrowIcon direction="right" /></Link>
+            <Link to={getLocalizedPath(next.path, en)} viewTransition><span><small>{en ? "Next work" : "Œuvre suivante"}</small>{next.titre}</span><ArrowIcon direction="right" /></Link>
           ) : (
-            <Link to={`/collections/${nextCollectionId}`} className="artwork-next-collection">
+            <Link to={getLocalizedPath(`/collections/${nextCollectionId}`, en)} className="artwork-next-collection">
               <span>
                 <small>{en ? "Next collection" : "Collection suivante"}</small>
                 {en ? collectionMeta[nextCollectionId]?.en || nextCollection.nom : nextCollection.nom}
@@ -341,7 +342,7 @@ export default function ArtworkDetail() {
                 {visibleRelated.map((item) => {
                   const relatedImages = getArtworkImageList(item);
                   return (
-                    <Link key={item.path} to={item.path} viewTransition>
+                    <Link key={item.path} to={getLocalizedPath(item.path, en)} viewTransition>
                       <span className={`related-artwork-visual ${relatedImages.length > 1 ? "is-diptych" : ""}`}>
                         {relatedImages.map((image, index) => (
                           <ResponsiveImage

@@ -1,6 +1,6 @@
 # Projet Galerie François Benett
 
-Avant toute modification, lire entièrement `docs/PROJECT_HANDOFF.md`.
+Avant toute modification, lire entièrement `docs/DOSSIER_PROJET.md`.
 
 Règles permanentes :
 
@@ -10,5 +10,4 @@ Règles permanentes :
 - Sous Windows, démarrer le site avec `npm.cmd run dev` avant les modifications visuelles, puis utiliser `npm.cmd run lint` et `npm.cmd run build` pour valider.
 - Ne jamais publier, pousser sur GitHub ou déclencher un déploiement Vercel sans une demande explicite de l'utilisateur.
 - Ne jamais écrire de clé API, jeton ou valeur secrète dans le dépôt.
-- Après un changement important, mettre à jour la section « Dernier état connu » de `docs/PROJECT_HANDOFF.md`.
-
+- Après un changement important, mettre à jour la section « Dernier état connu » de `docs/DOSSIER_PROJET.md`.

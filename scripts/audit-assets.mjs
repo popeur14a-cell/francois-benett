@@ -95,3 +95,7 @@ console.log(
     2
   )
 );
+
+if (unused.length > 0 || missing.length > 0) {
+  process.exitCode = 1;
+}

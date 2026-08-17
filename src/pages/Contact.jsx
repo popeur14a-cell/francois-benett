@@ -4,6 +4,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { ArrowIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import useLanguage from "../context/useLanguage";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 
@@ -203,7 +204,7 @@ export default function Contact() {
               {en
                 ? "The information entered is used only to reply to your request and is retained for no longer than 12 months. "
                 : "Les informations saisies servent uniquement à répondre à votre demande et sont conservées au maximum 12 mois. "}
-              <Link to="/confidentialite">{en ? "Learn more about your rights." : "En savoir plus sur vos droits."}</Link>
+              <Link to={getLocalizedPath("/confidentialite", en)}>{en ? "Learn more about your rights." : "En savoir plus sur vos droits."}</Link>
             </p>
 
             <button className="contact-submit" type="submit" disabled={status === "sending"}>

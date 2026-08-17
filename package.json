@@ -8,6 +8,8 @@
     "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "vite build && node scripts/generate-static-meta.mjs",
     "lint": "eslint .",
+    "audit:assets": "node scripts/audit-assets.mjs",
+    "check": "npm run lint && npm run build && npm run audit:assets",
     "preview": "vite preview"
   },
   "dependencies": {

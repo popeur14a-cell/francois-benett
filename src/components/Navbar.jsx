@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
+import { getLocalizedPath } from "../utils/localizedPath";
 import { CloseIcon } from "./Icons";
 
 export default function Navbar() {
@@ -71,7 +72,7 @@ export default function Navbar() {
         <div className="navbar-left">
           <div className="navbar-brand">
           <Link
-            to="/"
+            to={getLocalizedPath("/", en)}
             className="navbar-logo-link"
             aria-label={en ? "Back to home" : "Retour à l’accueil"}
             onClick={fermerMenu}
@@ -85,7 +86,7 @@ export default function Navbar() {
 
           <div className="navbar-identity">
             <Link
-              to="/parcours"
+              to={getLocalizedPath("/parcours", en)}
               className="navbar-name"
               onClick={fermerMenu}
             >
@@ -159,34 +160,34 @@ export default function Navbar() {
         </div>
 
         <nav className="menu-panel-links">
-          <Link to="/" onClick={fermerMenu}>
+          <Link to={getLocalizedPath("/", en)} onClick={fermerMenu}>
             <span className="menu-number">01</span>
             <span>{en ? "Home" : "Accueil"}</span>
           </Link>
 
-          <Link to="/collections" onClick={fermerMenu}>
+          <Link to={getLocalizedPath("/collections", en)} onClick={fermerMenu}>
             <span className="menu-number">02</span>
             <span>Collections</span>
           </Link>
 
-          <Link to="/favoris" onClick={fermerMenu}>
+          <Link to={getLocalizedPath("/favoris", en)} onClick={fermerMenu}>
             <span className="menu-number">03</span>
             <span>{en ? "Favorites" : "Favoris"}</span>
           </Link>
 
-          <Link to="/parcours" onClick={fermerMenu}>
+          <Link to={getLocalizedPath("/parcours", en)} onClick={fermerMenu}>
             <span className="menu-number">04</span>
             <span>{en ? "About" : "Parcours"}</span>
           </Link>
 
-          <Link to="/contact" onClick={fermerMenu}>
+          <Link to={getLocalizedPath("/contact", en)} onClick={fermerMenu}>
             <span className="menu-number">05</span>
             <span>Contact</span>
           </Link>
         </nav>
 
         <div className="menu-panel-footer">
-          <Link to="/parcours" className="artist-name-link" onClick={fermerMenu}>François Benett</Link>
+          <Link to={getLocalizedPath("/parcours", en)} className="artist-name-link" onClick={fermerMenu}>François Benett</Link>
           <span>{en ? "Contemporary painting" : "Peinture contemporaine"}</span>
         </div>
       </aside>

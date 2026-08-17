@@ -5,6 +5,7 @@ import ResponsiveImage from "../components/ResponsiveImage";
 import useFavorites from "../context/useFavorites";
 import useLanguage from "../context/useLanguage";
 import { findArtworkByPath, getArtworkAlt, getArtworkDimensionsLabel } from "../utils/artworks";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 export default function Favorites() {
   const { language } = useLanguage();
@@ -32,7 +33,7 @@ export default function Favorites() {
               {artworks.map((artwork) => (
                 <article key={artwork.path}>
                   <Link
-                    to={artwork.path}
+                    to={getLocalizedPath(artwork.path, en)}
                     viewTransition
                     aria-label={`${en ? "Open" : "Ouvrir"} ${artwork.titre}`}
                   >
@@ -50,21 +51,21 @@ export default function Favorites() {
                     </span>
                   </Link>
                   <div>
-                    <h2><Link to={artwork.path} viewTransition>{artwork.titre}</Link></h2>
+                    <h2><Link to={getLocalizedPath(artwork.path, en)} viewTransition>{artwork.titre}</Link></h2>
                     {artwork.dimensions && <p>{getArtworkDimensionsLabel(artwork.dimensions, en)}</p>}
                     <button type="button" onClick={() => removeFavorite(artwork.path)}><HeartIcon filled /> {en ? "Remove" : "Retirer"}</button>
                   </div>
                 </article>
               ))}
             </div>
-            <Link to={`/contact?artworks=${encodeURIComponent(groupedTitles)}`} className="favorites-contact">
+            <Link to={getLocalizedPath(`/contact?artworks=${encodeURIComponent(groupedTitles)}`, en)} className="favorites-contact">
               {en ? "Ask about this selection" : "Demander des informations sur cette sélection"} <ArrowIcon direction="right" />
             </Link>
           </>
         ) : (
           <div className="favorites-empty">
             <p>{en ? "You have not saved any artwork yet." : "Vous n’avez pas encore enregistré d’œuvre."}</p>
-            <Link to="/collections">{en ? "Explore the collections" : "Explorer les collections"} <ArrowIcon direction="right" /></Link>
+            <Link to={getLocalizedPath("/collections", en)}>{en ? "Explore the collections" : "Explorer les collections"} <ArrowIcon direction="right" /></Link>
           </div>
         )}
       </main>

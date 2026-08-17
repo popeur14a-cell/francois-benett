@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import useLanguage from "../context/useLanguage";
 import { ArrowIcon } from "../components/Icons";
 import { ArtistLink, ArtistLinkedText } from "../components/ArtistName";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 const SITE_URL = "https://www.benett-peintre.fr";
 const SITE_NAME = "Galerie François Benett";
@@ -345,7 +346,7 @@ export default function Parcours() {
 
         <section className="parcours-collections-cta">
           <p><ArtistLinkedText>{en ? "Continue through the worlds and works of François Benett." : "Poursuivez la découverte des univers et des œuvres de François Benett."}</ArtistLinkedText></p>
-          <Link to="/collections">
+          <Link to={getLocalizedPath("/collections", en)}>
             {en ? "Explore the collections" : "Découvrir les collections"}
             <ArrowIcon />
           </Link>

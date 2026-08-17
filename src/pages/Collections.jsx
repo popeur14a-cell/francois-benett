@@ -5,6 +5,7 @@ import useLanguage from "../context/useLanguage";
 import { ArrowIcon } from "../components/Icons";
 import { ArtistLinkedText } from "../components/ArtistName";
 import ResponsiveImage from "../components/ResponsiveImage";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 const ArtworkSearch = lazy(() => import("../components/ArtworkSearch"));
 
@@ -295,7 +296,7 @@ export default function Collections() {
                   {collectionsCategorie.map((collection, index) => (
                     <Link
                       key={collection.slug}
-                      to={`/collections/${collection.slug}`}
+                      to={getLocalizedPath(`/collections/${collection.slug}`, en)}
                       className="collection-card-page"
                       aria-label={`${en ? "Discover the collection" : "Découvrir la collection"} ${en ? collection.nomEn : collection.nom}`}
                     >

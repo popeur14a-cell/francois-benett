@@ -1,9 +1,13 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import useLanguage from "../context/useLanguage";
+import { getLocalizedPath } from "../utils/localizedPath";
 
 export function ArtistLink({ className = "", children = "François Benett" }) {
+  const { language } = useLanguage();
+
   return (
-    <Link to="/parcours" className={`artist-name-link ${className}`.trim()}>
+    <Link to={getLocalizedPath("/parcours", language === "en")} className={`artist-name-link ${className}`.trim()}>
       {children}
     </Link>
   );

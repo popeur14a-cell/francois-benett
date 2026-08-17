@@ -1,4 +1,4 @@
-# Transmission du projet — Galerie François Benett
+# Dossier de reprise et de maintenance — Galerie François Benett
 
 Dernière mise à jour : 17 août 2026
 
@@ -8,7 +8,7 @@ Ce document permet à une nouvelle conversation Codex de reprendre le projet san
 
 Message de reprise conseillé :
 
-> Ouvre le projet `C:\Users\popeu\Documents\francois-benett`, lis `AGENTS.md` puis `docs/PROJECT_HANDOFF.md` entièrement. Vérifie ensuite `git status` avant toute modification. Ne publie rien tant que je ne te le demande pas explicitement.
+> Ouvre le projet `C:\Users\popeu\Documents\francois-benett`, lis `AGENTS.md` puis `docs/DOSSIER_PROJET.md` entièrement. Vérifie ensuite `git status` avant toute modification. Ne publie rien tant que je ne te le demande pas explicitement.
 
 ## Projet
 
@@ -19,6 +19,11 @@ Message de reprise conseillé :
 - Langues : français et anglais
 - Formulaire : fonction Vercel dans `api/contact.js`, envoi par Resend
 - Mesure : Vercel Web Analytics et Speed Insights
+- Catalogue actuel : 94 œuvres, 220 URL dans le sitemap et 222 routes statiques générées
+
+## Présentation rapide à un tiers
+
+Le site est une galerie numérique bilingue consacrée à François Benett. Il associe une présentation éditoriale sobre à un catalogue consultable par collection, couleur, sujet et format. Les œuvres disposent de fiches détaillées, d'une visionneuse, de favoris et de mises en situation respectant autant que possible leurs dimensions réelles. Le projet est hébergé sur Vercel, suivi avec Web Analytics et Speed Insights, et son formulaire utilise Resend.
 
 ## Commandes de travail
 
@@ -28,6 +33,8 @@ Sous Windows/PowerShell :
 npm.cmd run dev
 npm.cmd run lint
 npm.cmd run build
+npm.cmd run audit:assets
+npm.cmd run check
 ```
 
 Le serveur local utilise généralement `http://localhost:5173/`, mais Vite peut choisir 5174, 5175, etc. si le port est déjà occupé. Ce changement est normal.
@@ -92,10 +99,22 @@ L'indexation sert à permettre à une page d'apparaître dans les résultats Goo
 - Le domaine d'envoi Resend a été vérifié.
 - Ne jamais afficher, copier dans le dépôt ou communiquer les valeurs des variables sensibles.
 
+## Audit qualité du 17 août 2026
+
+- `npm audit --omit=dev` : aucune vulnérabilité connue.
+- `npm run check` : lint, construction, métadonnées et audit des ressources réussis.
+- 94 œuvres, 507 fichiers d'image attendus, aucun fichier manquant, inutilisé ou dupliqué à l'identique.
+- 220 URL uniques dans le sitemap, chacune avec ses variantes `fr`, `en` et `x-default`.
+- 222 routes statiques disposent de métadonnées dédiées.
+- Le JavaScript initial compressé pèse environ 81 Ko et la feuille de styles environ 16 Ko ; le découpage par page est actif.
+- Les liens internes anglais pointent désormais directement vers `/en/...`, sans redirection intermédiaire.
+- Les dates `lastmod` artificielles ont été retirées du sitemap : Google préfère leur absence à une date inexacte renouvelée à chaque construction.
+- Le contrôle Chrome reste bloqué tant que le plugin Browser/Chrome n'a pas été réinstallé depuis l'interface Codex. Après reconnexion, demander l'indexation de quatre pages prioritaires : accueil, Collections, Parcours et collection Venise, en remplaçant toute page déjà indexée par une autre collection importante.
+
 ## Dernier état connu
 
 - Dernier commit de production observé : `38ce726` — `Polish gallery presentation and optimize artwork delivery`.
-- La branche locale contient le commit de transmission, non envoyé sur GitHub et non publié au moment de cette mise à jour.
+- La branche locale contient le dossier de reprise et la correction des anciennes URL ; la publication finale doit mettre cette documentation à disposition dans GitHub.
 - Le dépôt était propre au début de la session du 17 août 2026.
 - Les derniers contrôles connus de lint et de build étaient réussis.
 - Le site fonctionnait en production ; aucun incident de sécurité connu.
