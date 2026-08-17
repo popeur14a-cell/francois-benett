@@ -113,12 +113,12 @@ L'indexation sert à permettre à une page d'apparaître dans les résultats Goo
 
 ## Dernier état connu
 
-- Dernier commit de production observé : `38ce726` — `Polish gallery presentation and optimize artwork delivery`.
-- La branche locale contient le dossier de reprise et la correction des anciennes URL ; la publication finale doit mettre cette documentation à disposition dans GitHub.
+- Production publiée le 17 août 2026 depuis la branche `main`, avec le dossier de reprise, les redirections historiques et les optimisations de qualité.
+- Déploiement Vercel vérifié `READY`, sans erreur d'exécution observée après publication.
 - Le dépôt était propre au début de la session du 17 août 2026.
 - Les derniers contrôles connus de lint et de build étaient réussis.
 - Le site fonctionnait en production ; aucun incident de sécurité connu.
-- Cette session a créé la mémoire durable. L'accès automatique à Search Console a été bloqué par la liaison de l'extension Chrome ; aucune demande d'indexation n'a donc encore été envoyée.
+- Cette session a créé la mémoire durable et publié les corrections. L'accès automatique à Search Console reste bloqué par la liaison de l'extension Chrome ; aucune demande d'indexation n'a donc encore été envoyée.
 - Une erreur SEO a été trouvée : les anciennes URL en majuscules sans `.html` aboutissaient en 404 après le nettoyage automatique de Vercel. Des redirections intermédiaires ont été ajoutées dans `vercel.json`; elles doivent être publiées avant de demander les quatre indexations prioritaires.
 
 ## Priorités futures raisonnables
